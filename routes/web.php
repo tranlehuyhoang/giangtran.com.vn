@@ -34,7 +34,7 @@ use App\Livewire\General\Dashboard\Home as Dashboard ;
 use Illuminate\Support\Facades\Route;
 
 // Định nghĩa các route
-Route::get('/', Dashboard::class)->name('general.dashboard');
+Route::get('/home', Dashboard::class)->name('general.dashboard');
 // Route::get('/home', Home::class)->name('home');
 
 

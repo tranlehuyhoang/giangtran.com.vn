@@ -49,7 +49,7 @@
 
           <li class="sidebar-main-title">
             <div>
-              <h6 class="lan-8">Sản Phẩm</h6>
+              <h6  >Sản Phẩm</h6>
             </div>
           </li>
 
@@ -217,7 +217,7 @@
           </li>
           <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.imageToLink') ? 'active' : '' }}" href="{{ route('tools.imageToLink') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.imageToLink') ? 'active' : '' }}" href="{{ route('tools.imageToLink') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -229,7 +229,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.getFbId') ? 'active' : '' }}" href="{{ route('tools.getFbId') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.getFbId') ? 'active' : '' }}" href="{{ route('tools.getFbId') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -241,7 +241,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.createAiImage') ? 'active' : '' }}" href="{{ route('tools.createAiImage') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.createAiImage') ? 'active' : '' }}" href="{{ route('tools.createAiImage') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -253,7 +253,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.checkDomain') ? 'active' : '' }}" href="{{ route('tools.checkDomain') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.checkDomain') ? 'active' : '' }}" href="{{ route('tools.checkDomain') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -265,7 +265,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.appotaPayment') ? 'active' : '' }}" href="{{ route('tools.appotaPayment') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.appotaPayment') ? 'active' : '' }}" href="{{ route('tools.appotaPayment') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -277,7 +277,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.textToSpeech') ? 'active' : '' }}" href="{{ route('tools.textToSpeech') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.textToSpeech') ? 'active' : '' }}" href="{{ route('tools.textToSpeech') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -289,7 +289,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.asciiConverter') ? 'active' : '' }}" href="{{ route('tools.asciiConverter') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.asciiConverter') ? 'active' : '' }}" href="{{ route('tools.asciiConverter') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -301,7 +301,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.jsEncryption') ? 'active' : '' }}" href="{{ route('tools.jsEncryption') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.jsEncryption') ? 'active' : '' }}" href="{{ route('tools.jsEncryption') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -313,7 +313,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.phpEncryption') ? 'active' : '' }}" href="{{ route('tools.phpEncryption') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.phpEncryption') ? 'active' : '' }}" href="{{ route('tools.phpEncryption') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -325,7 +325,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.randomAvatar') ? 'active' : '' }}" href="{{ route('tools.randomAvatar') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.randomAvatar') ? 'active' : '' }}" href="{{ route('tools.randomAvatar') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -337,7 +337,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.characterEncryption') ? 'active' : '' }}" href="{{ route('tools.characterEncryption') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.characterEncryption') ? 'active' : '' }}" href="{{ route('tools.characterEncryption') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -349,7 +349,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.fontRemoval') ? 'active' : '' }}" href="{{ route('tools.fontRemoval') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.fontRemoval') ? 'active' : '' }}" href="{{ route('tools.fontRemoval') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -361,7 +361,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.get2faCode') ? 'active' : '' }}" href="{{ route('tools.get2faCode') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.get2faCode') ? 'active' : '' }}" href="{{ route('tools.get2faCode') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -373,7 +373,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.checkLiveFb') ? 'active' : '' }}" href="{{ route('tools.checkLiveFb') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.checkLiveFb') ? 'active' : '' }}" href="{{ route('tools.checkLiveFb') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -385,7 +385,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.downloadVideoWithoutLogo') ? 'active' : '' }}" href="{{ route('tools.downloadVideoWithoutLogo') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.downloadVideoWithoutLogo') ? 'active' : '' }}" href="{{ route('tools.downloadVideoWithoutLogo') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -397,7 +397,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.getColorCode') ? 'active' : '' }}" href="{{ route('tools.getColorCode') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.getColorCode') ? 'active' : '' }}" href="{{ route('tools.getColorCode') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -409,7 +409,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.createVideoFromImage') ? 'active' : '' }}" href="{{ route('tools.createVideoFromImage') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.createVideoFromImage') ? 'active' : '' }}" href="{{ route('tools.createVideoFromImage') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -421,7 +421,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.fileFormatConverter') ? 'active' : '' }}" href="{{ route('tools.fileFormatConverter') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.fileFormatConverter') ? 'active' : '' }}" href="{{ route('tools.fileFormatConverter') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -433,7 +433,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.urlShortener') ? 'active' : '' }}" href="{{ route('tools.urlShortener') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.urlShortener') ? 'active' : '' }}" href="{{ route('tools.urlShortener') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -445,7 +445,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.chartGenerator') ? 'active' : '' }}" href="{{ route('tools.chartGenerator') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.chartGenerator') ? 'active' : '' }}" href="{{ route('tools.chartGenerator') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -457,7 +457,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.spellCheck') ? 'active' : '' }}" href="{{ route('tools.spellCheck') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.spellCheck') ? 'active' : '' }}" href="{{ route('tools.spellCheck') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -469,7 +469,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.extractAudioFromVideo') ? 'active' : '' }}" href="{{ route('tools.extractAudioFromVideo') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.extractAudioFromVideo') ? 'active' : '' }}" href="{{ route('tools.extractAudioFromVideo') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -481,7 +481,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.checkInternetSpeed') ? 'active' : '' }}" href="{{ route('tools.checkInternetSpeed') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.checkInternetSpeed') ? 'active' : '' }}" href="{{ route('tools.checkInternetSpeed') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -493,7 +493,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.ipTracking') ? 'active' : '' }}" href="{{ route('tools.ipTracking') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.ipTracking') ? 'active' : '' }}" href="{{ route('tools.ipTracking') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -505,7 +505,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.passwordGenerator') ? 'active' : '' }}" href="{{ route('tools.passwordGenerator') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.passwordGenerator') ? 'active' : '' }}" href="{{ route('tools.passwordGenerator') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -517,7 +517,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.videoToAudio') ? 'active' : '' }}" href="{{ route('tools.videoToAudio') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.videoToAudio') ? 'active' : '' }}" href="{{ route('tools.videoToAudio') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -529,7 +529,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.createGreetingCard') ? 'active' : '' }}" href="{{ route('tools.createGreetingCard') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.createGreetingCard') ? 'active' : '' }}" href="{{ route('tools.createGreetingCard') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
@@ -541,7 +541,7 @@
         </li>
         <li class="sidebar-list">
             <i class="fa fa-thumb-tack"></i>
-            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.trafficFine') ? 'active' : '' }}" href="{{ route('tools.trafficFine') }}">
+            <a class="sidebar-link sidebar-title link-nav {{ request()->routeIs('tools.trafficFine') ? 'active' : '' }}" href="{{ route('tools.trafficFine') }}" wire:navigate>
                 <svg class="stroke-icon">
                     <use href="/mofi/assets/svg/icon-sprite.svg#stroke-faq"></use>
                 </svg>
