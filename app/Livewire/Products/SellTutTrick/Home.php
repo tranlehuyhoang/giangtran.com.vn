@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\SellTutTrick;
+namespace App\Livewire\Products\SellTutTrick;
 
 use Livewire\Component;
 

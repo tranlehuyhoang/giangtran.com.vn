@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\SellSourceWeb;
+namespace App\Livewire\Products\Network5g;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class Home extends Component
 {
     public function render()
     {
-        return view('livewire.products.sell-source-web.home');
+        return view('livewire.products.network5g.home');
     }
 }

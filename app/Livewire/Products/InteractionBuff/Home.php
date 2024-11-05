@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\InteractionBuff;
+namespace App\Livewire\Products\InteractionBuff;
 
 use Livewire\Component;
 

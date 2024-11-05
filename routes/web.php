@@ -28,6 +28,9 @@ use App\Livewire\Tools\PasswordGenerator\Home as PasswordGenerator;
 use App\Livewire\Tools\VideoToAudio\Home as VideoToAudio;
 use App\Livewire\Tools\CreateGreetingCard\Home as CreateGreetingCard;
 use App\Livewire\Tools\TrafficFine\Home as TrafficFine;
+use App\Livewire\Products\HostingVps\Home as HostingHome;
+use App\Livewire\Products\HostingVps\Detail as HostingDetail;
+
 
 
 use App\Livewire\General\Dashboard\Home as Dashboard ;
@@ -67,4 +70,9 @@ Route::group(['prefix' => 'tools'], function () {
     Route::get('/video-to-audio', VideoToAudio::class)->name('tools.videoToAudio');
     Route::get('/create-greeting-card', CreateGreetingCard::class)->name('tools.createGreetingCard');
     Route::get('/traffic-fine', TrafficFine::class)->name('tools.trafficFine');
+});
+
+Route::group(['prefix' => 'hosting-vps'], function () {
+    Route::get('/', HostingHome::class)->name('products.hosting-vps');
+    Route::get('/{id}', HostingDetail::class)->name('products.hosting-vps.detail');
 });
