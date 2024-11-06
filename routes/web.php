@@ -34,6 +34,7 @@ use App\Livewire\Products\HostingVps\Detail as HostingDetail;
 
 
 use App\Livewire\General\Dashboard\Home as Dashboard ;
+use App\Livewire\Products\HostingVps\Orders;
 use Illuminate\Support\Facades\Route;
 
 // Định nghĩa các route
@@ -75,4 +76,5 @@ Route::group(['prefix' => 'tools'], function () {
 Route::group(['prefix' => 'hosting-vps'], function () {
     Route::get('/', HostingHome::class)->name('products.hosting-vps');
     Route::get('/{id}', HostingDetail::class)->name('products.hosting-vps.detail');
+    Route::get('/orders', Orders::class)->name('products.hosting-vps.orders');
 });

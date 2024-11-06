@@ -167,21 +167,124 @@
                                                                             <form class="row g-3 mb-3 needs-validation"
                                                                                 novalidate="">
                                                                                 <div class="col-md-12">
-                                                                                    <label for="discountCode" class="form-label">
-                                                                                        PREMIUM 1: 5.000 đ <br>
-                                                                                        
-                                                                                        Dịch vụ Backup: None <br>
-                                                                                        
-                                                                                        1 Tháng: 5.000 đ <br>
-                                                                                        
-                                                                                        Số tiền giảm: 0đ <br>
-                                                                                        
-                                                                                        Tổng tiền thanh toán: 5.000 đ</label>
-                                                                                </div>
-                                                                                <div class="col-md-12">
-                                                                                    <label for="discountCode" class="form-label">Enter Discount Code</label>
-                                                                                    <input type="text" class="form-control" id="discountCode" placeholder="Discount Code" required="">
-                                                                                    <div class="invalid-feedback">Please enter a discount code.</div>
+                                                                                    <div class="accordion dark-accordion"
+                                                                                        id="accordionExample-a">
+                                                                                        <div class="accordion-item">
+                                                                                            <h2 class="accordion-header"
+                                                                                                id="headingOne-a">
+                                                                                                <button
+                                                                                                    class="accordion-button collapsed accordion-light-primary txt-primary"
+                                                                                                    type="button"
+                                                                                                    data-bs-toggle="collapse"
+                                                                                                    data-bs-target="#collapseOne-a"
+                                                                                                    aria-expanded="true"
+                                                                                                    aria-controls="collapseOne-a">NET
+                                                                                                    BANKING<i
+                                                                                                        class="svg-color"
+                                                                                                        data-feather="chevron-down"></i></button>
+                                                                                            </h2>
+                                                                                            <div class="accordion-collapse collapse"
+                                                                                                id="collapseOne-a"
+                                                                                                aria-labelledby="headingOne-a"
+                                                                                                data-bs-parent="#accordionExample-a">
+                                                                                                <div
+                                                                                                    class="accordion-body weight-title card-wrapper">
+                                                                                                    <h6
+                                                                                                        class="sub-title f-14">
+                                                                                                        SELECT YOUR BANK
+                                                                                                    </h6>
+                                                                                                    <div
+                                                                                                        class="row choose-bank">
+                                                                                                        <div
+                                                                                                            class="col-sm-6">
+                                                                                                            <div
+                                                                                                                class="form-check radio radio-primary">
+                                                                                                                <input
+                                                                                                                    class="form-check-input"
+                                                                                                                    id="flexRadioDefault-z"
+                                                                                                                    type="radio"
+                                                                                                                    name="flexRadioDefault-v">
+                                                                                                                <label
+                                                                                                                    class="form-check-label"
+                                                                                                                    for="flexRadioDefault-z">Industrial
+                                                                                                                    &
+                                                                                                                    Commercial
+                                                                                                                    Bank</label>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="form-check radio radio-primary">
+                                                                                                                <input
+                                                                                                                    class="form-check-input"
+                                                                                                                    id="flexRadioDefault-y"
+                                                                                                                    type="radio"
+                                                                                                                    name="flexRadioDefault-v">
+                                                                                                                <label
+                                                                                                                    class="form-check-label"
+                                                                                                                    for="flexRadioDefault-y">Agricultural
+                                                                                                                    Bank</label>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="form-check radio radio-primary">
+                                                                                                                <input
+                                                                                                                    class="form-check-input"
+                                                                                                                    id="flexRadioDefault-x"
+                                                                                                                    type="radio"
+                                                                                                                    name="flexRadioDefault-v"
+                                                                                                                    checked="">
+                                                                                                                <label
+                                                                                                                    class="form-check-label"
+                                                                                                                    for="flexRadioDefault-x">JPMorgan
+                                                                                                                    Chase
+                                                                                                                    &
+                                                                                                                    Co.</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="col-sm-6">
+                                                                                                            <div
+                                                                                                                class="form-check radio radio-primary">
+                                                                                                                <input
+                                                                                                                    class="form-check-input"
+                                                                                                                    id="flexRadioDefault-w"
+                                                                                                                    type="radio"
+                                                                                                                    name="flexRadioDefault-v">
+                                                                                                                <label
+                                                                                                                    class="form-check-label"
+                                                                                                                    for="flexRadioDefault-w">Construction
+                                                                                                                    Bank
+                                                                                                                    Corp.</label>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="form-check radio radio-primary">
+                                                                                                                <input
+                                                                                                                    class="form-check-input"
+                                                                                                                    id="flexRadioDefault-v"
+                                                                                                                    type="radio"
+                                                                                                                    name="flexRadioDefault-v">
+                                                                                                                <label
+                                                                                                                    class="form-check-label"
+                                                                                                                    for="flexRadioDefault-v">Bank
+                                                                                                                    of
+                                                                                                                    America</label>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="form-check radio radio-primary">
+                                                                                                                <input
+                                                                                                                    class="form-check-input"
+                                                                                                                    id="flexRadioDefault-u"
+                                                                                                                    type="radio"
+                                                                                                                    name="flexRadioDefault-v">
+                                                                                                                <label
+                                                                                                                    class="form-check-label"
+                                                                                                                    for="flexRadioDefault-u">HDFC
+                                                                                                                    Bank</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="col-12">
                                                                                     <textarea class="form-control"
