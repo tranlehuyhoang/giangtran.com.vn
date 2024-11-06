@@ -47,7 +47,7 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer">
-                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/1" wire:navigate >Đăng ký ngay</a></h6>
+                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/detail/1" wire:navigate >Đăng ký ngay</a></h6>
                                             </div>
                                         </div>
                                     </div>
@@ -71,7 +71,7 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer">
-                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/1" wire:navigate >Đăng ký ngay</a></h6>
+                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/detail/1" wire:navigate >Đăng ký ngay</a></h6>
                                             </div>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer">
-                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/1" wire:navigate >Đăng ký ngay</a></h6>
+                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/detail/1" wire:navigate >Đăng ký ngay</a></h6>
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer">
-                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/1" wire:navigate >Đăng ký ngay</a></h6>
+                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/detail/1" wire:navigate >Đăng ký ngay</a></h6>
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@
                                                 </p>
                                             </div>
                                             <div class="card-footer">
-                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/1" wire:navigate >Đăng ký ngay</a></h6>
+                                                <h6 class="mb-0 text-end"><a href="/hosting-vps/detail/1" wire:navigate >Đăng ký ngay</a></h6>
                                             </div>
                                         </div>
                                     </div>
