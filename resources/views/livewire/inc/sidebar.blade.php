@@ -115,8 +115,8 @@
                                 <use href="/mofi/assets/svg/icon-sprite.svg#fill-project"></use>
                             </svg><span>Vps Hosting </span></a>
                         <ul class="sidebar-submenu">
-                            <li><a href="{{ route('products.hosting-vps') }}" wire:navigate>Đăng ký dịch vụ</a></li>
-                            <li><a href="{{ route('products.hosting-vps.orders') }}" wire:navigate>Quản lý dịch vụ</a></li>
+                            <li><a href="/hosting-vps/home" wire:navigate>Đăng ký dịch vụ</a></li>
+                            <li><a href="/hosting-vps/orders" wire:navigate>Quản lý dịch vụ</a></li>
                         </ul>
                     </li>
 

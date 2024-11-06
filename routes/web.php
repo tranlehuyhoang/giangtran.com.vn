@@ -30,11 +30,12 @@ use App\Livewire\Tools\CreateGreetingCard\Home as CreateGreetingCard;
 use App\Livewire\Tools\TrafficFine\Home as TrafficFine;
 use App\Livewire\Products\HostingVps\Home as HostingHome;
 use App\Livewire\Products\HostingVps\Detail as HostingDetail;
+use App\Livewire\Products\HostingVps\Orders;
 
 
 
 use App\Livewire\General\Dashboard\Home as Dashboard ;
-use App\Livewire\Products\HostingVps\Orders;
+use App\Livewire\Products\HostingVps\OrderDetail;
 use Illuminate\Support\Facades\Route;
 
 // Định nghĩa các route
@@ -74,7 +75,8 @@ Route::group(['prefix' => 'tools'], function () {
 });
 
 Route::group(['prefix' => 'hosting-vps'], function () {
-    Route::get('/', HostingHome::class)->name('products.hosting-vps');
-    Route::get('/{id}', HostingDetail::class)->name('products.hosting-vps.detail');
-    Route::get('/orders', Orders::class)->name('products.hosting-vps.orders');
+    Route::get('/home', HostingHome::class)->name('products.hosting-vps');
+    Route::get('/detail/{id}', HostingDetail::class)->name('products.hosting-vps.detail');
+    Route::get('/orders', action: Orders::class)->name('products.hosting-vps.orders');
+    Route::get('/orders/{id}', action: OrderDetail::class)->name('products.hosting-vps.orders-detail');
 });
