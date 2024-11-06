@@ -181,82 +181,119 @@
                                                 <div class="dashboard-2">
 
 
-                                                <div class="row">
-                                                    <div class="col-3">
-                                                        <div class="btn-light1-primary b-r-10">
-                                                            <div class="upcoming-box">
-                                                                <div class="upcoming-icon "> <img
-                                                                        src="https://ezhost.vn/assets/images/cron_jobs.png"
-                                                                        alt=""></div>
-                                                                <h6>Cron Jobs</h6>
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <div class="btn-light1-primary b-r-10">
+                                                                <div class="upcoming-box">
+                                                                    <div class="upcoming-icon "> <img
+                                                                            src="https://ezhost.vn/assets/images/cron_jobs.png"
+                                                                            alt=""></div>
+                                                                    <h6>Cron Jobs</h6>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="btn-light1-primary b-r-10">
-                                                            <div class="upcoming-box">
-                                                                <div class="upcoming-icon "> <img
-                                                                        src="https://ezhost.vn/assets/images/addon_domains.png"
-                                                                        alt=""></div>
-                                                                <h6>Addon Domains</h6>
+                                                        <div class="col-3">
+                                                            <div class="btn-light1-primary b-r-10">
+                                                                <div class="upcoming-box">
+                                                                    <div class="upcoming-icon "> <img
+                                                                            src="https://ezhost.vn/assets/images/addon_domains.png"
+                                                                            alt=""></div>
+                                                                    <h6>Addon Domains</h6>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="btn-light1-primary b-r-10">
-                                                            <div class="upcoming-box">
-                                                                <div class="upcoming-icon "> <img
-                                                                        src="https://ezhost.vn/assets/images/subdomains.png"
-                                                                        alt=""></div>
-                                                                <h6>Subdomains</h6>
+                                                        <div class="col-3">
+                                                            <div class="btn-light1-primary b-r-10">
+                                                                <div class="upcoming-box">
+                                                                    <div class="upcoming-icon "> <img
+                                                                            src="https://ezhost.vn/assets/images/subdomains.png"
+                                                                            alt=""></div>
+                                                                    <h6>Subdomains</h6>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                            
-                                                    <div class="col-3">
-                                                        <div class="btn-light1-primary b-r-10">
-                                                            <div class="upcoming-box">
-                                                                <div class="upcoming-icon "> <img
-                                                                        src="https://ezhost.vn/assets/images/cpanel_reinstall.svg"
-                                                                        alt=""></div>
-                                                                <h6>Cài đặt lại hosting</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="btn-light1-primary b-r-10">
-                                                            <div class="upcoming-box">
-                                                                <div class="upcoming-icon "> <img
-                                                                        src="https://ezhost.vn/assets/images/cpanel_change_domain.svg"
-                                                                        alt=""></div>
-                                                                <h6>Đổi miền chính</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="btn-light1-primary b-r-10">
-                                                            <div class="upcoming-box">
-                                                                <div class="upcoming-icon "> <img
-                                                                        src="https://ezhost.vn/assets/images/cpanel_allow_ip.svg"
-                                                                        alt=""></div>
-                                                                <h6>Chặn IP</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="btn-light1-primary b-r-10">
-                                                            <div class="upcoming-box">
-                                                                <div class="upcoming-icon "> <img
-                                                                        src="https://ezhost.vn/assets/images/cpanel_unblock_ip.svg"
-                                                                        alt=""></div>
-                                                                <h6>Bỏ chặn IP</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                            
-                                                </div>
-                                            </div>
 
+                                                        <div class="col-3">
+                                                            <div class="btn-light1-primary b-r-10">
+                                                                <div class="upcoming-box">
+                                                                    <div class="upcoming-icon "> <img
+                                                                            src="https://ezhost.vn/assets/images/cpanel_reinstall.svg"
+                                                                            alt=""></div>
+                                                                    <h6>Cài đặt lại hosting</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btn-light1-primary b-r-10">
+                                                                <div class="upcoming-box">
+                                                                    <div class="upcoming-icon "> <img
+                                                                            src="https://ezhost.vn/assets/images/cpanel_change_domain.svg"
+                                                                            alt=""></div>
+                                                                    <h6>Đổi miền chính</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btn-light1-primary b-r-10">
+                                                                <div class="upcoming-box">
+                                                                    <div class="upcoming-icon "> <img
+                                                                            src="https://ezhost.vn/assets/images/cpanel_allow_ip.svg"
+                                                                            alt=""></div>
+                                                                    <h6>Chặn IP</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="btn-light1-primary b-r-10">
+                                                                <div class="upcoming-box">
+                                                                    <div class="upcoming-icon "> <img
+                                                                            src="https://ezhost.vn/assets/images/cpanel_unblock_ip.svg"
+                                                                            alt=""></div>
+                                                                    <h6>Bỏ chặn IP</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <h5 class="f-w-500 pb-2">Tài nguyên sử dụng</h5>
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-xl-6">
+                                                            <h5 class="f-w-500 pb-2">Disk Usage: 0.69 MB / 500.00 MB
+                                                                (0%)</h5>
+                                                            <div class="progress progress-striped-secondary b-r-2">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 40%" aria-valuenow="10"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-xl-6">
+                                                            <h5 class="f-w-500 pb-2">Bandwidth: 720896 / 524288000 (0%)
+                                                            </h5>
+                                                            <div class="progress progress-striped-secondary b-r-2">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 40%" aria-valuenow="10"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="card-footer">
+                                                    <h5 class="f-w-500 pb-2">Liên kết nhanh
+                                                    </h5>
+                                                    <div class="common-flex">
+ 
+                                                        <button class="btn btn-square btn-light">Đăng nhập vào cPanel</button>
+                                                        <button class="btn btn-square btn-light">Thay đổi mật khẩu</button>
+                                                        <button class="btn btn-square btn-light">Gia hạn</button>
+                                                        <button class="btn btn-square btn-light">Nâng cấp</button>
+                                                        <button class="btn btn-square btn-light">Đổi quyền quản trị</button>
+                                                    </div>
+                                                        
+                                                </div>
                                             </div>
                                         </div>
 
