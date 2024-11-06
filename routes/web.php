@@ -76,7 +76,7 @@ Route::group(['prefix' => 'tools'], function () {
 
 Route::group(['prefix' => 'hosting-vps'], function () {
     Route::get('/home', HostingHome::class)->name('products.hosting-vps');
-    Route::get('/detail/{id}', HostingDetail::class)->name('products.hosting-vps.detail');
+    Route::get('/home/detail/{id}', HostingDetail::class)->name('products.hosting-vps.detail');
     Route::get('/orders', action: Orders::class)->name('products.hosting-vps.orders');
     Route::get('/orders/{id}', action: OrderDetail::class)->name('products.hosting-vps.orders-detail');
 });
