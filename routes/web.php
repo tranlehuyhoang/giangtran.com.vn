@@ -28,6 +28,7 @@ use App\Livewire\Tools\PasswordGenerator\Home as PasswordGenerator;
 use App\Livewire\Tools\VideoToAudio\Home as VideoToAudio;
 use App\Livewire\Tools\CreateGreetingCard\Home as CreateGreetingCard;
 use App\Livewire\Tools\TrafficFine\Home as TrafficFine;
+
 use App\Livewire\Products\HostingVps\Home as HostingHome;
 use App\Livewire\Products\HostingVps\Detail as HostingDetail;
 use App\Livewire\Products\HostingVps\Orders;
@@ -35,12 +36,38 @@ use App\Livewire\Products\HostingVps\Orders;
 
 
 use App\Livewire\General\Dashboard\Home as Dashboard ;
+use App\Livewire\General\LandingPage\Home as LandingPage ;
 use App\Livewire\Products\HostingVps\OrderDetail;
+
+
+
+use App\Livewire\Auth\Comingsoon\Home as Comingsoon;
+use App\Livewire\Auth\ForgetPassword\Home as ForgetPassword;
+use App\Livewire\Auth\Login\Home as Login;
+use App\Livewire\Auth\Maintenance\Home as Maintenance;
+use App\Livewire\Auth\Register\Home as Register;
+use App\Livewire\Auth\ResetPassword\Home as ResetPassword;
+use App\Livewire\Auth\Unlock\Home as Unlock;
+
+
 use Illuminate\Support\Facades\Route;
 
 // Định nghĩa các route
-Route::get('/home', Dashboard::class)->name('general.dashboard');
-// Route::get('/home', Home::class)->name('home');
+
+Route::group(['prefix' => '/'], function () {
+    Route::get('/', LandingPage::class)->name(name: 'general.landingpage');
+    Route::get('/home', Dashboard::class)->name('general.dashboard');
+});
+Route::group(['prefix' => '/auth'], function () {
+    Route::get('/coming-soon', Comingsoon::class)->name('auth.coming-soon');
+    Route::get('/forget-password', ForgetPassword::class)->name('auth.forget-password');
+    Route::get('/login', Login::class)->name('auth.login');
+    Route::get('/maintenance', Maintenance::class)->name('auth.maintenance');
+    Route::get('/register', Register::class)->name('auth.register');
+    Route::get('/reset-password', ResetPassword::class)->name('auth.reset-password');
+    Route::get('/unlock', Unlock::class)->name('auth.unlock');
+});
+
 
 
 Route::group(['prefix' => 'tools'], function () {
@@ -79,4 +106,7 @@ Route::group(['prefix' => 'hosting-vps'], function () {
     Route::get('/home/detail/{id}', HostingDetail::class)->name('products.hosting-vps.detail');
     Route::get('/orders', action: Orders::class)->name('products.hosting-vps.orders');
     Route::get('/orders/{id}', action: OrderDetail::class)->name('products.hosting-vps.orders-detail');
+});
+Route::get('/test-500', function () {
+    abort(500); // Tạo lỗi 500
 });
