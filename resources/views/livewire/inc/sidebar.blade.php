@@ -66,7 +66,7 @@
                         <ul class="sidebar-submenu">
                             <li><a href="/sources-code/home" wire:navigate>Danh sách Mã nguồn</a></li>
 
-                            <li><a href="projects.html">Mã nguồn đã mua</a></li>
+                            <li><a href="/sources-code/orders" wire:navigate>Mã nguồn đã mua</a></li>
                         </ul>
                     </li>
 

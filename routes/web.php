@@ -35,6 +35,8 @@ use App\Livewire\Products\HostingVps\Orders;
 
 use App\Livewire\Products\SellSourceWeb\Home as SellSourceWebHome;
 use App\Livewire\Products\SellSourceWeb\Detail as SellSourceWebDetail;
+use App\Livewire\Products\SellSourceWeb\Orders as  SellSourceWebOrders ;
+
 
 
 
@@ -113,6 +115,7 @@ Route::group(['prefix' => 'hosting-vps'], function () {
 Route::group(['prefix' => 'sources-code'], function () {
     Route::get('/home', SellSourceWebHome::class)->name('products.sell-source-web.home');
     Route::get('/home/detail/{slug}', SellSourceWebDetail::class)->name('products.sell-source-web.detail');
+    Route::get('/orders', SellSourceWebOrders::class)->name('products.sell-source-web.orders');
 });
 
 Route::get('/test-500', function () {
