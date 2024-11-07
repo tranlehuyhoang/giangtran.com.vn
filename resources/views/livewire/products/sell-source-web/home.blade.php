@@ -100,11 +100,13 @@
 
                                     </div>
                                 </div>
-                                .<div class="row justify-content-center align-items-center g-10">
+                                <div class="row justify-content-center align-items-center g-10">
                                     <div class="col-xl-4 col-md-6 proorder-md-5">
-                                        <div class="card ">
+                                        <div class="card ribbon-wrapper border border-1 height-equal alert-light-light">
                                             <div class="card-header card-no-border pb-0 ">
 
+                                            </div>
+                                            <div class="ribbon ribbon-primary ribbon-clip-right ribbon-right">Mã #01
                                             </div>
                                             <div
                                                 class="card-body live-meet  animated-ribbon ribbon-wrapper smooth-animate ">
@@ -144,8 +146,8 @@
                             ">
                                                     <button class="btn border-dashed-success">270.000đ</button>
                                                     <button class="btn btn-danger" type="button"
-                                                        data-bs-toggle="tooltip" title="btn btn-danger"> Mua
-                                                        ngay</button>
+                                                        data-bs-toggle="tooltip" title="btn btn-danger"><a href="/sources-code/home/detail/1" wire:navigate style="color: #ffffff" >Mua
+                                                            ngay</a> </button>
                                                 </div>
                                             </div>
 
@@ -153,9 +155,11 @@
 
                                     </div>
                                     <div class="col-xl-4 col-md-6 proorder-md-5">
-                                        <div class="card ">
+                                        <div class="card ribbon-wrapper border border-1 height-equal alert-light-light">
                                             <div class="card-header card-no-border pb-0 ">
 
+                                            </div>
+                                            <div class="ribbon ribbon-primary ribbon-clip-right ribbon-right">Mã #01
                                             </div>
                                             <div
                                                 class="card-body live-meet  animated-ribbon ribbon-wrapper smooth-animate ">
@@ -195,8 +199,8 @@
                             ">
                                                     <button class="btn border-dashed-success">270.000đ</button>
                                                     <button class="btn btn-danger" type="button"
-                                                        data-bs-toggle="tooltip" title="btn btn-danger"> Mua
-                                                        ngay</button>
+                                                        data-bs-toggle="tooltip" title="btn btn-danger"><a href="/sources-code/home/detail/1" wire:navigate style="color: #ffffff" >Mua
+                                                            ngay</a> </button>
                                                 </div>
                                             </div>
 
@@ -204,9 +208,11 @@
 
                                     </div>
                                     <div class="col-xl-4 col-md-6 proorder-md-5">
-                                        <div class="card ">
+                                        <div class="card ribbon-wrapper border border-1 height-equal alert-light-light">
                                             <div class="card-header card-no-border pb-0 ">
 
+                                            </div>
+                                            <div class="ribbon ribbon-primary ribbon-clip-right ribbon-right">Mã #01
                                             </div>
                                             <div
                                                 class="card-body live-meet  animated-ribbon ribbon-wrapper smooth-animate ">
@@ -246,168 +252,14 @@
                             ">
                                                     <button class="btn border-dashed-success">270.000đ</button>
                                                     <button class="btn btn-danger" type="button"
-                                                        data-bs-toggle="tooltip" title="btn btn-danger"> Mua
-                                                        ngay</button>
+                                                        data-bs-toggle="tooltip" title="btn btn-danger"><a href="/sources-code/home/detail/1" wire:navigate style="color: #ffffff" >Mua
+                                                            ngay</a> </button>
                                                 </div>
                                             </div>
 
                                         </div>
 
                                     </div>
-                                    <div class="col-xl-4 col-md-6 proorder-md-5">
-                                        <div class="card ">
-                                            <div class="card-header card-no-border pb-0 ">
-
-                                            </div>
-                                            <div
-                                                class="card-body live-meet  animated-ribbon ribbon-wrapper smooth-animate ">
-                                                <div class="live-metting">
-
-
-                                                    <img class="img-fluid" src="https://imgur.com/u7ALYR1.png" alt="">
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <h5 class="text-truncate"> <span></span>Share Code Cho thuê cron
-                                                            API
-                                                            qua cron.dichvuright.net</h5>
-                                                    </li>
-                                                    <li style="
-                                  display: flex;
-                                  gap: 10px;
-                                  text-align: center;
-                                  justify-content: center;
-                              ">
-                                                        <p class="text-truncate"> <span>Lượt xem: </span>1000</p>
-                                                        <p class="text-truncate"> <span>Lượt bán: </span>1</p>
-                                                    </li>
-                                                    <li>
-                                                    </li>
-                                                </ul>
-                                                <div class="box">
-                                                    <div class="ribbon"><i class="back"></i><i class="front"><span>Link
-                                                                demo</span></i></div>
-                                                </div>
-
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="card-body common-flex" style="
-                                display: flex;
-                                justify-content: center;
-                            ">
-                                                    <button class="btn border-dashed-success">270.000đ</button>
-                                                    <button class="btn btn-danger" type="button"
-                                                        data-bs-toggle="tooltip" title="btn btn-danger"> Mua
-                                                        ngay</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 proorder-md-5">
-                                        <div class="card ">
-                                            <div class="card-header card-no-border pb-0 ">
-
-                                            </div>
-                                            <div
-                                                class="card-body live-meet  animated-ribbon ribbon-wrapper smooth-animate ">
-                                                <div class="live-metting">
-
-
-                                                    <img class="img-fluid" src="https://imgur.com/u7ALYR1.png" alt="">
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <h5 class="text-truncate"> <span></span>Share Code Cho thuê cron
-                                                            API
-                                                            qua cron.dichvuright.net</h5>
-                                                    </li>
-                                                    <li style="
-                                  display: flex;
-                                  gap: 10px;
-                                  text-align: center;
-                                  justify-content: center;
-                              ">
-                                                        <p class="text-truncate"> <span>Lượt xem: </span>1000</p>
-                                                        <p class="text-truncate"> <span>Lượt bán: </span>1</p>
-                                                    </li>
-                                                    <li>
-                                                    </li>
-                                                </ul>
-                                                <div class="box">
-                                                    <div class="ribbon"><i class="back"></i><i class="front"><span>Link
-                                                                demo</span></i></div>
-                                                </div>
-
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="card-body common-flex" style="
-                                display: flex;
-                                justify-content: center;
-                            ">
-                                                    <button class="btn border-dashed-success">270.000đ</button>
-                                                    <button class="btn btn-danger" type="button"
-                                                        data-bs-toggle="tooltip" title="btn btn-danger"> Mua
-                                                        ngay</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="col-xl-4 col-md-6 proorder-md-5">
-                                        <div class="card ">
-                                            <div class="card-header card-no-border pb-0 ">
-
-                                            </div>
-                                            <div
-                                                class="card-body live-meet  animated-ribbon ribbon-wrapper smooth-animate ">
-                                                <div class="live-metting">
-
-
-                                                    <img class="img-fluid" src="https://imgur.com/u7ALYR1.png" alt="">
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <h5 class="text-truncate"> <span></span>Share Code Cho thuê cron
-                                                            API
-                                                            qua cron.dichvuright.net</h5>
-                                                    </li>
-                                                    <li style="
-                                  display: flex;
-                                  gap: 10px;
-                                  text-align: center;
-                                  justify-content: center;
-                              ">
-                                                        <p class="text-truncate"> <span>Lượt xem: </span>1000</p>
-                                                        <p class="text-truncate"> <span>Lượt bán: </span>1</p>
-                                                    </li>
-                                                    <li>
-                                                    </li>
-                                                </ul>
-                                                <div class="box">
-                                                    <div class="ribbon"><i class="back"></i><i class="front"><span>Link
-                                                                demo</span></i></div>
-                                                </div>
-
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="card-body common-flex" style="
-                                display: flex;
-                                justify-content: center;
-                            ">
-                                                    <button class="btn border-dashed-success">270.000đ</button>
-                                                    <button class="btn btn-danger" type="button"
-                                                        data-bs-toggle="tooltip" title="btn btn-danger"> Mua
-                                                        ngay</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
                                 </div>
 
                                 <div class="col-md-12">
@@ -442,6 +294,19 @@
                     <style>
                         .animated-ribbon .box {
                             top: -3rem;
+                        }
+
+                        .dashboard-4 .live-meet .live-metting {
+                            padding-top: 0px;
+                        }
+
+                        [class*=ribbon-wrapper] {
+                            position: relative;
+                            padding: inherit;
+                        }
+
+                        .alert-light-light {
+                            background-color: #ffffff;
                         }
                     </style>
                 </div>
