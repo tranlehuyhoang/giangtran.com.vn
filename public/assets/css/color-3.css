@@ -5959,7 +5959,8 @@ button:focus {
 body {
     font-size: 14px;
     overflow-x: hidden;
-    font-family: "Outfit", sans-serif, sans-serif;
+    /* font-family: "Outfit", sans-serif, sans-serif; */
+    font-family: "Roboto", sans-serif, sans-serif;
     color: #3D434A;
     background-color: #F4F7F9;
 }

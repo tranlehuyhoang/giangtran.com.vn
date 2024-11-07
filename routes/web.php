@@ -29,6 +29,11 @@ use App\Livewire\Tools\VideoToAudio\Home as VideoToAudio;
 use App\Livewire\Tools\CreateGreetingCard\Home as CreateGreetingCard;
 use App\Livewire\Tools\TrafficFine\Home as TrafficFine;
 
+use App\Livewire\Products\InteractionBuff\Create as InteractionCreate;
+use App\Livewire\Products\InteractionBuff\Orders as InteractionOrders;
+use App\Livewire\Products\InteractionBuff\PriceLists as InteractionPriceLists;
+
+
 use App\Livewire\Products\HostingVps\Home as HostingHome;
 use App\Livewire\Products\HostingVps\Detail as HostingDetail;
 use App\Livewire\Products\HostingVps\Orders;
@@ -116,6 +121,11 @@ Route::group(['prefix' => 'sources-code'], function () {
     Route::get('/home', SellSourceWebHome::class)->name('products.sell-source-web.home');
     Route::get('/home/detail/{slug}', SellSourceWebDetail::class)->name('products.sell-source-web.detail');
     Route::get('/orders', SellSourceWebOrders::class)->name('products.sell-source-web.orders');
+});
+Route::group(['prefix' => 'interaction'], function () {
+    Route::get('/create', InteractionCreate::class)->name('products.interaction.create');
+    Route::get('/orders', InteractionOrders::class)->name('products.interaction.orders');
+    Route::get('/price-lists', InteractionPriceLists::class)->name('products.interaction.price-lists');
 });
 
 Route::get('/test-500', function () {

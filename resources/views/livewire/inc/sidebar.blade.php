@@ -77,6 +77,20 @@
                             </svg>
                             <svg class="fill-icon">
                                 <use href="/mofi/assets/svg/icon-sprite.svg#fill-project"></use>
+                            </svg><span>Dịch vụ MXH </span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="/interaction/create" wire:navigate >Tạo đơn hàng</a></li>
+                            <li><a href="/interaction/orders" wire:navigate >Quản lý đơn hàng</a></li>
+                            <li><a href="/interaction/price-lists" wire:navigate >Bảng giá dịch vụ</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i><a class="sidebar-link sidebar-title"
+                            href="javascript:void(0)">
+                            <svg class="stroke-icon">
+                                <use href="/mofi/assets/svg/icon-sprite.svg#stroke-project"></use>
+                            </svg>
+                            <svg class="fill-icon">
+                                <use href="/mofi/assets/svg/icon-sprite.svg#fill-project"></use>
                             </svg><span>Khóa Học </span></a>
                         <ul class="sidebar-submenu">
                             <li><a href="projects.html">Wordpress</a></li>
@@ -227,6 +241,27 @@
                         <li><a href="projectcreate.html">Python</a></li>
                     </ul>
                 </li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
+                    class="sidebar-link sidebar-title link-nav" href="/dashboard" wire:navigate>
+                    <svg class="stroke-icon">
+                        <use href="/mofi/assets/svg/icon-sprite.svg#stroke-project"></use>
+                    </svg>
+                    <svg class="fill-icon">
+                        <use href="/mofi/assets/svg/icon-sprite.svg#fill-project"></use>
+                    </svg><span>Bài viết </span>
+                    <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                </a></li>
+                <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
+                    class="sidebar-link sidebar-title link-nav" href="/dashboard" wire:navigate>
+                    <svg class="stroke-icon">
+                        <use href="/mofi/assets/svg/icon-sprite.svg#stroke-project"></use>
+                    </svg>
+                    <svg class="fill-icon">
+                        <use href="/mofi/assets/svg/icon-sprite.svg#fill-project"></use>
+                    </svg><span>Nhắn tin </span>
+                    <div class="according-menu"><i class="fa fa-angle-right"></i></div>
+                </a></li>
+
                 </ul>
             </div>
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
