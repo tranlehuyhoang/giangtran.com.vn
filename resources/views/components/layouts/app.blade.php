@@ -35,6 +35,8 @@
     <link id="color" rel="stylesheet" href="/mofi/assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="/mofi/assets/css/responsive.css">
+    {{-- <link rel="stylesheet" type="text/css" href="/mofi/assets/css/components/_buttons.scss"> --}}
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
     @livewireStyles
 </head>
 

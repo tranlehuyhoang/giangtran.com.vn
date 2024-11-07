@@ -37,7 +37,7 @@
 
 
                     <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
-                            class="sidebar-link sidebar-title link-nav" href="/home" wire:navigate>
+                            class="sidebar-link sidebar-title link-nav" href="/dashboard" wire:navigate>
                             <svg class="stroke-icon">
                                 <use href="/mofi/assets/svg/icon-sprite.svg#stroke-home"></use>
                             </svg>
@@ -62,13 +62,11 @@
                             </svg>
                             <svg class="fill-icon">
                                 <use href="/mofi/assets/svg/icon-sprite.svg#fill-project"></use>
-                            </svg><span>Mã Nguồn </span></a>
+                            </svg><span>Source code </span></a>
                         <ul class="sidebar-submenu">
-                            <li><a href="projects.html">Wordpress</a></li>
-                            <li><a href="projectcreate.html">Laravel</a></li>
-                            <li><a href="projectcreate.html">Codeigniter</a></li>
-                            <li><a href="projectcreate.html">PHP</a></li>
-                            <li><a href="projectcreate.html">Python</a></li>
+                            <li><a href="/sources-code/home" wire:navigate>Danh sách Mã nguồn</a></li>
+
+                            <li><a href="projects.html">Mã nguồn đã mua</a></li>
                         </ul>
                     </li>
 

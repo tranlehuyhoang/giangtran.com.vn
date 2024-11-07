@@ -33,6 +33,8 @@ use App\Livewire\Products\HostingVps\Home as HostingHome;
 use App\Livewire\Products\HostingVps\Detail as HostingDetail;
 use App\Livewire\Products\HostingVps\Orders;
 
+use App\Livewire\Products\SellSourceWeb\Home as SellSourceWebHome;
+
 
 
 use App\Livewire\General\Dashboard\Home as Dashboard ;
@@ -56,7 +58,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => '/'], function () {
     Route::get('/', LandingPage::class)->name(name: 'general.landingpage');
-    Route::get('/home', Dashboard::class)->name('general.dashboard');
+    Route::get('/dashboard', Dashboard::class)->name('general.dashboard');
 });
 Route::group(['prefix' => '/auth'], function () {
     Route::get('/coming-soon', Comingsoon::class)->name('auth.coming-soon');
@@ -107,6 +109,10 @@ Route::group(['prefix' => 'hosting-vps'], function () {
     Route::get('/orders', action: Orders::class)->name('products.hosting-vps.orders');
     Route::get('/orders/{id}', action: OrderDetail::class)->name('products.hosting-vps.orders-detail');
 });
+Route::group(['prefix' => 'sources-code'], function () {
+    Route::get('/home', SellSourceWebHome::class)->name('products.sell-source-web.home');
+});
+
 Route::get('/test-500', function () {
     abort(500); // Tạo lỗi 500
 });
