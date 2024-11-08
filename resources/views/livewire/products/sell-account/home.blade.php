@@ -43,42 +43,140 @@
 
                 </div>
 
-          
+
                 <div class="col-sm-12">
                   <div class="card">
-                  
+
                     <div class="table-responsive theme-scrollbar signal-table">
                       <table class="table table-hover">
                         <thead>
-                            <tr>
-                              <th scope="col"><img style="width: 20px;"
-                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt=""
-                                srcset=""> CLONE NGOẠI CÓ 2FA</th>
+                          <tr>
+                            <th scope="col"><img style="width: 20px;"
+                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="" srcset="">
+                              CLONE NGOẠI CÓ 2FA</th>
                             <th scope="col">Xem trước </th>
                             <th scope="col">Hiện có</th>
                             <th scope="col">Đã bán </th>
                             <th scope="col">Giá</th>
                             <th scope="col">Thao tác
                             </th>
-                            </tr>
+                          </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                              <th scope="row">
-                                <p> V1.83 | CLONE NGOẠI CÓ 2FA - NAME NGOẠI - AVT - INFO - 100 - 300 BB - NGÂM TRÊN 14
-                                  NGÀY - REG ANDROID <span>Bảo hành Sai pass từ trước| Không bảo hành login die| Đã
-                                    change pass không bảo hành ( 5 )</span></p>
-                              </th>
-                              <td> <img class="img-30 me-2"
-                                  src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="profile">
-                              </td>
-                              <td>100</td>
-                              <td>100</td>
-                              <td>100đ</td>
-                              <td> <span class="badge badge-light-danger">Mua Ngay</span></td>
-                            </tr>
+                          <tr>
+                            <th scope="row" style="min-width: 500px;max-width: 700px;">
+                              <p> V1.83 | CLONE NGOẠI CÓ 2FA - NAME NGOẠI - AVT - INFO - 100 - 300 BB - NGÂM TRÊN 14
+                                NGÀY - REG ANDROID <br> <span>Bảo hành Sai pass từ trước| Không bảo hành login die| Đã
+                                  change pass không bảo hành ( 5 )</span></p>
+                            </th>
+                            <td> <img class="img-30 me-2"
+                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="profile">
+                            </td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100đ</td>
+                            <td> <span class="badge badge-light-danger">Mua Ngay</span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" style="min-width: 500px;max-width: 700px;">
+                              <p> V1.83 | CLONE NGOẠI CÓ 2FA - NAME NGOẠI - AVT - INFO - 100 - 300 BB - NGÂM TRÊN 14
+                                NGÀY - REG ANDROID <br> <span>Bảo hành Sai pass từ trước| Không bảo hành login die| Đã
+                                  change pass không bảo hành ( 5 )</span></p>
+                            </th>
+                            <td> <img class="img-30 me-2"
+                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="profile">
+                            </td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100đ</td>
+                            <td> <span class="badge badge-light-danger">Mua Ngay</span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" style="min-width: 500px;max-width: 700px;">
+                              <p> V1.83 | CLONE NGOẠI CÓ 2FA - NAME NGOẠI - AVT - INFO - 100 - 300 BB - NGÂM TRÊN 14
+                                NGÀY - REG ANDROID <br> <span>Bảo hành Sai pass từ trước| Không bảo hành login die| Đã
+                                  change pass không bảo hành ( 5 )</span></p>
+                            </th>
+                            <td> <img class="img-30 me-2"
+                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="profile">
+                            </td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100đ</td>
+                            <td> <span class="badge badge-light-danger">Mua Ngay</span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" style="min-width: 500px;max-width: 700px;">
+                              <p> V1.83 | CLONE NGOẠI CÓ 2FA - NAME NGOẠI - AVT - INFO - 100 - 300 BB - NGÂM TRÊN 14
+                                NGÀY - REG ANDROID <br> <span>Bảo hành Sai pass từ trước| Không bảo hành login die| Đã
+                                  change pass không bảo hành ( 5 )</span></p>
+                            </th>
+                            <td> <img class="img-30 me-2"
+                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="profile">
+                            </td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100đ</td>
+                            <td> <span class="badge badge-light-danger">Mua Ngay</span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" style="min-width: 500px;max-width: 700px;">
+                              <p> V1.83 | CLONE NGOẠI CÓ 2FA - NAME NGOẠI - AVT - INFO - 100 - 300 BB - NGÂM TRÊN 14
+                                NGÀY - REG ANDROID <br> <span>Bảo hành Sai pass từ trước| Không bảo hành login die| Đã
+                                  change pass không bảo hành ( 5 )</span></p>
+                            </th>
+                            <td> <img class="img-30 me-2"
+                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="profile">
+                            </td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100đ</td>
+                            <td> <span class="badge badge-light-danger">Mua Ngay</span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" style="min-width: 500px;max-width: 700px;">
+                              <p> V1.83 | CLONE NGOẠI CÓ 2FA - NAME NGOẠI - AVT - INFO - 100 - 300 BB - NGÂM TRÊN 14
+                                NGÀY - REG ANDROID <br> <span>Bảo hành Sai pass từ trước| Không bảo hành login die| Đã
+                                  change pass không bảo hành ( 5 )</span></p>
+                            </th>
+                            <td> <img class="img-30 me-2"
+                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="profile">
+                            </td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100đ</td>
+                            <td> <span class="badge badge-light-danger">Mua Ngay</span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" style="min-width: 500px;max-width: 700px;">
+                              <p> V1.83 | CLONE NGOẠI CÓ 2FA - NAME NGOẠI - AVT - INFO - 100 - 300 BB - NGÂM TRÊN 14
+                                NGÀY - REG ANDROID <br> <span>Bảo hành Sai pass từ trước| Không bảo hành login die| Đã
+                                  change pass không bảo hành ( 5 )</span></p>
+                            </th>
+                            <td> <img class="img-30 me-2"
+                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="profile">
+                            </td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100đ</td>
+                            <td> <span class="badge badge-light-danger">Mua Ngay</span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" style="min-width: 500px;max-width: 700px;">
+                              <p> V1.83 | CLONE NGOẠI CÓ 2FA - NAME NGOẠI - AVT - INFO - 100 - 300 BB - NGÂM TRÊN 14
+                                NGÀY - REG ANDROID <br> <span>Bảo hành Sai pass từ trước| Không bảo hành login die| Đã
+                                  change pass không bảo hành ( 5 )</span></p>
+                            </th>
+                            <td> <img class="img-30 me-2"
+                                src="https://tainguyentesla.com/assets/storage/images/favicon_EA3.png" alt="profile">
+                            </td>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>100đ</td>
+                            <td> <span class="badge badge-light-danger">Mua Ngay</span></td>
+                          </tr>
                         </tbody>
-                    </table>
+                      </table>
                     </div>
                   </div>
                 </div>
