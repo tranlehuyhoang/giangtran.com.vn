@@ -43,6 +43,9 @@ use App\Livewire\Products\SellSourceWeb\Detail as SellSourceWebDetail;
 use App\Livewire\Products\SellSourceWeb\Orders as  SellSourceWebOrders ;
 
 
+use App\Livewire\Products\SellAccount\Home as SellAccountbHome;
+use App\Livewire\Products\SellAccount\Detail as SellAccountbDetail;
+use App\Livewire\Products\SellAccount\Orders as  SellAccountbOrders ;
 
 
 use App\Livewire\General\Dashboard\Home as Dashboard ;
@@ -65,8 +68,8 @@ use Illuminate\Support\Facades\Route;
 // Định nghĩa các route
 
 Route::group(['prefix' => '/'], function () {
-    Route::get('/', LandingPage::class)->name(name: 'general.landingpage');
-    Route::get('/dashboard', Dashboard::class)->name('general.dashboard');
+    Route::get('/landing-page', LandingPage::class)->name(name: 'general.landingpage');
+    Route::get('/', Dashboard::class)->name('general.dashboard');
 });
 Route::group(['prefix' => '/auth'], function () {
     Route::get('/coming-soon', Comingsoon::class)->name('auth.coming-soon');
@@ -127,7 +130,17 @@ Route::group(['prefix' => 'interaction'], function () {
     Route::get('/orders', InteractionOrders::class)->name('products.interaction.orders');
     Route::get('/price-lists', InteractionPriceLists::class)->name('products.interaction.price-lists');
 });
+Route::group(['prefix' => 'account'], function () {
+    Route::get('/list', SellAccountbHome::class)->name('products.sell-account.create');
+    Route::get('/list/detail/{slug}', SellAccountbDetail::class)->name('products.sell-account.detail');
+    Route::get('/orders', SellAccountbOrders::class)->name('products.sell-account.orders');
+});
 
 Route::get('/test-500', function () {
-    abort(500); // Tạo lỗi 500
+    // Kiểm tra nếu header 'User-Agent' chứa 'view-source'
+    if (strpos(request()->header('User-Agent'), 'view-source') !== false) {
+        abort(400); // Trả về lỗi 400 nếu đang xem mã nguồn
+    }
+
+    abort(500); // Tạo lỗi 500 cho các yêu cầu khác
 });

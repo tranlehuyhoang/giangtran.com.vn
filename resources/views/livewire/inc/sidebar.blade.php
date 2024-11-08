@@ -109,11 +109,8 @@
                                 <use href="/mofi/assets/svg/icon-sprite.svg#fill-project"></use>
                             </svg><span>Tài Khoản </span></a>
                         <ul class="sidebar-submenu">
-                            <li><a href="projects.html">Wordpress</a></li>
-                            <li><a href="projectcreate.html">Laravel</a></li>
-                            <li><a href="projectcreate.html">Codeigniter</a></li>
-                            <li><a href="projectcreate.html">PHP</a></li>
-                            <li><a href="projectcreate.html">Python</a></li>
+                            <li><a href="/account/list" wire:navigate>Danh sách tài khoản</a></li>
+                            <li><a href="/account/orders" wire:navigate>Tài khoản đã mua</a></li>
                         </ul>
                     </li>
 
@@ -242,7 +239,7 @@
                     </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
-                    class="sidebar-link sidebar-title link-nav" href="/dashboard" wire:navigate>
+                    class="sidebar-link sidebar-title link-nav" href="/blogs" wire:navigate>
                     <svg class="stroke-icon">
                         <use href="/mofi/assets/svg/icon-sprite.svg#stroke-project"></use>
                     </svg>
@@ -252,7 +249,7 @@
                     <div class="according-menu"><i class="fa fa-angle-right"></i></div>
                 </a></li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
-                    class="sidebar-link sidebar-title link-nav" href="/dashboard" wire:navigate>
+                    class="sidebar-link sidebar-title link-nav" href="/messenger" wire:navigate>
                     <svg class="stroke-icon">
                         <use href="/mofi/assets/svg/icon-sprite.svg#stroke-project"></use>
                     </svg>
