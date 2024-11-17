@@ -10,15 +10,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request()->fullUrl() }}">
     <meta name="twitter:url" content="{{ request()->fullUrl() }}">
-     
     @livewireStyles
 </head>
 
 <body>
-    
     {{ $slot }}
 
     @livewireScripts
+    <!-- Plugin used-->
 </body>
 
 </html>

@@ -10,15 +10,20 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request()->fullUrl() }}">
     <meta name="twitter:url" content="{{ request()->fullUrl() }}">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     @livewireStyles
 </head>
 
 <body>
+ 
     {{ $slot }}
 
     @livewireScripts
     <!-- Plugin used-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+    <x-livewire-alert::scripts />
 </body>
 
 </html>
