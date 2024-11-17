@@ -66,11 +66,8 @@
                                                     </a>
                                                 </div>
 
-                                                <div id="recaptchaTrue"></div>
-                                                <center>
-                                                    <div class="g-recaptcha"
-                                                        data-sitekey="6LfzvSUqAAAAABdzyxupCtes0wk7WdoQP3kyjsi4"></div>
-                                                </center>
+                                                <div class="g-recaptcha"
+                                                    data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
                                                 <div class="text-end mt-3">
                                                     <button class="btn btn-dark btn-block w-100"> Tạo Tài Khoản
                                                     </button>
