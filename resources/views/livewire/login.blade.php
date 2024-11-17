@@ -1,22 +1,6 @@
 <div>
     <head>
         <title> Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam </title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam">
-        <meta name="keywords" content="Nify.vn, domain, hosting cpanel, reseller, whm, jetbackup, litespeed, whois">
-        <meta name="author" content="nify.vn">
-        <link rel="canonical" href="/login">
-        <link rel="icon" href="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png" type="image/x-icon">
-        <link rel="shortcut icon" href="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png"
-            type="image/x-icon">
-    
-        <!-- FB, LinkedIn SEO -->
-        <meta property="og:title" content="Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam">
-        <meta property="og:description" content="Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam">
-        <meta property="og:image" content="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png">
-        <meta property="og:url" content="/login">
     
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=758177082">
@@ -39,9 +23,7 @@
     </head>
     
     <body id="content">
-        <div class="loader-wrapper" style="z-index: 999999;">
-            <div class="boxes"></div>
-        </div>
+     
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
     
@@ -67,45 +49,39 @@
                                             <center>
                                                 <h2> Đăng Nhập Hệ Thống </h2>
                                             </center>
-    
+                                        
                                             <div class="form-group mt-3">
                                                 <label class="col-form-label"> Tên Tài Khoản </label>
-                                                <input class="form-control" type="text" id="username"
-                                                    placeholder="Tên Đăng Nhập" style="background-color: white;">
+                                                <input class="form-control" type="text" wire:model="username" placeholder="Tên Đăng Nhập" style="background-color: white;">
                                             </div>
-    
+                                        
                                             <div class="form-group">
                                                 <label class="col-form-label"> Mật Khẩu </label>
                                                 <div class="form-input position-relative">
-                                                    <input class="form-control" type="password" name="login[password]"
-                                                        id="password" placeholder="*********"
-                                                        style="background-color: white;">
+                                                    <input class="form-control" type="password" wire:model="password" placeholder="*********" style="background-color: white;">
                                                     <div class="show-hide">
                                                         <span class="show"></span>
                                                     </div>
                                                 </div>
                                             </div>
-    
+                                        
                                             <div class="form-group mb-0">
                                                 <div class="checkbox p-0">
-                                                    <input id="checkbox1" type="checkbox">
-                                                    <label class="text-muted" for="checkbox1" id="flexCheckChecked"> Ghi
-                                                        nhớ? </label>
-                                                </div><a class="link" href="/forgot-password">Quên Mật Khẩu?</a>
-    
+                                                    <input id="checkbox1" type="checkbox" wire:model="remember">
+                                                    <label class="text-muted" for="checkbox1" id="flexCheckChecked"> Ghi Nhớ? </label>
+                                                </div>
+                                                <a class="link" href="/forgot-password">Quên Mật Khẩu?</a>
+                                        
                                                 <div id="recaptchaTrue"></div>
                                                 <center>
-                                                    <div class="g-recaptcha"
-                                                        data-sitekey="6LfzvSUqAAAAABdzyxupCtes0wk7WdoQP3kyjsi4"></div>
+                                                    <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
                                                 </center>
                                                 <div class="text-end mt-3">
-                                                    <button class="btn btn-dark btn-block w-100" type="submit"
-                                                        onclick="login('btn', 'Đăng Nhập')" id="btn"> Đăng Nhập </button>
+                                                    <button class="btn btn-dark btn-block w-100" type="button" wire:click="login"> Đăng Nhập </button>
                                                 </div>
                                             </div>
-    
-                                            <p class="mt-4 mb-0 text-center"> Tôi Chưa Có Tài Khoản?<a class="ms-2"
-                                                    href="/register"> Tạo Tài Khoản </a></p>
+                                        
+                                            <p class="mt-4 mb-0 text-center"> Tôi Chưa Có Tài Khoản?<a class="ms-2" href="/register"> Tạo Tài Khoản </a></p>
                                         </div>
     
                                         <div id="otp_form" class="content-vi">
@@ -148,30 +124,6 @@
                         }
                     }
                 </style>
-    
-                <script src="/assets/static/auth-config.js" defer></script>
-                <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-                <script src="/assets/static/jquery.min.js"></script>
-                <script src="/assets/static/config.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-                <script src="/assets/static/cyberlux.js"></script>
-                <script src="/assets/static/handlebars.min.js"></script>
-                <script src="/assets/static/bundle.min.js"></script>
-                <script src="/assets/static/feather.min.js"></script>
-                <script src="/assets/static/bootstrap.bundle.min.js"></script>
-                <script src="/assets/static/feather.min.js"></script>
-                <script src="/assets/static/simplebar.js"></script>
-                <script src="/assets/static/swiper-bundle.min.js"></script>
-                <script src="/assets/static/sidebar-menu.js"></script>
-                <script src="/assets/static/bootstrap-notify.min.js"></script>
-                <script src="/assets/static/index.js"></script>
-                <script src="/assets/static/custom_touchspin.js"></script>
-                <script src="/assets/static/simple-datatable.js"></script>
-                <script src="/assets/static/handlebars.js"></script>
-                <script src="/assets/static/typeahead.bundle.js"></script>
-                <script src="/assets/static/handlebars.js"></script>
-                <script src="/assets/static/script.js"></script>
-    
             </div>
         </div>
     </body>
