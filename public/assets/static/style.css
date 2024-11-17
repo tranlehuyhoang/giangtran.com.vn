@@ -93788,6 +93788,25 @@ html[dir=rtl] .timeline-lists.variation-timeline::before {
     }
 }
 
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper.close_icon .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li a {
+    text-align: center;
+    transition: all 0.3s ease;
+    justify-content: center;
+    display: block;
+}
+
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li .sidebar-link {
+    transition: all 0.5s ease;
+    display: flex;
+    /* display: block; */
+}
+
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper.close_icon:hover .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li a {
+    text-align: left;
+    display: flex;
+    justify-content: start;
+}
+
 
 /**=====================
      62. Responsive CSS Ends
