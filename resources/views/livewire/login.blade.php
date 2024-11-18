@@ -1,6 +1,6 @@
 <div>
     <head>
-        <title> Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam </title>
+        <title> Đăng Nhập Tài Khoản | GIANGTRAN.COM.VN </title>
     
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=758177082">
@@ -17,9 +17,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     
     
-        <noscript>
-            <meta http-equiv="refresh" content="0;url=about:blank">
-        </noscript>
     </head>
     
     <body id="content">
@@ -27,9 +24,7 @@
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
     
-            <script>
-                document.title = "Đăng Nhập Tài Khoản";
-            </script>
+ 
     
             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
             <div class="container-fluid p-0">

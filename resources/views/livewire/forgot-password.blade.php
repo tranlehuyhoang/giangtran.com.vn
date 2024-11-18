@@ -1,6 +1,6 @@
 <div>
     <head>
-        <title> Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam </title>
+        <title> Đặt Lại Mật Khẩu | GIANGTRAN.COM.VN </title>
         <link rel="stylesheet" href="/assets/static/style.css?v=62348332">
     </head>
     <body id="content">

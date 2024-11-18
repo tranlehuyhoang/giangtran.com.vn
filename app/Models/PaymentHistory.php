@@ -49,10 +49,6 @@ class PaymentHistory extends Model
                     'status' => $transaction->status ?? 'thành công', // Trạng thái
                     'bank' => $transaction->bank_brand_name, // Tên ngân hàng
                 ]);
-                broadcast(new MessageSent([
-                    'invitation_code' => $transaction->amount_in,
-                    'customer_id' => 1,
-                ]));
             }
         }
     }

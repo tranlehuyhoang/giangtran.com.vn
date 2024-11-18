@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title> Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam </title>
+        <title> Đăng Ký Tài Khoản | GIANGTRAN.COM.VN </title>
         <link rel="stylesheet" href="/assets/static/style.css?v=2097735562">
     </head>
 
@@ -9,9 +9,6 @@
 
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
-            <script>
-                document.title = "Đăng Ký Tài Khoản"
-            </script>
 
             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
             <div class="container-fluid p-0">

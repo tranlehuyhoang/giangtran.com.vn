@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row gy-1">
             <div class="col-lg-6 col-md-7 footer-copyright">
-                <p class="mb-0 f-light f-w-500"> COPYRIGHT 2024 © NIFY.VN </p>
+                <p class="mb-0 f-light f-w-500"> COPYRIGHT 2024 © GIANGTRAN.COM.VN </p>
             </div>
             <div class="col-lg-6 col-md-5">
                 <div class="d-flex">

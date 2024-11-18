@@ -45,22 +45,13 @@
                                 <div class="d-flex align-items-center justify-content-between bg-light rounded"
                                     style="padding: 10px;">
                                     <b class="text-dark"> NF 2509ROBLOX </b>
-                                    <button class="btn btn-dark btn-sm" onclick="copyText('NF 2509roblox');">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            style="width: 18px; height: auto; cursor: pointer; margin-bottom: -5px;"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="{2}"
-                                                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
-                                            </path>
-                                        </svg> Sao chép
-                                    </button>
                                 </div>
                             </div>
 
 
                             <div class="row">
 
-                                <div class="col-md-3">
+                                <div class="col-md-5">
                                     <div class="card card-body widget-1">
                                         <div class="row">
                                             <div class="col-md-6 col-6">
@@ -72,7 +63,7 @@
                                                 <i class="icofont icofont-qr-code" style="cursor: pointer;"
                                                     title="Mã QR Chuyển Khoản" data-bs-target="#showqr-code"
                                                     data-bs-toggle="modal"
-                                                    onclick="showQRcode(`https://api.vietqr.io/mb/127969999/0/NF 2509ROBLOX/vietqr_net_2.jpg?accountName=NGUYEN+HUU+THANH`);"></i>
+                                                    onclick="showQRcode(`https://api.vietqr.io/mb/0966579217/0/NF 2509ROBLOX/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG`);"></i>
                                             </div>
                                         </div>
 
@@ -86,16 +77,16 @@
                                                 </div>
 
                                                 <div class="col-md-6 col-6 text-end">
-                                                    <span> 127969999 <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <span> 0966579217 <svg xmlns="http://www.w3.org/2000/svg"
                                                             style="width: 18px; height: auto; cursor: pointer;"
                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                                            onclick="copyText('127969999');">
+                                                            onclick="copyText('0966579217');">
                                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                                 stroke-width="{2}"
                                                                 d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
                                                             </path>
                                                         </svg></span><br>
-                                                    <span> NGUYEN HUU THANH </span><br>
+                                                    <span> TRAN LE HOANG GIANG </span><br>
                                                     <span> 0 VND </span><br>
                                                 </div>
 
@@ -104,137 +95,13 @@
                                     </div>
                                 </div>
 
-
-                                <div class="col-md-3">
-                                    <div class="card card-body widget-1">
-                                        <div class="row">
-                                            <div class="col-md-6 col-6">
-                                                <img src="https://doithe1s.vn/storage/userfiles/files/doithe1s2019.png"
-                                                    style="width: 90px; max-width: 345px; height: 40px">
-                                            </div>
-
-                                            <div class="col-md-6 col-6 text-end">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="mt-3">
-                                            <div class="row">
-                                                <div class="col-md-6 col-6">
-                                                    <span> Số Tài Khoản: </span><br>
-                                                    <span> Chủ Tài Khoản: </span><br>
-                                                    <span> Tối Thiểu Nạp: </span><br>
-                                                </div>
-
-                                                <div class="col-md-6 col-6 text-end">
-                                                    <span> NHTHANH123 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            style="width: 18px; height: auto; cursor: pointer;"
-                                                            fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                                            onclick="copyText('NHTHANH123');">
-                                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                                stroke-width="{2}"
-                                                                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
-                                                            </path>
-                                                        </svg></span><br>
-                                                    <span> NGUYỄN THÀNH </span><br>
-                                                    <span> 0 VND </span><br>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-md-3">
-                                    <div class="card card-body widget-1">
-                                        <div class="row">
-                                            <div class="col-md-6 col-6">
-                                                <img src="https://thesieure.com/storage/userfiles/images/logo_thesieurecom.png"
-                                                    style="width: 90px; max-width: 345px; height: 40px">
-                                            </div>
-
-                                            <div class="col-md-6 col-6 text-end">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="mt-3">
-                                            <div class="row">
-                                                <div class="col-md-6 col-6">
-                                                    <span> Số Tài Khoản: </span><br>
-                                                    <span> Chủ Tài Khoản: </span><br>
-                                                    <span> Tối Thiểu Nạp: </span><br>
-                                                </div>
-
-                                                <div class="col-md-6 col-6 text-end">
-                                                    <span> NHTHANH123 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            style="width: 18px; height: auto; cursor: pointer;"
-                                                            fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                                            onclick="copyText('NHTHANH123');">
-                                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                                stroke-width="{2}"
-                                                                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
-                                                            </path>
-                                                        </svg></span><br>
-                                                    <span> NGUYỄN THÀNH </span><br>
-                                                    <span> 0 VND </span><br>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-md-3">
-                                    <div class="card card-body widget-1">
-                                        <div class="row">
-                                            <div class="col-md-6 col-6">
-                                                <img src="https://doithe.vn/storage/userfiles/images/2023.jpg"
-                                                    style="width: 120px; max-width: 345px; height: 40px">
-                                            </div>
-
-                                            <div class="col-md-6 col-6 text-end">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="mt-3">
-                                            <div class="row">
-                                                <div class="col-md-6 col-6">
-                                                    <span> Số Tài Khoản: </span><br>
-                                                    <span> Chủ Tài Khoản: </span><br>
-                                                    <span> Tối Thiểu Nạp: </span><br>
-                                                </div>
-
-                                                <div class="col-md-6 col-6 text-end">
-                                                    <span> NHTHANHIT123 <svg xmlns="http://www.w3.org/2000/svg"
-                                                            style="width: 18px; height: auto; cursor: pointer;"
-                                                            fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                                            onclick="copyText('NHTHANHIT123');">
-                                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                                stroke-width="{2}"
-                                                                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
-                                                            </path>
-                                                        </svg></span><br>
-                                                    <span> NGUYEN HUU THANH </span><br>
-                                                    <span> 0 VND </span><br>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+ 
                             </div>
 
                             <div class="col-md-12">
                                 <div class="card title-line">
                                     <div class="card-header">
                                         <h2 class="card-title mb-0"> Lịch Sử Nạp Tiền </h2>
-                                        <button class="btn btn-dark btn-sm" wire:click="updatePaymentHistory">Cập
-                                            nhật</button>
                                     </div>
                                     <div class="card-body">
                                         <div class="col-sm-12">
@@ -301,7 +168,6 @@
                     }
                     </script>
 
-                    <script src="/static/wallet.js"></script>
                     @livewire('inc.footer')
                 </div>
             </div>
@@ -387,8 +253,6 @@
         <script src="/assets/static/custom_touchspin.js"></script>
         <script src="/assets/static/simple-datatable.js"></script>
         <script src="/assets/static/handlebars.js"></script>
-        <script src="/assets/static/typeahead.bundle.js"></script>
-        <script src="/assets/static/typeahead.custom.js"></script>
         <script src="/assets/static/search-handlebars.js"></script>
         <script src="/assets/static/script.js"></script>
         <script src="/assets/static/customizer.js"></script>

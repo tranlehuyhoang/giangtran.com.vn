@@ -16,7 +16,6 @@ class ChuyenKhoan extends Component
 
     public function mount()
     {
-        Transaction::fetchTransactionsFromApi();
         $this->loadPaymentHistory();
     }
     protected function loadPaymentHistory()
@@ -27,7 +26,6 @@ class ChuyenKhoan extends Component
     public function updatePaymentHistory()
     {
         PaymentHistory::createPaymentHistory(); // Gọi hàm từ model
-        // $this->loadPaymentHistory();
     }
 
     public function render()
