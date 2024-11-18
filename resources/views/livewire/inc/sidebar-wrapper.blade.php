@@ -9,7 +9,7 @@
                     data-feather="grid"> </i></div>
         </div>
         <div class="logo-icon-wrapper"><a href="/"><img class="img-fluid"
-                    src="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png"
+                    src="/icon.png"
                     width="35px;" alt=""></a></div>
         <div class="profile-section sidebar-search">
 
@@ -50,7 +50,7 @@
             <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
                     <li class="back-btn"><a href="/"><img class="img-fluid"
-                                src="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png"
+                                src="/icon.png"
                                 width="35px;" alt=""></a>
                         <div class="mobile-back text-end"><span>Back</span><i
                                 class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>

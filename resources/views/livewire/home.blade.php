@@ -1,26 +1,8 @@
 <div>
 
     <head>
-        <title> Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam </title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam">
-        <meta name="keywords" content="Nify.vn, domain, hosting cpanel, reseller, whm, jetbackup, litespeed, whois">
-        <meta name="author" content="nify.vn">
-        <link rel="canonical" href="/">
-        <link rel="icon" href="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png"
-            type="image/x-icon">
-        <link rel="shortcut icon" href="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png"
-            type="image/x-icon">
-
-        <!-- FB, LinkedIn SEO -->
-        <meta property="og:title" content="Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam">
-        <meta property="og:description" content="Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam">
-        <meta property="og:image" content="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png">
-        <meta property="og:url" content="/">
-
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <title> TRANG CHỦ | GIANGTRAN.COM.VN </title>
+      
         <link rel="stylesheet" href="/assets/static/style.css?v=1822759336">
         <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,15 +11,7 @@
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js">
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-
-
-        <noscript>
-            <meta http-equiv="refresh" content="0;url=about:blank">
-        </noscript>
+ 
     </head>
 
     <body id="content">
@@ -162,7 +136,7 @@
 
                                         <div class="col-md-6" style="margin-top: -10px;">
                                             <div class="offer-banner"
-                                                style="background-image: url(/assets/images/bg-affilate.png);">
+                                                style="background-image: url(/assets/assets/images/bg-affilate.png);">
                                                 <div class="offer-content">
                                                     <h2> Nhận Lên Đến 30% Cho Mỗi Lần Nạp </h2>
                                                     <p class="f-w-500 f-12"> Bắt Đầu Giới Thiệu Kiếm Tiền Ngay! </p>
@@ -436,49 +410,9 @@
 
 
         <input type="hidden" id="mn" value="0">
-
-        <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
-        <script>
-            Pusher.logToConsole = false;
-        
-         var pusher = new Pusher('b2658b1172ccab773a69', {
-           cluster: 'ap1'
-         });
-        
-         var channel = pusher.subscribe('iamthanhX-2509roblox');
-         channel.bind('my-event', function(data) {
-           var message = data.message;
-           var status = data.status;
-           
-           swal('Thông Báo', message, status);
-           
-           if(data.reload){
-               setTimeout(() => {
-                   loadto('');
-               }, 2000);
-           }
-           
-         });
+ 
          
-             
-          document.addEventListener("DOMContentLoaded", function() {
-            Fancybox.bind("[data-fancybox='gallery']", {
-              animated: true,
-              infobar: true,
-              toolbar: true,
-              loop: true
-            });
-          });
-          
-          $(document).ready(function() {
-                $('img').each(function() {
-                    if (!$(this).attr('loading')) {
-                        $(this).attr('loading', 'lazy');
-                    }
-                });
-            });
-        </script>
-
+        
         <style>
             table tfoot tr {
                 padding-bottom: 6px;
