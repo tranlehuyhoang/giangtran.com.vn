@@ -94,27 +94,7 @@
                         </ul>
                     </li>
 
-                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
-                            class="sidebar-link sidebar-title" href="#">
-                            <svg class="stroke-icon">
-                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-internationalization">
-                                </use>
-                            </svg>
-
-                            <span class="lan-7"> Reseller Hosting </span></a>
-                        <ul class="sidebar-submenu">
-
-
-                            <li><a href="/reseller/vn-premium"> Máy Chủ Việt Nam </a></li>
-
-
-
-                            <li><a href="/manage/reseller"> Quản Lý </a></li>
-
-
-
-                        </ul>
-                    </li>
+                  
 
 
 
