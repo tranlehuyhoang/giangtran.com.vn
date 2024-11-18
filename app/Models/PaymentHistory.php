@@ -32,17 +32,14 @@ class PaymentHistory extends Model
     {
         // Lấy tất cả các giao dịch
         $transactions = Transaction::all();
-
+      
         foreach ($transactions as $transaction) {
             // Kiểm tra xem transaction_code đã tồn tại trong bảng PaymentHistory chưa
             $exists = self::where('transaction_code', $transaction->id)->exists();
 
             if (!$exists) {
                 // Gửi sự kiện nếu cần
-                broadcast(new MessageSent([
-                    'invitation_code' => $transaction->id,
-                    'customer_id' => auth()->id()
-                ]));
+           
 
                 // Lưu lịch sử nạp tiền
                 self::create([
@@ -52,6 +49,10 @@ class PaymentHistory extends Model
                     'status' => $transaction->status ?? 'thành công', // Trạng thái
                     'bank' => $transaction->bank_brand_name, // Tên ngân hàng
                 ]);
+                broadcast(new MessageSent([
+                    'invitation_code' => '1',
+                    'customer_id' => 1,
+                ]));
             }
         }
     }

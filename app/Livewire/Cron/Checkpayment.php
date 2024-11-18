@@ -10,6 +10,7 @@ class Checkpayment extends Component
 {
     public function mount()
     {
+        Transaction::fetchTransactionsFromApi();
         PaymentHistory::createPaymentHistory(); // Gọi hàm từ model
     }
     public function render()
