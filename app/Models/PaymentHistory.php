@@ -50,7 +50,7 @@ class PaymentHistory extends Model
                     'bank' => $transaction->bank_brand_name, // Tên ngân hàng
                 ]);
                 broadcast(new MessageSent([
-                    'invitation_code' => '1',
+                    'invitation_code' => $transaction->amount_in,
                     'customer_id' => 1,
                 ]));
             }

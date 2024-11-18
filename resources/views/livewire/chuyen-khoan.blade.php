@@ -408,7 +408,7 @@
     Swal.fire({
                 icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
                 title: 'Thông báo',
-                text: 'Thanh toán thành công đơn hàng ' + content + '!',
+                text: 'Nạp thành công số tiền ' + content + '!',
                 confirmButtonText: 'OK'
             }).then((result) => {
                 if (result.isConfirmed) {
