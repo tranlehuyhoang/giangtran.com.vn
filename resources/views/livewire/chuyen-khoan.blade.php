@@ -434,14 +434,14 @@
             console.log('Invoices updated.');
         }
 
-        // Always fetch again after the response (continuous polling)
-        fetchCronData(); 
+        // Set a timeout to fetch again after 2 seconds
+        setTimeout(fetchCronData, 2000); // 2000 milliseconds = 2 seconds
     })
     .catch(error => {
         console.error('Error fetching data:', error);
 
         // Handle errors if needed, continue fetching in case of failure
-        fetchCronData();
+        setTimeout(fetchCronData, 2000); // Retry after 2 seconds in case of error
     });
 }
 
