@@ -3,6 +3,7 @@
  
 
 use App\Livewire\ChuyenKhoan;
+use App\Livewire\Cron\Checkpayment;
 use App\Livewire\ForgotPassword;
 use App\Livewire\Home;
 use App\Livewire\LandingPage;
@@ -20,3 +21,4 @@ Route::get('/register', action: Register::class)->name('register');
 Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
 Route::get('/profile', Profile::class)->name('profile');
 Route::get('/chuyen-khoan', ChuyenKhoan::class)->name('chuyen-khoan');
+Route::get('/checkpayment', Checkpayment::class)->name('checkpayment');

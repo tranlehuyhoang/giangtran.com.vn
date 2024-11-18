@@ -1,6 +1,7 @@
 <?php
 namespace App\Models;
 
+use App\Events\MessageSent;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -26,5 +27,32 @@ class PaymentHistory extends Model
     public static function getPaymentHistoryByUser($userId)
     {
         return self::where('user_id', $userId)->orderBy('created_at', 'desc')->get();
+    }
+    public static function createPaymentHistory()
+    {
+        // Lấy tất cả các giao dịch
+        $transactions = Transaction::all();
+
+        foreach ($transactions as $transaction) {
+            // Kiểm tra xem transaction_code đã tồn tại trong bảng PaymentHistory chưa
+            $exists = self::where('transaction_code', $transaction->id)->exists();
+
+            if (!$exists) {
+                // Gửi sự kiện nếu cần
+                broadcast(new MessageSent([
+                    'invitation_code' => $transaction->id,
+                    'customer_id' => auth()->id()
+                ]));
+
+                // Lưu lịch sử nạp tiền
+                self::create([
+                    'user_id' => auth()->id(), // ID người dùng hiện tại
+                    'transaction_code' => $transaction->id, // Sử dụng mã giao dịch
+                    'amount' => $transaction->amount_in, // Số tiền nạp
+                    'status' => $transaction->status ?? 'thành công', // Trạng thái
+                    'bank' => $transaction->bank_brand_name, // Tên ngân hàng
+                ]);
+            }
+        }
     }
 }

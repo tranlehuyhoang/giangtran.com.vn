@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Events\MessageSent;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
@@ -37,7 +38,7 @@ class Transaction extends Model
         if (self::where('id', $attributes['id'])->exists()) {
             return;
         }
-
+     
         // Tạo giao dịch mới
         return self::create($attributes);
     }
@@ -85,4 +86,5 @@ class Transaction extends Model
             }
         }
     }
+   
 }

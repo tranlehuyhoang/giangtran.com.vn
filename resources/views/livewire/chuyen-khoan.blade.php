@@ -30,7 +30,7 @@
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
             <div class="page-wrapper compact-wrapper" id="pageWrapper">
-               @livewire('inc.header')
+                @livewire('inc.header')
 
                 <div class="page-body-wrapper">
 
@@ -233,6 +233,8 @@
                                 <div class="card title-line">
                                     <div class="card-header">
                                         <h2 class="card-title mb-0"> Lịch Sử Nạp Tiền </h2>
+                                        <button class="btn btn-dark btn-sm" wire:click="updatePaymentHistory">Cập
+                                            nhật</button>
                                     </div>
                                     <div class="card-body">
                                         <div class="col-sm-12">
@@ -258,8 +260,8 @@
                                                             <td>{{ $history->bank }}</td>
                                                             <td>{{ $history->created_at->format('d/m/Y H:i:s') }}</td>
                                                         </tr>
-                                                    @endforeach
-                                                         
+                                                        @endforeach
+
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -300,7 +302,7 @@
                     </script>
 
                     <script src="/static/wallet.js"></script>
-                 @livewire('inc.footer')
+                    @livewire('inc.footer')
                 </div>
             </div>
         </div>
@@ -390,7 +392,63 @@
         <script src="/assets/static/search-handlebars.js"></script>
         <script src="/assets/static/script.js"></script>
         <script src="/assets/static/customizer.js"></script>
+        <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            // Enable pusher logging - don't include this in production
+   Pusher.logToConsole = true;
 
+   var pusher = new Pusher('827c74b29880dbe97c43', {
+     cluster: 'ap1'
+   });
+
+   var channel = pusher.subscribe('notification');
+   channel.bind('notification.' + {{ Auth::user()->id }}, function(data) {
+    var content = data.invitation_code; // Adjust this field according to the actual structure of data.bank
+    Swal.fire({
+                icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
+                title: 'Thông báo',
+                text: 'Thanh toán thành công đơn hàng ' + content + '!',
+                confirmButtonText: 'OK'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                }
+            });
+   });
+ 
+   function fetchCronData() {
+    fetch('/checkpayment', {
+        method: 'GET', // HTTP method
+        headers: {
+            'Content-Type': 'application/json' // Optional, depending on your backend requirements
+        }
+    })
+    .then(response => response.json()) // Assuming the response is JSON
+    .then(data => {
+        console.log('Data from cron endpoint:', data);
+
+        // If no invoice was updated, still continue fetching
+        if (!data.invoiceUpdated) {
+            console.log('No invoices updated, will try again...');
+        } else {
+            console.log('Invoices updated.');
+        }
+
+        // Always fetch again after the response (continuous polling)
+        fetchCronData(); 
+    })
+    .catch(error => {
+        console.error('Error fetching data:', error);
+
+        // Handle errors if needed, continue fetching in case of failure
+        fetchCronData();
+    });
+}
+
+// Call fetchCronData once to start the process
+fetchCronData();
+
+        </script>
     </body>
 
 </div>
