@@ -2,7 +2,7 @@
 <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
     <div>
         <div class="logo-wrapper"><a href="/"><img class="img-fluid"
-                    src="https://img.upanh.tv/2024/08/13/logo-light-1.png" style="height: 35px;"
+                    src="/giangtran.com.vn.png" style="height: 40px;"
                     alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle"

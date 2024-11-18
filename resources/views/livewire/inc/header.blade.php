@@ -3,7 +3,7 @@
     <div class="col-auto header-left-wrapper">
         <div class="header-logo-wrapper p-0 left-header">
             <div class="logo-wrapper"><a href="/"><img class="img-fluid"
-                        src="https://img.upanh.tv/2024/08/13/logo-light-1.png" style="height: 35px;"
+                        src="/giangtran.com.vn.png" style="height: 35px;"
                         alt=""></a></div>
         </div>
         <div class="toggle-sidebar">

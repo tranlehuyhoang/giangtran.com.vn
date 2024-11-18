@@ -33,7 +33,7 @@
     
         <div class="preloader bg-light-subtle">
             <div class="preloader-wrap">
-                <img src="https://img.upanh.tv/2024/08/14/logodarkhehe.png" alt="logo" class="img-fluid"
+                <img src="/giangtran.com.vn.png" alt="logo" class="img-fluid"
                     style="width: 150px;">
                 <div class="loading-bar"></div>
             </div>
@@ -44,8 +44,8 @@
             <nav class="navbar navbar-1 navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand logo" href="/landing-page">
-                        <img src="https://img.upanh.tv/2024/08/13/logo-light-1.png" alt="image" class="logo__img">
-                        <img src="https://img.upanh.tv/2024/08/14/logodarkhehe.png" alt="image"
+                        <img src="/giangtran.com.vn.png" alt="image" class="logo__img">
+                        <img src="/giangtran.com.vn.png" alt="image"
                             class="logo__img logo__sticky">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryMenu"
@@ -2467,7 +2467,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <img src="https://img.upanh.tv/2024/08/13/logo-light-1.png" alt="image" class="logo__img"
+                        <img src="/giangtran.com.vn.png" alt="image" class="logo__img"
                             style="width: 145px;">
                         <p class="text-white text-opacity-75 mt-8">
                             Bạn đang quản lý một trang web hay điều hành doanh nghiệp? Hãy đảm bảo rằng trang web của bạn

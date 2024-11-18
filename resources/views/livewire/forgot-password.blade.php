@@ -57,7 +57,7 @@
                             <div>
                                 <div class="login-main">
                                     <center onclick="loadto('/');" style="cursor: pointer;"><img
-                                            src="https://img.upanh.tv/2024/08/14/logodarkhehe.png"
+                                            src="/giangtran.com.vn.png"
                                             style="max-width: 100%; height: 35px;"></center>
     
                                     <div class="theme-form mt-3">
