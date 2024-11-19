@@ -2,33 +2,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description"
-            content="NIFY.VN - Cung Cấp Giải Pháp Website Chuyên Nghiệp, dịch vụ thiết kế web chuẩn SEO, tối ưu hóa tốc độ và bảo mật.">
-        <meta name="author" content="NIFY.VN">
-        <meta name="keywords"
-            content="giải pháp website, thiết kế web, tối ưu hóa SEO, bảo mật website, dịch vụ web, thuê cron, nify, nify.vn, cyberlux, cyberlux.vn, mua hosting">
-        <meta name="robots" content="index, follow">
-        <meta property="og:title" content="NIFY.VN - Cung cấp giải pháp website">
-        <meta property="og:description" content="Dịch vụ thiết kế website chuẩn SEO, bảo mật, và tối ưu hóa hiệu suất.">
-        <meta property="og:image" content="https://nify.vn/assets/img/share-image.png">
-        <meta property="og:url" content="https://nify.vn">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="NIFY.VN - Cung cấp giải pháp website">
-        <meta name="twitter:description" content="Thiết kế web chuẩn SEO, bảo mật và tối ưu hóa cho doanh nghiệp.">
-        <meta name="twitter:image" content="https://nify.vn/assets/img/share-image.png">
-    
-        <meta property="og:title" content="Thuê Cron Job Tốc Độ Cao">
-        <meta property="og:description" content="Thuê Cron Job Tốc Độ Cao">
-        <meta property="og:url" content="https://nify.vn">
-    
-        <link rel="icon" href="/assets/static/assets/img/favicon.png" type="image/png" sizes="16x16">
-        <title>NIFY.VN - Cung Cấp Giải Pháp Website Chuyên Nghiệp</title>
+        <title>GIANGTRAN.COM.VN - Cung Cấp Giải Pháp Website Chuyên Nghiệp</title>
         <link rel="stylesheet" href="/assets/static/assets/css/main.css">
-    
- 
-    
     </head>
-    
     <body class="bg-secondary">
     
         <div class="preloader bg-light-subtle">
@@ -55,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="primaryMenu">
                         <ul class="navbar-nav align-items-lg-center gap-lg-3 ms-auto">
                             <li class="nav-item  contain-sub-1--alter">
-                                <a class="nav-link fw-medium active" aria-current="page" href="/landing-page"> Trang Chủ
+                                <a class="nav-link fw-medium active" aria-current="page" href="/home"> Trang Chủ
                                 </a>
                             </li>
     
@@ -65,7 +41,7 @@
                                 </a>
                                 <ul class="contain-sub-1__content contain-sub-1__content-xl list-unstyled">
                                     <li>
-                                        <a href="/hosting/vn-premium"
+                                        <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-menu-wp-hosting.png" alt="image"
@@ -86,7 +62,7 @@
                                     </li>
     
                                     <li>
-                                        <a href="/hosting/vn-premium"
+                                        <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-menu-shared-hosting.png" alt="image"
@@ -102,7 +78,7 @@
                                     </li>
     
                                     <li>
-                                        <a href="/hosting/vn-premium"
+                                        <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-menu-shared-hosting.png" alt="image"
@@ -118,7 +94,7 @@
                                     </li>
     
                                     <li>
-                                        <a href="/hosting/vn-premium"
+                                        <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-menu-shared-hosting.png" alt="image"
@@ -134,7 +110,7 @@
                                     </li>
     
                                     <li>
-                                        <a href="/reseller/vn-premium"
+                                        <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-reseller-hosting.png" alt="image"
@@ -150,7 +126,7 @@
                                     </li>
     
                                     <li>
-                                        <a href="/reseller/germany"
+                                        <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-reseller-hosting.png" alt="image"
@@ -174,7 +150,7 @@
                                 </a>
                                 <ul class="contain-sub-1__content list-unstyled">
                                     <li>
-                                        <a href="/vps-store/cloud-vps-viet-nam/cloud-vps-pro"
+                                        <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-menu-vps-server.png" alt="image"
@@ -190,7 +166,7 @@
                                     </li>
     
                                     <li>
-                                        <a href="/vps-store/cloud-vps-viet-nam/cloud-vps-pro"
+                                        <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-menu-vps-server.png" alt="image"
@@ -206,7 +182,7 @@
                                     </li>
     
                                     <li>
-                                        <a href="/vps-store/cloud-vps-viet-nam/cloud-vps-pro"
+                                        <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-menu-vps-server.png" alt="image"
@@ -253,7 +229,7 @@
                                                         <div class="col-md-6">
                                                             <ul class="contain-mega-menu__list list-unstyled">
                                                                 <li>
-                                                                    <a href="/ten-mien/dang-ky-ten-mien"
+                                                                    <a href="/home"
                                                                         class="contain-mega-menu__link text-decoration-none d-flex align-items-start gap-2">
                                                                         <span class="contain-mega-menu__img">
                                                                             <img src="/assets/static/assets/img/icon-menu-search-domain.png"
@@ -314,7 +290,7 @@
                                                                 <small class="fw-medium"> Các Tên Miền Khác Chỉ Từ 1K
                                                                 </small>
                                                             </div>
-                                                            <a href="/ten-mien/dang-ky-ten-mien"
+                                                            <a href="/home"
                                                                 class="btn btn-sm btn-primary">
                                                                 Xem Ngay
                                                             </a>
@@ -380,7 +356,7 @@
                             </li>
     
                             <li class="nav-item">
-                                <a href="/"
+                                <a href="/home"
                                     class="link btn btn-sm btn-primary hover:bg-dark hover:border-dark fw-medium rounded-1">
                                     Bắt Đầu
                                 </a>
@@ -415,7 +391,7 @@
                             Bắt Đầu Sử Dụng Hosting Miễn Phí, Trải Nghiệm Tính Năng Nâng Cao. </p>
                         <div class="d-flex align-items-center gap-6 flex-wrap" data-sal="fade" data-sal-duration="500"
                             data-sal-delay="200" data-sal-easing="ease-in-out-sine">
-                            <a href="/" class="btn btn-primary btn-arrow btn-lg fs-14 fw-semibold rounded">
+                            <a href="/home" class="btn btn-primary btn-arrow btn-lg fs-14 fw-semibold rounded">
                                 <span class="btn-arrow__text">
                                     Bắt Đầu
                                     <span class="btn-arrow__icon">
@@ -599,7 +575,7 @@
     
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                        href="/mua-hosting/18">
+                                        href="/home">
                                         <span class="btn-arrow__text">
                                             Đăng Ký
                                             <span class="btn-arrow__icon">
@@ -706,7 +682,7 @@
     
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                        href="/mua-hosting/19">
+                                        href="">
                                         <span class="btn-arrow__text">
                                             Đăng Ký
                                             <span class="btn-arrow__icon">
@@ -816,7 +792,7 @@
     
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                        href="/mua-hosting/23">
+                                        href="">
                                         <span class="btn-arrow__text">
                                             Đăng Ký
                                             <span class="btn-arrow__icon">
@@ -926,7 +902,7 @@
     
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                        href="/mua-hosting/12">
+                                        href="">
                                         <span class="btn-arrow__text">
                                             Đăng Ký
                                             <span class="btn-arrow__icon">
@@ -1098,7 +1074,7 @@
                                                 </div>
                                             </div>
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                                href="/mua-reseller/19">
+                                                href="/home">
                                                 <span class="btn-arrow__text">
                                                     Đăng Ký
                                                     <span class="btn-arrow__icon">
@@ -1212,7 +1188,7 @@
                                                 </div>
                                             </div>
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                                href="/mua-reseller/21">
+                                                href="/home">
                                                 <span class="btn-arrow__text">
                                                     Đăng Ký
                                                     <span class="btn-arrow__icon">
@@ -1326,7 +1302,7 @@
                                                 </div>
                                             </div>
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                                href="/mua-reseller/22">
+                                                href="/home">
                                                 <span class="btn-arrow__text">
                                                     Đăng Ký
                                                     <span class="btn-arrow__icon">
@@ -1441,7 +1417,7 @@
                                             </div>
     
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                                href="/vps-store/cloud-vps-viet-nam/cloud-vps-pro">
+                                                href="/home">
                                                 <span class="btn-arrow__text">
                                                     Đăng Ký
                                                     <span class="btn-arrow__icon">
@@ -1548,7 +1524,7 @@
                                             </div>
     
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                                href="/vps-store/cloud-vps-viet-nam/cloud-vps-pro">
+                                                href="/home">
                                                 <span class="btn-arrow__text">
                                                     Đăng Ký
                                                     <span class="btn-arrow__icon">
@@ -1652,7 +1628,7 @@
                                             </div>
     
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                                href="/vps-store/cloud-vps-viet-nam/cloud-vps-pro">
+                                                href="/home">
                                                 <span class="btn-arrow__text">
                                                     Đăng Ký
                                                     <span class="btn-arrow__icon">
@@ -2156,8 +2132,8 @@
                                 <img src="/assets/static/assets/img/why-icon-2.png" alt="image" class="img-fluid">
                                 <img src="/assets/static/assets/img/why-icon-2-dark.png" alt="image" class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Chuyển Dữ Liệu Miễn Phí </h6>
-                                <p class="text-white text-opacity-75 mb-0"> Nify Hỗ Trợ Chuyển Dữ Liệu Từ Nhà Cung Cấp Khác
-                                    Sang Nify Hoàn Toàn Miễn Phí Qua FTP. </p>
+                                <p class="text-white text-opacity-75 mb-0"> GiangTran Hỗ Trợ Chuyển Dữ Liệu Từ Nhà Cung Cấp Khác
+                                    Sang GiangTran Hoàn Toàn Miễn Phí Qua FTP. </p>
                             </div>
                         </div>
     
@@ -2178,7 +2154,7 @@
                                 <img src="/assets/static/assets/img/why-icon-4.png" alt="image" class="img-fluid">
                                 <img src="/assets/static/assets/img/why-icon-4-dark.png" alt="image" class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Hoàn Tiền </h6>
-                                <p class="text-white text-opacity-75 mb-0"> Nify Có Chính Sách Hoàn 100% Tiền Trong 24 Giờ
+                                <p class="text-white text-opacity-75 mb-0"> GiangTran Có Chính Sách Hoàn 100% Tiền Trong 24 Giờ
                                     Nếu Dịch Vụ Gặp Lỗi Do Nify. </p>
                             </div>
                         </div>
@@ -2253,7 +2229,7 @@
                                     <p class="mt-3">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi thích ở
-                                                Nify là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
+                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
                                     </p>
@@ -2293,7 +2269,7 @@
                                     <p class="mt-3">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi thích ở
-                                                Nify là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
+                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
                                     </p>
@@ -2333,7 +2309,7 @@
                                     <p class="mt-3">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi thích ở
-                                                Nify là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
+                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
                                     </p>
@@ -2373,7 +2349,7 @@
                                     <p class="mt-3">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi thích ở
-                                                Nify là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
+                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
                                     </p>
@@ -2423,7 +2399,7 @@
                                 data-sal-delay="200" data-sal-easing="ease-in-out-sine">
                                 <div class="px-3 py-1 border border-primary rounded d-inline-flex align-items-center gap-2">
                                     <div class="w-2 h-2 rounded-circle bg-primary"></div>
-                                    <small class="text-primary fw-bold"> Chuyển Dữ Liệu Đến Nify </small>
+                                    <small class="text-primary fw-bold"> Chuyển Dữ Liệu Đến GiangTran </small>
                                 </div>
                             </div>
                             <div class="text-center mt-5">
@@ -2437,7 +2413,7 @@
                             <div class="d-flex align-items-center justify-content-center gap-4 flex-wrap flex-md-nowrap"
                                 data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"
                                 data-sal-easing="ease-in-out-sine">
-                                <a href="https://t.me/iamthanhXdev"
+                                <a href="/home"
                                     class="btn btn-primary btn-arrow btn-arrow-md btn-lg fs-14 fw-medium rounded">
                                     <span class="btn-arrow__text">
                                         Bắt Đầu Ngay
@@ -2446,7 +2422,7 @@
                                         </span>
                                     </span>
                                 </a>
-                                <a href="https://www.google.com/search?sca_esv=2b5ce49ea87870d0&sca_upv=1&rlz=1C1ONGR_viVN1056VN1056&sxsrf=ADLYWIK9jQ09rzUyB9F5-L57raVNh_YqRw%3A1726898329664&q=Nify.vn&stick=H4sIAAAAAAAAAONgU1I1qEg0MjM1STJJSjKxNE60MDG3MqgwTTU1NTNOsTAzNjRNNUhLXMTK7peZVqlXlgcA04Yy1TMAAAA&mat=CZBTciThUhTZ&ved=2ahUKEwjW1YLMrdOIAxVqsFYBHR4zMa4QrMcEegQIDBAD"
+                                <a href="https://www.google.com/search?q=site%3Agiangtran.com.vn&sca_esv=2b5ce49ea87870d0&rlz=1C1ONGR_viVN1056VN1056&sxsrf=ADLYWIIzp58hIDcYDSH4iJNM2hzNtm-9gg%3A1731997075996&ei=ky08Z9XAPOeivr0P7vHm0Ag&ved=0ahUKEwiV1t3z3-eJAxVnka8BHe64GYoQ4dUDCA8&uact=5&oq=site%3Agiangtran.com.vn&gs_lp=Egxnd3Mtd2l6LXNlcnAiFXNpdGU6Z2lhbmd0cmFuLmNvbS52bkibFVC5BljCDHABeACQAQCYAWigAe8DqgEDMy4yuAEDyAEA-AEBmAIAoAIAmAMAiAYBkgcAoAfiAg&sclient=gws-wiz-serp"
                                     class="btn btn-dark btn-arrow btn-arrow-md btn-lg fs-14 fw-medium rounded">
                                     <span class="btn-arrow__text">
                                         Tìm Hiểu Thêm
@@ -2471,7 +2447,7 @@
                             style="width: 145px;">
                         <p class="text-white text-opacity-75 mt-8">
                             Bạn đang quản lý một trang web hay điều hành doanh nghiệp? Hãy đảm bảo rằng trang web của bạn
-                            luôn hoạt động ổn định với hiệu suất tối ưu. Đến với Nify – giải pháp toàn diện từ A đến Z, giúp
+                            luôn hoạt động ổn định với hiệu suất tối ưu. Đến với GiangTran – giải pháp toàn diện từ A đến Z, giúp
                             bạn thành công vượt bậc!
                         </p>
                         <h6 class="text-white mt-6 mb-4 fs-16">Social Media</h6>
@@ -2498,20 +2474,20 @@
                         <div class="ps-xl-10">
                             <h6 class="text-white fs-16 mt-3 mb-8">Product &amp; Solutions</h6>
                             <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li><a href="/hosting/vn-premium" class="footer-2-link">Hosting Anti DDoS</a>
+                                <li><a href="/home" class="footer-2-link">Hosting Anti DDoS</a>
                                 </li>
-                                <li><a href="/hosting/vn-premium" class="footer-2-link">Hosting WordPress</a>
+                                <li><a href="/home" class="footer-2-link">Hosting WordPress</a>
                                 </li>
-                                <li><a href="/vps-store/cloud-vps-viet-nam/cloud-vps-pro"
+                                <li><a href="/home"
                                         class="footer-2-link">Cloud VPS</a></li>
-                                <li><a href="https://t.me/iamthanhXdev" class="footer-2-link">Máy Chủ Cài Sẵn</a></li>
-                                <li><a href="https://t.me/iamthanhXdev" class="footer-2-link">Máy Chủ Chuyên Dụng</a></li>
+                                <li><a href="/home" class="footer-2-link">Máy Chủ Cài Sẵn</a></li>
+                                <li><a href="/home" class="footer-2-link">Máy Chủ Chuyên Dụng</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="ps-xl-5">
-                            <h6 class="text-white fs-16 mt-3 mb-8">Nify Feature</h6>
+                            <h6 class="text-white fs-16 mt-3 mb-8">GiangTran Feature</h6>
                             <ul class="list-unstyled d-flex flex-column gap-2">
                                 <li><a href="#" class="footer-2-link">Data Center</a></li>
                                 <li><a href="#" class="footer-2-link">Uptime Server</a></li>
@@ -2536,7 +2512,7 @@
                 </div>
                 <div class="mt-20">
                     <div class="d-flex align-items-center justify-content-between flex-wrap gap-5 pt-5 border-top">
-                        <p class="mb-0 fs-14 text-white">&copy; 2024 NIFY.VN. All rights reserved</p>
+                        <p class="mb-0 fs-14 text-white">&copy; 2024 GIANGTRAN.COM.VN. All rights reserved</p>
                     </div>
                 </div>
             </div>

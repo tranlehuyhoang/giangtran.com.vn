@@ -11,6 +11,7 @@
     <meta property="og:url" content="{{ request()->fullUrl() }}">
     <meta name="twitter:url" content="{{ request()->fullUrl() }}">
     <link rel="icon" href="/icon.png">
+    <meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     @livewireStyles

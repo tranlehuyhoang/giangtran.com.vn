@@ -33,8 +33,8 @@ use Illuminate\Support\Facades\Route;
 
 // template
 
-Route::get('/landing-page', LandingPage::class)->name('landingpage');
-Route::get('/', Home::class)->name('home');
+Route::get('/', LandingPage::class)->name('landingpage');
+Route::get('/home', Home::class)->name('home');
 Route::get('/login', Login::class)->name('login');
 Route::get('/register', action: Register::class)->name('register');
 Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
