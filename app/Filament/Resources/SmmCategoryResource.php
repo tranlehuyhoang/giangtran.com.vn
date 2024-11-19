@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\UserResource\Pages;
-use App\Filament\Resources\UserResource\RelationManagers;
-use App\Models\User;
+use App\Filament\Resources\SmmCategoryResource\Pages;
+use App\Filament\Resources\SmmCategoryResource\RelationManagers;
+use App\Models\SmmCategory;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -12,16 +12,16 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Validation\Rules\In;
 
-class UserResource extends Resource
+class SmmCategoryResource extends Resource
 {
-    protected static ?string $model = User::class;
-    protected static ?string $navigationLabel = 'Người Dùng';
-    protected static ?string $navigationGroup = 'Người Dùng';
+    protected static ?string $model = SmmCategory::class;
+    protected static ?string $navigationLabel = 'Danh Mục';
+    protected static ?string $navigationGroup = 'SMM';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    protected static ?int $sort = 101;
+    protected static ?int $sort = 100;
 
-    
 
     public static function form(Form $form): Form
     {
@@ -30,24 +30,12 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('email')
-                    ->email()
+                Forms\Components\FileUpload::make('image')
+                    ->image()
+                    ->required(),
+                Forms\Components\TextInput::make('code')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('username')
-                    ->maxLength(255)
-                    ->default(null),
-                Forms\Components\DateTimePicker::make('email_verified_at'),
-                Forms\Components\TextInput::make('password')
-                    ->password()
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('theme')
-                    ->maxLength(255)
-                    ->default('default'),
-                Forms\Components\TextInput::make('theme_color')
-                    ->maxLength(255)
-                    ->default(null),
             ]);
     }
 
@@ -56,16 +44,12 @@ class UserResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')
-                    ->searchable(),
+                ->searchable(),
+                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('email')
+                Tables\Columns\TextColumn::make('code')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('username')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('email_verified_at')
-                    ->dateTime()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -74,10 +58,6 @@ class UserResource extends Resource
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('theme')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('theme_color')
-                    ->searchable(),
             ])
             ->filters([
                 //
@@ -102,9 +82,9 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListUsers::route('/'),
-            'create' => Pages\CreateUser::route('/create'),
-            'edit' => Pages\EditUser::route('/{record}/edit'),
+            'index' => Pages\ListSmmCategories::route('/'),
+            'create' => Pages\CreateSmmCategory::route('/create'),
+            'edit' => Pages\EditSmmCategory::route('/{record}/edit'),
         ];
     }
 }
