@@ -19,7 +19,7 @@
             <!-- Primary Header -->
             <nav class="navbar navbar-1 navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand logo" href="/landing-page">
+                    <a class="navbar-brand logo" href="/">
                         <img src="/giangtran.com.vn.png" alt="image" class="logo__img">
                         <img src="/giangtran.com.vn.png" alt="image"
                             class="logo__img logo__sticky">

@@ -15,10 +15,10 @@
 
     <div class="col-auto header-right-wrapper page-title">
         <div>
-            <h2> Trang Khách Hàng </h2>
+            <h2>{{ $title }} </h2>
             <nav>
                 <ol class="breadcrumb justify-content-sm-start align-items-center mb-0">
-                    <li class="breadcrumb-item"><a href="/"> Tổng Quan </a></li>
+                    <li class="breadcrumb-item"><a href="/"> {{ $description }} </a></li>
                 </ol>
             </nav>
         </div>

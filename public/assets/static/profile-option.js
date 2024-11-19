@@ -121,7 +121,7 @@ function sendOTP() {
 
 function isChecked() {
     if (document.getElementById("2FaStatus").checked) {
-        document.getElementById("isCheckedText").innerHTML = 'Äang Báº­t';
+        document.getElementById("isCheckedText").innerHTML = 'Đang Bật';
 
         if (document.getElementById("2faDefault").value != 'true') {
             document.getElementById("formOTP-2Fa").classList.remove('content-vi');
@@ -131,7 +131,7 @@ function isChecked() {
             document.getElementById("formOTP-2Fa").classList.add('content-vi');
         }
     } else {
-        document.getElementById("isCheckedText").innerHTML = 'Äang Táº¯t';
+        document.getElementById("isCheckedText").innerHTML = 'Đang Tắt';
 
         if (document.getElementById("2faDefault").value != 'false') {
             document.getElementById("formOTP-2Fa").classList.remove('content-vi');

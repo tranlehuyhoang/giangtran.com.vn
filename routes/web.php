@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\cron\Checkpayment;
 use App\Http\Controllers\cron\Transaction;
+use App\Http\Middleware\EnsureUserIsAuthenticated;
 use App\Livewire\ApiClient;
 use App\Livewire\ChuyenKhoan;
 use App\Livewire\ForgotPassword;
@@ -29,6 +30,8 @@ use App\Livewire\KhoMaNguon\Detail as KhoMaNguonDetail;
 use App\Livewire\Manage\Code;
 use App\Livewire\Product\Hosting\Detail as DetailHosting;
 use App\Livewire\HoaDon\Detail as DetailHoaDon;
+use App\Livewire\Services\Smm\Create as CreateSmm;
+use App\Livewire\Services\Smm\Manager as ManagerSmm;
 use Illuminate\Support\Facades\Route;
 
 // template
@@ -38,7 +41,15 @@ Route::get('/home', Home::class)->name('home');
 Route::get('/login', Login::class)->name('login');
 Route::get('/register', action: Register::class)->name('register');
 Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
-Route::get('/profile', Profile::class)->name('profile');
+
+
+Route::middleware(EnsureUserIsAuthenticated::class)->group(function () {
+    Route::get('/profile', Profile::class)->name('profile');
+});
+
+Route::get('/services/smm/create', CreateSmm::class)->name('smm.create');
+Route::get('/services/smm/manager', ManagerSmm::class)->name('smm.manager');
+
 Route::get('/chuyen-khoan', ChuyenKhoan::class)->name('chuyen-khoan');
 Route::get('/hosting/vn-premium', VnPremium::class)->name('vn-premium');
 Route::get('/hosting/ca', Ca::class)->name('ca');

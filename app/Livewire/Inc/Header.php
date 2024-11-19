@@ -8,8 +8,16 @@ use Livewire\Component;
 class Header extends Component
 {
     use LivewireAlert;
+    public $title;
+    public $description;
+    public function mount($title = null, $description = null)
+    {
+        $this->title = $title ?? 'Trang Khách Hàng';
+        $this->description = $description ?? 'Trang khách hàng';
+    }
     public function render()
     {
+     
         return view('livewire.inc.header');
     }
     public function logout()
