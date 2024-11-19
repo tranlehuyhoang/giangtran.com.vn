@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3309
--- Generation Time: Nov 19, 2024 at 03:36 PM
+-- Generation Time: Nov 19, 2024 at 04:00 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -132,7 +132,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (5, '2024_11_17_045600_create_payment_history_table', 3),
 (6, '2024_11_19_205751_add_themes_settings_to_users_table', 4),
 (7, '2024_11_19_210118_create_permission_tables', 5),
-(8, '2024_11_19_212615_create_smm_categories_table', 6);
+(8, '2024_11_19_212615_create_smm_categories_table', 6),
+(9, '2024_11_19_214137_create_smm_services_table', 7);
 
 -- --------------------------------------------------------
 
@@ -347,7 +348,7 @@ CREATE TABLE `sessions` (
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
 ('pkIM9jgHu5tOx7XpxYi8m5RvQLihuU2kOAJ2erqg', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicWtzeHFvdzFZOVNJRXY3NTBlOHkyUjltb3djbldGRXVkMjlkVE1mMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1732023718),
-('rsm4mbMxdEoW1qdcEE2Df1fGfkCnPptHcuTVHkOI', 4, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1V5a1QwSTdHVkxva0htdnUxY3RFcVpQWWtGSERXcWNjcHpwaW9DSSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9zbW0tY2F0ZWdvcmllcyI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjQ7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRwcWVsQnZIdkJtY3JGVE13dGZQcEZldE9hY3pMN2hiaE0yaUxSNElkb09YRHdzU2R1UXFMQyI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1732026988);
+('rsm4mbMxdEoW1qdcEE2Df1fGfkCnPptHcuTVHkOI', 4, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1V5a1QwSTdHVkxva0htdnUxY3RFcVpQWWtGSERXcWNjcHpwaW9DSSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9zbW0tc2VydmljZXMvMS9lZGl0Ijt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6NDtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJHBxZWxCdkh2Qm1jckZUTXd0ZlBwRmV0T2Fjekw3aGJoTTJpTFI0SWRvT1hEd3NTZHVRcUxDIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1732028389);
 
 -- --------------------------------------------------------
 
@@ -371,6 +372,30 @@ CREATE TABLE `smm_categories` (
 INSERT INTO `smm_categories` (`id`, `name`, `image`, `code`, `created_at`, `updated_at`) VALUES
 (1, 'Follow tiktok', '01JD2DGAVJRKZZM70P3FA9ZFME.gif', '123', '2024-11-19 14:33:57', '2024-11-19 14:33:57'),
 (2, 'Follow facebook', '01JD2DM3EGYGQ1NGQF9S8GT266.gif', '1', '2024-11-19 14:36:01', '2024-11-19 14:36:25');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `smm_services`
+--
+
+CREATE TABLE `smm_services` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `smmcategory_id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `code` varchar(255) NOT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT 1,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `smm_services`
+--
+
+INSERT INTO `smm_services` (`id`, `smmcategory_id`, `name`, `price`, `code`, `is_active`, `created_at`, `updated_at`) VALUES
+(1, 1, '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', 10000.00, '763', 1, '2024-11-19 14:58:37', '2024-11-19 14:58:37');
 
 -- --------------------------------------------------------
 
@@ -594,6 +619,13 @@ ALTER TABLE `smm_categories`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `smm_services`
+--
+ALTER TABLE `smm_services`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `smm_services_smmcategory_id_foreign` (`smmcategory_id`);
+
+--
 -- Indexes for table `transactions`
 --
 ALTER TABLE `transactions`
@@ -626,7 +658,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `payment_history`
@@ -651,6 +683,12 @@ ALTER TABLE `roles`
 --
 ALTER TABLE `smm_categories`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `smm_services`
+--
+ALTER TABLE `smm_services`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -686,6 +724,12 @@ ALTER TABLE `payment_history`
 ALTER TABLE `role_has_permissions`
   ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `smm_services`
+--
+ALTER TABLE `smm_services`
+  ADD CONSTRAINT `smm_services_smmcategory_id_foreign` FOREIGN KEY (`smmcategory_id`) REFERENCES `smm_categories` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
