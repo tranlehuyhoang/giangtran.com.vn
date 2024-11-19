@@ -50,11 +50,17 @@ class AdminPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
+                \Hasnayeen\Themes\Http\Middleware\SetTheme::class,
             ])
             ->authMiddleware([
                 Authenticate::class,
             ])
+            ->plugins([
+                \Hasnayeen\Themes\ThemesPlugin::make(),
+                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+            ])
             ->brandLogo(asset('/giangtran.com.vn.png'))
-            ->brandLogoHeight('2rem');
+            ->brandLogoHeight('2rem')
+            ->favicon('/icon.png');
     }
 }
