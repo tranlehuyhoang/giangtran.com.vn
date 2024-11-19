@@ -38,10 +38,7 @@ class PaymentHistory extends Model
             $exists = self::where('transaction_code', $transaction->id)->exists();
 
             if (!$exists) {
-                // Gửi sự kiện nếu cần
-           
-
-                // Lưu lịch sử nạp tiền
+        
                 self::create([
                     'user_id' => auth()->id(), // ID người dùng hiện tại
                     'transaction_code' => $transaction->id, // Sử dụng mã giao dịch
@@ -49,7 +46,10 @@ class PaymentHistory extends Model
                     'status' => $transaction->status ?? 'thành công', // Trạng thái
                     'bank' => $transaction->bank_brand_name, // Tên ngân hàng
                 ]);
+                return ['status' => 'success', 'amount' => $transaction->amount_in];
             }
+
         }
+        return ['status' => 'not_found', 'amount' =>null];
     }
 }

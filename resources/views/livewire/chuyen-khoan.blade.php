@@ -95,7 +95,7 @@
                                     </div>
                                 </div>
 
- 
+
                             </div>
 
                             <div class="col-md-12">
@@ -280,8 +280,20 @@
             });
    });
  
+   function fetchCronTransaction() {
+    fetch('/api/transaction', {
+        method: 'GET', // HTTP method
+        headers: {
+            'Content-Type': 'application/json' // Optional, depending on your backend requirements
+        }
+    })
+    .then(data => {   
+        setTimeout(fetchCronTransaction, 2000); // 2000 milliseconds = 2 seconds
+    })
+    ;
+}
    function fetchCronData() {
-    fetch('/checkpayment', {
+    fetch('/api/checkpayment', {
         method: 'GET', // HTTP method
         headers: {
             'Content-Type': 'application/json' // Optional, depending on your backend requirements
@@ -289,15 +301,18 @@
     })
     .then(response => response.json()) // Assuming the response is JSON
     .then(data => {
-        console.log('Data from cron endpoint:', data);
-
-        // If no invoice was updated, still continue fetching
-        if (!data.invoiceUpdated) {
-            console.log('No invoices updated, will try again...');
-        } else {
-            console.log('Invoices updated.');
-        }
-
+        if(data.status == 'success'){
+            Swal.fire({
+                icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
+                title: 'Thông báo',
+                text: 'Nạp thành công số tiền ' + data.amount + ' VNĐ!',
+                confirmButtonText: 'OK'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.reload();
+                }
+            });
+        } 
         // Set a timeout to fetch again after 2 seconds
         setTimeout(fetchCronData, 2000); // 2000 milliseconds = 2 seconds
     })
@@ -311,6 +326,7 @@
 
 // Call fetchCronData once to start the process
 fetchCronData();
+fetchCronTransaction();
 
         </script>
     </body>

@@ -1,10 +1,9 @@
 <?php
 
- 
-
+use App\Http\Controllers\cron\Checkpayment;
+use App\Http\Controllers\cron\Transaction;
 use App\Livewire\ApiClient;
 use App\Livewire\ChuyenKhoan;
-use App\Livewire\Cron\Checkpayment;
 use App\Livewire\ForgotPassword;
 use App\Livewire\Home;
 use App\Livewire\Hosting\Ca;
@@ -41,7 +40,6 @@ Route::get('/register', action: Register::class)->name('register');
 Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
 Route::get('/profile', Profile::class)->name('profile');
 Route::get('/chuyen-khoan', ChuyenKhoan::class)->name('chuyen-khoan');
-Route::get('/checkpayment', Checkpayment::class)->name('checkpayment');
 Route::get('/hosting/vn-premium', VnPremium::class)->name('vn-premium');
 Route::get('/hosting/ca', Ca::class)->name('ca');
 Route::get('/mua-hosting/{id}', MuaHosting::class)->name('mua-hosting');
@@ -62,3 +60,6 @@ Route::get('/nap-card', action: NapCard::class)->name('nap-card');
 Route::get('/api-client', action: ApiClient::class)->name('api-client');
 Route::get('/hoa-don/{id}', action: DetailHoaDon::class)->name('hoa-don');
 Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
+Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
+Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
+
