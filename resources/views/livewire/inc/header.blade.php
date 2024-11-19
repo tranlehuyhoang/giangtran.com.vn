@@ -84,7 +84,10 @@
                             <div class="sidebar-image"> <img src="/assets/assets/images/user.png"
                                     alt="profile"><span class="status status-success"></span></div>
                             <div class="sidebar-content">
-                                <h4> 2509roblox </h4><span class="f-12 f-w-600 f-light"> Số Dư:
+                                <h4>
+                                    {{ Auth::check() ? Auth::user()->name : 'Khách' }}
+                                </h4>
+                                <span class="f-12 f-w-600 f-light"> Số Dư:
                                     0<sup>đ</sup> </span>
                             </div>
                         </div>
@@ -98,8 +101,9 @@
                                 <span> Số Dư: 0<sup>đ</sup> </span>
                             </li>
 
-
-                            <li><a href="/profile">
+                            @if (Auth::check())
+                            <li>
+                                <a href="/profile">
                                     <div class="profile-icon">
                                         <svg>
                                             <use href="/assets/assets/svg/icon-sprite.svg#user"></use>
@@ -108,16 +112,42 @@
                                     <span> Hồ Sơ </span>
                                 </a>
                             </li>
-
+                    
+                            <li>
+                                <a wire:click="logout" >
+                                    <div class="profile-icon">
+                                        <svg>
+                                            <use href="/assets/assets/svg/icon-sprite.svg#login"></use>
+                                        </svg>
+                                    </div>
+                                    <span> Đăng Xuất </span>
+                                </a>
+                           
+                            </li>
+                        @else
+                            <li>
+                                <a href="/register">
+                                    <div class="profile-icon">
+                                        <svg>
+                                            <use href="/assets/assets/svg/icon-sprite.svg#login"></use>
+                                        </svg>
+                                    </div>
+                                    <span> Đăng Ký </span>
+                                </a>
+                            </li>
+                    
                             <li>
                                 <a href="/login">
                                     <div class="profile-icon">
                                         <svg>
                                             <use href="/assets/assets/svg/icon-sprite.svg#login"></use>
                                         </svg>
-                                    </div><span> Đăng Xuất </span>
+                                    </div>
+                                    <span> Đăng Nhập </span>
                                 </a>
                             </li>
+                        @endif
+                          
 
                         </ul>
 

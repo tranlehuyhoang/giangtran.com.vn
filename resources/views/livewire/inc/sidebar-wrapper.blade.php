@@ -1,14 +1,14 @@
 
 <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
     <div>
-        <div class="logo-wrapper"><a href="/"><img class="img-fluid"
+        <div class="logo-wrapper"><a href="/home"><img class="img-fluid"
                     src="/giangtran.com.vn.png" style="height: 40px;"
                     alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle"
                     data-feather="grid"> </i></div>
         </div>
-        <div class="logo-icon-wrapper"><a href="/"><img class="img-fluid"
+        <div class="logo-icon-wrapper"><a href="/home"><img class="img-fluid"
                     src="/icon.png"
                     width="35px;" alt=""></a></div>
         <div class="profile-section sidebar-search">
@@ -49,7 +49,7 @@
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
-                    <li class="back-btn"><a href="/"><img class="img-fluid"
+                    <li class="back-btn"><a href="/home"><img class="img-fluid"
                                 src="/icon.png"
                                 width="35px;" alt=""></a>
                         <div class="mobile-back text-end"><span>Back</span><i
@@ -63,7 +63,7 @@
 
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
-                        <a class="sidebar-link sidebar-title link-nav" id="homeHref" href="/">
+                        <a class="sidebar-link sidebar-title link-nav" id="homeHref" href="/home">
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-home"></use>
                             </svg>

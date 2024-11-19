@@ -453,6 +453,6 @@
         <script src="/assets/static/search-handlebars.js"></script>
         <script src="/assets/static/script.js"></script>
         <script src="/assets/static/customizer.js"></script>
-
+    
     </body>
 </div>
