@@ -28,28 +28,33 @@ class PaymentHistory extends Model
     {
         return self::where('user_id', $userId)->orderBy('created_at', 'desc')->get();
     }
-    public static function createPaymentHistory()
+    public static function createPaymentHistory($code, $user_id)
     {
         // Lấy tất cả các giao dịch
         $transactions = Transaction::all();
       
         foreach ($transactions as $transaction) {
-            // Kiểm tra xem transaction_code đã tồn tại trong bảng PaymentHistory chưa
-            $exists = self::where('transaction_code', $transaction->id)->exists();
-
-            if (!$exists) {
-        
-                self::create([
-                    'user_id' => auth()->id(), // ID người dùng hiện tại
-                    'transaction_code' => $transaction->id, // Sử dụng mã giao dịch
-                    'amount' => $transaction->amount_in, // Số tiền nạp
-                    'status' => $transaction->status ?? 'thành công', // Trạng thái
-                    'bank' => $transaction->bank_brand_name, // Tên ngân hàng
-                ]);
-                return ['status' => 'success', 'amount' => $transaction->amount_in];
+            // Kiểm tra xem transaction_content có chứa mã code không
+            if (strpos($transaction->transaction_content, $code) !== false) {
+                // Kiểm tra xem transaction_code đã tồn tại trong bảng PaymentHistory chưa
+                $exists = self::where('transaction_code', $transaction->id)->exists();
+    
+                if (!$exists) {
+                    self::create([
+                        'user_id' => $user_id, // Sử dụng user_id được truyền vào
+                        'transaction_code' => $transaction->id, // Sử dụng mã giao dịch
+                        'amount' => $transaction->amount_in, // Số tiền nạp
+                        'status' => $transaction->status ?? 'thành công', // Trạng thái
+                        'bank' => $transaction->bank_brand_name, // Tên ngân hàng
+                    ]);
+                    $user = User::find($user_id); // Giả sử bạn có mô hình User
+                    $user->balance += $transaction->amount_in; // Cộng số tiền vào balance
+                    $user->save(); // Lưu thay đổi
+                    return ['status' => 'success', 'amount' => $transaction->amount_in, 'code'=> $code, 'user' =>$user_id];
+                }
             }
-
         }
-        return ['status' => 'not_found', 'amount' =>null];
+        // return ['status' => 'success', 'amount' => $transaction->amount_in, 'code'=> $code, 'user' =>$user_id];
+        return ['status' => 'not_found', 'amount' => null,  'code'=> $code, 'user' =>$user_id];
     }
 }

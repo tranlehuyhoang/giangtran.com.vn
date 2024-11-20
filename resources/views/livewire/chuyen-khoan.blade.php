@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title> Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam </title>
+        <title>Nạp Tiền - GIANGTRAN.COM.VN </title>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=1635596303">
         <link rel="stylesheet" type="text/css"
@@ -44,7 +44,9 @@
                                 <b class="font-weight-bold mb-3 text-dark">Nội dung chuyển khoản</b>
                                 <div class="d-flex align-items-center justify-content-between bg-light rounded"
                                     style="padding: 10px;">
-                                    <b class="text-dark"> NF 2509ROBLOX </b>
+                                    <b class="text-dark">
+                                        NF {{ Auth::check() ? strtoupper(Auth::user()->name) : 'Khách' }}
+                                    </b>
                                 </div>
                             </div>
 
@@ -63,7 +65,7 @@
                                                 <i class="icofont icofont-qr-code" style="cursor: pointer;"
                                                     title="Mã QR Chuyển Khoản" data-bs-target="#showqr-code"
                                                     data-bs-toggle="modal"
-                                                    onclick="showQRcode(`https://api.vietqr.io/mb/0966579217/0/NF 2509ROBLOX/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG`);"></i>
+                                                    onclick="showQRcode(`https://api.vietqr.io/mb/0966579217/0/NF {{ Auth::check() ? strtoupper(Auth::user()->name) : 'Khách' }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG`);"></i>
                                             </div>
                                         </div>
 

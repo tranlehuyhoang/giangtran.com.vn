@@ -23,10 +23,7 @@ class ChuyenKhoan extends Component
         $userId = auth()->id(); // Lấy ID người dùng hiện tại
         $this->paymentHistories = PaymentHistory::getPaymentHistoryByUser($userId);
     }
-    public function updatePaymentHistory()
-    {
-        PaymentHistory::createPaymentHistory(); // Gọi hàm từ model
-    }
+ 
 
     public function render()
     {

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3309
--- Generation Time: Nov 19, 2024 at 04:00 PM
+-- Generation Time: Nov 20, 2024 at 03:24 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -253,7 +253,21 @@ INSERT INTO `payment_history` (`id`, `user_id`, `transaction_code`, `amount`, `s
 (97, 1, '4793814', 0.00, 'thành công', 'MBBank', '2024-11-19 06:11:23', '2024-11-19 06:11:23'),
 (98, 1, '4799013', 2000.00, 'thành công', 'MBBank', '2024-11-19 12:14:18', '2024-11-19 12:14:18'),
 (99, 1, '4799036', 2002.00, 'thành công', 'MBBank', '2024-11-19 12:14:24', '2024-11-19 12:14:24'),
-(100, 1, '4801588', 2008.00, 'thành công', 'MBBank', '2024-11-19 12:14:28', '2024-11-19 12:14:28');
+(100, 1, '4801588', 2008.00, 'thành công', 'MBBank', '2024-11-19 12:14:28', '2024-11-19 12:14:28'),
+(101, 4, '4816568', 250000.00, 'thành công', 'MBBank', '2024-11-20 13:55:43', '2024-11-20 13:55:43'),
+(102, 4, '4817470', 0.00, 'thành công', 'MBBank', '2024-11-20 13:55:46', '2024-11-20 13:55:46'),
+(103, 4, '4819057', 0.00, 'thành công', 'MBBank', '2024-11-20 13:55:50', '2024-11-20 13:55:50'),
+(104, 4, '4819127', 0.00, 'thành công', 'MBBank', '2024-11-20 13:55:55', '2024-11-20 13:55:55'),
+(105, 4, '4819289', 0.00, 'thành công', 'MBBank', '2024-11-20 13:55:59', '2024-11-20 13:55:59'),
+(106, 4, '4819334', 0.00, 'thành công', 'MBBank', '2024-11-20 13:56:02', '2024-11-20 13:56:02'),
+(107, 4, '4820214', 0.00, 'thành công', 'MBBank', '2024-11-20 13:56:05', '2024-11-20 13:56:05'),
+(108, 4, '4820258', 0.00, 'thành công', 'MBBank', '2024-11-20 13:56:08', '2024-11-20 13:56:08'),
+(109, 4, '4820432', 0.00, 'thành công', 'MBBank', '2024-11-20 13:56:12', '2024-11-20 13:56:12'),
+(110, 4, '4820602', 30000.00, 'thành công', 'MBBank', '2024-11-20 13:56:15', '2024-11-20 13:56:15'),
+(111, 4, '4830566', 2020.00, 'thành công', 'MBBank', '2024-11-20 13:58:43', '2024-11-20 13:58:43'),
+(112, 4, '4831131', 2012.00, 'thành công', 'MBBank', '2024-11-20 14:18:57', '2024-11-20 14:18:57'),
+(113, 4, '4831168', 2003.00, 'thành công', 'MBBank', '2024-11-20 14:20:24', '2024-11-20 14:20:24'),
+(114, 4, '4831251', 2400.00, 'thành công', 'MBBank', '2024-11-20 14:23:23', '2024-11-20 14:23:23');
 
 -- --------------------------------------------------------
 
@@ -347,8 +361,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('pkIM9jgHu5tOx7XpxYi8m5RvQLihuU2kOAJ2erqg', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicWtzeHFvdzFZOVNJRXY3NTBlOHkyUjltb3djbldGRXVkMjlkVE1mMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1732023718),
-('rsm4mbMxdEoW1qdcEE2Df1fGfkCnPptHcuTVHkOI', 4, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiU1V5a1QwSTdHVkxva0htdnUxY3RFcVpQWWtGSERXcWNjcHpwaW9DSSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9zbW0tc2VydmljZXMvMS9lZGl0Ijt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6NDtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJHBxZWxCdkh2Qm1jckZUTXd0ZlBwRmV0T2Fjekw3aGJoTTJpTFI0SWRvT1hEd3NTZHVRcUxDIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1732028389);
+('QsoQjY9IaysiO5myxBjPe4OEg6uWGhhQWrDigeJT', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVzJ0bGlLTnZaNGFhc255NGtlY2NiY0tNejJjMjdQZmRjVDVjUWo0dCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1732110687),
+('WFQUJzemFVzLZJtVnxviO3axxXD4Knx2uY4x06Ie', 4, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiY3hYR2hzUUxTdWNKMEFPM1o1SmRUWmFwS0haYzFZV0Zic2NWbmM1RiI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6NDtzOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czozODoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL2FwaS9jaGVja3BheW1lbnQiO319', 1732112655);
 
 -- --------------------------------------------------------
 
@@ -483,7 +497,22 @@ INSERT INTO `transactions` (`id`, `bank_brand_name`, `account_number`, `transact
 ('4793814', 'MBBank', '0966579217', '2024-11-19 11:07:45', 1950000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien - Ma giao dich/ Trace 429982', 'FT24324353906900', NULL, NULL, '4230', '2024-11-19 06:11:18', '2024-11-19 06:11:18'),
 ('4799013', 'MBBank', '0966579217', '2024-11-19 15:26:26', 0.00, 2000.00, 0.00, 'TRAN LE HUY HOANG chuyen tien', 'FT24324051985697', NULL, NULL, '4230', '2024-11-19 12:14:17', '2024-11-19 12:14:17'),
 ('4799036', 'MBBank', '0966579217', '2024-11-19 15:27:33', 0.00, 2002.00, 0.00, 'TRAN LE HUY HOANG chuyen tien', 'FT24324039249453', NULL, NULL, '4230', '2024-11-19 12:14:17', '2024-11-19 12:14:17'),
-('4801588', 'MBBank', '0966579217', '2024-11-19 17:11:37', 0.00, 2008.00, 0.00, 'TRAN LE HUY HOANG chuyen tien', 'FT24324037264639', NULL, NULL, '4230', '2024-11-19 12:14:17', '2024-11-19 12:14:17');
+('4801588', 'MBBank', '0966579217', '2024-11-19 17:11:37', 0.00, 2008.00, 0.00, 'TRAN LE HUY HOANG chuyen tien', 'FT24324037264639', NULL, NULL, '4230', '2024-11-19 12:14:17', '2024-11-19 12:14:17'),
+('4816568', 'MBBank', '0966579217', '2024-11-20 12:53:34', 0.00, 250000.00, 0.00, 'TRAN QUANG NGHIA chuyen tien', 'FT24325262970382', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4817470', 'MBBank', '0966579217', '2024-11-20 13:31:49', 60000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ S6481826', 'FT24325054018064', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4819057', 'MBBank', '0966579217', '2024-11-20 14:29:00', 3000.00, 0.00, 0.00, 'MVPAS589cgnwY - Ma giao dich/ Trace055243', 'FT24325503600880', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4819127', 'MBBank', '0966579217', '2024-11-20 14:31:37', 3000.00, 0.00, 0.00, 'MVPAS591lRFng - Ma giao dich/ Trace068551', 'FT24325402206600', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4819289', 'MBBank', '0966579217', '2024-11-20 14:38:07', 3000.00, 0.00, 0.00, 'MVPAS595uUi4e - Ma giao dich/ Trace100096', 'FT24325539663730', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4819334', 'MBBank', '0966579217', '2024-11-20 14:39:22', 10000.00, 0.00, 0.00, 'MVPAS597V5J3M - Ma giao dich/ Trace106650', 'FT24325980074265', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4820214', 'MBBank', '0966579217', '2024-11-20 15:10:52', 5123.00, 0.00, 0.00, 'MVPAS6245vaOu - Ma giao dich/ Trace273908', 'FT24325458030289', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4820258', 'MBBank', '0966579217', '2024-11-20 15:12:18', 3123.00, 0.00, 0.00, 'MVPAS626nSW5w - Ma giao dich/ Trace356015', 'FT24325734607170', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4820432', 'MBBank', '0966579217', '2024-11-20 15:17:57', 5000.00, 0.00, 0.00, 'MVPAS628JKbJo - Ma giao dich/ Trace313567', 'FT24325199968851', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4820602', 'MBBank', '0966579217', '2024-11-20 15:23:03', 0.00, 30000.00, 0.00, 'MBVCB.7667692440.180038.LE THANH HAI chuyen tien.CT tu 9999118888 LE THANH HAI toi 0966579217 TRAN LE HOANG GIANG tai MB- Ma GD ACSP/ ot1800', 'FT24325824068610', NULL, NULL, '4230', '2024-11-20 13:55:42', '2024-11-20 13:55:42'),
+('4830566', 'MBBank', '0966579217', '2024-11-20 20:58:39', 0.00, 2020.00, 0.00, 'NF 2509ROBLOX', 'FT24325528478455', NULL, NULL, '4230', '2024-11-20 13:58:42', '2024-11-20 13:58:42'),
+('4831131', 'MBBank', '0966579217', '2024-11-20 21:18:50', 0.00, 2012.00, 0.00, 'NF ADMIN', 'FT24325697902828', NULL, NULL, '4230', '2024-11-20 14:18:56', '2024-11-20 14:18:56'),
+('4831142', 'MBBank', '0966579217', '2024-11-20 21:19:20', 0.00, 2200.00, 0.00, 'TRAN LE HUY HOANG chuyen tien', 'FT24325853505830', NULL, NULL, '4230', '2024-11-20 14:19:31', '2024-11-20 14:19:31'),
+('4831168', 'MBBank', '0966579217', '2024-11-20 21:20:16', 0.00, 2003.00, 0.00, 'NF ADMIN', 'FT24325082202583', NULL, NULL, '4230', '2024-11-20 14:20:23', '2024-11-20 14:20:23'),
+('4831251', 'MBBank', '0966579217', '2024-11-20 21:23:17', 0.00, 2400.00, 0.00, 'NF ADMIN', 'FT24325625162500', NULL, NULL, '4230', '2024-11-20 14:23:22', '2024-11-20 14:23:22');
 
 -- --------------------------------------------------------
 
@@ -502,16 +531,17 @@ CREATE TABLE `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `theme` varchar(255) DEFAULT 'default',
-  `theme_color` varchar(255) DEFAULT NULL
+  `theme_color` varchar(255) DEFAULT NULL,
+  `balance` decimal(30,2) NOT NULL DEFAULT 0.00
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`) VALUES
-(1, '2509roblox@gmail.com', '2509roblox@gmail.com', '2509roblox@gmail.com', NULL, '$2y$12$MX0TDXpd987my1iQYkDNHeWT.UdSsnRT2xb54S0SAWoa0EHAIbzs.', 'QNpkFCIsAjRd343ehsrMt2fHymumqA5w88EF2SBHdPdm7oSzjXP8WqVZPz2X', '2024-11-16 20:18:19', '2024-11-16 20:18:19', 'default', NULL),
-(4, 'admin', 'admin@gmail.com', NULL, NULL, '$2y$12$pqelBvHvBmcrFTMwtfPpFetOaczL7hbhM2iLR4IdoOXDwsSduQqLC', 'crvqEvOxlD9yEqKTmOzQ5ha6EaVoN9p8BuEfcS0VchdcEtxE9K8R2ZrMYHft', '2024-11-19 13:52:31', '2024-11-19 13:52:31', 'default', NULL);
+INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`) VALUES
+(1, '2509roblox@gmail.com', '2509roblox@gmail.com', '2509roblox@gmail.com', NULL, '$2y$12$MX0TDXpd987my1iQYkDNHeWT.UdSsnRT2xb54S0SAWoa0EHAIbzs.', 'QNpkFCIsAjRd343ehsrMt2fHymumqA5w88EF2SBHdPdm7oSzjXP8WqVZPz2X', '2024-11-16 20:18:19', '2024-11-16 20:18:19', 'default', NULL, 0.00),
+(4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$pqelBvHvBmcrFTMwtfPpFetOaczL7hbhM2iLR4IdoOXDwsSduQqLC', 'crvqEvOxlD9yEqKTmOzQ5ha6EaVoN9p8BuEfcS0VchdcEtxE9K8R2ZrMYHft', '2024-11-19 13:52:31', '2024-11-20 14:23:23', 'default', NULL, 2400.00);
 
 --
 -- Indexes for dumped tables
@@ -664,7 +694,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `payment_history`
 --
 ALTER TABLE `payment_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
 
 --
 -- AUTO_INCREMENT for table `permissions`
