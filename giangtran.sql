@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3309
--- Generation Time: Nov 21, 2024 at 02:17 PM
+-- Generation Time: Nov 21, 2024 at 04:06 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -32,6 +32,13 @@ CREATE TABLE `cache` (
   `value` mediumtext NOT NULL,
   `expiration` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `cache`
+--
+
+INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
+('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:7:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:1:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1732286367);
 
 -- --------------------------------------------------------
 
@@ -122,7 +129,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (7, '2024_11_19_210118_create_permission_tables', 5),
 (8, '2024_11_19_212615_create_smm_categories_table', 6),
 (9, '2024_11_19_214137_create_smm_services_table', 7),
-(10, '2024_11_21_140737_create_smm_orders_table', 8);
+(10, '2024_11_21_140737_create_smm_orders_table', 8),
+(11, '2024_11_21_213650_add_fields_to_users_table', 9);
 
 -- --------------------------------------------------------
 
@@ -350,7 +358,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('irVJdap5Nyrd81oW8VXtIXWsELOMAOAqH09rsA1o', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiMThoZzZlMWFVRExpdzRudnlKY0RETXJ4TjNaNFlFOTU3WmdUcW95WiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTM2OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvcmVzZXQtcGFzc3dvcmQ/ZW1haWw9MjUwOXJvYmxveCU0MGdtYWlsLmNvbSZ0b2tlbj02NmMwYjEzZThjYjRhOGI4YTU1ZmNjYTE3ZTZiNjk5MmY5ZGE2NmVhMTA0OGJjZTkxZjNmZjBhNWMwODA3MjcxIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRwcWVsQnZIdkJtY3JGVE13dGZQcEZldE9hY3pMN2hiaE0yaUxSNElkb09YRHdzU2R1UXFMQyI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1732194860);
+('orhuyKtQho2kpHaEMpYGvaH8Bdr8iVmpnnXipunX', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo1OntzOjM6InVybCI7YToxOntzOjg6ImludGVuZGVkIjtzOjMzOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4vdXNlcnMiO31zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czoyOToiaHR0cDovL2xvY2FsaG9zdDo4MDAwL3Byb2ZpbGUiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjY6Il90b2tlbiI7czo0MDoib1NYQ1YxQ1BMTVlGN2NvcGlFaTNMVnNja0pySExnQlRWeks4YlhKYyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732201581);
 
 -- --------------------------------------------------------
 
@@ -552,18 +560,25 @@ CREATE TABLE `users` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `theme` varchar(255) DEFAULT 'default',
   `theme_color` varchar(255) DEFAULT NULL,
-  `balance` decimal(30,2) NOT NULL DEFAULT 0.00
+  `balance` decimal(30,2) NOT NULL DEFAULT 0.00,
+  `ip_address` varchar(255) DEFAULT NULL,
+  `other_contact_info` varchar(255) DEFAULT NULL,
+  `device` varchar(255) DEFAULT NULL,
+  `total_consumption` decimal(10,2) DEFAULT NULL,
+  `total_deposit` decimal(10,2) DEFAULT NULL,
+  `two_factor_auth_status` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`) VALUES
-(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$JemtshjcOiQIxuUik4iqeuNJGyhXdrlPTuFe2FyWOJH85OKoMaWP2', 'q3No3MPFE1BlDN7ps6BWE8N8vEvGdv5P2irvSnl7VNhSyw12T7cc3S7UbRwX', '2024-11-16 20:18:19', '2024-11-21 13:10:41', 'default', NULL, 0.00),
-(4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$pqelBvHvBmcrFTMwtfPpFetOaczL7hbhM2iLR4IdoOXDwsSduQqLC', '4OBcTd5nAUfJTQ4vxjfh4ChaQ4TmKOGD0NfQjaQ0mtRJfR2IaIpKm4d5lmYr', '2024-11-19 13:52:31', '2024-11-21 09:39:04', 'default', NULL, 4800.00),
-(5, 'Tran Le Huy Hoang (FPL HCM)', 'hoangtlhps26819@fpt.edu.vn', NULL, NULL, '$2y$12$DB1b1DSlzKgdA/kE8xn9ROrSRJA4fBtKXfYh0YMb.fPdKmLE7yYcy', NULL, '2024-11-21 10:50:00', '2024-11-21 10:50:00', 'default', NULL, 0.00),
-(6, '123', '2@2', '123', NULL, '$2y$12$6MfzzoMPyoUSQhMZOAp3V.8I/N00zunuSnP8hr4cWGn3nJueXqh8S', NULL, '2024-11-21 11:14:20', '2024-11-21 11:14:20', 'default', NULL, 0.00);
+INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`) VALUES
+(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$jv0VFanX3CzJqEPmYZgt7ecgU1PyDiC8/NSKqXXVPyeZDu8vVtemi', 'fI1YaghRdRwht3lHsIrnu7qA43Gjx4tUIjAMMH4iWrrcIT6b8zrfP1LN8Ous', '2024-11-16 20:18:19', '2024-11-21 15:00:18', 'default', NULL, 0.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0),
+(4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$pqelBvHvBmcrFTMwtfPpFetOaczL7hbhM2iLR4IdoOXDwsSduQqLC', '4OBcTd5nAUfJTQ4vxjfh4ChaQ4TmKOGD0NfQjaQ0mtRJfR2IaIpKm4d5lmYr', '2024-11-19 13:52:31', '2024-11-21 09:39:04', 'default', NULL, 4800.00, NULL, NULL, NULL, NULL, NULL, 0),
+(5, 'Tran Le Huy Hoang (FPL HCM)', 'hoangtlhps26819@fpt.edu.vn', NULL, NULL, '$2y$12$DB1b1DSlzKgdA/kE8xn9ROrSRJA4fBtKXfYh0YMb.fPdKmLE7yYcy', NULL, '2024-11-21 10:50:00', '2024-11-21 10:50:00', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0),
+(6, '123', '2@2', '123', NULL, '$2y$12$6MfzzoMPyoUSQhMZOAp3V.8I/N00zunuSnP8hr4cWGn3nJueXqh8S', NULL, '2024-11-21 11:14:20', '2024-11-21 11:14:20', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0),
+(7, 'Hoàng Lâm Đoàn', 'hoanglamdoan79m0c@uehs.us', NULL, NULL, '$2y$12$FBtfvERuOP3pAo7A8IK5aOxk9LOfOGhyUYkuCZryFE7NlXpWMfcJC', NULL, '2024-11-21 13:32:41', '2024-11-21 13:32:41', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0);
 
 --
 -- Indexes for dumped tables
@@ -718,7 +733,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `payment_history`
@@ -760,7 +775,7 @@ ALTER TABLE `smm_services`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

@@ -17,6 +17,12 @@ class User extends Authenticatable
         'email',
         'balance',
         'password',
+        'ip_address',
+        'other_contact_info',
+        'device',
+        'total_consumption',
+        'total_deposit',
+        'two_factor_auth_status',
     ];
 
     protected $hidden = [

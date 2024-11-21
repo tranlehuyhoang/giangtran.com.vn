@@ -17,7 +17,7 @@ use App\Livewire\Auth\ResetPassword;
 use App\Livewire\Manage\Cronjob;
 use App\Livewire\Manage\Vps;
 use App\Livewire\NapCard;
-use App\Livewire\Profile;
+use App\Livewire\Page\Profile;
 use App\Livewire\Hosting\VnPremium;
 use App\Livewire\Reseller\VnPremium as ResellerVnPremium;
 use App\Livewire\Hosting\MuaHosting;

@@ -24,6 +24,7 @@ class Header extends Component
     {
         Auth::logout();
         $this->alert('success', 'Đăng xuất thành công');
+        return redirect('/login');
     }
 
 }

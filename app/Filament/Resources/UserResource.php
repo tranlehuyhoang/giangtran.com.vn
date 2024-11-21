@@ -40,7 +40,6 @@ class UserResource extends Resource
                 Forms\Components\DateTimePicker::make('email_verified_at'),
                 Forms\Components\TextInput::make('password')
                     ->password()
-                    ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('theme')
                     ->maxLength(255)
@@ -48,6 +47,12 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('theme_color')
                     ->maxLength(255)
                     ->default(null),
+                Forms\Components\TextInput::make('ip_address')->label('Địa chỉ IP'),
+                Forms\Components\TextInput::make('other_contact_info')->label('Thông tin liên hệ khác'),
+                Forms\Components\TextInput::make('device')->label('Thiết bị'),
+                Forms\Components\TextInput::make('total_consumption')->numeric()->default(0)->label('Tổng tiêu thụ'),
+                Forms\Components\TextInput::make('total_deposit')->numeric()->default(0)->label('Tổng gửi'),
+                Forms\Components\Toggle::make('two_factor_auth_status')->default(false)->label('Trạng thái 2FA'),
             ]);
     }
 
