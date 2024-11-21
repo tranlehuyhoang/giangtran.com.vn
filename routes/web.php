@@ -6,6 +6,7 @@ use App\Http\Middleware\CheckAuth;
 use App\Http\Middleware\EnsureUserIsAuthenticated;
 use App\Livewire\ApiClient;
 use App\Livewire\ChuyenKhoan;
+use App\Livewire\DieuKhoan;
 use App\Livewire\ForgotPassword;
 use App\Livewire\Home;
 use App\Livewire\Hosting\Ca;
@@ -77,7 +78,7 @@ Route::get('/hoa-don/{id}', action: DetailHoaDon::class)->name('hoa-don');
 Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
 Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
 Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
-
+Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
 
 Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
 Route::get('/auth/google/register', [Register::class, 'redirectToProvider'])->name('google.register');
