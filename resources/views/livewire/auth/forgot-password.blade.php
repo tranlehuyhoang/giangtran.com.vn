@@ -29,9 +29,11 @@
     
                                             <div class="form-group">
                                                 <label class="col-form-label"> Email Khôi Phục </label>
-                                                <input class="form-control" type="email" id="email"
-                                                    placeholder="Email Khôi Phục" style="background-color: white;"
-                                                    autocomplete="new-email" onchange="sendOTP()" value="">
+                                                <form wire:submit="sendResetLink">
+                                                    <input class="form-control" type="email" id="email"
+                                                        placeholder="Email Khôi Phục" style="background-color: white;"
+                                                        autocomplete="new-email" wire:model="email" value="">
+                                                </form>
                                             </div>
     
     

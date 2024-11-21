@@ -7,16 +7,17 @@ use App\Http\Middleware\EnsureUserIsAuthenticated;
 use App\Livewire\ApiClient;
 use App\Livewire\ChuyenKhoan;
 use App\Livewire\DieuKhoan;
-use App\Livewire\ForgotPassword;
+use App\Livewire\Auth\ForgotPassword;
 use App\Livewire\Home;
 use App\Livewire\Hosting\Ca;
 use App\Livewire\LandingPage;
-use App\Livewire\Login;
+use App\Livewire\Auth\Login;
+use App\Livewire\Auth\Register;
+use App\Livewire\Auth\ResetPassword;
 use App\Livewire\Manage\Cronjob;
 use App\Livewire\Manage\Vps;
 use App\Livewire\NapCard;
 use App\Livewire\Profile;
-use App\Livewire\Register;
 use App\Livewire\Hosting\VnPremium;
 use App\Livewire\Reseller\VnPremium as ResellerVnPremium;
 use App\Livewire\Hosting\MuaHosting;
@@ -45,6 +46,7 @@ Route::middleware(CheckAuth::class)->group(function () {
     Route::get('/login', Login::class)->name('login');
     Route::get('/register', action: Register::class)->name('register');
     Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
+    Route::get('/reset-password', action: ResetPassword::class)->name('password.reset');
 });
 
 

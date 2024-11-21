@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Auth;
 
 use Laravel\Socialite\Facades\Socialite;
 use Livewire\Component;
@@ -72,6 +72,6 @@ class Register extends Component
 
     public function render()
     {
-        return view('livewire.register')->layout('components.layouts.auth');
+        return view('livewire.auth.register');
     }
 }
