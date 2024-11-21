@@ -20,7 +20,7 @@
                         <div class="card-wrapper border rounded-3 checkbox-checked">
                             <div class="radio-form">
                                 <div class="form-check">
-                                    <input class="form-check-input" id="radio14" type="radio" name="radio-stacked" disabled onchange="Method_payment()">
+                                    <input class="form-check-input" id="radio14" type="radio" name="radio-stacked"   onchange="Method_payment()">
                                     <label class="form-check-label" for="radio14"> Số Dư Tài Khoản (0<sup>đ</sup>) </label>
                                 </div>
                                 <div class="form-check">
@@ -75,12 +75,11 @@
 
                     <div class="form-group">
                         <label for="categories">Danh Mục  
-                            <img id="selected-category-image" src="" alt="" style="width: 20px; height: 20px;">
+                            <img id="selected-category-image" src="{{ Storage::url($image) }}" alt="" style="width: 20px; height: 20px;">
                         </label>
                         <input type="hidden" id="cycle_max" value="12">
                         
                         <select class="form-control" id="categories" wire:model.live="selectedCategory">
-                            <option value="">--Chọn Danh Mục--</option>
                             @foreach($categories as $category)
                                 <option value="{{ $category['id'] }}" data-image="{{ Storage::url($category['image']) }}">
                                     {{ $category['name'] }}
@@ -88,43 +87,27 @@
                             @endforeach
                         </select>
                     </div>
-                    
-                    <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                        const categorySelect = document.getElementById('categories');
-                        const categoryImage = document.getElementById('selected-category-image');
-                        
-                        categorySelect.addEventListener('change', function() {
-                            const selectedOption = categorySelect.options[categorySelect.selectedIndex];
-                            const imageUrl = selectedOption.getAttribute('data-image');
-                    
-                            // Cập nhật hình ảnh
-                            categoryImage.src = imageUrl;
-                        });
-                    });
-                    </script>
-                    
                     <div class="form-group mt-3">
                         <label>Dịch Vụ</label>
                         <select class="form-control" wire:model.live="selectedService">
                             <option value="">--Chọn Dịch Vụ--</option>
                             @foreach($services as $service)
-                                    <option {{ $service->smmcategory_id == $selectedCategory ? 'disabled hidden' : '' }} value="{{ $service->id }}">{{ $service->name }} - {{ $service->price }} VNĐ</option>
+                                    <option   value="{{ $service->id }}">{{ $service->name }} - {{ $service->price }} VNĐ</option>
                             @endforeach
                         </select>
                     </div>
                     <div class="form-group mt-3">
                         <label> Link </label>
                         <input type="hidden" id="cycle_max" value="12">
-                        <input class="form-control" id="domain" placeholder="Link" wire:model="link">
+                        <input class="form-control" id="domain" placeholder="Link" wire:model.live="link">
                     </div>
                     <div class="form-group mt-3">
                         <label> Số Lượng </label>
 
                         <div class="touchspin-wrapper">
-                            <button class="decrement-touchspin btn-touchspin touchspin-dark" onclick="Cong();"><i class="fa fa-minus"></i></button>
-                            <input class="input-touchspin spin-outline-dark" id="chuky" type="number" value="2" onchange="checkPrice();" wire:model="quantity">
-                            <button class="increment-touchspin btn-touchspin touchspin-dark" onclick="Tru();"><i class="fa fa-plus"></i></button>
+                            <button class="decrement-touchspin btn-touchspin touchspin-dark" wire:click="quantity--"><i class="fa fa-minus"></i></button>
+                            <input class="input-touchspin spin-outline-dark" id="chuky" type="number" value="2" wire:model.live="quantity">
+                            <button class="increment-touchspin btn-touchspin touchspin-dark" wire:click="quantity++"><i class="fa fa-plus"></i></button>
                         </div>
                     </div>
 
@@ -137,7 +120,7 @@
                             <input id="dieuKhoan" type="checkbox" checked>
                             <label class="text-muted" for="dieuKhoan"> Đồng Ý Với </label> <a href="/dieu-khoan" class="txt-primary"> Điều Khoản Sử Dụng Dịch Vụ </a>
                         </div>
-                        <button class="btn btn-primary mt-2" wire:click="submitOrder" id="payment"><i class="fa fa-shopping-cart me-1"></i> Thanh Toán </span></button>
+                        <button class="btn btn-primary mt-2" wire:click="submitOrder" id="payment" wire:loading.attr="disabled"><i class="fa fa-shopping-cart me-1" wire:loading.class="fa fa-spinner fa-spin"></i> Thanh Toán </span></button>
                     </div>
 
 
@@ -158,19 +141,19 @@
                             <tfoot>
                                 <tr>
                                     <td> Dịch Vụ:</td>
-                                    <td colspan="2" class="txt-primary"> VIETNAM #STARTUP </td>
+                                    <td colspan="2" class="txt-primary"> {{ $categories->where('id', $selectedCategory)->first()->name }} </td>
                                 </tr>
                                 <tr>
-                                    <td> Chu Kỳ Đăng Ký :</td>
-                                    <td colspan="2" id="chuky-show">0 Tháng</td>
+                                    <td> Giá Dịch Vụ :</td>
+                                    <td colspan="2" id="chuky-show"> {{ App\Helpers\FormatHelper::formatCurrency(isset($services->where('id', $selectedService)->first()->price) ? $services->where('id', $selectedService)->first()->price : 0) }} </td>
                                 </tr>
                                 <tr>
-                                    <td>Khuyến Mãi:</td>
-                                    <td colspan="2" id="discount-show"> Không </td>
+                                    <td>Số Lượng:</td>
+                                    <td colspan="2" id="discount-show"> {{ $quantity }} </td>
                                 </tr>
                                 <tr>
                                     <td> Tổng Thanh Toán (VND) :</td>
-                                    <td colspan="2" id="amount-total">0</td>
+                                    <td colspan="2" id="amount-total"> {{ App\Helpers\FormatHelper::formatCurrency(isset($services->where('id', $selectedService)->first()->price) ? $services->where('id', $selectedService)->first()->price * $quantity : 0) }} </td>
                                 </tr>
                             </tfoot>
 

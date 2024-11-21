@@ -47,26 +47,41 @@
                                                 <table class="display" id="basic-1">
                                                     <thead>
                                                         <tr>
-                                                            <th> ID </th>
-                                                            <th> Dịch Vụ </th>
-                                                            <th> Giá Tiền </th>
-                                                            <th> Chu Kỳ </th>
-                                                            <th> Thời Gian Hết Hạn </th>
-                                                            <th> Trạng Thái </th>
-                                                            <th> Thao Tác </th>
+                                                            <th>ID</th> <!-- ID của đơn hàng -->
+                                                            <th>Dịch Vụ</th> <!-- Tên dịch vụ -->
+                                                            <th>Giá Tiền</th> <!-- Tổng giá tiền -->
+                                                            <th>Giá Đơn Vị</th> <!-- Giá đơn vị -->
+                                                            <th>Số Lượng</th> <!-- Số lượng dịch vụ -->
+                                                            <th>Khởi Tạo</th> <!-- Số lượng khởi tạo -->
+                                                            <th>Thời Gian Tạo</th> <!-- Thời gian tạo đơn hàng -->
+                                                            <th>Trạng Thái</th> <!-- Trạng thái của đơn hàng -->
+                                                            <th>Link</th> <!-- Liên kết đến dịch vụ -->
+                                                            <th>Số Lượng Còn Lại</th> <!-- Số lượng còn lại -->
+                                                            <th>Thao Tác</th> <!-- Các thao tác mà người dùng có thể thực hiện -->
                                                         </tr>
                                                     </thead>
                                                     <tbody>
+                                                        @foreach (App\Models\SmmOrder::getOrdersByCurrentUser() as $order)
                                                         <tr role="row" class="odd">
-                                                            <td class="sorting_1">#1</td>
-                                                            <td>CANADA #CA1<p><a href="https://nphdigital.vn" target="_blank">nphdigital.vn</a></p></td>
-                                                            <td>10,000 VNĐ </td>
-                                                            <td>1 Tháng</td>
-                                                            <td>18/12/2024 - 09:34:18</td>
-                                                            <td><span class="badge badge-success badge bg-success"> Hoạt Động </span></td>
-                                                            <td><span onclick="loadto('/product/hosting/471');" class="badge badge-primary"> QUẢN LÝ </span></td>
-                                                          </tr>
-    
+                                                            <td class="sorting_1">{{ $order->id }}</td>
+                                                            <td>{{ $order->service->name }}</td> <!-- Hiển thị tên dịch vụ -->
+                                                            <td>{{ number_format($order->total_price, 0, ',', '.') }} VNĐ</td> <!-- Giá tiền -->
+                                                            <td>{{ number_format($order->unit_price, 0, ',', '.') }} VNĐ</td> <!-- Giá đơn vị -->
+                                                            <td>{{ $order->quantity }}</td> <!-- Số lượng -->
+                                                            <td>{{ $order->start_count }}</td> <!-- Số lượng khởi tạo -->
+                                                            <td>{{ \Carbon\Carbon::parse($order->created_at)->format('d/m/Y - H:i:s') }}</td> <!-- Thời gian tạo -->
+                                                            <td>
+                                                                <span class="badge badge-success bg-success">{{ ucfirst($order->status) }}</span> <!-- Trạng thái -->
+                                                            </td>
+                                                            <td>
+                                                                <a href="{{ $order->link }}" target="_blank">{{ $order->link }}</a> <!-- Hiển thị liên kết đến dịch vụ -->
+                                                            </td>
+                                                            <td>{{ $order->remains }}</td> <!-- Số lượng còn lại -->
+                                                            <td>
+                                                                <span  class="badge badge-primary">QUẢN LÝ</span> <!-- Thao tác -->
+                                                            </td>
+                                                        </tr>
+                                                        @endforeach
                                                     </tbody>
                                                 </table>
                                             </div>

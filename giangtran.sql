@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3309
--- Generation Time: Nov 20, 2024 at 03:24 PM
+-- Generation Time: Nov 21, 2024 at 08:58 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -42,7 +42,7 @@ INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
 ('1b6453892473a467d07372d45eb05abc2031647a:timer', 'i:1732027017;', 1732027017),
 ('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1732024605),
 ('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1732024605;', 1732024605),
-('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:7:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:1:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1732111590),
+('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:7:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:1:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1732254133),
 ('theme', 's:7:\"dracula\";', 2047384757);
 
 -- --------------------------------------------------------
@@ -133,7 +133,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (6, '2024_11_19_205751_add_themes_settings_to_users_table', 4),
 (7, '2024_11_19_210118_create_permission_tables', 5),
 (8, '2024_11_19_212615_create_smm_categories_table', 6),
-(9, '2024_11_19_214137_create_smm_services_table', 7);
+(9, '2024_11_19_214137_create_smm_services_table', 7),
+(10, '2024_11_21_140737_create_smm_orders_table', 8);
 
 -- --------------------------------------------------------
 
@@ -361,8 +362,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('QsoQjY9IaysiO5myxBjPe4OEg6uWGhhQWrDigeJT', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVzJ0bGlLTnZaNGFhc255NGtlY2NiY0tNejJjMjdQZmRjVDVjUWo0dCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1732110687),
-('WFQUJzemFVzLZJtVnxviO3axxXD4Knx2uY4x06Ie', 4, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiY3hYR2hzUUxTdWNKMEFPM1o1SmRUWmFwS0haYzFZV0Zic2NWbmM1RiI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6NDtzOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czozODoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL2FwaS9jaGVja3BheW1lbnQiO319', 1732112655);
+('d0cW6kdnyDV7vcdo07Po6OfTWaXmdOckbGqle7wo', 4, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiMThoZzZlMWFVRExpdzRudnlKY0RETXJ4TjNaNFlFOTU3WmdUcW95WiI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6NDtzOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czo0MToiaHR0cDovL2xvY2FsaG9zdDo4MDAwL3NlcnZpY2VzL3NtbS9jcmVhdGUiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJHBxZWxCdkh2Qm1jckZUTXd0ZlBwRmV0T2Fjekw3aGJoTTJpTFI0SWRvT1hEd3NTZHVRcUxDIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1732175851);
 
 -- --------------------------------------------------------
 
@@ -390,6 +390,37 @@ INSERT INTO `smm_categories` (`id`, `name`, `image`, `code`, `created_at`, `upda
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `smm_orders`
+--
+
+CREATE TABLE `smm_orders` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
+  `smm_service_id` bigint(20) UNSIGNED NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `total_price` decimal(15,2) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `unit_price` decimal(15,2) NOT NULL,
+  `start_count` int(255) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  `remains` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `smm_orders`
+--
+
+INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_price`, `status`, `unit_price`, `start_count`, `link`, `remains`, `created_at`, `updated_at`) VALUES
+(1, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'nphdigital.vn', 1000, '2024-11-21 07:18:07', '2024-11-21 07:18:07'),
+(2, 4, 1, 1, 10000.00, 'pending', 10000.00, 0, 'http://localhost/phpmyadmin/index.php?route=/table/structure/save', 1, '2024-11-21 07:32:54', '2024-11-21 07:32:54'),
+(3, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://123', 1000, '2024-11-21 07:35:12', '2024-11-21 07:35:12'),
+(4, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://thanhsansale', 1000, '2024-11-21 07:40:33', '2024-11-21 07:40:33');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `smm_services`
 --
 
@@ -409,7 +440,7 @@ CREATE TABLE `smm_services` (
 --
 
 INSERT INTO `smm_services` (`id`, `smmcategory_id`, `name`, `price`, `code`, `is_active`, `created_at`, `updated_at`) VALUES
-(1, 1, '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', 10000.00, '763', 1, '2024-11-19 14:58:37', '2024-11-19 14:58:37');
+(1, 1, '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', 10000.00, '763', 1, '2024-11-19 14:58:37', '2024-11-21 06:54:51');
 
 -- --------------------------------------------------------
 
@@ -649,6 +680,14 @@ ALTER TABLE `smm_categories`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `smm_orders`
+--
+ALTER TABLE `smm_orders`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `smm_orders_user_id_foreign` (`user_id`),
+  ADD KEY `smm_orders_smm_service_id_foreign` (`smm_service_id`);
+
+--
 -- Indexes for table `smm_services`
 --
 ALTER TABLE `smm_services`
@@ -688,7 +727,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `payment_history`
@@ -713,6 +752,12 @@ ALTER TABLE `roles`
 --
 ALTER TABLE `smm_categories`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `smm_orders`
+--
+ALTER TABLE `smm_orders`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `smm_services`
@@ -754,6 +799,13 @@ ALTER TABLE `payment_history`
 ALTER TABLE `role_has_permissions`
   ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `smm_orders`
+--
+ALTER TABLE `smm_orders`
+  ADD CONSTRAINT `smm_orders_smm_service_id_foreign` FOREIGN KEY (`smm_service_id`) REFERENCES `smm_services` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `smm_orders_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `smm_services`

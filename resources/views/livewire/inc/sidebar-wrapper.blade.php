@@ -20,7 +20,7 @@
                     <div class="status bg-success"> </div>
                 </div>
                 <div>
-                    <h4> 2509roblox </h4><span> Số Dư: 0<sup>đ</sup> </span>
+                    <h4> {{ App\Models\User::getCurrentUserName() }} </h4><span> Số Dư: {{ App\Helpers\FormatHelper::formatCurrency(App\Models\User::getCurrentUserBalance()) }} <sup>đ</sup> </span>
                 </div>
             </div>
 
