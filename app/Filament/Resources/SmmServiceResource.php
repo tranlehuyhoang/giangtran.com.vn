@@ -17,7 +17,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class SmmServiceResource extends Resource
 {
     protected static ?string $model = SmmService::class;
-
+    protected static ?string $navigationLabel = 'Dịch vụ';
+    protected static ?string $navigationGroup = 'SMM';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form

@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class SmmCategory extends Model
 {
     use HasFactory;
-
     protected $table = 'smm_categories';
 
     protected $fillable = [
@@ -16,4 +15,8 @@ class SmmCategory extends Model
         'image',
         'code',
     ];
+    public static function getAllCategories()
+    {
+        return self::all();
+    }
 }
