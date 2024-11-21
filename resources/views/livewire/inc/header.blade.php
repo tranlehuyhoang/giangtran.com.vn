@@ -2,7 +2,7 @@
 
     <div class="col-auto header-left-wrapper">
         <div class="header-logo-wrapper p-0 left-header">
-            <div class="logo-wrapper"><a href="/"><img class="img-fluid"
+            <div class="logo-wrapper"><a href="/"><img loading="lazy" class="img-fluid"
                         src="/giangtran.com.vn.png" style="height: 35px;"
                         alt=""></a></div>
         </div>
@@ -81,7 +81,7 @@
 
 
                         <div class="onhover-click">
-                            <div class="sidebar-image"> <img src="/assets/assets/images/user.png"
+                            <div class="sidebar-image"> <img loading="lazy" src="/assets/assets/images/user.png"
                                     alt="profile"><span class="status status-success"></span></div>
                             <div class="sidebar-content">
                                 <h4>

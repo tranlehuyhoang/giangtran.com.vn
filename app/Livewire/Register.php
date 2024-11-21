@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use Laravel\Socialite\Facades\Socialite;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use App\Models\User; // Import model User
@@ -40,6 +41,11 @@ class Register extends Component
     
         // Reset form sau khi thành công
         $this->reset(['name', 'email', 'username', 'password', 'agree_terms']);
+    }
+    public function redirectToProvider()
+    {
+       
+        return Socialite::driver('google')->redirect();
     }
     public function render()
     {

@@ -21,7 +21,7 @@ class ChuyenKhoan extends Component
     protected function loadPaymentHistory()
     {
         $userId = auth()->id(); // Lấy ID người dùng hiện tại
-        $this->paymentHistories = PaymentHistory::getPaymentHistoryByUser($userId);
+        $this->paymentHistories = PaymentHistory::getPaymentHistoryByUser($userId) ?? [];
     }
  
 

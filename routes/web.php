@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\cron\Checkpayment;
 use App\Http\Controllers\cron\Transaction;
+use App\Http\Middleware\CheckAuth;
 use App\Http\Middleware\EnsureUserIsAuthenticated;
 use App\Livewire\ApiClient;
 use App\Livewire\ChuyenKhoan;
@@ -38,9 +39,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', LandingPage::class)->name('landingpage');
 Route::get('/home', Home::class)->name('home');
-Route::get('/login', Login::class)->name('login');
-Route::get('/register', action: Register::class)->name('register');
-Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
+ 
+Route::middleware(CheckAuth::class)->group(function () {
+    Route::get('/login', Login::class)->name('login');
+    Route::get('/register', action: Register::class)->name('register');
+    Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
+});
 
 
 Route::middleware(EnsureUserIsAuthenticated::class)->group(function () {
@@ -74,3 +78,7 @@ Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product
 Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
 Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
 
+
+Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
+Route::get('/auth/google/register', [Register::class, 'redirectToProvider'])->name('google.register');
+Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);

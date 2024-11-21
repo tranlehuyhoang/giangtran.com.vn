@@ -57,7 +57,7 @@
                                     <div class="card card-body widget-1">
                                         <div class="row">
                                             <div class="col-md-6 col-6">
-                                                <img src="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMmZvSXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--88c82102b4c6782414b90e4077f75449b9789560/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJc0FXa0NMQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--15c3f2f3e11927673ae52b71712c1f66a7a1b7bd/Logo%20MB%20he%20mau%20RGB%2001.png"
+                                                <img  loading="lazy" src="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMmZvSXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--88c82102b4c6782414b90e4077f75449b9789560/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJc0FXa0NMQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--15c3f2f3e11927673ae52b71712c1f66a7a1b7bd/Logo%20MB%20he%20mau%20RGB%2001.png"
                                                     style="width: 90px; max-width: 345px; height: auto">
                                             </div>
 
@@ -151,7 +151,7 @@
                                     <div class="modal-toggle-wrapper">
                                         <ul class="modal-img">
                                             <li>
-                                                <center><img src="" id="qr-cid" style="width: 70%; height: auto;"
+                                                <center><img  loading="lazy" src="" id="qr-cid" style="width: 70%; height: auto;"
                                                         alt=""></center>
                                             </li>
                                         </ul>
@@ -231,7 +231,7 @@
         </style>
 
 
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
         <script src="/assets/static/simplebar.js"></script>
         <script src="/assets/static/invoices.js?v=1731410768" defer></script>
@@ -269,7 +269,7 @@
    });
 
    var channel = pusher.subscribe('notification');
-   channel.bind('notification.' + {{ Auth::user()->id }}, function(data) {
+   channel.bind('notification.' + {{ Auth::user()->id ?? 0 }}, function(data) {
     var content = data.invitation_code; // Adjust this field according to the actual structure of data.bank
     Swal.fire({
                 icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')

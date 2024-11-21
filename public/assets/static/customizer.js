@@ -6,13 +6,13 @@
     <div class="flex-column nac-pills nav" id="c-pills-tab" role="tablist" aria-orientation="vertical">
     <a class="nav-link" data-original-title="" href="#c-pills-home" aria-controls="c-pills-home" aria-selected="false" data-bs-toggle="pill" id="c-pills-home-tab" role="tab">
     <div class="settings">
-    <img src="/assets/assets/images/customizer/brush.png" alt="">
+    <img src="/assets/assets/images/customizer/brush.png" alt="" loading="lazy">
     </div>
     <span> Tùy Chỉnh Giao Diện </span>
     </a>
     <a class="nav-link" data-original-title="" href="https://t.me/+dkk8aBBJYKNkNTFl" target="_blank">
     <div>
-    <img src="/assets/assets/svg/live-support.svg" alt="">
+    <img src="/assets/assets/svg/live-support.svg" alt="" loading="lazy">
     </div>
     <span> Hỗ Trợ </span>
     </a>
