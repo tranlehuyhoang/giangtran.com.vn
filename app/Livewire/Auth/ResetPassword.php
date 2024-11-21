@@ -7,34 +7,15 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Request;
 use Livewire\Component;
-use Str;
-
+use Illuminate\Support\Str;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 class ResetPassword extends Component
 {
-    public $email, $token, $password, $password_confirmation;
+    use LivewireAlert;
 
-    public function mount(Request $request)
+    public function mount()
     {
-        $this->token = $request->token;
-        $this->email = $request->email;
-    }
-
-    public function resetPassword()
-    {
-        $status = Password::reset(
-            [
-                'password' => $this->password,
-                'token' => $this->token,
-            ],
-            function (User $user, string $password) {
-                $user->forceFill([
-                    'password' => Hash::make($password)
-                ])->setRememberToken(Str::random(60));
-     
-                $user->save();
-     
-            }
-        );
+        
     }
 
     public function render()

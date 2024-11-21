@@ -29,11 +29,7 @@
     
                                             <div class="form-group">
                                                 <label class="col-form-label"> Email Khôi Phục </label>
-                                                <form wire:submit="sendResetLink">
-                                                    <input class="form-control" type="email" id="email"
-                                                        placeholder="Email Khôi Phục" style="background-color: white;"
-                                                        autocomplete="new-email" wire:model="email" value="">
-                                                </form>
+                                             @livewire('auth.forgot-password.form')
                                             </div>
     
     

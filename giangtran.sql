@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3309
--- Generation Time: Nov 21, 2024 at 12:38 PM
+-- Generation Time: Nov 21, 2024 at 02:17 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -350,10 +350,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('217VJwIxarxACsOrPYoWZApJBRqjOcvhAYcu0KZW', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoicEVsQWZuRE1QSkl6QnlFN1oxU3o3dHFMcktKS2NOMFJBWGJhV2U4ViI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1732181925),
-('jX8tCriolcuCDdsZw6Yn0UKYxoWuIpg2wDGQTVjD', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiMThoZzZlMWFVRExpdzRudnlKY0RETXJ4TjNaNFlFOTU3WmdUcW95WiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9mb3Jnb3QtcGFzc3dvcmQiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJHBxZWxCdkh2Qm1jckZUTXd0ZlBwRmV0T2Fjekw3aGJoTTJpTFI0SWRvT1hEd3NTZHVRcUxDIjtzOjg6ImZpbGFtZW50IjthOjA6e31zOjU6InN0YXRlIjtzOjQwOiI4YUwyQTdVbUhWSGd3c2JYRm5SdUpZTm1vZm5nMVJMcG9wYTllUElSIjt9', 1732188975),
-('kopohZsm9x74isOCM1vh2tfMLnVgL5jUqQlhWNbR', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiNTA0a20wRlRkN1FXbGY5c2RjejBCbDdzbnVHOThPS2FOQ2VkRGprcSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1732181919),
-('mitNlhyLSxHNsflNay8xh1cgdZWWYAv5xV9t0BOQ', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicVpTcnJEcXQxb2h5RnJFQTFLNm9DM2s4dmNIbUI0aDkxZXpDdWpNbSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hcGkvdHJhbnNhY3Rpb24iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1732182937);
+('irVJdap5Nyrd81oW8VXtIXWsELOMAOAqH09rsA1o', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiMThoZzZlMWFVRExpdzRudnlKY0RETXJ4TjNaNFlFOTU3WmdUcW95WiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTM2OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvcmVzZXQtcGFzc3dvcmQ/ZW1haWw9MjUwOXJvYmxveCU0MGdtYWlsLmNvbSZ0b2tlbj02NmMwYjEzZThjYjRhOGI4YTU1ZmNjYTE3ZTZiNjk5MmY5ZGE2NmVhMTA0OGJjZTkxZjNmZjBhNWMwODA3MjcxIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRwcWVsQnZIdkJtY3JGVE13dGZQcEZldE9hY3pMN2hiaE0yaUxSNElkb09YRHdzU2R1UXFMQyI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1732194860);
 
 -- --------------------------------------------------------
 
@@ -563,7 +560,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`) VALUES
-(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$MX0TDXpd987my1iQYkDNHeWT.UdSsnRT2xb54S0SAWoa0EHAIbzs.', 'AomvxGZxK6tPNPRYH0i9kNZS6SpltvbsTs0pBxNy03DJ7bARbPc7Ama02bRH', '2024-11-16 20:18:19', '2024-11-16 20:18:19', 'default', NULL, 0.00),
+(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$JemtshjcOiQIxuUik4iqeuNJGyhXdrlPTuFe2FyWOJH85OKoMaWP2', 'q3No3MPFE1BlDN7ps6BWE8N8vEvGdv5P2irvSnl7VNhSyw12T7cc3S7UbRwX', '2024-11-16 20:18:19', '2024-11-21 13:10:41', 'default', NULL, 0.00),
 (4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$pqelBvHvBmcrFTMwtfPpFetOaczL7hbhM2iLR4IdoOXDwsSduQqLC', '4OBcTd5nAUfJTQ4vxjfh4ChaQ4TmKOGD0NfQjaQ0mtRJfR2IaIpKm4d5lmYr', '2024-11-19 13:52:31', '2024-11-21 09:39:04', 'default', NULL, 4800.00),
 (5, 'Tran Le Huy Hoang (FPL HCM)', 'hoangtlhps26819@fpt.edu.vn', NULL, NULL, '$2y$12$DB1b1DSlzKgdA/kE8xn9ROrSRJA4fBtKXfYh0YMb.fPdKmLE7yYcy', NULL, '2024-11-21 10:50:00', '2024-11-21 10:50:00', 'default', NULL, 0.00),
 (6, '123', '2@2', '123', NULL, '$2y$12$6MfzzoMPyoUSQhMZOAp3V.8I/N00zunuSnP8hr4cWGn3nJueXqh8S', NULL, '2024-11-21 11:14:20', '2024-11-21 11:14:20', 'default', NULL, 0.00);

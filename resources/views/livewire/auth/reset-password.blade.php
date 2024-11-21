@@ -29,18 +29,12 @@
     
                                             <div class="form-group">
                                                 <label class="col-form-label"> Mật khẩu mới </label>
-                                                <form wire:submit="resetPassword">
-                                                    <input class="form-control" type="password" id="password"
-                                                        placeholder="Mật khẩu mới" style="background-color: white;"
-                                                        autocomplete="new-password" wire:model="password" value="">
-                                                </form>
+                                            @livewire('auth.reset-password.form')
                                             </div>
     
     
                                 
-                                            <div class="mt-2 text-danger" style="font-size: 12px;" id="default-text"> Hướng
-                                                Dẫn: Nhập Chính Xác Email Tài Khoản Của Bạn, Sau Khi Nhập Xong Hệ Thống Sẽ
-                                                Tự Gửi Một Email Đến Bạn! </div>
+                                            <div class="mt-2 text-danger" style="font-size: 12px;" id="default-text"> Nhập mật khẩu mới của bạn</div>
                                             <div class="mt-4 mb-4" id="btn-resendText" style="display: none;"><span
                                                     class="reset-password-link"> Chưa Nhận Được Mã OTP? <a
                                                         class="btn-link txt-danger" onclick="resendOTP()" id="icon-resend">
