@@ -28,11 +28,34 @@
 
     <x-livewire-alert::scripts />
 </body>
-<div id="g_id_onload"
-     data-client_id="146292703441-4hf46oo2tpm8bret0234lrnljgadlisg.apps.googleusercontent.com"
-     data-context="signin"
-     data-callback="http://localhost:8000/auth/google/callback"
-     data-itp_support="true">
+<div id="g_id_onload" data-client_id="1040772401360-g5u4ooibpqu3n7n31so5uo4q39abiisl.apps.googleusercontent.com"
+    data-context="signin" data-csrf_token="{{ csrf_token() }}" data-ux_mode="popup" data-callback="googleLogin"
+    data-itp_support="true">
 </div>
+
+<div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="signin_with"
+    data-size="large" data-logo_alignment="left">
+</div>
+
+<script>
+    function googleLogin(response) {
+        // Ghi log toàn bộ response vào console
+        console.log(response);
+
+        // Gọi hàm parseJwt để phân tích token credentials từ response
+        console.log(parseJwt(response.credential));
+    }
+
+    function parseJwt(token) {
+        var base64Url = token.split('.')[1];
+        var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+
+        return JSON.parse(jsonPayload);
+    }
+</script>
 {{-- @livewire('inc.social-popup') --}}
+
 </html>
