@@ -21,7 +21,7 @@
     <style>
         .social-popup {
             position: fixed;
-            top: 20px;
+            top: 80px;
             right: 20px;
             max-width: 400px;
             width: 100%;
