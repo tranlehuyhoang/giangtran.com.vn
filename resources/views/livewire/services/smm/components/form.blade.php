@@ -20,53 +20,15 @@
                         <div class="card-wrapper border rounded-3 checkbox-checked">
                             <div class="radio-form">
                                 <div class="form-check">
-                                    <input class="form-check-input" id="radio14" type="radio" name="radio-stacked" wire:model.live="paymentMethod" checked=""   onchange="Method_payment()">
+                                    <input class="form-check-input" id="radio14" type="radio" name="radio-stacked" wire:model.live="paymentMethod" value="account_balance" checked >
                                     <label class="form-check-label" for="radio14"> Số Dư Tài Khoản ({{ App\Helpers\FormatHelper::formatCurrency($balance) }}<sup>đ</sup>) </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" id="radio13" type="radio" name="radio-stacked" wire:model.live="paymentMethod" onchange="Method_payment()">
+                                    <input class="form-check-input" id="radio13" type="radio" name="radio-stacked" wire:model.live="paymentMethod" value="bank_transfer" >
                                     <label class="form-check-label" for="radio13"> Chuyển Khoản Ngân Hàng </label>
                                 </div>
                             </div>
                         </div>
-
-                        <input type="hidden" id="payment_method" name="payment_method" value="">
-
-                        <script>
-                            function Method_payment() {
-                                var payment_balance = document.getElementById("radio14");
-                                var payment_bank = document.getElementById("radio13");
-
-                                if (payment_balance.checked) {
-                                    document.getElementById("payment_method").value = 'payment_balance';
-                                }
-
-                                if (payment_bank.checked) {
-                                    document.getElementById("payment_method").value = 'payment_bank';
-                                }
-                            }
-
-                            function amountIsMoney(price, vpstype = false) {
-                                var mn = document.getElementById("mn").value;
-                                if (price <= mn) {
-                                    document.getElementById("radio14").disabled = false;
-                                    !vpstype ? document.getElementById("radio14").checked = true : null;
-
-                                    Method_payment();
-                                } else if (price > mn) {
-                                    document.getElementById("radio14").disabled = true;
-                                    document.getElementById("radio13").checked = true;
-
-                                    Method_payment();
-                                }
-                            }
-
-                            setTimeout(() => {
-                                Method_payment();
-                            }, 100)
-                        </script>
-
-
                     </div>
 
                     <div class="mt-3"></div>
@@ -105,9 +67,10 @@
                         <label> Số Lượng </label>
 
                         <div class="touchspin-wrapper">
-                            <button class="decrement-touchspin btn-touchspin touchspin-dark" wire:click="quantity--"><i class="fa fa-minus"></i></button>
-                            <input class="input-touchspin spin-outline-dark" id="chuky" type="number" value="2" wire:model.live="quantity">
-                            <button class="increment-touchspin btn-touchspin touchspin-dark" wire:click="quantity++"><i class="fa fa-plus"></i></button>
+                            <input class="input-touchspin spin-outline-dark" id="chuky" type="number" value="1000" wire:model.live="quantity">
+                            <button class="increment-touchspin btn-touchspin touchspin-dark" wire:click="incrementQuantity(1000)"><i class="fa fa-plus"></i></button>
+                        
+                            <!-- Thêm các nút tăng số lượng -->
                         </div>
                     </div>
 
@@ -145,7 +108,7 @@
                                 </tr>
                                 <tr>
                                     <td> Giá Dịch Vụ :</td>
-                                    <td colspan="2" id="chuky-show"> {{ App\Helpers\FormatHelper::formatCurrency(isset($services->where('id', $selectedService)->first()->price) ? $services->where('id', $selectedService)->first()->price : 0) }} </td>
+                                    <td colspan="2" id="chuky-show"> {{ App\Helpers\FormatHelper::formatCurrency(isset($services->where('id', $selectedService)->first()->price) ? $services->where('id', $selectedService)->first()->price : 0) }} VNĐ </td>
                                 </tr>
                                 <tr>
                                     <td>Số Lượng:</td>
@@ -160,7 +123,7 @@
                                                 floatval($services->where('id', $selectedService)->first()->price) * intval($quantity) : 
                                                 0
                                             ) 
-                                        }} 
+                                        }} VNĐ 
                                     </td>
                                 </tr>
                             </tfoot>

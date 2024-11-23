@@ -23,6 +23,7 @@ class SmmOrder extends Model
         'start_count',
         'link',
         'remains',
+        'payment_method'
     ];
 
     public function user()
@@ -69,6 +70,7 @@ class SmmOrder extends Model
             'start_count' => $data['start_count'],
             'link' => $data['link'],
             'remains' => $data['remains'],
+            'payment_method' => $data['payment_method'],
         ]);
 
         return ['status' => 'success', 'message' => 'Đơn hàng đã được tạo thành công'];

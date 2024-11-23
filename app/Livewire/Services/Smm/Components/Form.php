@@ -19,10 +19,10 @@ class Form extends Component
     public $selectedCategory; // Danh mục đã chọn
     public $selectedService; // Dịch vụ đã chọn
     public $services = []; // Danh sách dịch vụ theo danh mục
-    public $quantity = 1; // Danh sách dịch vụ theo danh mục
+    public $quantity = 1000; // Danh sách dịch vụ theo danh mục
     public $link; // Danh sách dịch vụ theo danh mục
     public $image; // Danh sách dịch vụ theo danh mục
-    public $paymentMethod; // Phương thức thanh toán
+    public $paymentMethod ; // Phương thức thanh toán
     public function mount()
     {
         $this->balance = Auth::user()->balance ?? 0; // Mặc định là 0 nếu không có balance
@@ -44,7 +44,7 @@ class Form extends Component
             $this->alert('error', 'Vui lòng đăng nhập để tạo đơn hàng');
             return;
         }
-         
+       
       $order  = SmmOrder::createOrder([
             'user_id' => auth()->user()->id ?? null,
             'smm_service_id' => $this->selectedService ?? null,
@@ -81,6 +81,10 @@ class Form extends Component
             return SmmService::find($id)->price;
         }
         return null;
+    }
+    public function incrementQuantity($amount)
+    {
+        $this->quantity += $amount; // Tăng số lượng với giá trị được truyền vào
     }
     public function render()
     {

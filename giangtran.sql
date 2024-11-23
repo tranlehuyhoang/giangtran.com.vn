@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2024 at 04:38 AM
+-- Generation Time: Nov 23, 2024 at 05:26 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -359,8 +359,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('Alh5HChqRjsV8oaRsUQJ5tiYLkXt0OHIWSCgzHeW', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoicUpoSmswMXhkZnpDQ3MwQ0pzT2RpTjRVejVXQU5ZMFN6YzEzcEZVUSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732333071),
-('orhuyKtQho2kpHaEMpYGvaH8Bdr8iVmpnnXipunX', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo1OntzOjM6InVybCI7YToxOntzOjg6ImludGVuZGVkIjtzOjMzOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4vdXNlcnMiO31zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czoyOToiaHR0cDovL2xvY2FsaG9zdDo4MDAwL3Byb2ZpbGUiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjY6Il90b2tlbiI7czo0MDoib1NYQ1YxQ1BMTVlGN2NvcGlFaTNMVnNja0pySExnQlRWeks4YlhKYyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732201581);
+('RWrj7EIxORSu3YIZTRD91a3u46tSo3FGd26QZnYt', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoicUpoSmswMXhkZnpDQ3MwQ0pzT2RpTjRVejVXQU5ZMFN6YzEzcEZVUSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vbWFuYWdlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1732335625);
 
 -- --------------------------------------------------------
 
@@ -412,11 +411,13 @@ CREATE TABLE `smm_orders` (
 --
 
 INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_price`, `status`, `unit_price`, `start_count`, `link`, `remains`, `payment_method`, `created_at`, `updated_at`) VALUES
-(1, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'nphdigital.vn', 1000, NULL, '2024-11-21 07:18:07', '2024-11-21 07:18:07'),
-(2, 4, 1, 1, 10000.00, 'pending', 10000.00, 0, 'http://localhost/phpmyadmin/index.php?route=/table/structure/save', 1, NULL, '2024-11-21 07:32:54', '2024-11-21 07:32:54'),
-(3, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://123', 1000, NULL, '2024-11-21 07:35:12', '2024-11-21 07:35:12'),
-(4, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://thanhsansale', 1000, NULL, '2024-11-21 07:40:33', '2024-11-21 07:40:33'),
-(5, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, NULL, '2024-11-23 03:37:51', '2024-11-23 03:37:51');
+(8, 1, 1, 2000, 20000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 2000, NULL, '2024-11-23 04:10:15', '2024-11-23 04:10:15'),
+(9, 1, 1, 2000, 20000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 2000, NULL, '2024-11-23 04:12:15', '2024-11-23 04:12:15'),
+(10, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, NULL, '2024-11-23 04:12:43', '2024-11-23 04:12:43'),
+(11, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, NULL, '2024-11-23 04:13:00', '2024-11-23 04:13:00'),
+(12, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, NULL, '2024-11-23 04:13:57', '2024-11-23 04:13:57'),
+(13, 1, 1, 2000, 20000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 2000, 'account_balance', '2024-11-23 04:15:04', '2024-11-23 04:15:04'),
+(14, 1, 1, 3000, 30000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 3000, 'account_balance', '2024-11-23 04:20:23', '2024-11-23 04:20:23');
 
 -- --------------------------------------------------------
 
@@ -588,7 +589,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`) VALUES
-(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$jv0VFanX3CzJqEPmYZgt7ecgU1PyDiC8/NSKqXXVPyeZDu8vVtemi', 'tjWydge8lAgxcaTgwsWtxRIy8tN3xYlU2LhxwILpVOzugp4uMY22MuvPmF1y', '2024-11-16 20:18:19', '2024-11-23 02:51:02', 'default', NULL, 2000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0),
+(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$jv0VFanX3CzJqEPmYZgt7ecgU1PyDiC8/NSKqXXVPyeZDu8vVtemi', 's93F7rzqxCULyxs5rjr5p5szLpLfZjdbtZQ0IBqpznTtylhcLPcXsCfCoxAj', '2024-11-16 20:18:19', '2024-11-23 02:51:02', 'default', NULL, 2000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0),
 (4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$pqelBvHvBmcrFTMwtfPpFetOaczL7hbhM2iLR4IdoOXDwsSduQqLC', '4OBcTd5nAUfJTQ4vxjfh4ChaQ4TmKOGD0NfQjaQ0mtRJfR2IaIpKm4d5lmYr', '2024-11-19 13:52:31', '2024-11-21 09:39:04', 'default', NULL, 4800.00, NULL, NULL, NULL, NULL, NULL, 0),
 (5, 'Tran Le Huy Hoang (FPL HCM)', 'hoangtlhps26819@fpt.edu.vn', NULL, NULL, '$2y$12$DB1b1DSlzKgdA/kE8xn9ROrSRJA4fBtKXfYh0YMb.fPdKmLE7yYcy', NULL, '2024-11-21 10:50:00', '2024-11-21 10:50:00', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0),
 (6, '123', '2@2', '123', NULL, '$2y$12$6MfzzoMPyoUSQhMZOAp3V.8I/N00zunuSnP8hr4cWGn3nJueXqh8S', NULL, '2024-11-21 11:14:20', '2024-11-21 11:14:20', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0),
@@ -777,7 +778,7 @@ ALTER TABLE `smm_categories`
 -- AUTO_INCREMENT for table `smm_orders`
 --
 ALTER TABLE `smm_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `smm_services`
