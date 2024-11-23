@@ -27,5 +27,5 @@
   
     <x-livewire-alert::scripts />
 </body>
-
+@livewire('inc.social-popup')
 </html>
