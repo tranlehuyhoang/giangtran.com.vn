@@ -1,31 +1,31 @@
 <div>
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GIANGTRAN.COM.VN - Cung Cấp Giải Pháp Website Chuyên Nghiệp</title>
         <link rel="stylesheet" href="/assets/static/assets/css/main.css">
     </head>
+
     <body class="bg-secondary">
-    
+
         <div class="preloader bg-light-subtle">
             <div class="preloader-wrap">
-                <img src="/giangtran.com.vn.png" alt="logo" class="img-fluid"
-                    style="width: 150px;">
+                <img src="/giangtran.com.vn.png" alt="logo" class="img-fluid" style="width: 150px;">
                 <div class="loading-bar"></div>
             </div>
         </div>
-    
+
         <div class="navbar-overlay bg-body bg-opacity-5">
             <!-- Primary Header -->
             <nav class="navbar navbar-1 navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand logo" href="/">
                         <img src="/giangtran.com.vn.png" alt="image" class="logo__img">
-                        <img src="/giangtran.com.vn.png" alt="image"
-                            class="logo__img logo__sticky">
+                        <img src="/giangtran.com.vn.png" alt="image" class="logo__img logo__sticky">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryMenu"
-                        aria-expanded="false">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#primaryMenu" aria-expanded="false">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="primaryMenu">
@@ -34,7 +34,7 @@
                                 <a class="nav-link fw-medium active" aria-current="page" href="/home"> Trang Chủ
                                 </a>
                             </li>
-    
+
                             <li class="nav-item contain-sub-1">
                                 <a class="nav-link fw-medium" href="#">
                                     Hosting
@@ -44,8 +44,8 @@
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-wp-hosting.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-wp-hosting.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span
@@ -60,13 +60,13 @@
                                             </span>
                                         </a>
                                     </li>
-    
+
                                     <li>
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-shared-hosting.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-shared-hosting.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span class="contain-sub-1__title d-flex"> Hosting Việt Nam </span>
@@ -76,13 +76,13 @@
                                             </span>
                                         </a>
                                     </li>
-    
+
                                     <li>
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-shared-hosting.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-shared-hosting.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span class="contain-sub-1__title d-flex"> Hosting Canada </span>
@@ -92,13 +92,13 @@
                                             </span>
                                         </a>
                                     </li>
-    
+
                                     <li>
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-shared-hosting.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-shared-hosting.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span class="contain-sub-1__title d-flex"> Hosting Germany </span>
@@ -108,29 +108,30 @@
                                             </span>
                                         </a>
                                     </li>
-    
+
                                     <li>
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-reseller-hosting.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-reseller-hosting.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
-                                                <span class="contain-sub-1__title d-flex">Reseller Hosting Việt Nam</span>
+                                                <span class="contain-sub-1__title d-flex">Reseller Hosting Việt
+                                                    Nam</span>
                                                 <span class="contain-sub-1__description">
                                                     Phù Hợp Với Đại Lý, Doanh Nghiệp Bán Lại, Anti DDoS, Giá Cả Hợp Lí
                                                 </span>
                                             </span>
                                         </a>
                                     </li>
-    
+
                                     <li>
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-reseller-hosting.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-reseller-hosting.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span class="contain-sub-1__title d-flex">Reseller Hosting Đức</span>
@@ -142,8 +143,8 @@
                                     </li>
                                 </ul>
                             </li>
-    
-    
+
+
                             <li class="nav-item contain-sub-1">
                                 <a class="nav-link fw-medium" href="#">
                                     VPS & Server
@@ -153,24 +154,25 @@
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-vps-server.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-vps-server.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
-                                                <span class="contain-sub-1__title d-flex"> Cloud VPS Pro Việt Nam </span>
+                                                <span class="contain-sub-1__title d-flex"> Cloud VPS Pro Việt Nam
+                                                </span>
                                                 <span class="contain-sub-1__description">
                                                     Cấu Hình Mạnh Mẽ, Giá Rẻ
                                                 </span>
                                             </span>
                                         </a>
                                     </li>
-    
+
                                     <li>
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-vps-server.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-vps-server.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span class="contain-sub-1__title d-flex"> VPS IP Nat Pro</span>
@@ -180,13 +182,13 @@
                                             </span>
                                         </a>
                                     </li>
-    
+
                                     <li>
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-vps-server.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-vps-server.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span class="contain-sub-1__title d-flex"> VPS Nat Cheap </span>
@@ -196,13 +198,13 @@
                                             </span>
                                         </a>
                                     </li>
-    
+
                                     <li>
                                         <a href="dedicated-server.html"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-dedicated-server.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-dedicated-server.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span class="contain-sub-1__title d-flex"> Máy Chủ Vật Lý </span>
@@ -214,7 +216,7 @@
                                     </li>
                                 </ul>
                             </li>
-    
+
                             <li class="nav-item contain-mega-menu">
                                 <a class="nav-link fw-medium" href="#">
                                     Tên Miền
@@ -236,10 +238,12 @@
                                                                                 alt="image" class="img-fluid">
                                                                         </span>
                                                                         <span class="flex-grow-1">
-                                                                            <span class="contain-mega-menu__title d-flex">
+                                                                            <span
+                                                                                class="contain-mega-menu__title d-flex">
                                                                                 Tìm Kiếm Tên Miền
                                                                             </span>
-                                                                            <span class="contain-mega-menu__description">
+                                                                            <span
+                                                                                class="contain-mega-menu__description">
                                                                                 Kiểm Tra Tên Miền Ưa Thích Của Bạn.
                                                                             </span>
                                                                         </span>
@@ -247,7 +251,7 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-    
+
                                                         <div class="col-md-6">
                                                             <ul class="contain-mega-menu__list list-unstyled">
                                                                 <li>
@@ -258,11 +262,14 @@
                                                                                 alt="image" class="img-fluid">
                                                                         </span>
                                                                         <span class="flex-grow-1">
-                                                                            <span class="contain-mega-menu__title d-flex">
+                                                                            <span
+                                                                                class="contain-mega-menu__title d-flex">
                                                                                 Đăng Ký Tên Miền
                                                                             </span>
-                                                                            <span class="contain-mega-menu__description">
-                                                                                Đăng Ký Tên Miền Đẹp Cho Doanh Nghiệp Của
+                                                                            <span
+                                                                                class="contain-mega-menu__description">
+                                                                                Đăng Ký Tên Miền Đẹp Cho Doanh Nghiệp
+                                                                                Của
                                                                                 Bạn.
                                                                             </span>
                                                                         </span>
@@ -273,8 +280,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
-    
+
+
                                             <div class="col-xl-5">
                                                 <div class="h-100 p-6">
                                                     <div class="row g-2 bg-primary bg-opacity-5 p-4 p-xl-8 rounded">
@@ -290,14 +297,13 @@
                                                                 <small class="fw-medium"> Các Tên Miền Khác Chỉ Từ 1K
                                                                 </small>
                                                             </div>
-                                                            <a href="/home"
-                                                                class="btn btn-sm btn-primary">
+                                                            <a href="/home" class="btn btn-sm btn-primary">
                                                                 Xem Ngay
                                                             </a>
                                                         </div>
                                                         <div class="col-xl-6 d-none d-xl-block">
-                                                            <img src="/assets/static/assets/img/mega-menu-img-1.png" alt="image"
-                                                                class="img-fluid">
+                                                            <img src="/assets/static/assets/img/mega-menu-img-1.png"
+                                                                alt="image" class="img-fluid">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -306,7 +312,7 @@
                                     </div>
                                 </div>
                             </li>
-    
+
                             <li class="nav-item contain-sub-1">
                                 <a class="nav-link fw-medium" href="#">
                                     Về Chúng Tôi
@@ -317,8 +323,8 @@
                                             href="https://www.google.com/search?sca_esv=4002789bc611c637&sca_upv=1&rlz=1C1ONGR_viVN1056VN1056&sxsrf=ADLYWIJKYwNDUMy_c4WsvQw7qE1F9EYd-w%3A1726882528723&q=Nify.vn&stick=H4sIAAAAAAAAAONgU1I1qEg0MjM1STJJSjKxNE60MDG3MqgwTTU1NTNOsTAzNjRNNUhLXMTK7peZVqlXlgcA04Yy1TMAAAA&mat=CZBTciThUhTZ&ved=2ahUKEwiGzcXd8tKIAxWLs1YBHSt_FrIQrMcEegQIFBAD"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-about.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-about.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span class="contain-sub-1__title d-flex">
@@ -330,13 +336,13 @@
                                             </span>
                                         </a>
                                     </li>
-    
+
                                     <li>
                                         <a href="/dieu-khoan"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-vps-hosting.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-vps-hosting.png"
+                                                    alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span
@@ -351,10 +357,10 @@
                                             </span>
                                         </a>
                                     </li>
-    
+
                                 </ul>
                             </li>
-    
+
                             <li class="nav-item">
                                 <a href="/home"
                                     class="link btn btn-sm btn-primary hover:bg-dark hover:border-dark fw-medium rounded-1">
@@ -366,7 +372,7 @@
                 </div>
             </nav>
         </div>
-    
+
         <section class="hero-1 pb-32 bg-dark position-relative z-1 overflow-hidden">
             <div class="container">
                 <div class="row g-4 align-items-center">
@@ -376,12 +382,13 @@
                                 data-sal-delay="200" data-sal-easing="ease-in-out-sine">
                                 <span><img src="/assets/static/assets/img/shape/bage-1.png" alt=""></span>
                                 <span>
-                                    Đừng bỏ lỡ chương trình tiết kiệm có thời hạn: <span class="text-warning">Tiết kiệm 50%
+                                    Đừng bỏ lỡ chương trình tiết kiệm có thời hạn: <span class="text-warning">Tiết kiệm
+                                        50%
                                     </span>
                                 </span>
                             </div>
                         </div>
-    
+
                         <h1 class="text-white mt-1" data-sal="fade" data-sal-duration="500" data-sal-delay="200"
                             data-sal-easing="ease-in-out-sine">
                             Nhanh Chóng, An Toàn, Giá Cả Hợp Lý.
@@ -389,8 +396,8 @@
                         <p class="text-white mt-5 max-text-68 mb-8" data-sal="fade" data-sal-duration="500"
                             data-sal-delay="200" data-sal-easing="ease-in-out-sine">
                             Bắt Đầu Sử Dụng Hosting Miễn Phí, Trải Nghiệm Tính Năng Nâng Cao. </p>
-                        <div class="d-flex align-items-center gap-6 flex-wrap" data-sal="fade" data-sal-duration="500"
-                            data-sal-delay="200" data-sal-easing="ease-in-out-sine">
+                        <div class="d-flex align-items-center gap-6 flex-wrap" data-sal="fade"
+                            data-sal-duration="500" data-sal-delay="200" data-sal-easing="ease-in-out-sine">
                             <a href="/home" class="btn btn-primary btn-arrow btn-lg fs-14 fw-semibold rounded">
                                 <span class="btn-arrow__text">
                                     Bắt Đầu
@@ -421,22 +428,23 @@
                                 </div>
                             </div>
                             <div class="hero-1__map">
-                                <img class="img-fluid hero-1__map-img" src="/assets/static/assets/img/shape/hero-map.png"
-                                    alt="image">
+                                <img class="img-fluid hero-1__map-img"
+                                    src="/assets/static/assets/img/shape/hero-map.png" alt="image">
                                 <div class="hero-1__map-location hero-1__map-location--1 active">
                                     <div class="hero-1__map-location-dot">
                                         <div class="hero-1__map-location-info">
                                             <div class="hero-1__map-location-info-btn">
                                                 <div class="hero-1__map-location-info-btn-img">
-                                                    <img src="/assets/static/assets/img/flag-5.png" alt="image" class="img-fluid">
+                                                    <img src="/assets/static/assets/img/flag-5.png" alt="image"
+                                                        class="img-fluid">
                                                 </div>
                                                 <div class="hero-1__map-location-info-btn-text">
                                                     London, UK
                                                 </div>
                                             </div>
                                             <div class="hero-1__map-location-info-arrow">
-                                                <img src="/assets/static/assets/img/shape/location-arrow.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/shape/location-arrow.png"
+                                                    alt="image" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -446,15 +454,16 @@
                                         <div class="hero-1__map-location-info">
                                             <div class="hero-1__map-location-info-btn">
                                                 <div class="hero-1__map-location-info-btn-img">
-                                                    <img src="/assets/static/assets/img/flag-7.png" alt="image" class="img-fluid">
+                                                    <img src="/assets/static/assets/img/flag-7.png" alt="image"
+                                                        class="img-fluid">
                                                 </div>
                                                 <div class="hero-1__map-location-info-btn-text">
                                                     Russia
                                                 </div>
                                             </div>
                                             <div class="hero-1__map-location-info-arrow">
-                                                <img src="/assets/static/assets/img/shape/location-arrow.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/shape/location-arrow.png"
+                                                    alt="image" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -464,15 +473,16 @@
                                         <div class="hero-1__map-location-info">
                                             <div class="hero-1__map-location-info-btn">
                                                 <div class="hero-1__map-location-info-btn-img">
-                                                    <img src="/assets/static/assets/img/flag-8.png" alt="image" class="img-fluid">
+                                                    <img src="/assets/static/assets/img/flag-8.png" alt="image"
+                                                        class="img-fluid">
                                                 </div>
                                                 <div class="hero-1__map-location-info-btn-text">
                                                     New York
                                                 </div>
                                             </div>
                                             <div class="hero-1__map-location-info-arrow">
-                                                <img src="/assets/static/assets/img/shape/location-arrow.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/shape/location-arrow.png"
+                                                    alt="image" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -482,15 +492,16 @@
                                         <div class="hero-1__map-location-info">
                                             <div class="hero-1__map-location-info-btn">
                                                 <div class="hero-1__map-location-info-btn-img">
-                                                    <img src="/assets/static/assets/img/flag-9.png" alt="image" class="img-fluid">
+                                                    <img src="/assets/static/assets/img/flag-9.png" alt="image"
+                                                        class="img-fluid">
                                                 </div>
                                                 <div class="hero-1__map-location-info-btn-text">
                                                     Brazil
                                                 </div>
                                             </div>
                                             <div class="hero-1__map-location-info-arrow">
-                                                <img src="/assets/static/assets/img/shape/location-arrow.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/shape/location-arrow.png"
+                                                    alt="image" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -500,15 +511,16 @@
                                         <div class="hero-1__map-location-info">
                                             <div class="hero-1__map-location-info-btn">
                                                 <div class="hero-1__map-location-info-btn-img">
-                                                    <img src="/assets/static/assets/img/flag-10.png" alt="image" class="img-fluid">
+                                                    <img src="/assets/static/assets/img/flag-10.png" alt="image"
+                                                        class="img-fluid">
                                                 </div>
                                                 <div class="hero-1__map-location-info-btn-text">
                                                     Hongkong
                                                 </div>
                                             </div>
                                             <div class="hero-1__map-location-info-arrow">
-                                                <img src="/assets/static/assets/img/shape/location-arrow.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/shape/location-arrow.png"
+                                                    alt="image" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -518,15 +530,16 @@
                                         <div class="hero-1__map-location-info">
                                             <div class="hero-1__map-location-info-btn">
                                                 <div class="hero-1__map-location-info-btn-img">
-                                                    <img src="/assets/static/assets/img/flag-11.png" alt="image" class="img-fluid">
+                                                    <img src="/assets/static/assets/img/flag-11.png" alt="image"
+                                                        class="img-fluid">
                                                 </div>
                                                 <div class="hero-1__map-location-info-btn-text">
                                                     Bangladesh
                                                 </div>
                                             </div>
                                             <div class="hero-1__map-location-info-arrow">
-                                                <img src="/assets/static/assets/img/shape/location-arrow.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/shape/location-arrow.png"
+                                                    alt="image" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -536,15 +549,16 @@
                                         <div class="hero-1__map-location-info">
                                             <div class="hero-1__map-location-info-btn">
                                                 <div class="hero-1__map-location-info-btn-img">
-                                                    <img src="/assets/static/assets/img/flag-12.png" alt="image" class="img-fluid">
+                                                    <img src="/assets/static/assets/img/flag-12.png" alt="image"
+                                                        class="img-fluid">
                                                 </div>
                                                 <div class="hero-1__map-location-info-btn-text">
                                                     India
                                                 </div>
                                             </div>
                                             <div class="hero-1__map-location-info-arrow">
-                                                <img src="/assets/static/assets/img/shape/location-arrow.png" alt="image"
-                                                    class="img-fluid">
+                                                <img src="/assets/static/assets/img/shape/location-arrow.png"
+                                                    alt="image" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -555,15 +569,16 @@
                 </div>
             </div>
         </section><!-- Hero -->
-    
+
         <div class="domain-list-section position-relative pb-120" style="z-index: 1200;">
             <div class="container">
                 <div class="row g-4">
-    
+
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 sal-animate" data-sal="slide-up" data-sal-duration="350"
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
-                            <div class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
+                            <div
+                                class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
                                 <h6 class="mb-1"> GERMANY #CP10G </h6>
                                 <small> Miễn Phí 10GB/ 30 Ngày, Dùng Trải Nghiệm, Hạn Chế Kinh Doanh. </small>
                                 <div class="mt-5">
@@ -572,7 +587,7 @@
                                         <small class="fw-bold"><del>Giá Gốc: 29,000đ</del></small>
                                     </div>
                                 </div>
-    
+
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                         href="/home">
@@ -585,7 +600,7 @@
                                     </a>
                                     <small class="d-block fw-medium mt-2"> Không Hỗ Trợ Gia Hạn.</small>
                                 </div>
-    
+
                                 <div class="mt-6">
                                     <h6 class="mb-5"> Thông Số Nổi Bật </h6>
                                     <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
@@ -596,7 +611,7 @@
                                             </div>
                                             <small> SSD NVMe <span class="fw-bold"> 10GB </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -604,7 +619,7 @@
                                             </div>
                                             <small> Băng Thông <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -612,7 +627,7 @@
                                             </div>
                                             <small> Miền Khác <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -620,7 +635,7 @@
                                             </div>
                                             <small> Miền Con <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -628,7 +643,7 @@
                                             </div>
                                             <small> Database <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -636,15 +651,16 @@
                                             </div>
                                             <small> <span class="fw-bold"> Miễn Phí Chứng Chỉ SSL </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                 <i class="las la-check"></i>
                                             </div>
-                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày </span></small>
+                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
+                                                </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -652,7 +668,7 @@
                                             </div>
                                             <small> Anti DDoS <span class="fw-bold"> Basic </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -660,17 +676,18 @@
                                             </div>
                                             <small> Vị Trí Máy Chủ <span class="fw-bold"> Đức </span></small>
                                         </li>
-    
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 sal-animate" data-sal="slide-up" data-sal-duration="350"
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
-                            <div class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
+                            <div
+                                class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
                                 <h6 class="mb-1"> VIETNAM #STARTUP </h6>
                                 <small> Phù Hợp Kinh Doanh Web Nhỏ, Doanh Nghiệp Nhỏ, Anti DDoS </small>
                                 <div class="mt-5">
@@ -679,7 +696,7 @@
                                         <small class="fw-bold"><del>Giá Gốc: 29,000đ</del></small>
                                     </div>
                                 </div>
-    
+
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                         href="">
@@ -692,7 +709,7 @@
                                     </a>
                                     <small class="d-block fw-medium mt-2">12,000đ Khi Gia Hạn Mỗi Chu Kỳ.</small>
                                 </div>
-    
+
                                 <div class="mt-6">
                                     <h6 class="mb-5"> Thông Số Nổi Bật </h6>
                                     <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
@@ -703,7 +720,7 @@
                                             </div>
                                             <small> SSD NVMe <span class="fw-bold"> 1GB </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -711,7 +728,7 @@
                                             </div>
                                             <small> Băng Thông <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -719,7 +736,7 @@
                                             </div>
                                             <small> Miền Khác <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -727,7 +744,7 @@
                                             </div>
                                             <small> Miền Con <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -735,7 +752,7 @@
                                             </div>
                                             <small> Database <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -743,15 +760,16 @@
                                             </div>
                                             <small> <span class="fw-bold"> Miễn Phí Chứng Chỉ SSL </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                 <i class="las la-check"></i>
                                             </div>
-                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày </span></small>
+                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
+                                                </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -759,7 +777,7 @@
                                             </div>
                                             <small> Anti DDoS <span class="fw-bold"> Pro </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -772,15 +790,16 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 sal-animate" data-sal="slide-up" data-sal-duration="350"
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
-                            <div class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
+                            <div
+                                class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
                                 <div class="discount-badge gradient-bg">
                                     <p class="text-white fw-bold mb-0"> Bán Chạy </p>
                                 </div>
-    
+
                                 <h6 class="mb-1"> VIETNAM #PREMIUM1 </h6>
                                 <small> Phù Hợp Kinh Doanh, Doanh Nghiệp - Đại Lý, Anti DDoS Pro </small>
                                 <div class="mt-5">
@@ -789,7 +808,7 @@
                                         <small class="fw-bold"><del>Giá Gốc: 99,000đ</del></small>
                                     </div>
                                 </div>
-    
+
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                         href="">
@@ -802,7 +821,7 @@
                                     </a>
                                     <small class="d-block fw-medium mt-2">52,000đ Khi Gia Hạn Mỗi Chu Kỳ.</small>
                                 </div>
-    
+
                                 <div class="mt-6">
                                     <h6 class="mb-5"> Thông Số Nổi Bật </h6>
                                     <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
@@ -813,7 +832,7 @@
                                             </div>
                                             <small> SSD NVMe <span class="fw-bold"> 5.5GB </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -821,7 +840,7 @@
                                             </div>
                                             <small> Băng Thông <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -829,7 +848,7 @@
                                             </div>
                                             <small> Miền Khác <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -837,7 +856,7 @@
                                             </div>
                                             <small> Miền Con <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -845,7 +864,7 @@
                                             </div>
                                             <small> Database <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -853,15 +872,16 @@
                                             </div>
                                             <small> <span class="fw-bold"> Miễn Phí Chứng Chỉ SSL </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                 <i class="las la-check"></i>
                                             </div>
-                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày </span></small>
+                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
+                                                </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -869,7 +889,7 @@
                                             </div>
                                             <small> Anti DDoS <span class="fw-bold"> Pro </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -882,15 +902,16 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 sal-animate" data-sal="slide-up" data-sal-duration="350"
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
-                            <div class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
+                            <div
+                                class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
                                 <div class="discount-badge gradient-bg">
                                     <p class="text-white fw-bold mb-0"> Bán Chạy </p>
                                 </div>
-    
+
                                 <h6 class="mb-1"> CANADA #CA3 </h6>
                                 <small> Phù Hợp Kinh Doanh, Doanh Nghiệp - Đại Lý, Anti DDoS (Basic) </small>
                                 <div class="mt-5">
@@ -899,7 +920,7 @@
                                         <small class="fw-bold"><del>Giá Gốc: 72,000đ</del></small>
                                     </div>
                                 </div>
-    
+
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                         href="">
@@ -912,7 +933,7 @@
                                     </a>
                                     <small class="d-block fw-medium mt-2">30,000đ Khi Gia Hạn Mỗi Chu Kỳ.</small>
                                 </div>
-    
+
                                 <div class="mt-6">
                                     <h6 class="mb-5"> Thông Số Nổi Bật </h6>
                                     <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
@@ -923,7 +944,7 @@
                                             </div>
                                             <small> SSD NVMe <span class="fw-bold"> 3GB </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -931,7 +952,7 @@
                                             </div>
                                             <small> Băng Thông <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -939,7 +960,7 @@
                                             </div>
                                             <small> Miền Khác <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -947,7 +968,7 @@
                                             </div>
                                             <small> Miền Con <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -955,7 +976,7 @@
                                             </div>
                                             <small> Database <span class="fw-bold"> Không Giới Hạn </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -963,15 +984,16 @@
                                             </div>
                                             <small> <span class="fw-bold"> Miễn Phí Chứng Chỉ SSL </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                 <i class="las la-check"></i>
                                             </div>
-                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày </span></small>
+                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
+                                                </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -979,7 +1001,7 @@
                                             </div>
                                             <small> Anti DDoS <span class="fw-bold"> Medium </span></small>
                                         </li>
-    
+
                                         <li class="d-flex align-items-center gap-3">
                                             <div
                                                 class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -995,7 +1017,7 @@
                 </div>
             </div>
         </div>
-    
+
         <section class="price-area-2 pt-120 pb-60 position-relative z-1">
             <div class="pt-80 pb-60">
                 <div class="container">
@@ -1003,9 +1025,11 @@
                         <div class="col-md-10 col-lg-8 col-xxl-7">
                             <div class="text-center">
                                 <h2 class="text-white mb-4 sal-animate" data-sal="slide-up" data-sal-duration="500"
-                                    data-sal-delay="300" data-sal-easing="ease-in-out-sine"> Các Gói Dịch Vụ Phổ Biến </h2>
+                                    data-sal-delay="300" data-sal-easing="ease-in-out-sine"> Các Gói Dịch Vụ Phổ Biến
+                                </h2>
                                 <p class="text-white text-opacity-75 sal-animate" data-sal="slide-up"
-                                    data-sal-duration="500" data-sal-delay="300" data-sal-easing="ease-in-out-sine"> Liên Hệ
+                                    data-sal-duration="500" data-sal-delay="300" data-sal-easing="ease-in-out-sine">
+                                    Liên Hệ
                                     Dùng Thử Trong 30 Phút Hoàn Toàn Miễn Phí </p>
                                 <div class="d-flex justify-content-center sal-animate" data-sal="slide-up"
                                     data-sal-duration="500" data-sal-delay="300" data-sal-easing="ease-in-out-sine">
@@ -1013,16 +1037,17 @@
                                         class="pricing-nav-pills d-inline-block mx-auto py-2 px-3 border rounded-pill overflow-x-auto">
                                         <ul class="nav nav-pills flex-nowrap" role="tablist">
                                             <li class="nav-item flex-shrink-0" role="presentation">
-                                                <a class="text-white nav-link rounded-pill fs-14 active" href="#"
-                                                    data-bs-toggle="pill" data-bs-target="#reseller-plan"
-                                                    aria-selected="true" role="tab">
+                                                <a class="text-white nav-link rounded-pill fs-14 active"
+                                                    href="#" data-bs-toggle="pill"
+                                                    data-bs-target="#reseller-plan" aria-selected="true"
+                                                    role="tab">
                                                     Reseller Hosting
                                                 </a>
                                             </li>
                                             <li class="nav-item flex-shrink-0" role="presentation">
                                                 <a class="text-white nav-link rounded-pill fs-14" href="#"
-                                                    data-bs-toggle="pill" data-bs-target="#cloud-vps" aria-selected="false"
-                                                    tabindex="-1" role="tab">
+                                                    data-bs-toggle="pill" data-bs-target="#cloud-vps"
+                                                    aria-selected="false" tabindex="-1" role="tab">
                                                     Cloud VPS
                                                 </a>
                                             </li>
@@ -1033,7 +1058,7 @@
                                                     Máy Chủ Dịch Vụ
                                                 </a>
                                             </li>
-    
+
                                         </ul>
                                     </div>
                                 </div>
@@ -1042,7 +1067,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
@@ -1050,7 +1075,7 @@
                             data-sal-easing="ease-in-out-sine">
                             <div class="tab-pane fade show active" id="reseller-plan" role="tabpanel">
                                 <div class="row g-4">
-    
+
                                     <div class="col-xl-4 col-md-6">
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
@@ -1093,7 +1118,7 @@
                                                         </div>
                                                         <small> SSD NVMe <span class="fw-bold"> 5GB </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1102,7 +1127,7 @@
                                                         <small> Không Giới Hạn <span class="fw-bold"> Tài Khoản Cpanel
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1111,7 +1136,7 @@
                                                         <small> Băng Thông <span class="fw-bold"> Không Giới Hạn
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1120,7 +1145,7 @@
                                                         <small>Plugin <span class="fw-bold"> Imunify, Sitepad,
                                                                 Softaculous,...</span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1128,7 +1153,7 @@
                                                         </div>
                                                         <small> Anti DDoS <span class="fw-bold"> Pro </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1137,7 +1162,7 @@
                                                         <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1146,9 +1171,9 @@
                                                         <small> Vị Trí Máy Chủ <span class="fw-bold"> Việt Nam
                                                             </span></small>
                                                     </li>
-    
+
                                                 </ul>
-    
+
                                                 <a href="javascript:void(0)"
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
@@ -1160,19 +1185,20 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-xl-4 col-md-6">
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="discount-badge gradient-bg">
                                                 <p class="text-white fw-bold mb-0"> Bán Chạy </p>
                                             </div>
-    
+
                                             <div class="text-center">
                                                 <img src="/assets/static/assets/img/price-2-icon.png" alt="image"
                                                     class="img-fluid mb-5">
                                                 <h6 class="mb-1"> VIETNAM #WHM3 </h6>
-                                                <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý, Tính Ổn Định
+                                                <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý, Tính Ổn
+                                                    Định
                                                     Cao. </small>
                                                 <div class="mt-5">
                                                     <div class="monthly-price">
@@ -1207,7 +1233,7 @@
                                                         </div>
                                                         <small> SSD NVMe <span class="fw-bold"> 10GB </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1216,7 +1242,7 @@
                                                         <small> Không Giới Hạn <span class="fw-bold"> Tài Khoản Cpanel
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1225,7 +1251,7 @@
                                                         <small> Băng Thông <span class="fw-bold"> Không Giới Hạn
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1234,7 +1260,7 @@
                                                         <small>Plugin <span class="fw-bold"> Imunify, Sitepad,
                                                                 Softaculous,...</span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1242,7 +1268,7 @@
                                                         </div>
                                                         <small> Anti DDoS <span class="fw-bold"> Pro </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1251,7 +1277,7 @@
                                                         <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1260,9 +1286,9 @@
                                                         <small> Vị Trí Máy Chủ <span class="fw-bold"> Việt Nam
                                                             </span></small>
                                                     </li>
-    
+
                                                 </ul>
-    
+
                                                 <a href="javascript:void(0)"
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
@@ -1274,19 +1300,20 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-xl-4 col-md-6">
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="discount-badge gradient-bg">
                                                 <p class="text-white fw-bold mb-0"> Phổ Biến </p>
                                             </div>
-    
+
                                             <div class="text-center">
                                                 <img src="/assets/static/assets/img/price-2-icon.png" alt="image"
                                                     class="img-fluid mb-5">
                                                 <h6 class="mb-1"> VIETNAM #WHM4 </h6>
-                                                <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý, Tính Ổn Định
+                                                <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý, Tính Ổn
+                                                    Định
                                                     Cao. </small>
                                                 <div class="mt-5">
                                                     <div class="monthly-price">
@@ -1321,7 +1348,7 @@
                                                         </div>
                                                         <small> SSD NVMe <span class="fw-bold"> 25GB </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1330,7 +1357,7 @@
                                                         <small> Không Giới Hạn <span class="fw-bold"> Tài Khoản Cpanel
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1339,7 +1366,7 @@
                                                         <small> Băng Thông <span class="fw-bold"> Không Giới Hạn
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1348,7 +1375,7 @@
                                                         <small>Plugin <span class="fw-bold"> Imunify, Sitepad,
                                                                 Softaculous,...</span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1356,7 +1383,7 @@
                                                         </div>
                                                         <small> Anti DDoS <span class="fw-bold"> Pro </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1365,7 +1392,7 @@
                                                         <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1374,9 +1401,9 @@
                                                         <small> Vị Trí Máy Chủ <span class="fw-bold"> Việt Nam
                                                             </span></small>
                                                     </li>
-    
+
                                                 </ul>
-    
+
                                                 <a href="javascript:void(0)"
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
@@ -1388,13 +1415,13 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                 </div>
                             </div>
-    
+
                             <div class="tab-pane fade" id="cloud-vps" role="tabpanel">
                                 <div class="row g-4">
-    
+
                                     <div class="col-xl-4 col-md-6">
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
@@ -1415,7 +1442,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                                 href="/home">
                                                 <span class="btn-arrow__text">
@@ -1425,7 +1452,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-    
+
                                             <div class="mt-6">
                                                 <h6 class="mb-5"> Thông Số Nổi Bật </h6>
                                                 <ul
@@ -1435,9 +1462,10 @@
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> Intel Xeon E5-2696 V4 </span></small>
+                                                        <small><span class="fw-bold"> Intel Xeon E5-2696 V4
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1445,7 +1473,7 @@
                                                         </div>
                                                         <small> 1 <span class="fw-bold">vCore</span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1453,7 +1481,7 @@
                                                         </div>
                                                         <small><span class="fw-bold"> 1Ram DDR4 ECC </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1461,23 +1489,25 @@
                                                         </div>
                                                         <small><span class="fw-bold">20GB SSD Enterprise</span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> 200 Mbps Port Speed </span></small>
+                                                        <small><span class="fw-bold"> 200 Mbps Port Speed
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> Firewall Port 10 Gbps</span></small>
+                                                        <small><span class="fw-bold"> Firewall Port 10
+                                                                Gbps</span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1497,14 +1527,14 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-xl-4 col-md-6">
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="discount-badge gradient-bg">
                                                 <p class="text-white fw-bold mb-0"> Bán Chạy </p>
                                             </div>
-    
+
                                             <div class="text-center">
                                                 <img src="/assets/static/assets/img/price-2-icon.png" alt="image"
                                                     class="img-fluid mb-5">
@@ -1522,7 +1552,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                                 href="/home">
                                                 <span class="btn-arrow__text">
@@ -1532,7 +1562,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-    
+
                                             <div class="mt-6">
                                                 <h6 class="mb-5"> Thông Số Nổi Bật </h6>
                                                 <ul
@@ -1542,9 +1572,10 @@
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> Intel Platinum 8171M </span></small>
+                                                        <small><span class="fw-bold"> Intel Platinum 8171M
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1552,7 +1583,7 @@
                                                         </div>
                                                         <small> <span class="fw-bold">4 vCore</span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1560,7 +1591,7 @@
                                                         </div>
                                                         <small><span class="fw-bold"> 8Ram DDR4 ECC </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1568,23 +1599,25 @@
                                                         </div>
                                                         <small><span class="fw-bold"> 60GB Nvme </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> 200 Mbps Port Speed </span></small>
+                                                        <small><span class="fw-bold"> 200 Mbps Port Speed
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> Firewall Port 10 Gbps </span></small>
+                                                        <small><span class="fw-bold"> Firewall Port 10 Gbps
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1592,7 +1625,7 @@
                                                         </div>
                                                         <small><span class="fw-bold"> IPv4 Private </span></small>
                                                     </li>
-    
+
                                                 </ul>
                                                 <a href="javascript:void(0)"
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
@@ -1605,7 +1638,7 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-xl-4 col-md-6">
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
@@ -1626,7 +1659,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                                 href="/home">
                                                 <span class="btn-arrow__text">
@@ -1636,7 +1669,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-    
+
                                             <div class="mt-6">
                                                 <h6 class="mb-5"> Thông Số Nổi Bật </h6>
                                                 <ul
@@ -1646,9 +1679,10 @@
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> Intel Platinum 8171M </span></small>
+                                                        <small><span class="fw-bold"> Intel Platinum 8171M
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1656,7 +1690,7 @@
                                                         </div>
                                                         <small> <span class="fw-bold">16 vCore</span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1664,7 +1698,7 @@
                                                         </div>
                                                         <small><span class="fw-bold"> 32Ram DDR4 ECC </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1672,23 +1706,25 @@
                                                         </div>
                                                         <small><span class="fw-bold"> 100GB Nvme </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> 200 Mbps Port Speed </span></small>
+                                                        <small><span class="fw-bold"> 200 Mbps Port Speed
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> Firewall Port 10 Gbps </span></small>
+                                                        <small><span class="fw-bold"> Firewall Port 10 Gbps
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1696,7 +1732,7 @@
                                                         </div>
                                                         <small><span class="fw-bold"> IPv4 Private </span></small>
                                                     </li>
-    
+
                                                 </ul>
                                                 <a href="javascript:void(0)"
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
@@ -1709,21 +1745,22 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                 </div>
                             </div>
-    
+
                             <div class="tab-pane fade" id="server-full" role="tabpanel">
                                 <div class="row g-4">
-    
+
                                     <div class="col-xl-4 col-md-6">
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="text-center">
-                                                <img src="https://123host.vn/uploads/post/320/cpanelandwhm.png" alt="image"
-                                                    class="img-fluid mb-5" style="width: 100px">
+                                                <img src="https://123host.vn/uploads/post/320/cpanelandwhm.png"
+                                                    alt="image" class="img-fluid mb-5" style="width: 100px">
                                                 <h6 class="mb-1"> SERVER CPANEL 01 </h6>
-                                                <small> Phù Hợp Doanh Nghiệp, Đại Lý Bán Nhỏ Lẻ, Tự Làm Chủ Server. </small>
+                                                <small> Phù Hợp Doanh Nghiệp, Đại Lý Bán Nhỏ Lẻ, Tự Làm Chủ Server.
+                                                </small>
                                                 <div class="mt-5">
                                                     <div class="monthly-price">
                                                         <div
@@ -1736,7 +1773,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                                 href="https://t.me/iamthanhXdev">
                                                 <span class="btn-arrow__text">
@@ -1746,7 +1783,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-    
+
                                             <div class="mt-6">
                                                 <h6 class="mb-5"> Cấu Hình </h6>
                                                 <ul
@@ -1758,7 +1795,7 @@
                                                         </div>
                                                         <small> SSD NVMe 40GB </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1766,7 +1803,7 @@
                                                         </div>
                                                         <small>3 vCore </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1774,23 +1811,25 @@
                                                         </div>
                                                         <small>4 Ram </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> 200 Mbps Port Speed </span></small>
+                                                        <small><span class="fw-bold"> 200 Mbps Port Speed
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small>Firewall <span class="fw-bold"> Port 10 Gbps </span></small>
+                                                        <small>Firewall <span class="fw-bold"> Port 10 Gbps
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1798,7 +1837,7 @@
                                                         </div>
                                                         <small>1 IP </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1807,16 +1846,17 @@
                                                         <small> Giấy Phép <span class="fw-bold"> CPanel, Cloudlinux,
                                                                 Litespeed (Có Thể Nâng Thêm) </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small> Anti DDoS <span class="fw-bold"> Cơ Bản </span></small>
+                                                        <small> Anti DDoS <span class="fw-bold"> Cơ Bản
+                                                            </span></small>
                                                     </li>
                                                 </ul>
-    
+
                                                 <a href="javascript:void(0)"
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
@@ -1828,17 +1868,17 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-xl-4 col-md-6">
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="discount-badge gradient-bg">
                                                 <p class="text-white fw-bold mb-0"> Phổ Biến </p>
                                             </div>
-    
+
                                             <div class="text-center">
-                                                <img src="https://123host.vn/uploads/post/320/cpanelandwhm.png" alt="image"
-                                                    class="img-fluid mb-5" style="width: 100px">
+                                                <img src="https://123host.vn/uploads/post/320/cpanelandwhm.png"
+                                                    alt="image" class="img-fluid mb-5" style="width: 100px">
                                                 <h6 class="mb-1"> SERVER CPANEL 02 </h6>
                                                 <small> Phù Hợp Doanh Nghiệp, Đại Lý, Độ Ổn Định Cao. </small>
                                                 <div class="mt-5">
@@ -1853,7 +1893,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                                 href="https://t.me/iamthanhXdev">
                                                 <span class="btn-arrow__text">
@@ -1863,7 +1903,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-    
+
                                             <div class="mt-6">
                                                 <h6 class="mb-5"> Cấu Hình </h6>
                                                 <ul
@@ -1873,10 +1913,11 @@
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small> SSD NVMe <span class="fw-bold"> 100 GB + 100GB Free </span>
+                                                        <small> SSD NVMe <span class="fw-bold"> 100 GB + 100GB Free
+                                                            </span>
                                                         </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1884,7 +1925,7 @@
                                                         </div>
                                                         <small>16 vCore </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1892,23 +1933,25 @@
                                                         </div>
                                                         <small>32 Ram </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> 200 Mbps Port Speed </span></small>
+                                                        <small><span class="fw-bold"> 200 Mbps Port Speed
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small>Firewall <span class="fw-bold"> Port 10 Gbps </span></small>
+                                                        <small>Firewall <span class="fw-bold"> Port 10 Gbps
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1916,17 +1959,18 @@
                                                         </div>
                                                         <small>1 IP </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
                                                         <small> Giấy Phép <span class="fw-bold"> CPanel, Cloudlinux,
-                                                                Litespeed, jetBackup, WHM Reseller (Tặng Kèm Softaculous,
+                                                                Litespeed, jetBackup, WHM Reseller (Tặng Kèm
+                                                                Softaculous,
                                                                 SitePad, WP Toolkit, ...) </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -1934,16 +1978,17 @@
                                                         </div>
                                                         <small> Anti DDoS <span class="fw-bold"> Pro </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small> Miễn Phí <span class="fw-bold"> Hỗ Trợ 24/7 </span></small>
+                                                        <small> Miễn Phí <span class="fw-bold"> Hỗ Trợ 24/7
+                                                            </span></small>
                                                     </li>
                                                 </ul>
-    
+
                                                 <a href="javascript:void(0)"
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
@@ -1955,17 +2000,17 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-xl-4 col-md-6">
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="discount-badge gradient-bg">
                                                 <p class="text-white fw-bold mb-0"> Khuyên Dùng </p>
                                             </div>
-    
+
                                             <div class="text-center">
-                                                <img src="https://123host.vn/uploads/post/320/cpanelandwhm.png" alt="image"
-                                                    class="img-fluid mb-5" style="width: 100px">
+                                                <img src="https://123host.vn/uploads/post/320/cpanelandwhm.png"
+                                                    alt="image" class="img-fluid mb-5" style="width: 100px">
                                                 <h6 class="mb-1"> SERVER CPANEL 02 </h6>
                                                 <small> Phù Hợp Doanh Nghiệp, Công Ty, Độ Ổn Định Cao. </small>
                                                 <div class="mt-5">
@@ -1980,7 +2025,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                                 href="https://t.me/iamthanhXdev">
                                                 <span class="btn-arrow__text">
@@ -1990,7 +2035,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-    
+
                                             <div class="mt-6">
                                                 <h6 class="mb-5"> Cấu Hình (Máy Chủ Vật Lý) </h6>
                                                 <ul
@@ -2002,15 +2047,16 @@
                                                         </div>
                                                         <small> CORE 28 x 2.40 GHz </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small> SSD NVMe <span class="fw-bold"> 400 GB </span> </small>
+                                                        <small> SSD NVMe <span class="fw-bold"> 400 GB </span>
+                                                        </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -2018,7 +2064,7 @@
                                                         </div>
                                                         <small> 64 Ram </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -2026,16 +2072,17 @@
                                                         </div>
                                                         <small><span class="fw-bold"> Cổng Mạng 1Gbps </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small><span class="fw-bold"> Tốc Độ Mạng 1GB Trong Nước/10MB Quốc
+                                                        <small><span class="fw-bold"> Tốc Độ Mạng 1GB Trong Nước/10MB
+                                                                Quốc
                                                                 Tế </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -2044,7 +2091,7 @@
                                                         <small> <span class="fw-bold"> Datacenter FPT - Hồ Chí Minh
                                                             </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
@@ -2052,34 +2099,37 @@
                                                         </div>
                                                         <small>1 IP </small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
                                                         <small> Giấy Phép <span class="fw-bold"> CPanel, Cloudlinux,
-                                                                Litespeed, jetBackup, WHM Reseller (Tặng Kèm Softaculous,
+                                                                Litespeed, jetBackup, WHM Reseller (Tặng Kèm
+                                                                Softaculous,
                                                                 SitePad, WP Toolkit, ...) </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small> Anti DDoS <span class="fw-bold"> Premium </span></small>
+                                                        <small> Anti DDoS <span class="fw-bold"> Premium
+                                                            </span></small>
                                                     </li>
-    
+
                                                     <li class="d-flex align-items-center gap-3">
                                                         <div
                                                             class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
                                                             <i class="las la-check"></i>
                                                         </div>
-                                                        <small> Miễn Phí <span class="fw-bold"> Hỗ Trợ 24/7 </span></small>
+                                                        <small> Miễn Phí <span class="fw-bold"> Hỗ Trợ 24/7
+                                                            </span></small>
                                                     </li>
                                                 </ul>
-    
+
                                                 <a href="javascript:void(0)"
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
@@ -2091,7 +2141,7 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                 </div>
                             </div>
                         </div>
@@ -2099,7 +2149,7 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="why-area-one bg-dark pt-120 pb-120 position-relative z-1">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
@@ -2109,59 +2159,72 @@
                     </div>
                     <div class="col-xl-4">
                         <p class="text-white" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300"
-                            data-sal-easing="ease-in-out-sine"> Miễn Phí SSL Tiêu Chuẩn Cho Các Dịch Vụ Lưu Trữ, Đại Lý Lưu
+                            data-sal-easing="ease-in-out-sine"> Miễn Phí SSL Tiêu Chuẩn Cho Các Dịch Vụ Lưu Trữ, Đại
+                            Lý Lưu
                             Trữ Hoàn Toàn Miễn Phí. </p>
                     </div>
                 </div>
                 <div class="mt-8">
                     <div class="row g-4">
-                        <div class="col-xl-3 col-md-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"
-                            data-sal-easing="ease-in-out-sine">
+                        <div class="col-xl-3 col-md-6" data-sal="slide-up" data-sal-duration="500"
+                            data-sal-delay="200" data-sal-easing="ease-in-out-sine">
                             <div class="why-card px-6 py-9 rounded-3 transition">
-                                <img src="/assets/static/assets/img/why-icon-1.png" alt="image" class="img-fluid">
-                                <img src="/assets/static/assets/img/why-icon-1-dark.png" alt="image" class="img-fluid dark">
+                                <img src="/assets/static/assets/img/why-icon-1.png" alt="image"
+                                    class="img-fluid">
+                                <img src="/assets/static/assets/img/why-icon-1-dark.png" alt="image"
+                                    class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Xử Lí Nhanh Hơn 20 Lần </h6>
-                                <p class="text-white text-opacity-75 mb-0">WordPress Hosting cung cấp môi trường chuyên biệt
+                                <p class="text-white text-opacity-75 mb-0">WordPress Hosting cung cấp môi trường
+                                    chuyên biệt
                                     phù hợp với nhu cầu của các trang web WordPress với các máy chủ được tối ưu hóa.</p>
                             </div>
                         </div>
-    
-                        <div class="col-xl-3 col-md-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300"
-                            data-sal-easing="ease-in-out-sine">
+
+                        <div class="col-xl-3 col-md-6" data-sal="slide-up" data-sal-duration="500"
+                            data-sal-delay="300" data-sal-easing="ease-in-out-sine">
                             <div class="why-card px-6 py-9 rounded-3 transition">
-                                <img src="/assets/static/assets/img/why-icon-2.png" alt="image" class="img-fluid">
-                                <img src="/assets/static/assets/img/why-icon-2-dark.png" alt="image" class="img-fluid dark">
+                                <img src="/assets/static/assets/img/why-icon-2.png" alt="image"
+                                    class="img-fluid">
+                                <img src="/assets/static/assets/img/why-icon-2-dark.png" alt="image"
+                                    class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Chuyển Dữ Liệu Miễn Phí </h6>
-                                <p class="text-white text-opacity-75 mb-0"> GiangTran Hỗ Trợ Chuyển Dữ Liệu Từ Nhà Cung Cấp Khác
+                                <p class="text-white text-opacity-75 mb-0"> GiangTran Hỗ Trợ Chuyển Dữ Liệu Từ Nhà
+                                    Cung Cấp Khác
                                     Sang GiangTran Hoàn Toàn Miễn Phí Qua FTP. </p>
                             </div>
                         </div>
-    
-                        <div class="col-xl-3 col-md-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="400"
-                            data-sal-easing="ease-in-out-sine">
+
+                        <div class="col-xl-3 col-md-6" data-sal="slide-up" data-sal-duration="500"
+                            data-sal-delay="400" data-sal-easing="ease-in-out-sine">
                             <div class="why-card px-6 py-9 rounded-3 transition">
-                                <img src="/assets/static/assets/img/why-icon-3.png" alt="image" class="img-fluid">
-                                <img src="/assets/static/assets/img/why-icon-3-dark.png" alt="image" class="img-fluid dark">
+                                <img src="/assets/static/assets/img/why-icon-3.png" alt="image"
+                                    class="img-fluid">
+                                <img src="/assets/static/assets/img/why-icon-3-dark.png" alt="image"
+                                    class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Bảo Mật Máy Chủ </h6>
-                                <p class="text-white text-opacity-75 mb-0"> Quét Virus Trong File, Tường Lữa Anti DDoS Hạn
+                                <p class="text-white text-opacity-75 mb-0"> Quét Virus Trong File, Tường Lữa Anti DDoS
+                                    Hạn
                                     Chế Tấn Công Từ Chối Dịch Vụ. </p>
                             </div>
                         </div>
-    
-                        <div class="col-xl-3 col-md-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500"
-                            data-sal-easing="ease-in-out-sine">
+
+                        <div class="col-xl-3 col-md-6" data-sal="slide-up" data-sal-duration="500"
+                            data-sal-delay="500" data-sal-easing="ease-in-out-sine">
                             <div class="why-card px-6 py-9 rounded-3 transition">
-                                <img src="/assets/static/assets/img/why-icon-4.png" alt="image" class="img-fluid">
-                                <img src="/assets/static/assets/img/why-icon-4-dark.png" alt="image" class="img-fluid dark">
+                                <img src="/assets/static/assets/img/why-icon-4.png" alt="image"
+                                    class="img-fluid">
+                                <img src="/assets/static/assets/img/why-icon-4-dark.png" alt="image"
+                                    class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Hoàn Tiền </h6>
-                                <p class="text-white text-opacity-75 mb-0"> GiangTran Có Chính Sách Hoàn 100% Tiền Trong 24 Giờ
+                                <p class="text-white text-opacity-75 mb-0"> GiangTran Có Chính Sách Hoàn 100% Tiền
+                                    Trong 24 Giờ
                                     Nếu Dịch Vụ Gặp Lỗi Do Nify. </p>
                             </div>
                         </div>
                     </div>
                 </div>
-    
-    
+
+
                 <div class="mt-20">
                     <div class="row g-4">
                         <div class="col-lg-4">
@@ -2171,16 +2234,18 @@
                                 <p class="text-white text-opacity-75">Trung tâm dữ liệu phân tán toàn cầu</p>
                             </div>
                         </div>
-    
+
                         <div class="col-lg-4">
                             <div class="why-service-item text-center position-relative" data-sal="slide-up"
                                 data-sal-duration="500" data-sal-delay="300" data-sal-easing="ease-in-out-sine">
-                                <h5 class="text-white mb-3"><span class="counter"></span> Data Centers Tại Việt Nam </h5>
-                                <p class="text-white text-opacity-75"> Tốc độ kết nối nhanh, Giảm rủi ro về băng thông quốc
+                                <h5 class="text-white mb-3"><span class="counter"></span> Data Centers Tại Việt Nam
+                                </h5>
+                                <p class="text-white text-opacity-75"> Tốc độ kết nối nhanh, Giảm rủi ro về băng thông
+                                    quốc
                                     tế, Thời gian phục hồi nhanh hơn. </p>
                             </div>
                         </div>
-    
+
                         <div class="col-lg-4">
                             <div class="why-service-item last text-center position-relative" data-sal="slide-up"
                                 data-sal-duration="500" data-sal-delay="400" data-sal-easing="ease-in-out-sine">
@@ -2192,7 +2257,7 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="pt-60 pb-60">
             <div class="container">
                 <div class="row">
@@ -2210,31 +2275,36 @@
                     <div class="feedback-slider swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
                         <div class="swiper-wrapper" id="swiper-wrapper-fdf291bef7c45d11" aria-live="off"
                             style="transition-duration: 0ms; transform: translate3d(-440px, 0px, 0px); transition-delay: 0ms;">
-    
+
                             <div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 4"
                                 data-swiper-slide-index="1" style="width: 416px; margin-right: 24px;">
                                 <div class="bg-white p-7 shadow-sm rounded-3">
                                     <div
                                         class="d-flex align-items-center justify-content-between border-bottom border-secondary pb-5">
-                                        <img src="/assets/static/assets/img/feedback-brand-2.png" alt="hình ảnh" class="img-fluid">
+                                        <img src="/assets/static/assets/img/feedback-brand-2.png" alt="hình ảnh"
+                                            class="img-fluid">
                                         <img src="/assets/static/assets/img/shape/feedback-quate.png" alt="hình ảnh"
                                             class="img-fluid">
                                     </div>
                                     <h6 class="mt-5">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;">Nhà thiết kế sáng tạo nhất được đánh giá
+                                            <font style="vertical-align: inherit;">Nhà thiết kế sáng tạo nhất được
+                                                đánh giá
                                                 cao.</font>
                                         </font>
                                     </h6>
                                     <p class="mt-3">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi thích ở
-                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
+                                            <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi
+                                                thích ở
+                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
+                                                xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
                                     </p>
                                     <div class="d-flex align-items-center gap-4 mt-7">
-                                        <img src="/assets/static/assets/img/user-img-3.png" alt="hình ảnh" class="img-fluid">
+                                        <img src="/assets/static/assets/img/user-img-3.png" alt="hình ảnh"
+                                            class="img-fluid">
                                         <div>
                                             <h6 class="fs-16 mb-0">
                                                 <font style="vertical-align: inherit;">
@@ -2243,7 +2313,8 @@
                                             </h6>
                                             <small>
                                                 <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Giám đốc tiếp thị kỹ thuật số
+                                                    <font style="vertical-align: inherit;">Giám đốc tiếp thị kỹ thuật
+                                                        số
                                                     </font>
                                                 </font>
                                             </small>
@@ -2256,25 +2327,30 @@
                                 <div class="bg-white p-7 shadow-sm rounded-3">
                                     <div
                                         class="d-flex align-items-center justify-content-between border-bottom border-secondary pb-5">
-                                        <img src="/assets/static/assets/img/feedback-brand-3.png" alt="hình ảnh" class="img-fluid">
+                                        <img src="/assets/static/assets/img/feedback-brand-3.png" alt="hình ảnh"
+                                            class="img-fluid">
                                         <img src="/assets/static/assets/img/shape/feedback-quate.png" alt="hình ảnh"
                                             class="img-fluid">
                                     </div>
                                     <h6 class="mt-5">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;">Nhà thiết kế sáng tạo nhất được đánh giá
+                                            <font style="vertical-align: inherit;">Nhà thiết kế sáng tạo nhất được
+                                                đánh giá
                                                 cao.</font>
                                         </font>
                                     </h6>
                                     <p class="mt-3">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi thích ở
-                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
+                                            <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi
+                                                thích ở
+                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
+                                                xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
                                     </p>
                                     <div class="d-flex align-items-center gap-4 mt-7">
-                                        <img src="/assets/static/assets/img/user-img-4.png" alt="hình ảnh" class="img-fluid">
+                                        <img src="/assets/static/assets/img/user-img-4.png" alt="hình ảnh"
+                                            class="img-fluid">
                                         <div>
                                             <h6 class="fs-16 mb-0">
                                                 <font style="vertical-align: inherit;">
@@ -2283,7 +2359,8 @@
                                             </h6>
                                             <small>
                                                 <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Giám đốc tiếp thị kỹ thuật số
+                                                    <font style="vertical-align: inherit;">Giám đốc tiếp thị kỹ thuật
+                                                        số
                                                     </font>
                                                 </font>
                                             </small>
@@ -2296,25 +2373,30 @@
                                 <div class="bg-white p-7 shadow-sm rounded-3">
                                     <div
                                         class="d-flex align-items-center justify-content-between border-bottom border-secondary pb-5">
-                                        <img src="/assets/static/assets/img/feedback-brand-3.png" alt="hình ảnh" class="img-fluid">
+                                        <img src="/assets/static/assets/img/feedback-brand-3.png" alt="hình ảnh"
+                                            class="img-fluid">
                                         <img src="/assets/static/assets/img/shape/feedback-quate.png" alt="hình ảnh"
                                             class="img-fluid">
                                     </div>
                                     <h6 class="mt-5">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;">Nhà thiết kế sáng tạo nhất được đánh giá
+                                            <font style="vertical-align: inherit;">Nhà thiết kế sáng tạo nhất được
+                                                đánh giá
                                                 cao.</font>
                                         </font>
                                     </h6>
                                     <p class="mt-3">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi thích ở
-                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
+                                            <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi
+                                                thích ở
+                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
+                                                xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
                                     </p>
                                     <div class="d-flex align-items-center gap-4 mt-7">
-                                        <img src="/assets/static/assets/img/user-img-5.png" alt="hình ảnh" class="img-fluid">
+                                        <img src="/assets/static/assets/img/user-img-5.png" alt="hình ảnh"
+                                            class="img-fluid">
                                         <div>
                                             <h6 class="fs-16 mb-0">
                                                 <font style="vertical-align: inherit;">
@@ -2323,7 +2405,8 @@
                                             </h6>
                                             <small>
                                                 <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Giám đốc tiếp thị kỹ thuật số
+                                                    <font style="vertical-align: inherit;">Giám đốc tiếp thị kỹ thuật
+                                                        số
                                                     </font>
                                                 </font>
                                             </small>
@@ -2331,30 +2414,35 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" role="group" aria-label="1 / 4" data-swiper-slide-index="0"
-                                style="width: 416px; margin-right: 24px;">
+                            <div class="swiper-slide" role="group" aria-label="1 / 4"
+                                data-swiper-slide-index="0" style="width: 416px; margin-right: 24px;">
                                 <div class="bg-white p-7 shadow-sm rounded-3">
                                     <div
                                         class="d-flex align-items-center justify-content-between border-bottom border-secondary pb-5">
-                                        <img src="/assets/static/assets/img/feedback-brand-1.png" alt="hình ảnh" class="img-fluid">
+                                        <img src="/assets/static/assets/img/feedback-brand-1.png" alt="hình ảnh"
+                                            class="img-fluid">
                                         <img src="/assets/static/assets/img/shape/feedback-quate.png" alt="hình ảnh"
                                             class="img-fluid">
                                     </div>
                                     <h6 class="mt-5">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;">Nhà thiết kế sáng tạo nhất được đánh giá
+                                            <font style="vertical-align: inherit;">Nhà thiết kế sáng tạo nhất được
+                                                đánh giá
                                                 cao.</font>
                                         </font>
                                     </h6>
                                     <p class="mt-3">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi thích ở
-                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp xếp mọi
+                                            <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi
+                                                thích ở
+                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
+                                                xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
                                     </p>
                                     <div class="d-flex align-items-center gap-4 mt-7">
-                                        <img src="/assets/static/assets/img/user-img-1.png" alt="hình ảnh" class="img-fluid">
+                                        <img src="/assets/static/assets/img/user-img-1.png" alt="hình ảnh"
+                                            class="img-fluid">
                                         <div>
                                             <h6 class="fs-16 mb-0">
                                                 <font style="vertical-align: inherit;">
@@ -2363,7 +2451,8 @@
                                             </h6>
                                             <small>
                                                 <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Giám đốc tiếp thị kỹ thuật số
+                                                    <font style="vertical-align: inherit;">Giám đốc tiếp thị kỹ thuật
+                                                        số
                                                     </font>
                                                 </font>
                                             </small>
@@ -2379,7 +2468,8 @@
                         <span
                             class="feedback-button-next w-10 h-10 rounded-circle bg-dark d-flex align-items-center justify-content-center text-white"
                             tabindex="0" role="button" aria-label="Slide tiếp theo"
-                            aria-controls="swiper-wrapper-fdf291bef7c45d11"><i class="las la-arrow-right"></i></span>
+                            aria-controls="swiper-wrapper-fdf291bef7c45d11"><i
+                                class="las la-arrow-right"></i></span>
                         <span
                             class="feedback-button-prev w-10 h-10 rounded-circle bg-dark d-flex align-items-center justify-content-center text-white"
                             tabindex="0" role="button" aria-label="Slide trước"
@@ -2388,7 +2478,7 @@
                 </div>
             </div>
         </section>
-    
+
         <!-- Cta -->
         <section class="mt-10">
             <div class="container">
@@ -2397,17 +2487,21 @@
                         <div class="col-xxl-7 col-xl-9">
                             <div class="d-flex justify-content-center" data-sal="slide-up" data-sal-duration="500"
                                 data-sal-delay="200" data-sal-easing="ease-in-out-sine">
-                                <div class="px-3 py-1 border border-primary rounded d-inline-flex align-items-center gap-2">
+                                <div
+                                    class="px-3 py-1 border border-primary rounded d-inline-flex align-items-center gap-2">
                                     <div class="w-2 h-2 rounded-circle bg-primary"></div>
                                     <small class="text-primary fw-bold"> Chuyển Dữ Liệu Đến GiangTran </small>
                                 </div>
                             </div>
                             <div class="text-center mt-5">
-                                <h2 class="mb-5" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"
-                                    data-sal-easing="ease-in-out-sine"> Di chuyển trang web của bạn miễn phí </h2>
-                                <p class="mb-8" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"
-                                    data-sal-easing="ease-in-out-sine"> Chúng tôi sẽ đảm nhiệm quy trình di chuyển trang web
-                                    của bạn từ công ty lưu trữ web cũ sang nền tảng của chúng tôi để bạn có thể tập trung
+                                <h2 class="mb-5" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="200" data-sal-easing="ease-in-out-sine"> Di chuyển trang web của
+                                    bạn miễn phí </h2>
+                                <p class="mb-8" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="200" data-sal-easing="ease-in-out-sine"> Chúng tôi sẽ đảm nhiệm
+                                    quy trình di chuyển trang web
+                                    của bạn từ công ty lưu trữ web cũ sang nền tảng của chúng tôi để bạn có thể tập
+                                    trung
                                     vào những việc quan trọng. </p>
                             </div>
                             <div class="d-flex align-items-center justify-content-center gap-4 flex-wrap flex-md-nowrap"
@@ -2437,17 +2531,18 @@
                 </div>
             </div>
         </section>
-    
+
         <!-- Footer -->
         <footer class="footer-2-area pt-120 pb-5 bg-dark position-relative z-1">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <img src="/giangtran.com.vn.png" alt="image" class="logo__img"
-                            style="width: 145px;">
+                        <img src="/giangtran.com.vn.png" alt="image" class="logo__img" style="width: 145px;">
                         <p class="text-white text-opacity-75 mt-8">
-                            Bạn đang quản lý một trang web hay điều hành doanh nghiệp? Hãy đảm bảo rằng trang web của bạn
-                            luôn hoạt động ổn định với hiệu suất tối ưu. Đến với GiangTran – giải pháp toàn diện từ A đến Z, giúp
+                            Bạn đang quản lý một trang web hay điều hành doanh nghiệp? Hãy đảm bảo rằng trang web của
+                            bạn
+                            luôn hoạt động ổn định với hiệu suất tối ưu. Đến với GiangTran – giải pháp toàn diện từ A
+                            đến Z, giúp
                             bạn thành công vượt bậc!
                         </p>
                         <h6 class="text-white mt-6 mb-4 fs-16">Social Media</h6>
@@ -2478,8 +2573,7 @@
                                 </li>
                                 <li><a href="/home" class="footer-2-link">Hosting WordPress</a>
                                 </li>
-                                <li><a href="/home"
-                                        class="footer-2-link">Cloud VPS</a></li>
+                                <li><a href="/home" class="footer-2-link">Cloud VPS</a></li>
                                 <li><a href="/home" class="footer-2-link">Máy Chủ Cài Sẵn</a></li>
                                 <li><a href="/home" class="footer-2-link">Máy Chủ Chuyên Dụng</a></li>
                             </ul>
@@ -2502,10 +2596,12 @@
                                 <li><a href="https://www.google.com/search?sca_esv=2b5ce49ea87870d0&q=Nify.vn"
                                         class="footer-2-link">Giới Thiệu</a></li>
                                 <li><a href="#" class="footer-2-link">Đối Tác</a></li>
-                                <li><a href="https://zalo.me/g/ukevsm860" class="footer-2-link">Liên hệ với chúng tôi</a>
+                                <li><a href="https://zalo.me/g/ukevsm860" class="footer-2-link">Liên hệ với chúng
+                                        tôi</a>
                                 </li>
                                 <li><a href="#" class="footer-2-link">Tin Tức</a></li>
-                                <li><a href="https://t.me/iamthanhXdev" class="footer-2-link">Trò Chuyện Trực Tiếp</a></li>
+                                <li><a href="https://t.me/iamthanhXdev" class="footer-2-link">Trò Chuyện Trực
+                                        Tiếp</a></li>
                             </ul>
                         </div>
                     </div>
@@ -2517,9 +2613,10 @@
                 </div>
             </div>
         </footer>
-    
-    
+
+
         <!--build:js-->
+        <script src="{{ asset('js/default.js') }}"></script>
         <script src="/assets/static/assets/js/vendors/jquery-3.7.1.min.js"></script>
         <script src="/assets/static/assets/js/vendors/jquery-ui.min.js"></script>
         <script src="/assets/static/assets/js/vendors/bootstrap.bundle.min.js"></script>
@@ -2527,7 +2624,13 @@
         <script src="/assets/static/assets/js/vendors/simplebar.min.js"></script>
         <script src="/assets/static/assets/js/vendors/sal.js"></script>
         <script src="/assets/static/assets/js/vendors/jquery.magnific-popup.min.js"></script>
-    
+
         <script src="/assets/static/assets/js/app.js"></script>
+        <div id="g_id_onload"
+            data-client_id="{{ env('GOOGLE_CLIENT_ID') }}"
+            data-context="signin" data-csrf_token="{{ csrf_token() }}" data-ux_mode="popup"
+            data-callback="googleLogin" data-itp_support="true">
+        </div>
+
     </body>
 </div>
