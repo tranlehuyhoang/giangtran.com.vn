@@ -20,11 +20,11 @@
                         <div class="card-wrapper border rounded-3 checkbox-checked">
                             <div class="radio-form">
                                 <div class="form-check">
-                                    <input class="form-check-input" id="radio14" type="radio" name="radio-stacked"   onchange="Method_payment()">
-                                    <label class="form-check-label" for="radio14"> Số Dư Tài Khoản (0<sup>đ</sup>) </label>
+                                    <input class="form-check-input" id="radio14" type="radio" name="radio-stacked" wire:model.live="paymentMethod" checked=""   onchange="Method_payment()">
+                                    <label class="form-check-label" for="radio14"> Số Dư Tài Khoản ({{ App\Helpers\FormatHelper::formatCurrency($balance) }}<sup>đ</sup>) </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" id="radio13" type="radio" name="radio-stacked" checked="" onchange="Method_payment()">
+                                    <input class="form-check-input" id="radio13" type="radio" name="radio-stacked" wire:model.live="paymentMethod" onchange="Method_payment()">
                                     <label class="form-check-label" for="radio13"> Chuyển Khoản Ngân Hàng </label>
                                 </div>
                             </div>
@@ -153,7 +153,15 @@
                                 </tr>
                                 <tr>
                                     <td> Tổng Thanh Toán (VND) :</td>
-                                    <td colspan="2" id="amount-total"> {{ App\Helpers\FormatHelper::formatCurrency(isset($services->where('id', $selectedService)->first()->price) ? $services->where('id', $selectedService)->first()->price * $quantity : 0) }} </td>
+                                    <td colspan="2" id="amount-total">
+                                        {{ 
+                                            App\Helpers\FormatHelper::formatCurrency(
+                                                isset($services->where('id', $selectedService)->first()->price) ? 
+                                                floatval($services->where('id', $selectedService)->first()->price) * intval($quantity) : 
+                                                0
+                                            ) 
+                                        }} 
+                                    </td>
                                 </tr>
                             </tfoot>
 

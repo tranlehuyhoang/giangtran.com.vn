@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3309
--- Generation Time: Nov 21, 2024 at 04:06 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Host: 127.0.0.1
+-- Generation Time: Nov 23, 2024 at 04:38 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -264,7 +264,8 @@ INSERT INTO `payment_history` (`id`, `user_id`, `transaction_code`, `amount`, `s
 (111, 4, '4830566', 2020.00, 'thành công', 'MBBank', '2024-11-20 13:58:43', '2024-11-20 13:58:43'),
 (112, 4, '4831131', 2012.00, 'thành công', 'MBBank', '2024-11-20 14:18:57', '2024-11-20 14:18:57'),
 (113, 4, '4831168', 2003.00, 'thành công', 'MBBank', '2024-11-20 14:20:24', '2024-11-20 14:20:24'),
-(115, 4, '4831251', 2400.00, 'thành công', 'MBBank', '2024-11-21 09:39:04', '2024-11-21 09:39:04');
+(115, 4, '4831251', 2400.00, 'thành công', 'MBBank', '2024-11-21 09:39:04', '2024-11-21 09:39:04'),
+(116, 1, '4891313', 2000.00, 'thành công', 'MBBank', '2024-11-23 02:51:02', '2024-11-23 02:51:02');
 
 -- --------------------------------------------------------
 
@@ -358,6 +359,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
+('Alh5HChqRjsV8oaRsUQJ5tiYLkXt0OHIWSCgzHeW', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoicUpoSmswMXhkZnpDQ3MwQ0pzT2RpTjRVejVXQU5ZMFN6YzEzcEZVUSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732333071),
 ('orhuyKtQho2kpHaEMpYGvaH8Bdr8iVmpnnXipunX', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 'YTo1OntzOjM6InVybCI7YToxOntzOjg6ImludGVuZGVkIjtzOjMzOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4vdXNlcnMiO31zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czoyOToiaHR0cDovL2xvY2FsaG9zdDo4MDAwL3Byb2ZpbGUiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjY6Il90b2tlbiI7czo0MDoib1NYQ1YxQ1BMTVlGN2NvcGlFaTNMVnNja0pySExnQlRWeks4YlhKYyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732201581);
 
 -- --------------------------------------------------------
@@ -400,6 +402,7 @@ CREATE TABLE `smm_orders` (
   `start_count` int(255) NOT NULL,
   `link` varchar(255) NOT NULL,
   `remains` int(11) NOT NULL,
+  `payment_method` varchar(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -408,11 +411,12 @@ CREATE TABLE `smm_orders` (
 -- Dumping data for table `smm_orders`
 --
 
-INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_price`, `status`, `unit_price`, `start_count`, `link`, `remains`, `created_at`, `updated_at`) VALUES
-(1, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'nphdigital.vn', 1000, '2024-11-21 07:18:07', '2024-11-21 07:18:07'),
-(2, 4, 1, 1, 10000.00, 'pending', 10000.00, 0, 'http://localhost/phpmyadmin/index.php?route=/table/structure/save', 1, '2024-11-21 07:32:54', '2024-11-21 07:32:54'),
-(3, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://123', 1000, '2024-11-21 07:35:12', '2024-11-21 07:35:12'),
-(4, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://thanhsansale', 1000, '2024-11-21 07:40:33', '2024-11-21 07:40:33');
+INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_price`, `status`, `unit_price`, `start_count`, `link`, `remains`, `payment_method`, `created_at`, `updated_at`) VALUES
+(1, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'nphdigital.vn', 1000, NULL, '2024-11-21 07:18:07', '2024-11-21 07:18:07'),
+(2, 4, 1, 1, 10000.00, 'pending', 10000.00, 0, 'http://localhost/phpmyadmin/index.php?route=/table/structure/save', 1, NULL, '2024-11-21 07:32:54', '2024-11-21 07:32:54'),
+(3, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://123', 1000, NULL, '2024-11-21 07:35:12', '2024-11-21 07:35:12'),
+(4, 4, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://thanhsansale', 1000, NULL, '2024-11-21 07:40:33', '2024-11-21 07:40:33'),
+(5, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, NULL, '2024-11-23 03:37:51', '2024-11-23 03:37:51');
 
 -- --------------------------------------------------------
 
@@ -540,7 +544,17 @@ INSERT INTO `transactions` (`id`, `bank_brand_name`, `account_number`, `transact
 ('4831142', 'MBBank', '0966579217', '2024-11-20 21:19:20', 0.00, 2200.00, 0.00, 'TRAN LE HUY HOANG chuyen tien', 'FT24325853505830', NULL, NULL, '4230', '2024-11-20 14:19:31', '2024-11-20 14:19:31'),
 ('4831168', 'MBBank', '0966579217', '2024-11-20 21:20:16', 0.00, 2003.00, 0.00, 'NF ADMIN', 'FT24325082202583', NULL, NULL, '4230', '2024-11-20 14:20:23', '2024-11-20 14:20:23'),
 ('4831251', 'MBBank', '0966579217', '2024-11-20 21:23:17', 0.00, 2400.00, 0.00, 'NF ADMIN', 'FT24325625162500', NULL, NULL, '4230', '2024-11-20 14:23:22', '2024-11-20 14:23:22'),
-('4847871', 'MBBank', '0966579217', '2024-11-21 15:39:37', 0.00, 500000.00, 0.00, 'LA VAN QUYEN CHUYEN TIEN- Ma GD ACSP/ Gx209419', 'FT24326301117476', NULL, NULL, '4230', '2024-11-21 09:37:42', '2024-11-21 09:37:42');
+('4847871', 'MBBank', '0966579217', '2024-11-21 15:39:37', 0.00, 500000.00, 0.00, 'LA VAN QUYEN CHUYEN TIEN- Ma GD ACSP/ Gx209419', 'FT24326301117476', NULL, NULL, '4230', '2024-11-21 09:37:42', '2024-11-21 09:37:42'),
+('4856392', 'MBBank', '0966579217', '2024-11-21 21:19:03', 0.00, 300000.00, 0.00, 'NGUYEN NGOC TIEN chuyen tien', 'FT24326517060164', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
+('4867474', 'MBBank', '0966579217', '2024-11-22 11:46:29', 2000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien', 'FT24327092295652', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
+('4867701', 'MBBank', '0966579217', '2024-11-22 11:56:53', 544000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien - Ma giao dich/ Trace 549655', 'FT24327430850880', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
+('4868611', 'MBBank', '0966579217', '2024-11-22 12:32:36', 500000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ IH715740', 'FT24327220670097', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
+('4872099', 'MBBank', '0966579217', '2024-11-22 14:45:07', 80000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ HL854514', 'FT24327346363505', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
+('4872270', 'MBBank', '0966579217', '2024-11-22 14:50:50', 0.00, 20000.00, 0.00, 'MBVCB.7686469610.274309.HO VAN TRONG chuyen tien.CT tu 0501000105037 HO VAN TRONG toi 0966579217 TRAN LEHOANG GIANG tai MB- Ma GD ACSP/ zs2', 'FT24327405666887', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
+('4872643', 'MBBank', '0966579217', '2024-11-22 15:02:12', 20000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ 6X412272', 'FT24327442460364', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
+('4890341', 'MBBank', '0966579217', '2024-11-23 08:19:21', 0.00, 40000.00, 0.00, 'TRAN LE HUY HOANG chuyen tien', 'FT24328239208909', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
+('4890566', 'MBBank', '0966579217', '2024-11-23 08:37:40', 1990000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien - Ma giao dich/ Trace 163334', 'FT24328175240474', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
+('4891313', 'MBBank', '0966579217', '2024-11-23 09:50:52', 0.00, 2000.00, 0.00, 'NF 2509ROBLOX', 'FT24328650993234', NULL, NULL, '4230', '2024-11-23 02:51:00', '2024-11-23 02:51:00');
 
 -- --------------------------------------------------------
 
@@ -574,7 +588,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`) VALUES
-(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$jv0VFanX3CzJqEPmYZgt7ecgU1PyDiC8/NSKqXXVPyeZDu8vVtemi', 'fI1YaghRdRwht3lHsIrnu7qA43Gjx4tUIjAMMH4iWrrcIT6b8zrfP1LN8Ous', '2024-11-16 20:18:19', '2024-11-21 15:00:18', 'default', NULL, 0.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0),
+(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$jv0VFanX3CzJqEPmYZgt7ecgU1PyDiC8/NSKqXXVPyeZDu8vVtemi', 'tjWydge8lAgxcaTgwsWtxRIy8tN3xYlU2LhxwILpVOzugp4uMY22MuvPmF1y', '2024-11-16 20:18:19', '2024-11-23 02:51:02', 'default', NULL, 2000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0),
 (4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$pqelBvHvBmcrFTMwtfPpFetOaczL7hbhM2iLR4IdoOXDwsSduQqLC', '4OBcTd5nAUfJTQ4vxjfh4ChaQ4TmKOGD0NfQjaQ0mtRJfR2IaIpKm4d5lmYr', '2024-11-19 13:52:31', '2024-11-21 09:39:04', 'default', NULL, 4800.00, NULL, NULL, NULL, NULL, NULL, 0),
 (5, 'Tran Le Huy Hoang (FPL HCM)', 'hoangtlhps26819@fpt.edu.vn', NULL, NULL, '$2y$12$DB1b1DSlzKgdA/kE8xn9ROrSRJA4fBtKXfYh0YMb.fPdKmLE7yYcy', NULL, '2024-11-21 10:50:00', '2024-11-21 10:50:00', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0),
 (6, '123', '2@2', '123', NULL, '$2y$12$6MfzzoMPyoUSQhMZOAp3V.8I/N00zunuSnP8hr4cWGn3nJueXqh8S', NULL, '2024-11-21 11:14:20', '2024-11-21 11:14:20', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0),
@@ -739,7 +753,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `payment_history`
 --
 ALTER TABLE `payment_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 
 --
 -- AUTO_INCREMENT for table `permissions`
@@ -763,7 +777,7 @@ ALTER TABLE `smm_categories`
 -- AUTO_INCREMENT for table `smm_orders`
 --
 ALTER TABLE `smm_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `smm_services`
