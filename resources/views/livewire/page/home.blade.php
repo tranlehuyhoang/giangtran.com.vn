@@ -1,8 +1,8 @@
 <div>
 
     <head>
-        <title> TRANG CHỦ | GIANGTRAN.COM.VN </title>
-      
+        <title> Trang Chủ - GIANGTRAN.COM.VN </title>
+
         <link rel="stylesheet" href="/assets/static/style.css?v=1822759336">
         <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,7 +11,7 @@
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js">
         </script>
- 
+
     </head>
 
     <body id="content">
@@ -284,7 +284,7 @@
 
                                                 <div class="card-body pt-0 chat-app-wrapper">
                                                     <div class="project-details">
-                                                        <div class="d-flex gap-2"><img src="/assets/assets/images/user.png"
+                                                        <div class="d-flex gap-2"><img src="/avatar.png" style="width: 48px;"
                                                                 alt="user">
                                                             <div>
                                                                 <h4 class="f-w-500"> 2509roblox </h4><span
@@ -394,7 +394,7 @@
                                 var modal = new bootstrap.Modal(document.getElementById('modalHome'));
                                 modal.hide();
                             }
-                        
+
                             document.addEventListener("DOMContentLoaded", function() {
                                 var modal = new bootstrap.Modal(document.getElementById('modalHome'));
                                 if(localStorage.getItem('time_modal') < 1731409673){
@@ -403,16 +403,16 @@
                             });
                     </script>
   @livewire('inc.footer')
-             
+
                 </div>
             </div>
         </div>
 
 
         <input type="hidden" id="mn" value="0">
- 
-         
-        
+
+
+
         <style>
             table tfoot tr {
                 padding-bottom: 6px;
@@ -453,6 +453,6 @@
         <script src="/assets/static/search-handlebars.js"></script>
         <script src="/assets/static/script.js"></script>
         <script src="/assets/static/customizer.js"></script>
-    
+
     </body>
 </div>

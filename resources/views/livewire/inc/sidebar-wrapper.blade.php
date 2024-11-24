@@ -15,7 +15,7 @@
 
 
             <div class="profile-wrapper">
-                <div class="active-profile"> <img  loading="lazy" class="img-fluid" src="/assets/assets/images/user.png"
+                <div class="active-profile"> <img  loading="lazy" class="img-fluid" src="/avatar.png"
                         alt="user">
                     <div class="status bg-success"> </div>
                 </div>
@@ -92,7 +92,7 @@
 
                         </ul>
                     </li>
-                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
+                    {{-- <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
                             class="sidebar-link sidebar-title" href="#">
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-table"></use>
@@ -115,7 +115,7 @@
                         </ul>
                     </li>
 
-                  
+
 
 
 
@@ -212,7 +212,7 @@
                             </svg>
                             <span> Nạp Thẻ </span>
                         </a>
-                    </li>
+                    </li> --}}
 
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
@@ -224,7 +224,7 @@
                         </a>
                     </li>
 
-                    <li class="sidebar-list">
+                    {{-- <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
                         <a class="sidebar-link sidebar-title link-nav" href="/api-client">
                             <svg class="stroke-icon">
@@ -232,7 +232,7 @@
                             </svg>
                             <span> Kết Nối API </span>
                         </a>
-                    </li>
+                    </li> --}}
 
                 </ul>
             </div>

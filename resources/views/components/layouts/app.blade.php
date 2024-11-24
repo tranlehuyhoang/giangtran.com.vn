@@ -10,13 +10,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request()->fullUrl() }}">
     <meta name="twitter:url" content="{{ request()->fullUrl() }}">
-    <link loading="lazy" rel="icon" href="/icon.png">
+    <link rel="icon" href="/icon.png">
     <meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+
     @livewireStyles
 </head>
-
 <body>
 
     {{ $slot }}
@@ -26,9 +27,9 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <x-livewire-alert::scripts />
+
 </body>
-
-
+<div class="zalo-chat-widget" data-oaid="1715225565559061022" data-welcome-message="GIANGTRAN.COM.VN" data-autopopup="0" data-width="100" data-height="200"></div>
 {{-- @livewire('inc.social-popup') --}}
 
 </html>
