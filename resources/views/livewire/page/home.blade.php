@@ -40,7 +40,7 @@
                             <div class="row size-column">
                                 <div class="col-xl-12 col-xl-100 box-col-12">
                                     <div class="row">
-                                        <div class="col-xl-6 box-col-12">
+                                        <div class="col-xl-6 col-xl-100 box-col-12">
                                             <div class="card title-line upgrade-card overflow-hidden">
                                                 <div class="row align-items-end">
                                                     <div class="col-sm-8 col-11">
@@ -56,7 +56,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="cartoon-image"> <img class="img-fluid"
-                                                        src="/assets/assets/images/cyberlux/Dev-web-arow.svg?v=234"
+                                                        src="/assets/images/smm/banner.png"
                                                         alt="Nguyễn Thành"></div>
                                                 <img class="img-fluid pattern-image"
                                                     src="/assets/assets/images/dashboard/bg-1.png" alt="Nguyễn Thành">
