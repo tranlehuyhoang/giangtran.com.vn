@@ -1,26 +1,23 @@
-
 <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
     <div>
-        <div class="logo-wrapper"><a href="/home"><img  loading="lazy" class="img-fluid"
-                    src="/giangtran.com.vn.png" style="height: 40px;"
-                    alt=""></a>
+        <div class="logo-wrapper"><a href="/home"><img loading="lazy" class="img-fluid" src="/giangtran.com.vn.png"
+                    style="height: 40px;" alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
-            <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle"
-                    data-feather="grid"> </i></div>
+            <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
         </div>
-        <div class="logo-icon-wrapper"><a href="/home"><img loading="lazy" class="img-fluid"
-                    src="/icon.png"
+        <div class="logo-icon-wrapper"><a href="/home"><img loading="lazy" class="img-fluid" src="/icon.png"
                     width="35px;" alt=""></a></div>
         <div class="profile-section sidebar-search">
 
 
             <div class="profile-wrapper">
-                <div class="active-profile"> <img  loading="lazy" class="img-fluid" src="/avatar.png"
-                        alt="user">
+                <div class="active-profile"> <img loading="lazy" class="img-fluid" src="/avatar.png" alt="user">
                     <div class="status bg-success"> </div>
                 </div>
                 <div>
-                    <h4> {{ App\Models\User::getCurrentUserName() }} </h4><span> Số Dư: {{ App\Helpers\FormatHelper::formatCurrency(App\Models\User::getCurrentUserBalance()) }} <sup>đ</sup> </span>
+                    <h4> {{ App\Models\User::getCurrentUserName() }} </h4><span> Số Dư:
+                        {{ App\Helpers\FormatHelper::formatCurrency(App\Models\User::getCurrentUserBalance()) }}
+                        <sup>đ</sup> </span>
                 </div>
             </div>
 
@@ -49,11 +46,10 @@
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
-                    <li class="back-btn"><a href="/home"><img  loading="lazy" class="img-fluid"
-                                src="/icon.png"
+                    <li class="back-btn"><a href="/home"><img loading="lazy" class="img-fluid" src="/icon.png"
                                 width="35px;" alt=""></a>
-                        <div class="mobile-back text-end"><span>Back</span><i
-                                class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                        <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2"
+                                aria-hidden="true"></i></div>
                     </li>
                     <li class="pin-title sidebar-main-title">
                         <div>
@@ -71,10 +67,10 @@
                         </a>
                     </li>
 
-                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a
-                            class="sidebar-link sidebar-title" href="#">
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
+                            href="#">
                             <svg class="stroke-icon">
-                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-table"></use>
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-social"></use>
                             </svg>
 
                             <span class="lan-6"> Tăng Tương Tác </span></a>

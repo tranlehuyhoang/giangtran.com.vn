@@ -13,11 +13,11 @@
     <link rel="icon" href="/icon.png">
     <meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script src="https://sp.zalo.me/plugins/sdk.js"></script>
-
+    <script src="https://accounts.google.com/gsi/client" async></script>
     @livewireStyles
 </head>
+
 <body>
 
     {{ $slot }}
@@ -29,7 +29,8 @@
     <x-livewire-alert::scripts />
 
 </body>
-<div class="zalo-chat-widget" data-oaid="1715225565559061022" data-welcome-message="GIANGTRAN.COM.VN" data-autopopup="0" data-width="100" data-height="200"></div>
-{{-- @livewire('inc.social-popup') --}}
+<div class="zalo-chat-widget" data-oaid="1715225565559061022" data-welcome-message="GIANGTRAN.COM.VN" data-autopopup="0"
+    data-width="100" data-height="200"></div>
+@livewire('inc.social-popup')
 
 </html>

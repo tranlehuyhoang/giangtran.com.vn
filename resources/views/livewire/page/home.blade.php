@@ -9,8 +9,12 @@
         <link rel="stylesheet" type="text/css"
             href="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/css/toast@1.0.1/fuiToast.min.css">
         <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js">
-        </script>
+            src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js"></script>
+        <link id="googleidentityservice" type="text/css" media="all" href="https://accounts.google.com/gsi/style"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
 
     </head>
 
@@ -22,30 +26,31 @@
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
             <div class="page-wrapper compact-wrapper" id="pageWrapper">
-              @livewire('inc.header')
+                @livewire('inc.header')
 
                 <div class="page-body-wrapper">
 
                     @livewire('inc.sidebar-wrapper')
 
                     <div class="page-body">
+
                         <div class="container-fluid default-dashboard">
 
 
                             <div class="row size-column">
-                                <div class="col-xl-9 col-xl-100 box-col-12">
+                                <div class="col-xl-12 col-xl-100 box-col-12">
                                     <div class="row">
-                                        <div class="col-xl-6 box-col-6">
+                                        <div class="col-xl-6 box-col-12">
                                             <div class="card title-line upgrade-card overflow-hidden">
                                                 <div class="row align-items-end">
                                                     <div class="col-sm-8 col-11">
                                                         <div class="card-header">
-                                                            <h2> Hosting Việt Cấu Hình Cao <span class="txt-danger"> 6K/
-                                                                    Tháng </span> </h2>
-                                                            <p class="mt-2 f-light"> Cấu Hình Mạnh Mẽ Kèm Theo Đó Là
-                                                                FIREWALL ANTIDDOS Hight. </p> <a
+
+                                                            <h2> Tăng Tương Tác <span class="txt-danger"> Giá Rẻ </span>
+                                                            </h2>
+                                                            <p class="mt-2 f-light"> Giải pháp tối ưu giúp bạn tăng cường tương tác trên mạng xã hội, thu hút nhiều người theo dõi và nâng cao sự hiện diện trực tuyến của bạn. </p> <a
                                                                 class="btn btn-primary btn-hover-effect btn-sm f-w-500"
-                                                                target="_blank" href="/hosting/vn-premium"> Xem Thêm
+                                                                  href="/services/smm/create"> Mua Ngay
                                                             </a>
                                                         </div>
                                                     </div>
@@ -57,15 +62,116 @@
                                                     src="/assets/assets/images/dashboard/bg-1.png" alt="Nguyễn Thành">
                                             </div>
                                         </div>
+                                        <div class="col-xl-6 col-xl-100 box-col-12">
+                                            <div class="card height-equal title-line" style="padding-bottom: 7px;">
+                                                <div class="row">
+                                                    <div class="col-xxl-12 col-xl-12 col-sm-12 box-col-12 col-xxl-100">
+                                                        <div class="card-header card-no-border">
+                                                            <h2>Tài Khoản</h2>
+                                                            @if (Auth::check())
+                                                                <span class="f-w-500">Xác Thực 2 Bước: Đang Tắt</span>
+                                                            @endif
+                                                        </div>
 
-                                        <div class="col-xl-6 box-col-6">
+                                                        <div class="card-body pt-0 chat-app-wrapper">
+                                                            @if (Auth::check())
+                                                                <div class="project-details">
+                                                                    <div class="d-flex gap-2">
+                                                                        <img src="/avatar.png" style="width: 48px;"
+                                                                            alt="user">
+                                                                        <div>
+                                                                            <h4 class="f-w-500">
+                                                                                {{ Auth::user()->username }}
+                                                                            </h4>
+                                                                            <span class="f-12 f-light f-w-500">Thành
+                                                                                Viên</span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <p class="f-w-500 f-light text-danger">Quý Khách
+                                                                        Chưa Cập
+                                                                        Nhật Thông Tin Liên Hệ, Thêm Thông Tin <a
+                                                                            href="/profile" class="text-primary">Tại
+                                                                            Đây</a>
+                                                                    </p>
+                                                                    <div class="mt-3" style="display: flex;">
+                                                                        <a href="/chuyen-khoan"
+                                                                            class="badge badge-primary text-light">Nạp
+                                                                            Tiền</a>
+                                                                        <a href="/profile"
+                                                                            class="badge badge-secondary text-light">Lịch
+                                                                            Sử
+                                                                            Hoạt Động</a>
+                                                                        <a wire:click="logout" style="cursor: pointer;"
+                                                                            class="badge badge-danger text-light">Đăng
+                                                                            Xuất</a>
+                                                                    </div>
+                                                                </div>
+                                                            @else
+                                                                <div class="card-body pt-0">
+                                                                    <div class="light-card satisfaction-box common-box">
+                                                                        <div>
+                                                                            <div class="g_id_signin" data-type="standard" data-shape="rectangular"
+                                                                                data-theme="outline" data-text="signin_with" data-size="large"
+                                                                                data-logo_alignment="left">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            @endif
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xxl-12 col-xl-12 col-sm-12 box-col-12 col-xxl-100" hidden>
+                                                <div class="card height-equal title-line">
+                                                    <div class="card-header card-no-border">
+                                                        <div class="header-top">
+                                                            <h2> Mã Khuyến Mãi </h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card-body pt-0">
+                                                        <ul class="scrollable-div-250px">
+
+
+                                                            <li>
+                                                                <div class="card card-body">
+                                                                    <div style="display: flex;">
+                                                                        <b class="text-danger"> VIETNAM </b>
+                                                                        <a onclick="copyText('VIETNAM');"
+                                                                            class="badge badge-primary text-light"
+                                                                            style="margin-left: auto; cursor: pointer;">
+                                                                            <i class="icofont icofont-copy-alt"></i>
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <span> Áp Dụng Cho Tất Cả Dịch Vụ</span><br>
+                                                                        <span> Giảm: 20%, Đã Sử Dụng: 73%,
+                                                                            <br> Hết Hạn Vào: 13/11/2024 - 12:00:00
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{--
+                                        <div class="col-xl-6 box-col-6" hidden>
                                             <div class="row tread-cards">
                                                 <div class="col-xl-6 col-sm-6">
                                                     <div class="card widget-1">
                                                         <div class="card-body common-box">
                                                             <div class="widget-icon primary widget-round">
                                                                 <svg>
-                                                                    <use href="/assets/assets/svg/icon-sprite.svg#crown">
+                                                                    <use
+                                                                        href="/assets/assets/svg/icon-sprite.svg#crown">
                                                                     </use>
                                                                 </svg>
                                                             </div>
@@ -82,7 +188,8 @@
                                                         <div class="card-body common-box">
                                                             <div class="widget-icon success widget-round">
                                                                 <svg>
-                                                                    <use href="/assets/assets/svg/icon-sprite.svg#flash">
+                                                                    <use
+                                                                        href="/assets/assets/svg/icon-sprite.svg#flash">
                                                                     </use>
                                                                 </svg>
                                                             </div>
@@ -99,7 +206,8 @@
                                                         <div class="card-body common-box">
                                                             <div class="widget-icon warning widget-round">
                                                                 <svg>
-                                                                    <use href="/assets/assets/svg/icon-sprite.svg#blend-2">
+                                                                    <use
+                                                                        href="/assets/assets/svg/icon-sprite.svg#blend-2">
                                                                     </use>
                                                                 </svg>
                                                             </div>
@@ -132,9 +240,9 @@
 
 
                                             </div>
-                                        </div>
+                                        </div> --}}
 
-                                        <div class="col-md-6" style="margin-top: -10px;">
+                                        {{-- <div class="col-md-6" style="margin-top: -10px;" hidden>
                                             <div class="offer-banner"
                                                 style="background-image: url(/assets/assets/images/bg-affilate.png);">
                                                 <div class="offer-content">
@@ -155,7 +263,8 @@
                                                                 class="link-stroke-icon" href="/tiep-thi-lien-ket"> Chi
                                                                 Tiết
                                                                 <svg>
-                                                                    <use href="/assets/assets/svg/icon-sprite.svg#eye-contact">
+                                                                    <use
+                                                                        href="/assets/assets/svg/icon-sprite.svg#eye-contact">
                                                                     </use>
                                                                 </svg></a></div>
                                                     </div>
@@ -182,7 +291,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-6 box-col-6">
+                                        <div class="col-md-6 box-col-6"  hidden>
                                             <div class="card title-line">
                                                 <div class="card-header card-no-border transaction-header">
                                                     <div class="header-top">
@@ -196,7 +305,8 @@
                                                 <div class="card-body pt-0 transaction-list">
 
                                                     <div class="row">
-                                                        <div class="col-md-6 col-6" onclick="loadto('/manage/hosting')">
+                                                        <div class="col-md-6 col-6"
+                                                            onclick="loadto('/manage/hosting')">
                                                             <div class="card widget-1">
                                                                 <div class="card-body common-space order-card">
                                                                     <div> <span class="f-w-500 f-light txt-primary">
@@ -231,10 +341,12 @@
                                                         </div>
 
 
-                                                        <div class="col-md-6 col-6" onclick="loadto('/manage/domain')">
+                                                        <div class="col-md-6 col-6"
+                                                            onclick="loadto('/manage/domain')">
                                                             <div class="card widget-1">
                                                                 <div class="card-body common-space order-card">
-                                                                    <div> <span class="f-w-500 f-light txt-primary"> Tên
+                                                                    <div> <span class="f-w-500 f-light txt-primary">
+                                                                            Tên
                                                                             Miền </span>
                                                                         <h3> 0 </h3>
                                                                         <div class="order-content">
@@ -248,7 +360,8 @@
                                                         </div>
 
 
-                                                        <div class="col-md-6 col-6" onclick="loadto('/manage/cronjob')">
+                                                        <div class="col-md-6 col-6"
+                                                            onclick="loadto('/manage/cronjob')">
                                                             <div class="card widget-1">
                                                                 <div class="card-body common-space order-card">
                                                                     <div> <span class="f-w-500 f-light txt-primary">
@@ -268,85 +381,12 @@
 
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
 
 
-                                <div class="col-xl-3 col-xl-100 box-col-12">
-                                    <div class="card height-equal title-line" style="padding-bottom: 7px;">
-                                        <div class="row">
-                                            <div class="col-xxl-12 col-xl-12 col-sm-12 box-col-12 col-xxl-100">
-                                                <div class="card-header card-no-border">
-                                                    <h2> Tài Khoản </h2><span class="f-w-500"> Xác Thực 2 Bước: Đang Tắt
-                                                    </span>
-                                                </div>
 
-                                                <div class="card-body pt-0 chat-app-wrapper">
-                                                    <div class="project-details">
-                                                        <div class="d-flex gap-2"><img src="/avatar.png" style="width: 48px;"
-                                                                alt="user">
-                                                            <div>
-                                                                <h4 class="f-w-500"> 2509roblox </h4><span
-                                                                    class="f-12 f-light f-w-500"> Thành Viên
-                                                                </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <p class="f-w-500 f-light text-danger"> Quý Khách Chưa Cập Nhật
-                                                            Thông Tin Liên Hệ, Thêm Thông Tin <a href="/profile"
-                                                                class="text-primary"> Tại Đây </a> </p>
-                                                        <div class="mt-3" style="display: flex;">
-                                                            <a href="/chuyen-khoan"
-                                                                class="badge badge-primary text-light"
-                                                                data-toggle="dropdown" aria-haspopup="true"
-                                                                aria-expanded="false"> Nạp Tiền </a>
-                                                            <a href="/profile/history"
-                                                                class="badge badge-secondary text-light"> Lịch Sử Hoạt
-                                                                Động </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xxl-12 col-xl-12 col-sm-12 box-col-12 col-xxl-100">
-                                        <div class="card height-equal title-line">
-                                            <div class="card-header card-no-border">
-                                                <div class="header-top">
-                                                    <h2> Mã Khuyến Mãi </h2>
-                                                </div>
-                                            </div>
-
-                                            <div class="card-body pt-0">
-                                                <ul class="scrollable-div-250px">
-
-
-                                                    <li>
-                                                        <div class="card card-body">
-                                                            <div style="display: flex;">
-                                                                <b class="text-danger"> VIETNAM </b>
-                                                                <a onclick="copyText('VIETNAM');"
-                                                                    class="badge badge-primary text-light"
-                                                                    style="margin-left: auto; cursor: pointer;"> <i
-                                                                        class="icofont icofont-copy-alt"></i> </a>
-                                                            </div>
-
-                                                            <div>
-                                                                <span> Áp Dụng Cho Tất Cả Dịch Vụ</span><br>
-                                                                <span> Giảm: 20%, Đã Sử Dụng: 73%,
-                                                                    <br> Hết Hạn Vào: 13/11/2024 - 12:00:00 </span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -369,8 +409,7 @@
                                                     Mừng Đến Với GiangTran.Com.Vn</strong></span></p>
                                         <p style="text-align:center"><strong>Giới Thiệu Bạn B&egrave;, Kh&aacute;ch
                                                 H&agrave;ng, ... Nhận 30% Tiền Mỗi Khi Họ Thanh To&aacute;n, R&uacute;t
-                                                Nhanh Ch&oacute;ng&nbsp;<a
-                                                    href="/tiep-thi-lien-ket"><span
+                                                Nhanh Ch&oacute;ng&nbsp;<a href="/tiep-thi-lien-ket"><span
                                                         style="color:#3498db">Tại Đ&acirc;y</span></a></strong></p>
                                         <p style="text-align:center">Nếu C&oacute; Bạn C&oacute; Bất Cứ Vấn Đề Hoặc
                                             G&oacute;p &Yacute; Đừng Ngần Ngại Li&ecirc;n Hệ Nh&oacute;m Hỗ Trợ, Nify Sẽ
@@ -389,20 +428,20 @@
                     </div>
 
                     <script>
-                        function close1h(){
-                                localStorage.setItem('time_modal', '1731413273');
-                                var modal = new bootstrap.Modal(document.getElementById('modalHome'));
-                                modal.hide();
-                            }
+                        function close1h() {
+                            localStorage.setItem('time_modal', '1731413273');
+                            var modal = new bootstrap.Modal(document.getElementById('modalHome'));
+                            modal.hide();
+                        }
 
-                            document.addEventListener("DOMContentLoaded", function() {
-                                var modal = new bootstrap.Modal(document.getElementById('modalHome'));
-                                if(localStorage.getItem('time_modal') < 1731409673){
-                                    modal.show();
-                                }
-                            });
+                        document.addEventListener("DOMContentLoaded", function() {
+                            var modal = new bootstrap.Modal(document.getElementById('modalHome'));
+                            if (localStorage.getItem('time_modal') < 1731409673) {
+                                modal.show();
+                            }
+                        });
                     </script>
-  @livewire('inc.footer')
+                    @livewire('inc.footer')
 
                 </div>
             </div>
@@ -424,7 +463,7 @@
         </style>
 
 
-          {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
+        {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
         <script src="/assets/static/simplebar.js"></script>
         <script src="/assets/static/invoices.js?v=1731409673" defer></script>
@@ -455,4 +494,5 @@
         <script src="/assets/static/customizer.js"></script>
 
     </body>
+
 </div>
