@@ -14,11 +14,6 @@ class SocialPopup extends Component
 
     public function googleLogin($response)
     {
-        $response = [
-            'name' => 'web developer',
-            'email' => '2509roblox@gmail.com',
-            'picture' => 'https://lh3.googleusercontent.com/a/ACg8ocK8gM4BqM7T5N6j_ITi302_WurD0O8FM4ui8JJGNxNbwKM3cyjt=s96-c',
-        ];
         // Kiểm tra và lấy thông tin người dùng từ phản hồi
         try {
             // Thay vì gọi Socialite, bạn đã có phản hồi từ Google
