@@ -1,14 +1,16 @@
 <footer class="footer">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 footer-copyright d-flex flex-wrap align-items-center justify-content-between">
-          <p class="mb-0 f-w-600">Copyright <span class="year-update"> </span> © Mofi theme by pixelstrap  </p>
-          <p class="mb-0 f-w-600">Hand crafted & made with
-            <svg class="footer-icon">
-              <use href="/mofi/assets/svg/icon-sprite.svg#footer-heart"> </use>
-            </svg>
-          </p>
+        <div class="row gy-1">
+            <div class="col-lg-6 col-md-7 footer-copyright">
+                <p class="mb-0 f-light f-w-500"> COPYRIGHT 2024 © GIANGTRAN.COM.VN </p>
+            </div>
+            <div class="col-lg-6 col-md-5">
+                <div class="d-flex">
+                    <div class="lang-title f-light f-w-500"><span
+                            onclick="window.open('/dieu-khoan');" style="cursor: pointer;"> Điều
+                            Khoản & Chính Sách </span></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
+</footer>

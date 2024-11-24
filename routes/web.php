@@ -1,82 +1,87 @@
 <?php
 
-use App\Livewire\Tools\ImageToLink\Home as ImageToLink;
-use App\Livewire\Tools\GetFbId\Home as GetFbId;
-use App\Livewire\Tools\CreateAiImage\Home as CreateAiImage;
-use App\Livewire\Tools\CheckDomain\Home as CheckDomain;
-use App\Livewire\Tools\AppotaPayment\Home as AppotaPayment;
-use App\Livewire\Tools\TextToSpeech\Home as TextToSpeech;
-use App\Livewire\Tools\AsciiConverter\Home as AsciiConverter;
-use App\Livewire\Tools\JsEncryption\Home as JsEncryption;
-use App\Livewire\Tools\PHPEncryption\Home as PHPEncryption;
-use App\Livewire\Tools\RandomAvatar\Home as RandomAvatar;
-use App\Livewire\Tools\CharacterEncryption\Home as CharacterEncryption;
-use App\Livewire\Tools\FontRemoval\Home as FontRemoval;
-use App\Livewire\Tools\Get2faCode\Home as Get2faCode;
-use App\Livewire\Tools\CheckLiveFb\Home as CheckLiveFb;
-use App\Livewire\Tools\DownloadVideoWithoutLogo\Home as DownloadVideoWithoutLogo;
-use App\Livewire\Tools\GetColorCode\Home as GetColorCode;
-use App\Livewire\Tools\CreateVideoFromImage\Home as CreateVideoFromImage;
-use App\Livewire\Tools\FileFormatConverter\Home as FileFormatConverter;
-use App\Livewire\Tools\UrlShortener\Home as UrlShortener;
-use App\Livewire\Tools\ChartGenerator\Home as ChartGenerator;
-use App\Livewire\Tools\SpellCheck\Home as SpellCheck;
-use App\Livewire\Tools\ExtractAudioFromVideo\Home as ExtractAudioFromVideo;
-use App\Livewire\Tools\CheckInternetSpeed\Home as CheckInternetSpeed;
-use App\Livewire\Tools\IPTracking\Home as IPTracking;
-use App\Livewire\Tools\PasswordGenerator\Home as PasswordGenerator;
-use App\Livewire\Tools\VideoToAudio\Home as VideoToAudio;
-use App\Livewire\Tools\CreateGreetingCard\Home as CreateGreetingCard;
-use App\Livewire\Tools\TrafficFine\Home as TrafficFine;
-use App\Livewire\Products\HostingVps\Home as HostingHome;
-use App\Livewire\Products\HostingVps\Detail as HostingDetail;
-use App\Livewire\Products\HostingVps\Orders;
-
-
-
-use App\Livewire\General\Dashboard\Home as Dashboard ;
-use App\Livewire\Products\HostingVps\OrderDetail;
+use App\Http\Controllers\cron\Checkpayment;
+use App\Http\Controllers\cron\Transaction;
+use App\Http\Middleware\CheckAuth;
+use App\Http\Middleware\EnsureUserIsAuthenticated;
+use App\Livewire\Template\ApiClient;
+use App\Livewire\Page\ChuyenKhoan;
+use App\Livewire\Page\DieuKhoan;
+use App\Livewire\Auth\ForgotPassword;
+use App\Livewire\Page\Home;
+use App\Livewire\Template\Hosting\Ca;
+use App\Livewire\Page\LandingPage;
+use App\Livewire\Auth\Login;
+use App\Livewire\Auth\Register;
+use App\Livewire\Auth\ResetPassword;
+use App\Livewire\Template\Manage\Cronjob;
+use App\Livewire\Template\Manage\Vps;
+use App\Livewire\Template\NapCard;
+use App\Livewire\Page\Profile;
+use App\Livewire\Template\Hosting\VnPremium;
+use App\Livewire\Template\Reseller\VnPremium as ResellerVnPremium;
+use App\Livewire\Template\Hosting\MuaHosting;
+use App\Livewire\Template\Manage\Hosting;
+use App\Livewire\Template\Manage\Reseller;
+use App\Livewire\Template\KhoMaNguon;
+use App\Livewire\Template\RutTien;
+use App\Livewire\Template\ThueCron;
+use App\Livewire\Template\TiepThiLienKet;
+use App\Livewire\Template\VpsStore\CloudVpsVietNam\CloudVpsPro;
+use App\Livewire\Template\VpsStore\CloudVpsVietNam\CloudVpsPro\Detail;
+use App\Livewire\Template\KhoMaNguon\Detail as KhoMaNguonDetail;
+use App\Livewire\Template\Manage\Code;
+use App\Livewire\Template\Product\Hosting\Detail as DetailHosting;
+use App\Livewire\Template\HoaDon\Detail as DetailHoaDon;
+use App\Livewire\Services\Smm\Create as CreateSmm;
+use App\Livewire\Services\Smm\Manager as ManagerSmm;
 use Illuminate\Support\Facades\Route;
 
-// Định nghĩa các route
-Route::get('/home', Dashboard::class)->name('general.dashboard');
-// Route::get('/home', Home::class)->name('home');
+// template
 
+Route::get('/', LandingPage::class)->name('landingpage');
+Route::get('/home', Home::class)->name('home');
 
-Route::group(['prefix' => 'tools'], function () {
-    Route::get('/image-to-link', ImageToLink::class)->name('tools.imageToLink');
-    Route::get('/get-fb-id', GetFbId::class)->name('tools.getFbId');
-    Route::get('/create-ai-image', CreateAiImage::class)->name('tools.createAiImage');
-    Route::get('/check-domain', CheckDomain::class)->name('tools.checkDomain');
-    Route::get('/appota-payment', AppotaPayment::class)->name('tools.appotaPayment');
-    Route::get('/text-to-speech', TextToSpeech::class)->name('tools.textToSpeech');
-    Route::get('/ascii-converter', AsciiConverter::class)->name('tools.asciiConverter');
-    Route::get('/js-encryption', JsEncryption::class)->name('tools.jsEncryption');
-    Route::get('/php-encryption', PHPEncryption::class)->name('tools.phpEncryption');
-    Route::get('/random-avatar', RandomAvatar::class)->name('tools.randomAvatar');
-    Route::get('/character-encryption', CharacterEncryption::class)->name('tools.characterEncryption');
-    Route::get('/font-removal', FontRemoval::class)->name('tools.fontRemoval');
-    Route::get('/get-2fa-code', Get2faCode::class)->name('tools.get2faCode');
-    Route::get('/check-live-fb', CheckLiveFb::class)->name('tools.checkLiveFb');
-    Route::get('/download-video-without-logo', DownloadVideoWithoutLogo::class)->name('tools.downloadVideoWithoutLogo');
-    Route::get('/get-color-code', GetColorCode::class)->name('tools.getColorCode');
-    Route::get('/create-video-from-image', CreateVideoFromImage::class)->name('tools.createVideoFromImage');
-    Route::get('/file-format-converter', FileFormatConverter::class)->name('tools.fileFormatConverter');
-    Route::get('/url-shortener', UrlShortener::class)->name('tools.urlShortener');
-    Route::get('/chart-generator', ChartGenerator::class)->name('tools.chartGenerator');
-    Route::get('/spell-check', SpellCheck::class)->name('tools.spellCheck');
-    Route::get('/extract-audio-from-video', ExtractAudioFromVideo::class)->name('tools.extractAudioFromVideo');
-    Route::get('/check-internet-speed', CheckInternetSpeed::class)->name('tools.checkInternetSpeed');
-    Route::get('/ip-tracking', IPTracking::class)->name('tools.ipTracking');
-    Route::get('/password-generator', PasswordGenerator::class)->name('tools.passwordGenerator');
-    Route::get('/video-to-audio', VideoToAudio::class)->name('tools.videoToAudio');
-    Route::get('/create-greeting-card', CreateGreetingCard::class)->name('tools.createGreetingCard');
-    Route::get('/traffic-fine', TrafficFine::class)->name('tools.trafficFine');
+Route::middleware(CheckAuth::class)->group(function () {
+    Route::get('/login', Login::class)->name('login');
+    Route::get('/register', action: Register::class)->name('register');
+    Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
+    Route::get('/reset-password', action: ResetPassword::class)->name('password.reset');
 });
 
-Route::group(['prefix' => 'hosting-vps'], function () {
-    Route::get('/home', HostingHome::class)->name('products.hosting-vps');
-    Route::get('/detail/{id}', HostingDetail::class)->name('products.hosting-vps.detail');
-    Route::get('/orders', action: Orders::class)->name('products.hosting-vps.orders');
-    Route::get('/orders/{id}', action: OrderDetail::class)->name('products.hosting-vps.orders-detail');
+
+Route::middleware(EnsureUserIsAuthenticated::class)->group(function () {
+    Route::get('/profile', Profile::class)->name('profile');
 });
+
+Route::get('/services/smm/create', CreateSmm::class)->name('smm.create');
+Route::get('/services/smm/manager', ManagerSmm::class)->name('smm.manager');
+
+Route::get('/chuyen-khoan', ChuyenKhoan::class)->name('chuyen-khoan');
+Route::get('/hosting/vn-premium', VnPremium::class)->name('vn-premium');
+Route::get('/hosting/ca', Ca::class)->name('ca');
+Route::get('/mua-hosting/{id}', MuaHosting::class)->name('mua-hosting');
+Route::get('/manage/hosting', Hosting::class)->name('hosting');
+Route::get('/reseller/vn-premium', ResellerVnPremium::class)->name('reseller-vn-premium');
+Route::get('/manage/reseller', Reseller::class)->name('reseller');
+Route::get('/vps-store/cloud-vps-viet-nam/cloud-vps-pro', CloudVpsPro::class)->name('cloud-vps-pro');
+Route::get('/mua-vps/cloud-vps-viet-nam/cloud-vps-pro/{id}', action: Detail::class)->name('mua-vps-cloud-vps-viet-nam');
+Route::get('/manage/vps', Vps::class)->name('vps');
+Route::get('/kho-ma-nguon', KhoMaNguon::class)->name('kho-ma-nguon');
+Route::get('/mua-ma-nguon/{id}', KhoMaNguonDetail::class)->name('kho-ma-nguon-detail');
+Route::get('/manage/code', Code::class)->name('code');
+Route::get('/thue-cron', ThueCron::class)->name('thue-cron');
+Route::get('/manage/cronjob', Cronjob::class)->name('cronjob');
+Route::get('/tiep-thi-lien-ket', action: TiepThiLienKet::class)->name('tiep-thi-lien-ket');
+Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
+Route::get('/nap-card', action: NapCard::class)->name('nap-card');
+Route::get('/api-client', action: ApiClient::class)->name('api-client');
+Route::get('/hoa-don/{id}', action: DetailHoaDon::class)->name('hoa-don');
+Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
+Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
+Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
+Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
+
+Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
+Route::get('/auth/google/register', [Register::class, 'redirectToProvider'])->name('google.register');
+Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);

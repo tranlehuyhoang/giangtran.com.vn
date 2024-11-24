@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam">
+    <meta name="keywords" content="Nify.vn, domain, hosting cpanel, reseller, whm, jetbackup, litespeed, whois">
+    <meta name="author" content="nify.vn">
+    <link rel="canonical" href="/product/hosting/471">
+    <link rel="icon" href="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png" type="image/x-icon">
+
+    <!-- FB, LinkedIn SEO -->
+    <meta property="og:title" content="Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam">
+    <meta property="og:description" content="Nify.vn - Hệ Thống Cung Cấp Hosting, Tên Miền Giá Rẻ Tại Việt Nam">
+    <meta property="og:image" content="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png">
+    <meta property="og:url" content="/product/hosting/471">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://nify.vn/static/style.styl?v=514479215">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/css/toast@1.0.1/fuiToast.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=about:blank">
+    </noscript>
+</head>
+
+<body id="content">
+    <div class="loader-wrapper" style="z-index: 999999;">
+        <div class="boxes"></div>
+    </div>
+    <div>
+        <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+
+        <div class="page-wrapper compact-wrapper" id="pageWrapper">
+            <div class="page-header row">
+
+                <div class="col-auto header-left-wrapper">
+                    <div class="header-logo-wrapper p-0 left-header">
+                        <div class="logo-wrapper">
+                            <a href="/"><img class="img-fluid" src="https://img.upanh.tv/2024/08/13/logo-light-1.png" style="height: 35px;" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="toggle-sidebar">
+                        <svg class="status_toggle sidebar-toggle">
+                      <use href="/assets/svg/icon-sprite.svg#collapse-sidebar"></use>
+                    </svg>
+                    </div>
+                </div>
+
+                <div class="col-auto header-right-wrapper page-title">
+                    <div>
+                        <h2> Quản Lý Dịch Vụ </h2>
+                        <nav>
+                            <ol class="breadcrumb justify-content-sm-start align-items-center mb-0">
+                                <li class="breadcrumb-item"><a href=""> Chi Tiết Dịch Vụ </a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="col header-wrapper m-0 header-right-wrapper">
+                    <div class="row m-0">
+                        <div class="form-inline search-full col" action="#" method="get">
+                            <div class="form-group w-100">
+                                <div class="Typeahead Typeahead--twitterUsers">
+                                    <div class="u-posRelative">
+                                        <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search anything .." name="q" title="" autofocus="">
+                                        <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                                    </div>
+                                    <div class="Typeahead-menu"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-logo-wrapper col-auto p-0 left-header"></div>
+
+                        <div class="nav-right col-auto pull-right right-header p-0 ms-auto">
+                            <ul class="nav-menus">
+                                <li>
+                                    <span class="header-search">
+                            <svg>
+                              <use href="/assets/svg/icon-sprite.svg#search"></use>
+                            </svg>
+                            </span>
+                                </li>
+
+                                <li>
+                                    <div class="mode">
+                                        <svg class="moon-icon">
+                              <use href="/assets/svg/icon-sprite.svg#moon"></use>
+                            </svg>
+                                        <svg class="sun-icon">
+                              <use href="/assets/svg/icon-sprite.svg#sun"></use>
+                            </svg>
+                                    </div>
+                                </li>
+
+
+                                <li class="cart-nav onhover-dropdown" onclick="ShowHoaDon();">
+                                    <div class="cart-box onhover-click">
+                                        <svg>
+                              <use href="/assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
+                            </svg><span class="badge rounded-pill badge-primary" id="number_bill">0</span>
+                                    </div>
+                                </li>
+
+
+
+                                <li class="profile-nav onhover-dropdown">
+
+
+                                    <div class="onhover-click">
+                                        <div class="sidebar-image"> <img src="/assets/images/user.png" alt="profile"><span class="status status-success"></span></div>
+                                        <div class="sidebar-content">
+                                            <h4> 2508roblox </h4><span class="f-12 f-w-600 f-light"> Số Dư: 0<sup>đ</sup> </span>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <ul class="profile-dropdown onhover-show-div">
+
+                                        <li class="text-center d-block d-md-none">
+                                            <span> Số Dư: 0<sup>đ</sup> </span>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/profile">
+                                                <div class="profile-icon">
+                                                    <svg>
+                                    <use href="/assets/svg/icon-sprite.svg#user"></use>
+                                  </svg>
+                                                </div>
+                                                <span> Hồ Sơ </span></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/login">
+                                                <div class="profile-icon">
+                                                    <svg>
+                                    <use href="/assets/svg/icon-sprite.svg#login"></use>
+                                  </svg>
+                                                </div><span> Đăng Xuất </span></a>
+                                        </li>
+
+                                    </ul>
+
+
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-body-wrapper">
+
+
+                <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
+                    <div>
+                        <div class="logo-wrapper">
+                            <a href="/"><img class="img-fluid" src="https://img.upanh.tv/2024/08/13/logo-light-1.png" style="height: 35px;" alt=""></a>
+                            <div class="back-btn"><i class="fa fa-angle-left"></i></div>
+                            <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
+                        </div>
+                        <div class="logo-icon-wrapper">
+                            <a href="/"><img class="img-fluid" src="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png" width="35px;" alt=""></a>
+                        </div>
+                        <div class="profile-section sidebar-search">
+
+
+                            <div class="profile-wrapper">
+                                <div class="active-profile"> <img class="img-fluid" src="/assets/images/user.png" alt="user">
+                                    <div class="status bg-success"> </div>
+                                </div>
+                                <div>
+                                    <h4> 2508roblox </h4><span> Số Dư: 0<sup>đ</sup> </span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a href="/profile">
+                                    <svg>
+                      <use href="/assets/svg/icon-sprite.svg#profile-setting"></use>
+                    </svg>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="sidebar-search">
+                            <div class="input-group"><span class="input-group-text" id="sidebar-search">
+                  <svg>
+                    <use href="/assets/svg/icon-sprite.svg#search"></use>
+                  </svg></span>
+                                <input class="form-control" type="text" placeholder="Tìm Kiếm" aria-label="search" aria-describedby="sidebar-search">
+                            </div>
+                        </div>
+
+                        <nav class="sidebar-main">
+                            <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+                            <div id="sidebar-menu">
+                                <ul class="sidebar-links" id="simple-bar">
+                                    <li class="back-btn">
+                                        <a href="/"><img class="img-fluid" src="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png" width="35px;" alt=""></a>
+                                        <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                                    </li>
+                                    <li class="pin-title sidebar-main-title">
+                                        <div>
+                                            <h6>- Pinned</h6>
+                                        </div>
+                                    </li>
+
+                                    <li class="sidebar-list">
+                                        <i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title link-nav" id="homeHref" href="/">
+                                            <svg class="stroke-icon">
+                            <use href="/assets/svg/icon-sprite.svg#stroke-home"></use>
+                          </svg>
+                                            <span> Trang Chủ </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title" href="#">
+                                            <svg class="stroke-icon">
+                        <use href="/assets/svg/icon-sprite.svg#stroke-table"></use>
+                      </svg>
+
+                                            <span class="lan-6"> Hosting Lưu Trữ </span></a>
+                                        <ul class="sidebar-submenu">
+
+                                            <li><a href="/hosting/vn-premium"> Máy Chủ VN NVMe </a></li>
+
+
+                                            <li><a href="/hosting/ca"> Máy Chủ Canada </a></li>
+
+
+
+                                            <li><a href="/manage/hosting"> Quản Lý </a></li>
+
+                                            <li><a href="/product/hosting/471"> Chi Tiết Dịch Vụ </a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title" href="#">
+                                            <svg class="stroke-icon">
+                        <use href="/assets/svg/icon-sprite.svg#stroke-internationalization"></use>
+                      </svg>
+
+                                            <span class="lan-7"> Reseller Hosting </span></a>
+                                        <ul class="sidebar-submenu">
+
+
+                                            <li><a href="/reseller/vn-premium"> Máy Chủ Việt Nam </a></li>
+
+
+
+                                            <li><a href="/manage/reseller"> Quản Lý </a></li>
+
+
+
+                                        </ul>
+                                    </li>
+
+
+
+                                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title" href="#">
+                                            <svg class="stroke-icon">
+                        <use href="/assets/svg/icon-sprite.svg#stroke-icons"></use>
+                      </svg>
+                                            <span> Cloud VPS </span>
+                                            <div class="according-menu">
+                                                <i class="fa fa-angle-right"></i>
+                                            </div>
+                                        </a>
+
+                                        <ul class="sidebar-submenu" style="display: none;">
+                                            <li><a class="submenu-title submenu-wrapper" href="#"> VPS VN <span class="sub-arrow"><i class="fa fa-angle-right"></i></span></a>
+                                                <ul class="nav-su submenu-content">
+                                                    <li><a href="/vps-store/cloud-vps-viet-nam/cloud-vps-pro">CLOUD VPS PRO</a></li>
+                                                </ul>
+                                            </li>
+
+
+                                            <li><a href="/manage/vps"> Quản Lý </a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title" href="#">
+                                            <svg class="stroke-icon">
+                        <use href="/assets/svg/icon-sprite.svg#stroke-maps"></use>
+                      </svg>
+
+                                            <span class="lan-7"> Mã Nguồn </span></a>
+                                        <ul class="sidebar-submenu">
+                                            <li><a href="/kho-ma-nguon"> Mua Mã Nguồn </a></li>
+
+
+                                            <li><a href="/manage/code"> Code Đã Mua </a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title" href="#">
+                                            <svg class="stroke-icon">
+                        <use href="/assets/svg/icon-sprite.svg#stroke-animation"></use>
+                      </svg>
+
+                                            <span class="lan-7"> Cronjob </span></a>
+                                        <ul class="sidebar-submenu">
+                                            <li><a href="/thue-cron"> Thuê Cronjob </a></li>
+                                            <li><a href="/manage/cronjob"> Quản Lý </a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="sidebar-list">
+                                        <i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title" href="#">
+                                            <svg class="stroke-icon">
+                            <use href="/assets/svg/icon-sprite.svg#stroke-user"></use>
+                          </svg>
+                                            <span> Tài Khoản </span>
+                                        </a>
+
+                                        <ul class="sidebar-submenu">
+                                            <li><a href="/profile"> Hồ Sơ </a></li>
+                                            <li><a href="/login"> Đăng Xuất </a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="sidebar-list">
+                                        <i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title" href="#">
+                                            <svg class="stroke-icon">
+                            <use href="/assets/svg/icon-sprite.svg#stroke-faq"></use>
+                          </svg>
+                                            <span> Tiếp Thị Liên Kết </span>
+                                        </a>
+
+                                        <ul class="sidebar-submenu">
+                                            <li><a href="/tiep-thi-lien-ket"> Thống Kê </a></li>
+                                            <li><a href="/rut-tien"> Rút Tiền </a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="sidebar-list">
+                                        <i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title link-nav" href="/nap-card">
+                                            <svg class="stroke-icon">
+                            <use href="/assets/svg/icon-sprite.svg#stroke-sample-page"></use>
+                          </svg>
+                                            <span> Nạp Thẻ </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-list">
+                                        <i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title link-nav" href="/chuyen-khoan">
+                                            <svg class="stroke-icon">
+                            <use href="/assets/svg/icon-sprite.svg#stroke-starter-kit"></use>
+                          </svg>
+                                            <span> Nạp Ngân Hàng </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-list">
+                                        <i class="fa fa-thumb-tack"></i>
+                                        <a class="sidebar-link sidebar-title link-nav" href="/api-client">
+                                            <svg class="stroke-icon">
+                            <use href="/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
+                          </svg>
+                                            <span> Kết Nối API </span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+                        </nav>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {});
+                </script>
+
+
+
+
+
+
+                <style>
+                    img {
+                        cursor: pointer;
+                    }
+                </style>
+
+                <div class="page-body">
+                    <div class="container-fluid" id="content">
+
+                        <div class="col-md-12 project-list d-none d-md-block">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="nav nav-tabs border-tab" id="top-tab" role="tablist">
+                                            <li class="nav-item" role="presentation"><a class="nav-link active" id="top-home-tab" data-bs-toggle="tab" href="#top-home" role="tab" aria-controls="top-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg> Tổng Quan </a></li>
+                                            <li class="nav-item" onclick="loadto('/hosting/ca/upgrade/471');" role="presentation"><a class="nav-link" id="profile-top-tab" data-bs-toggle="tab" href="#top-profile" role="tab" aria-controls="top-profile" aria-selected="false" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg> Nâng Cấp </a></li>
+                                            <li class="nav-item" role="presentation">
+                                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalGiaHan" id="contact-top-tab" data-bs-toggle="tab" href="#top-contact" role="tab" aria-controls="top-contact" aria-selected="false" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>                                                    Gia Hạn </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div style="border: 3px solid; background-color: blue; border-top-left-radius: 15px; border-top-right-radius: 15px;"></div>
+                                    <div class="card-body">
+                                        <div class="row">
+
+                                            <div class="col-md-6 text-md-start text-center">
+                                                <h4 class="mt-2"> CANADA #CA1 </h4>
+                                                <div> Tên Miền: <a href="https://nphdigital.vn" class="txt-primary" target="_blank">NPHDIGITAL.VN</a> </div>
+                                                <b> Trạng Thái: <span class="badge badge-success badge bg-success"> Hoạt Động </span> </b>
+                                            </div>
+
+                                            <div class="col-md-6 d-flex justify-content-md-end justify-content-center align-items-start">
+                                                <div class="d-none d-md-block" style="padding-right: 30px;">
+                                                    <ul>
+                                                        <div> Thanh Toán Lần Đầu: 10,000VND </div>
+                                                        <div> Thanh Toán Định Kỳ: 10,000VND <sup><strong class="text-danger">1 Tháng</strong></sup></div>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="me-3">
+                                                    <div> <strong> Thời Gian Đăng Ký </strong></div>
+                                                    <p> 18/11/2024 - 09:35:07 </p>
+                                                </div>
+                                                <div>
+                                                    <div> <strong>Thời Gian Hết Hạn </strong></div>
+                                                    <p> 18/12/2024 - 09:34:18 </p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="d-block d-md-none text-center mt-3">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalGiaHan" class="text-info"> <i class="icon-control-eject"></i> Gia Hạn </a> |
+                                                <a href="#" onclick="loadto('/hosting/ca/upgrade/471');" class="text-info"> <i class="icon-harddrives"></i> Nâng Cấp </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card title-line">
+                                    <div class="card-body">
+                                        <h4 class="f-w-600"> CÔNG CỤ </h4>
+                                        <div class="row mt-2">
+                                            <div class="col-md-4 mt-2">
+                                                <button onclick="logintocp();" class="btn btn-dark" style="width: 100%; font-size: 12px;" id="btnLoginCP"> <i class="icon-harddrives"></i> Truy Cập Nhanh  </button>
+                                            </div>
+
+                                            <div class="col-md-4 mt-2">
+                                                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#change-passwordModal" style="width: 100%; font-size: 12px;"> <i class="icon-shield"></i> Đặt Lại Mật Khẩu </button>
+                                            </div>
+
+                                            <div class="col-md-4 mt-2">
+                                                <button class="btn btn-dark" style="width: 100%; font-size: 12px;" id="resetbtn" onclick="resetService('resetbtn');"> <i class="icon-reload"></i> Đặt Lại Dịch Vụ </button>
+                                            </div>
+
+                                            <div class="col-md-4 mt-2">
+                                                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#change-domainNew" style="width: 100%; font-size: 12px;"> <i class="icon-world"></i> Đổi Tên Miền Chính </button>
+                                            </div>
+
+                                            <div class="col-md-4 mt-2">
+                                                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#problem" style="width: 100%; font-size: 12px;"> <i class="icon-headphone"></i> Báo Cáo Sự Cố </button>
+                                            </div>
+
+                                            <div class="col-md-4 mt-2">
+                                                <button class="btn btn-danger" style="width: 100%; font-size: 12px;" id="btnRemove" onclick="removeService('btnRemove')"> <i class="icon-alert"></i> Yêu Cầu Hủy Dịch Vụ </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="card title-line">
+                                    <div class="card-body">
+                                        <h4 class="f-w-600"> TÀI NGUYÊN SỬ DỤNG </h4>
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-6" style="padding-top: 10px;">
+                                                <b>CPU</b>
+                                                <div class="progress lg-progress-bar">
+                                                    <div id="cpu_tientrinh" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span id="cpu-text" style="font-size: 10px;"> Đang tải ... </span>
+                                            </div>
+
+                                            <div class="col-md-6 col-6" style="padding-top: 10px;">
+                                                <b>Bandwidth</b>
+                                                <div class="progress lg-progress-bar">
+                                                    <div id="bandwidth_tientrinh" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span id="bandwidth-text" style="font-size: 10px;"> Đang tải ... </span>
+                                            </div>
+
+                                            <div class="col-md-6 col-6" style="padding-top: 10px;">
+                                                <b>Disk Usage</b>
+                                                <div class="progress lg-progress-bar">
+                                                    <div id="disk_tientrinh" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span id="disk-text" style="font-size: 10px;"> Đang tải ... </span>
+                                            </div>
+
+                                            <div class="col-md-6 col-6" style="padding-top: 10px;">
+                                                <b>Number of Processes</b>
+                                                <div class="progress lg-progress-bar">
+                                                    <div id="quytrinh_tientrinh" class="progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span id="number_of_processes-text" style="font-size: 10px;"> Đang tải ... </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="card title-line">
+                                    <div class="card-body">
+                                        <h4 class="f-w-600"> LIÊN KẾT VỚI CPANEL </h4>
+                                        <div class="row mt-2">
+                                            <div class="col-md-3 col-6 mt-4">
+                                                <img src="/assets/images/cyberlux/file_manager.png" width="40px;" onclick="logintocp('/frontend/jupiter/filemanager/index.html');"> File Manager
+                                            </div>
+
+                                            <div class="col-md-3 col-6 mt-4">
+                                                <img src="/assets/images/cyberlux/backup.png" width="40px;" onclick="logintocp('/frontend/jupiter/backup/index.html');"> Backup
+                                            </div>
+
+                                            <div class="col-md-3 col-6 mt-4">
+                                                <img src="/assets/images/cyberlux/cron_jobs.png" width="40px;" onclick="logintocp('/frontend/jupiter/cron/index.html');"> Cronjobs
+                                            </div>
+
+                                            <div class="col-md-3 col-6 mt-4">
+                                                <img src="/assets/images/cyberlux/php_my_admin.png" width="40px;" onclick="logintocp('/frontend/jupiter/sql/PhpMyAdmin.html');"> PHPMyAdmin
+                                            </div>
+
+                                            <div class="col-md-3 col-6 mt-4">
+                                                <img src="/assets/images/cyberlux/subdomains.png" width="40px;" onclick="logintocp('/frontend/jupiter/domains/index.html');"> Subdomain
+                                            </div>
+
+                                            <div class="col-md-3 col-6 mt-4">
+                                                <img src="/assets/images/cyberlux/addon_domains.png" width="40px;" onclick="logintocp('/frontend/jupiter/domains/index.html');"> AddonDomain
+                                            </div>
+
+                                            <div class="col-md-3 col-6 mt-4">
+                                                <img src="/assets/images/cyberlux/mysql_databases.png" width="40px;" onclick="logintocp('/frontend/jupiter/sql/wizard1.html');"> MySQL Database
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="card title-line">
+                                    <div class="card-body">
+                                        <h4 class="f-w-600"> THÔNG TIN CHI TIẾT </h4>
+
+                                        <div class="row mt-3">
+                                            <div class="col-6">
+                                                <div> <strong>Tài Khoản</strong> </div>
+                                                <p> arownwjo1is </p>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div><strong> Mật Khẩu </strong> (<span class="txt-primary" onclick="showHide('password', 'nrQhBVtnI2Bl');">Show/Hide</span>) </div>
+                                                <code id="password" class="text-light" style="background-color: #667382; padding: 5px;">***********</code>
+                                            </div>
+
+                                            <div class="col-6 mt-3">
+                                                <div><strong> IP & HOSTNAME </strong></div>
+                                                <span>158.69.52.169</span><br>
+                                                <span class="mt-2"><a href="https://host129.nify.vn:2083" target="_blank">https://host129.nify.vn:2083</a></span>
+                                            </div>
+
+                                            <div class="col-6 mt-3">
+                                                <div> <strong> Nameserver </strong> </div>
+                                                <p> NS128.NIFY.VN,NS129.NIFY.VN </p>
+                                            </div>
+
+
+                                            <div class="col-6 mt-3">
+                                                <div><strong> Email </strong></div>
+                                                <p>2508roblox@gmail.com</p>
+                                            </div>
+
+                                            <div class="col-6 mt-3">
+                                                <div> <strong> Gói Dịch Vụ </strong> </div>
+                                                <p> CANADA #CA1 </p>
+                                            </div>
+
+
+                                            <div class="col-6 mt-3">
+                                                <div><strong> Thanh Toán Lần Đầu </strong></div>
+                                                <p>10,000VND</p>
+                                            </div>
+
+                                            <div class="col-6 mt-3">
+                                                <div> <strong> Thanh Toán Định Kỳ </strong> </div>
+                                                <p> 10,000VND <sup><strong class="text-danger">1 Tháng</strong></sup></p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade bd-example-modal-fullscreen" id="modalGiaHan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen-xl-down modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <b class="modal-title" id="exampleModalLongTitle"> GIA HẠN DỊCH VỤ </b>
+                                <button class="btn-close py-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+
+
+                                        <div class="form-group">
+                                            <label> Phương Thức Thanh Toán </label>
+
+
+
+
+
+
+                                            <div class="card-wrapper border rounded-3 checkbox-checked">
+                                                <div class="radio-form">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" id="radio14" type="radio" name="radio-stacked" checked="" onchange="Method_payment()">
+                                                        <label class="form-check-label" for="radio14"> Số Dư Tài Khoản (0<sup>đ</sup>) </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" id="radio13" type="radio" name="radio-stacked" onchange="Method_payment()">
+                                                        <label class="form-check-label" for="radio13"> Chuyển Khoản Ngân Hàng </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <input type="hidden" id="payment_method" name="payment_method" value="">
+
+                                            <script>
+                                                function Method_payment() {
+                                                    var payment_balance = document.getElementById("radio14");
+                                                    var payment_bank = document.getElementById("radio13");
+
+                                                    if (payment_balance.checked) {
+                                                        document.getElementById("payment_method").value = 'payment_balance';
+                                                    }
+
+                                                    if (payment_bank.checked) {
+                                                        document.getElementById("payment_method").value = 'payment_bank';
+                                                    }
+                                                }
+
+                                                function amountIsMoney(price, vpstype = false) {
+                                                    var mn = document.getElementById("mn").value;
+                                                    if (price <= mn) {
+                                                        document.getElementById("radio14").disabled = false;
+                                                        !vpstype ? document.getElementById("radio14").checked = true : null;
+
+                                                        Method_payment();
+                                                    } else if (price > mn) {
+                                                        document.getElementById("radio14").disabled = true;
+                                                        document.getElementById("radio13").checked = true;
+
+                                                        Method_payment();
+                                                    }
+                                                }
+
+                                                setTimeout(() => {
+                                                    Method_payment();
+                                                }, 100)
+                                            </script>
+
+
+                                        </div>
+
+                                        <div class="mt-3"></div>
+
+
+                                        <div class="col-sm-12">
+                                            <label> Lựa Chọn Chu Kỳ </label>
+                                        </div>
+
+                                        <div class="">
+                                            <select class="form-select" id="chukypc" onclick="select_chukypc();">
+                                                                                     <option value="1" checked>1 Tháng (Giá: 10,000VND) </option>
+                                                                                          <option value="2" >2 Tháng (Giá: 20,000VND) </option>
+                                                                                          <option value="3" >3 Tháng (Giá: 30,000VND) </option>
+                                                                                          <option value="4" >4 Tháng (Giá: 40,000VND) </option>
+                                                                                          <option value="5" >5 Tháng (Giá: 50,000VND) </option>
+                                                                                          <option value="6" >6 Tháng (Giá: 60,000VND) </option>
+                                                                                          <option value="7" >7 Tháng (Giá: 70,000VND) </option>
+                                                                                          <option value="8" >8 Tháng (Giá: 80,000VND) </option>
+                                                                                          <option value="9" >9 Tháng (Giá: 90,000VND) </option>
+                                                                                          <option value="10" >10 Tháng (Giá: 100,000VND) </option>
+                                                                                          <option value="11" >11 Tháng (Giá: 110,000VND) </option>
+                                                                                          <option value="12" >12 Tháng (Giá: 120,000VND) </option>
+                                                                                          <option value="13" >13 Tháng (Giá: 130,000VND) </option>
+                                                                                          <option value="14" >14 Tháng (Giá: 140,000VND) </option>
+                                                                                          <option value="15" >15 Tháng (Giá: 150,000VND) </option>
+                                                                                          <option value="16" >16 Tháng (Giá: 160,000VND) </option>
+                                                                                          <option value="17" >17 Tháng (Giá: 170,000VND) </option>
+                                                                                          <option value="18" >18 Tháng (Giá: 180,000VND) </option>
+                                                                                          <option value="19" >19 Tháng (Giá: 190,000VND) </option>
+                                                                                          <option value="20" >20 Tháng (Giá: 200,000VND) </option>
+                                                                                          <option value="21" >21 Tháng (Giá: 210,000VND) </option>
+                                                                                          <option value="22" >22 Tháng (Giá: 220,000VND) </option>
+                                                                                          <option value="23" >23 Tháng (Giá: 230,000VND) </option>
+                                                                                          <option value="24" >24 Tháng (Giá: 240,000VND) </option>
+                                                                                  </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal"> Đóng </button>
+                                <button class="btn btn-primary btn-sm" type="button" id="btngiahan" onclick="GiaHan('btngiahan');"> Thanh Toán </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script>
+                    function select_chukypc() {
+                        var chuky = $("#chukypc").val();
+                        selectChuky(chuky);
+                        console.log(chuky);
+                    }
+                </script>
+
+                <div class="modal fade" id="problem" tabindex="-1" aria-labelledby="mdModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <b class="" id="mdModalLabel"> Báo Cáo Sự Cố </b>
+                                <button class="btn-close py-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body dark-modal">
+
+                                <span class="txt-danger"> Rất Tiếc, Quản Trị Viên Chưa Thiết Lập Cấu Hình Cho Máy Chủ Này! </span>
+
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal"> Đóng </button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <script src="/static/manage-hosting.js?id=471&v=301675902"></script>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row gy-1">
+                            <div class="col-lg-6 col-md-7 footer-copyright">
+                                <p class="mb-0 f-light f-w-500"> COPYRIGHT 2024 © NIFY.VN </p>
+                            </div>
+                            <div class="col-lg-6 col-md-5">
+                                <div class="d-flex">
+                                    <div class="lang-title f-light f-w-500"><span onclick="window.open('/dieu-khoan');" style="cursor: pointer;"> Điều Khoản & Chính Sách </span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <input type="hidden" id="mn" value="0">
+
+    <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+    <script>
+        Pusher.logToConsole = false;
+
+        var pusher = new Pusher('b2658b1172ccab773a69', {
+            cluster: 'ap1'
+        });
+
+        var channel = pusher.subscribe('iamthanhX-2508roblox');
+        channel.bind('my-event', function(data) {
+            var message = data.message;
+            var status = data.status;
+
+            swal('Thông Báo', message, status);
+
+            if (data.reload) {
+                setTimeout(() => {
+                    loadto('');
+                }, 2000);
+            }
+
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            Fancybox.bind("[data-fancybox='gallery']", {
+                animated: true,
+                infobar: true,
+                toolbar: true,
+                loop: true
+            });
+        });
+
+        $(document).ready(function() {
+            $('img').each(function() {
+                if (!$(this).attr('loading')) {
+                    $(this).attr('loading', 'lazy');
+                }
+            });
+        });
+    </script>
+
+    <style>
+        table tfoot tr {
+            padding-bottom: 6px;
+        }
+        
+        table tfoot tr td {
+            padding-bottom: 6px;
+        }
+    </style>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://nify.vn/static/simplebar.js"></script>
+    <script src="https://nify.vn/static/invoices.js?v=1731940563" defer></script>
+    <script src="https://nify.vn/static/jquery.min.js"></script>
+    <script src="https://nify.vn/static/config.js"></script>
+    <script src="https://nify.vn/static/cyberlux.js"></script>
+    <script src="https://nify.vn/static/handlebars.min.js"></script>
+    <script src="https://nify.vn/static/jquery.dataTables.min.js"></script>
+    <script src="https://nify.vn/static/datatable.custom.js"></script>
+    <script src="https://nify.vn/static/bundle.min.js"></script>
+    <script src="https://nify.vn/static/feather.min.js"></script>
+    <script src="https://nify.vn/static/bootstrap.bundle.min.js"></script>
+    <script src="https://nify.vn/static/feather.min.js"></script>
+    <script src="https://nify.vn/static/feather-icon.js"></script>
+    <script src="https://nify.vn/static/custom.js"></script>
+    <script src="https://nify.vn/static/swiper-bundle.min.js"></script>
+    <script src="https://nify.vn/static/sidebar-menu.js"></script>
+    <script src="https://nify.vn/static/sidebar-pin.js"></script>
+    <script src="https://nify.vn/static/bootstrap-notify.min.js"></script>
+    <script src="https://nify.vn/static/index.js"></script>
+    <script src="https://nify.vn/static/custom_touchspin.js"></script>
+    <script src="https://nify.vn/static/simple-datatable.js"></script>
+    <script src="https://nify.vn/static/handlebars.js"></script>
+    <script src="https://nify.vn/static/typeahead.bundle.js"></script>
+    <script src="https://nify.vn/static/typeahead.custom.js"></script>
+    <script src="https://nify.vn/static/search-handlebars.js"></script>
+    <script src="https://nify.vn/static/script.js"></script>
+    <script src="https://nify.vn/static/customizer.js"></script>
+
+</body>
+
+</html>
