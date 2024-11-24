@@ -6,6 +6,10 @@ use Livewire\Component;
 
 class SocialPopup extends Component
 {
+    public function googleLogin($response)
+    {
+        dd($response);
+    }
     public function render()
     {
         return view('livewire.inc.social-popup');

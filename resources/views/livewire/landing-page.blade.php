@@ -2626,11 +2626,7 @@
         <script src="/assets/static/assets/js/vendors/jquery.magnific-popup.min.js"></script>
 
         <script src="/assets/static/assets/js/app.js"></script>
-        <div id="g_id_onload"
-            data-client_id="{{ env('GOOGLE_CLIENT_ID') }}"
-            data-context="signin" data-csrf_token="{{ csrf_token() }}" data-ux_mode="popup"
-            data-callback="googleLogin" data-itp_support="true">
-        </div>
+        @livewire('inc.social-popup')
 
     </body>
 </div>

@@ -13,7 +13,6 @@
     <link loading="lazy" rel="icon" href="/icon.png">
     <meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://accounts.google.com/gsi/client" async></script>
 
     @livewireStyles
 </head>
