@@ -7,7 +7,6 @@
                 <p class="f-m-light mt-1"> Nếu Bạn Nghi Ngờ Tài Khoản Bị Truy Cập Bởi Một Ai
                     Đó,
                     Hãy Đổi Thông Tin Tài Khoản Ngay Nhé! </p>
-                    {{ Auth::user() }}
             </div>
 
             <div class="card-body">

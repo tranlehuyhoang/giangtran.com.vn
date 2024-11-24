@@ -36,11 +36,11 @@
 
 
                     <div class="form-group">
-                        <label for="categories">Danh Mục  
+                        <label for="categories">Danh Mục
                             <img id="selected-category-image" src="{{ Storage::url($image) }}" alt="" style="width: 20px; height: 20px;">
                         </label>
                         <input type="hidden" id="cycle_max" value="12">
-                        
+
                         <select class="form-control" id="categories" wire:model.live="selectedCategory">
                             @foreach($categories as $category)
                                 <option value="{{ $category['id'] }}" data-image="{{ Storage::url($category['image']) }}">
@@ -69,7 +69,7 @@
                         <div class="touchspin-wrapper">
                             <input class="input-touchspin spin-outline-dark" id="chuky" type="number" value="1000" wire:model.live="quantity">
                             <button class="increment-touchspin btn-touchspin touchspin-dark" wire:click="incrementQuantity(1000)"><i class="fa fa-plus"></i></button>
-                        
+
                             <!-- Thêm các nút tăng số lượng -->
                         </div>
                     </div>
@@ -117,13 +117,13 @@
                                 <tr>
                                     <td> Tổng Thanh Toán (VND) :</td>
                                     <td colspan="2" id="amount-total">
-                                        {{ 
+                                        {{
                                             App\Helpers\FormatHelper::formatCurrency(
-                                                isset($services->where('id', $selectedService)->first()->price) ? 
-                                                floatval($services->where('id', $selectedService)->first()->price) * intval($quantity) : 
+                                                isset($services->where('id', $selectedService)->first()->price) ?
+                                                floatval($services->where('id', $selectedService)->first()->price) * intval($quantity) :
                                                 0
-                                            ) 
-                                        }} VNĐ 
+                                            )
+                                        }} VNĐ
                                     </td>
                                 </tr>
                             </tfoot>
@@ -144,6 +144,5 @@
         </div>
         <input type="hidden" id="id" value="19">
         <input type="hidden" id="idPresent" value="">
-
     </div>
 </div>

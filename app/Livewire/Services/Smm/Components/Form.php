@@ -13,16 +13,9 @@ class Form extends Component
     use LivewireAlert;
     public $balance;
 
- 
 
-    public $categories; // Danh sách danh mục
-    public $selectedCategory; // Danh mục đã chọn
-    public $selectedService; // Dịch vụ đã chọn
-    public $services = []; // Danh sách dịch vụ theo danh mục
-    public $quantity = 1000; // Danh sách dịch vụ theo danh mục
-    public $link; // Danh sách dịch vụ theo danh mục
-    public $image; // Danh sách dịch vụ theo danh mục
-    public $paymentMethod ; // Phương thức thanh toán
+
+    public $categories, $selectedCategory, $selectedService, $services = [], $quantity = 1000, $link, $image, $paymentMethod; // Danh sách danh mục
     public function mount()
     {
         $this->balance = Auth::user()->balance ?? 0; // Mặc định là 0 nếu không có balance
@@ -35,7 +28,7 @@ class Form extends Component
     public function updatedSelectedCategory()
     {
         $this->services = SmmService::where('smmcategory_id', $this->selectedCategory)->get();
-        
+
         $this->image = $this->categories->where('id', $this->selectedCategory)->first()->image;
     }
     public function submitOrder() // Hàm submit đơn hàng
@@ -44,8 +37,7 @@ class Form extends Component
             $this->alert('error', 'Vui lòng đăng nhập để tạo đơn hàng');
             return;
         }
-       
-      $order  = SmmOrder::createOrder([
+       $data = [
             'user_id' => auth()->user()->id ?? null,
             'smm_service_id' => $this->selectedService ?? null,
             'quantity' => $this->quantity ?? null,
@@ -56,11 +48,12 @@ class Form extends Component
             'link' => $this->link ?? null,
             'remains' => $this->quantity ?? null,
             'payment_method' => $this->paymentMethod ?? null,
-        ]);
-       
+        ];
+        $order = SmmOrder::createOrder($data);
+
         if($order['status']){
             $this->alert($order['status'], $order['message']);
-        } 
+        }
     }
     public function checkUser(){
         if(auth()->user()){
