@@ -180,5 +180,7 @@
                 </style>
             </div>
         </div>
+        @livewire('inc.social-popup')
+
     </body>
 </div>

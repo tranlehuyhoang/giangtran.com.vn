@@ -109,16 +109,16 @@
                                                             align-items: center;
                                                             gap: 10px;
                                                         }
-    
+
                                                         #loginWithGoogle svg {
                                                             width: 20px;
                                                             height: 20px;
                                                         }
-    
+
                                                         .position-relative {
                                                             position: relative;
                                                         }
-    
+
                                                         #or span {
                                                             position: absolute;
                                                             left: 50%;
@@ -164,5 +164,6 @@
 
             </div>
         </div>
+        @livewire('inc.social-popup')
     </body>
 </div>
