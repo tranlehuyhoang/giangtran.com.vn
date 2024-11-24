@@ -67,27 +67,27 @@
 
                     <div class="col-sm-6 col-md-6">
                         <label class="form-label"> Địa Chỉ IP </label>
-                        <input class="form-control" value="{{ Auth::user()->ip_address }}" disabled>
+                        <input class="form-control" value="{{ $ipAddress }}" disabled>
                     </div>
 
                     <div class="col-md-6">
                         <label class="form-label"> Thiết Bị </label>
-                        <input class="form-control" value="{{ Auth::user()->device }}" disabled>
+                        <input class="form-control" value="{{ $device }}" disabled>
                     </div>
 
                     <div class="col-sm-6 col-md-4">
                         <label class="form-label"> Số Dư </label>
-                        <input class="form-control" value="{{ Auth::user()->total_deposit }}đ" disabled>
+                        <input class="form-control" value="{{ App\Helpers\FormatHelper::formatCurrency(Auth::user()->balance) }}đ" disabled>
                     </div>
 
                     <div class="col-sm-6 col-md-3">
                         <label class="form-label"> Tổng Nạp </label>
-                        <input class="form-control" value="{{ Auth::user()->total_deposit }}đ" disabled>
+                        <input class="form-control" value="{{ App\Helpers\FormatHelper::formatCurrency(Auth::user()->total_deposit) }}đ" disabled>
                     </div>
 
                     <div class="col-md-5">
                         <label class="form-label"> Tổng Tiêu </label>
-                        <input class="form-control" value="{{ Auth::user()->total_consumption }}đ" disabled>
+                        <input class="form-control" value="{{ App\Helpers\FormatHelper::formatCurrency(Auth::user()->total_consumption) }}đ" disabled>
                     </div>
                 </div>
             </div>
@@ -99,43 +99,7 @@
         </div>
     </div>
 
-    <div class="col-xl-8 content-vi" id="change-password">
-        <div class="card">
-            <div class="card-header">
-                <h2 class="card-title mb-0"> Đổi Mật Khẩu </h2>
-            </div>
-
-            <div class="card-body">
-                <div class="row g-3">
-
-                    <div class="col-md-4">
-                        <label class="form-label"> Mật Khẩu Hiện Tại </label>
-                        <input class="form-control" id="password"
-                            placeholder="Mật Khẩu Hiện Tại" wire:model="password">
-                    </div>
-
-                    <div class="col-md-4">
-                        <label class="form-label"> Mật Khẩu Mới </label>
-                        <input class="form-control" id="new-password"
-                            placeholder="Mật Khẩu Mới" wire:model="new_password">
-                    </div>
-
-                    <div class="col-md-4">
-                        <label class="form-label"> Nhập Lại Mật Khẩu Mới</label>
-                        <input class="form-control" id="cofirm-password"
-                            placeholder="Nhập Lại Mật Khẩu Mới" wire:model="confirm_password">
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="card-footer text-end">
-                <button class="btn btn-primary" id="changepassword"
-                    wire:click="changePassword"> Đổi Mật Khẩu </button>
-            </div>
-        </div>
-    </div>
-
+    @livewire('page.profile.form.reset-password')
 
     <div class="col-xl-8 content-vi" id="2step">
         <div class="card">
@@ -212,78 +176,20 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th> Nội Dung </th>
-                                            <th> Địa Chỉ IP </th>
-                                            <th> Thời Gian </th>
+                                            <th>Nội Dung</th>
+                                            <th>Địa Chỉ IP</th>
+                                            <th>Thời Gian</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-
-
-                                        <tr>
-                                            <td>#1</td>
-                                            <td>Đăng Nhập Vào Hệ Thống!</td>
-                                            <td>171.243.49.123</td>
-                                            <td>12/11/2024 - 10:01:09</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>#2</td>
-                                            <td>Đăng Nhập Vào Hệ Thống!</td>
-                                            <td>171.243.49.123</td>
-                                            <td>12/11/2024 - 09:26:51</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>#3</td>
-                                            <td>Đăng Nhập Vào Hệ Thống!</td>
-                                            <td>171.243.49.123</td>
-                                            <td>12/11/2024 - 06:24:19</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>#4</td>
-                                            <td>Thực Hiện Thay Đổi Mật Khẩu Thành Công!</td>
-                                            <td>171.243.49.123</td>
-                                            <td>12/11/2024 - 06:24:11</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>#5</td>
-                                            <td>Đăng Nhập Vào Hệ Thống!</td>
-                                            <td>171.243.49.123</td>
-                                            <td>12/11/2024 - 05:45:37</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>#6</td>
-                                            <td>Đăng Nhập Vào Hệ Thống!</td>
-                                            <td>171.243.49.123</td>
-                                            <td>12/11/2024 - 05:22:01</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>#7</td>
-                                            <td>Đăng Nhập Vào Hệ Thống!</td>
-                                            <td>171.243.49.123</td>
-                                            <td>08/11/2024 - 08:48:52</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>#8</td>
-                                            <td>Đăng Ký Tài Khoản Tại Hệ Thống!</td>
-                                            <td>171.243.49.123</td>
-                                            <td>08/11/2024 - 07:45:11</td>
-                                        </tr>
-
-
+                                        @foreach($activities as $activity)
+                                            <tr>
+                                                <td>{{ $activity->id }}</td>
+                                                <td>{{ $activity->content }}</td>
+                                                <td>{{ $activity->ip_address }}</td>
+                                                <td>{{ $activity->created_at->format('d/m/Y - H:i:s') }}</td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

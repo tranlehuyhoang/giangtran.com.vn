@@ -5,8 +5,8 @@ namespace App\Livewire\Auth;
 use Laravel\Socialite\Facades\Socialite;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
-use App\Models\User; 
-use Illuminate\Support\Facades\Hash; 
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class Register extends Component
 {
@@ -25,8 +25,8 @@ class Register extends Component
     public function mount()
     {
         // Tạo hai số ngẫu nhiên từ 1 đến 10
-        $this->num1 = rand(1, 10);
-        $this->num2 = rand(1, 10);
+        $this->num1 = rand(min: 1, max: 100);
+        $this->num2 = rand(min: 1, max: 100);
         $this->captchaResult = $this->num1 + $this->num2; // Tổng của hai số
     }
 
@@ -55,7 +55,7 @@ class Register extends Component
             'name' => $this->name,
             'email' => $this->email,
             'username' => $this->username,
-            'password' => Hash::make($this->password), 
+            'password' => Hash::make($this->password),
         ]);
 
         // Hiển thị thông báo thành công

@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Auth;
 
+use App\Models\ActivityHistory;
 use App\Models\User;
 use Laravel\Socialite\Facades\Socialite;
 use Livewire\Component;
@@ -44,6 +45,7 @@ class Login extends Component
             if ($findUser) {
                 // Đăng nhập người dùng nếu email được tìm thấy trong cơ sở dữ liệu
                 Auth::login($findUser);
+                ActivityHistory::logActivity('Đăng nhập bằng Google');
                 return redirect('/');
             } else {
                 // Tạo người dùng mới nếu email không được tìm thấy
@@ -61,7 +63,7 @@ class Login extends Component
                     'timer' => 3000,
                     'toast' => true,
                 ]);
-
+                ActivityHistory::logActivity('Đăng nhập bằng Google');
                 return redirect('/');
             }
         } catch (\Exception $e) {

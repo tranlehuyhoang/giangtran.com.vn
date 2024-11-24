@@ -55,10 +55,10 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-form-label">Xác Minh</label>
+                                                <label class="col-form-label">CAPTCHA: {{ $num1 }} + {{ $num2 }} = ? </label>
                                                 <div class="form-input">
                                                     <input class="form-control" type="text" wire:model="captcha"
-                                                           placeholder="Kết quả của {{ $num1 }} + {{ $num2 }}" style="background-color: white;" >
+                                                           placeholder="Nhập Kết Quả" style="background-color: white;" >
                                                 </div>
                                             </div>
 

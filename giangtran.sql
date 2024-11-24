@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2024 at 02:36 AM
+-- Generation Time: Nov 24, 2024 at 04:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `giangtran.com.vn`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `activity_history`
+--
+
+CREATE TABLE `activity_history` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `user_id` bigint(20) UNSIGNED NOT NULL,
+  `content` text NOT NULL,
+  `ip_address` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `activity_history`
+--
+
+INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Đăng nhập bằng Google', '127.0.0.1', '2024-11-24 03:29:57', '2024-11-24 03:29:57');
 
 -- --------------------------------------------------------
 
@@ -123,7 +145,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (8, '2024_11_19_212615_create_smm_categories_table', 6),
 (9, '2024_11_19_214137_create_smm_services_table', 7),
 (10, '2024_11_21_140737_create_smm_orders_table', 8),
-(11, '2024_11_21_213650_add_fields_to_users_table', 9);
+(11, '2024_11_21_213650_add_fields_to_users_table', 9),
+(12, '2024_11_24_102438_create_activity_history_table', 10);
 
 -- --------------------------------------------------------
 
@@ -352,10 +375,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('9E9qyLNZnnRsbliyuuTfNRCkzWvhRRwk55V8Yzo9', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUXJndVdHcVR6d0YyZjdpV09oMlB0RWMwOVZYTDJteGg2OVpyaFNWOSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1732405281),
-('aTOpZkbpmciGN5XkH5Hab7LDAD5ZChboTXnN1ZRU', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMzFjZ0xIRkg4alRhWVZGMG1BT2hVMHBLc3VxTEVvZFJUSHRxNFJsRiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1732404963),
-('NAn1jq01mdtJpsLitbRGsLDYPYUPpWkNOPtJmECc', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRHRISTRnQVozd0VGSm5LMURvN1M1elFqRVhid2N3T1cyVUI4ZDM5aiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1732412155),
-('W6womxjO7nxOvTkkMHAFDrYz4lYZ8kp1Yybadcc6', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUGhsQkxadXJXZThCUlJBTUROWnEyWGxWTHY1RjFVNGFROTFlVDZ1ViI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1732404997);
+('fwscxVu0OafYLcMXOMUaZZoj4dnLndIzbYHB9wJc', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiRHRISTRnQVozd0VGSm5LMURvN1M1elFqRVhid2N3T1cyVUI4ZDM5aiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9wcm9maWxlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732419517);
 
 -- --------------------------------------------------------
 
@@ -586,16 +606,23 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`) VALUES
-(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$jv0VFanX3CzJqEPmYZgt7ecgU1PyDiC8/NSKqXXVPyeZDu8vVtemi', 'RcWMHaDqN3ArHnR2v9dZGM93b92XNsYbXmxPoPso1VFiCBenGARldl0YLFsr', '2024-11-16 20:18:19', '2024-11-23 02:51:02', 'default', NULL, 2000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0, NULL),
+(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$jXmBzW61MiWBtxuSMGsNCeuGlEhScP2E9lt50AqrIxVv5YzJqQ49e', 'HQXMKRXXIiuGCec7FJUZOLTzxmGLNdBRmWZDIUfLGjb94WD86fCZptT7QVNh', '2024-11-16 20:18:19', '2024-11-24 03:18:35', 'default', NULL, 2000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0, NULL),
 (4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$pqelBvHvBmcrFTMwtfPpFetOaczL7hbhM2iLR4IdoOXDwsSduQqLC', '4OBcTd5nAUfJTQ4vxjfh4ChaQ4TmKOGD0NfQjaQ0mtRJfR2IaIpKm4d5lmYr', '2024-11-19 13:52:31', '2024-11-21 09:39:04', 'default', NULL, 4800.00, NULL, NULL, NULL, NULL, NULL, 0, NULL),
 (5, 'Tran Le Huy Hoang (FPL HCM)', 'hoangtlhps26819@fpt.edu.vn', NULL, NULL, '$2y$12$DB1b1DSlzKgdA/kE8xn9ROrSRJA4fBtKXfYh0YMb.fPdKmLE7yYcy', NULL, '2024-11-21 10:50:00', '2024-11-21 10:50:00', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL),
 (6, '123', '2@2', '123', NULL, '$2y$12$6MfzzoMPyoUSQhMZOAp3V.8I/N00zunuSnP8hr4cWGn3nJueXqh8S', NULL, '2024-11-21 11:14:20', '2024-11-21 11:14:20', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL),
 (7, 'Hoàng Lâm Đoàn', 'hoanglamdoan79m0c@uehs.us', NULL, NULL, '$2y$12$FBtfvERuOP3pAo7A8IK5aOxk9LOfOGhyUYkuCZryFE7NlXpWMfcJC', NULL, '2024-11-21 13:32:41', '2024-11-21 13:32:41', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL),
-(8, 'BB Gamer. HG', '2508roblox@gmail.com', NULL, NULL, '$2y$12$PGb7wtnWIesLWtkZYa2HR.gMvSCa/yyXnR4FtIIuKGBrJ5PZzynjy', NULL, '2024-11-23 12:45:54', '2024-11-23 12:45:54', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL);
+(8, 'BB Gamer. HG', '2508roblox@gmail.com', NULL, NULL, '$2y$12$BiCJCzS6SbiN7sw/jEoIM.ICeCx1JfatMeJHmmFpWt9vDM6PKY/FK', NULL, '2024-11-23 12:45:54', '2024-11-24 01:52:45', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `activity_history`
+--
+ALTER TABLE `activity_history`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `activity_history_user_id_foreign` (`user_id`);
 
 --
 -- Indexes for table `cache`
@@ -731,6 +758,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `activity_history`
+--
+ALTER TABLE `activity_history`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -746,7 +779,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `payment_history`
@@ -793,6 +826,12 @@ ALTER TABLE `users`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `activity_history`
+--
+ALTER TABLE `activity_history`
+  ADD CONSTRAINT `activity_history_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `model_has_permissions`

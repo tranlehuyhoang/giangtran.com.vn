@@ -2,27 +2,35 @@
 
 namespace App\Livewire\Page\Profile;
 
-use App\Models\User;
+use App\Models\ActivityHistory;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 
 class Form extends Component
 {
-    use LivewireAlert;
-    public $password, $new_password, $confirm_password;
-    public function changePassword()
+    public $device, $ipAddress;
+    public $activities; // Thuộc tính để lưu trữ lịch sử hoạt động
+
+    public function mount()
     {
-        if ($this->new_password !== $this->confirm_password) {
-            $this->alert('error', 'Mật khẩu mới không khớp');
-            return;
-        }
-        User::where('id', Auth::user()->id)->update([
-            'password' => Hash::make($this->new_password),
-        ]);
-        $this->alert('success', 'Đổi mật khẩu thành công');
+        $this->device = $this->getDevice();
+        $this->ipAddress = $this->getIpAddress();
+        $this->loadActivities(); // Gọi phương thức để tải lịch sử hoạt động
     }
+    public function getIpAddress()
+    {
+        return request()->ip();
+    }
+    public function getDevice()
+    {
+        return request()->header('User-Agent');
+    }
+    public function loadActivities()
+    {
+        // Lấy tất cả hoạt động của người dùng hiện tại
+        $this->activities = ActivityHistory::getActivitiesByUserId(Auth::id());
+    }
+
     public function render()
     {
         return view('livewire.page.profile.form');
