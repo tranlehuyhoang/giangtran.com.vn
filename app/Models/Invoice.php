@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Auth;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
@@ -20,6 +21,7 @@ class Invoice extends Model
         'service',
         'invoice_date',
         'amount',
+        'user_id',
         'payment_due_date',
     ];
 
@@ -51,5 +53,16 @@ class Invoice extends Model
             'message' => 'Hóa đơn đã được tạo thành công',
             'invoice' => $invoice,
         ];
+    }
+    public static function getInvoicesByUser($userId = null)
+    {
+        if ($userId) {
+            return self::where('user_id', $userId)->get();
+        } else if (Auth::check()) {
+            $user_id = Auth::user()->id;
+            return self::where('user_id', $user_id)->get();
+        } else {
+            return collect();
+        }
     }
 }

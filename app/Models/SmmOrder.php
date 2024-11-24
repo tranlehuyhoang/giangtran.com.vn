@@ -109,6 +109,7 @@ class SmmOrder extends Model
                 'service' => $order->service->name,
                 'amount' => $order->total_price,
                 'invoice_date' => now(),
+                'user_id' => $order->user_id,
                 'payment_due_date' => now()->addMinutes(3),
             ]);
             return ['status' => $invoice['status'], 'message' => $invoice['message']];

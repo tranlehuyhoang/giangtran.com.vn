@@ -1,43 +1,43 @@
-function ShowHoaDon() {
-    const modalHoadon = `<div class="modal fade" id="modalHoaDon" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="modal-toggle-wrapper"> 
-              <h4> 2509roblox ơi, Bạn Có <strong class="txt-danger"> 0 Hóa Đơn </strong> Chờ Thanh Toán! </h4>
-              
-              <div class="col-lg-12 mt-3" id="dmm_box">
-                  <div class="card">
-              <div class="card-body faq-body" style="max-height: 200px; overflow-y: auto;">
-                                            
-                      <a href="/hoa-don/564229">
-                          <div class="d-flex updates-faq-main">
+function ShowHoaDon(invoices, user_name) {
+    // Nếu không có hóa đơn nào, hiển thị thông báo tương ứng
+    const hasInvoices = invoices.length > 0;
+    const invoiceList = hasInvoices ?
+        invoices.map(invoice => `
+            <div class="card">
+                <div class="card-body faq-body">
+                    <a href="/hoa-don/${invoice.invoice_code}">
+                        <div class="d-flex updates-faq-main">
                             <div class="flex-grow-1 updates-bottom-time">
-                              <p class="txt-dark"> Hóa Đơn <strong>#564229</strong>, Số Tiền: <strong class="txt-danger">12,000<sup>đ</sup></strong></p>
-                              <p> Thời Gian Tạo: 18/11/2024 - 09:30:27 </p>
+                                <p class="txt-dark"> Hóa Đơn <strong>#${invoice.invoice_code}</strong>, Số Tiền: <strong class="txt-danger">${ invoice.amount.toLocaleString()}<sup>đ</sup></strong></p>
+                                <p> Thời Gian Tạo: ${new Date(invoice.invoice_date).toLocaleString()} </p>
                             </div>
-                            
-                            <b class="text-warning"> Chờ Thanh Toán </b>                            
-                            </div>
-                          </a>
-                          
-                          <br>
-
-                                            
-                    </div>
-                  </div>
+                            <b class="text-warning"> Chờ Thanh Toán </b>
+                        </div>
+                    </a>
                 </div>
-               
-                              
-                  <div class="modal-img" style="margin-top: -55px;"> <img src="/assets/images/gif/online-shopping.gif" alt="online-shopping"></div>
-                  <p class="text-sm-center"> Bạn chưa có hóa đơn nào, hãy bắt đầu thực hiện giao dịch mới ngay nào! </p>
-                
-                         
             </div>
-          </div>
+        `).join('') :
+        `<p class="text-sm-center"> Bạn chưa có hóa đơn nào, hãy bắt đầu thực hiện giao dịch mới ngay nào! </p>`;
+
+    const modalHoadon = `
+    <div class="modal fade" id="modalHoaDon" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-toggle-wrapper">
+                        <h4> ${user_name} ơi, Bạn Có <strong class="txt-danger"> ${invoices.length} Hóa Đơn </strong> Chờ Thanh Toán! </h4>
+                        <div class="col-lg-12 mt-3" id="dmm_box">
+                            ${invoiceList}
+                        </div>
+                        <div class="modal-img" style="margin-top: -55px;">
+                            <img src="/assets/images/gif/online-shopping.gif" alt="online-shopping">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>`;
+
     document.body.insertAdjacentHTML('beforeend', modalHoadon);
 
     var myModal = new bootstrap.Modal(document.getElementById('modalHoaDon'), {
@@ -46,23 +46,5 @@ function ShowHoaDon() {
     myModal.show();
 }
 
-document.getElementById("number_bill").innerHTML = "0";
-
-function changeWallet(name, id) {
-    var data = {
-        name: name,
-        invoiceId: id,
-    };
-
-    axios.get('/axios/change-wallet', {
-            params: data
-        })
-        .then(function(response) {
-            if (response.data.status == 'success') {
-                loadto('');
-            }
-        })
-        .catch(function(error) {
-            ShowModal('Lỗi', error, 'error');
-        });
-}
+// Cập nhật số lượng hóa đơn
+document.getElementById("number_bill").innerHTML = "0"; // Bạn có thể cập nhật giá trị này từ dữ liệu thực tế

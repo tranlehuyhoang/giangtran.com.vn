@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2024 at 05:49 AM
+-- Generation Time: Nov 24, 2024 at 06:38 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -98,15 +98,16 @@ CREATE TABLE `invoices` (
   `amount` decimal(15,2) NOT NULL,
   `payment_due_date` datetime NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `user_id` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `invoices`
 --
 
-INSERT INTO `invoices` (`id`, `invoice_code`, `invoice_type`, `service`, `invoice_date`, `amount`, `payment_due_date`, `created_at`, `updated_at`) VALUES
-(1, '240434', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-24 04:46:24', 10000000.00, '2024-11-24 11:49:24', '2024-11-24 04:46:24', '2024-11-24 04:46:24');
+INSERT INTO `invoices` (`id`, `invoice_code`, `invoice_type`, `service`, `invoice_date`, `amount`, `payment_due_date`, `created_at`, `updated_at`, `user_id`) VALUES
+(2, '363612', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-24 05:11:14', 20000000.00, '2024-11-24 12:14:14', '2024-11-24 05:11:14', '2024-11-24 05:11:14', 1);
 
 -- --------------------------------------------------------
 
@@ -401,7 +402,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('fwscxVu0OafYLcMXOMUaZZoj4dnLndIzbYHB9wJc', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiRHRISTRnQVozd0VGSm5LMURvN1M1elFqRVhid2N3T1cyVUI4ZDM5aiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732423584);
+('fwscxVu0OafYLcMXOMUaZZoj4dnLndIzbYHB9wJc', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiRHRISTRnQVozd0VGSm5LMURvN1M1elFqRVhid2N3T1cyVUI4ZDM5aiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9ob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732426645);
 
 -- --------------------------------------------------------
 
@@ -455,33 +456,7 @@ CREATE TABLE `smm_orders` (
 --
 
 INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_price`, `status`, `unit_price`, `start_count`, `link`, `remains`, `payment_method`, `payment_status`, `created_at`, `updated_at`, `order_code`) VALUES
-(8, 1, 1, 2000, 20000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 2000, NULL, NULL, '2024-11-23 04:10:15', '2024-11-23 04:10:15', NULL),
-(9, 1, 1, 2000, 20000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 2000, NULL, NULL, '2024-11-23 04:12:15', '2024-11-23 04:12:15', NULL),
-(10, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, NULL, NULL, '2024-11-23 04:12:43', '2024-11-23 04:12:43', NULL),
-(11, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, NULL, NULL, '2024-11-23 04:13:00', '2024-11-23 04:13:00', NULL),
-(12, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, NULL, NULL, '2024-11-23 04:13:57', '2024-11-23 04:13:57', NULL),
-(13, 1, 1, 2000, 20000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 2000, 'account_balance', NULL, '2024-11-23 04:15:04', '2024-11-23 04:15:04', NULL),
-(14, 1, 1, 3000, 30000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 3000, 'account_balance', NULL, '2024-11-23 04:20:23', '2024-11-23 04:20:23', NULL),
-(15, 1, 1, 12000, 120000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 12000, 'account_balance', NULL, '2024-11-24 04:06:21', '2024-11-24 04:06:21', NULL),
-(16, 1, 1, 12000, 120000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 12000, 'account_balance', NULL, '2024-11-24 04:13:54', '2024-11-24 04:13:54', NULL),
-(17, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', NULL, '2024-11-24 04:19:46', '2024-11-24 04:19:46', NULL),
-(18, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:23:14', '2024-11-24 04:23:14', '946583'),
-(19, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:39:30', '2024-11-24 04:39:30', '508105'),
-(20, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:41:00', '2024-11-24 04:41:00', '490766'),
-(21, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:41:06', '2024-11-24 04:41:06', '441072'),
-(22, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:41:46', '2024-11-24 04:41:46', '353185'),
-(23, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:42:29', '2024-11-24 04:42:29', '917616'),
-(24, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:43:00', '2024-11-24 04:43:00', '872052'),
-(25, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:43:16', '2024-11-24 04:43:16', '217021'),
-(26, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:43:20', '2024-11-24 04:43:20', '552955'),
-(27, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:44:07', '2024-11-24 04:44:07', '788490'),
-(28, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:44:19', '2024-11-24 04:44:19', '621829'),
-(29, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:44:40', '2024-11-24 04:44:40', '570240'),
-(30, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:44:58', '2024-11-24 04:44:58', '604799'),
-(31, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:45:06', '2024-11-24 04:45:06', '596392'),
-(32, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:45:20', '2024-11-24 04:45:20', '399187'),
-(33, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:46:07', '2024-11-24 04:46:07', '379938'),
-(34, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-24 04:46:24', '2024-11-24 04:46:24', '240434');
+(35, 1, 1, 2000, 20000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 2000, 'bank_transfer', 'pending', '2024-11-24 05:11:14', '2024-11-24 05:11:14', '363612');
 
 -- --------------------------------------------------------
 
@@ -828,7 +803,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `jobs`
@@ -870,7 +845,7 @@ ALTER TABLE `smm_categories`
 -- AUTO_INCREMENT for table `smm_orders`
 --
 ALTER TABLE `smm_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `smm_services`
