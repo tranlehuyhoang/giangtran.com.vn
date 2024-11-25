@@ -1,4 +1,6 @@
 <div>
+    @if (!auth()->check())
+        <script src="https://accounts.google.com/gsi/client" async></script>
 
     <div id="g_id_onload" data-client_id="{{ env('GOOGLE_CLIENT_ID') }}" data-context="signin"
         data-csrf_token="{{ csrf_token() }}" data-ux_mode="popup" data-callback="googleLogin" data-itp_support="true">
@@ -16,6 +18,7 @@
             }).join(''));
 
             return JSON.parse(jsonPayload);
-        }
-    </script>
+            }
+        </script>
+    @endif
 </div>

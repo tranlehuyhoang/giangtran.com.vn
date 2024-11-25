@@ -391,42 +391,7 @@
                         </div>
                     </div>
 
-                    <div class="modal fade" id="modalHome" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalCenter1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div class="modal-toggle-wrapper" style="position: relative;">
-                                        <b style="font-size: 14px;" class="text-center text-danger">Thông Báo</b>
-                                        <span class="close"
-                                            style="position: absolute; top: 0; right: 0; margin-top: -10px; font-size: 1.4rem; cursor: pointer;"
-                                            data-bs-dismiss="modal">
-                                            <span aria-hidden="true">&times;</span>
-                                        </span>
-                                        <br>
-                                        <p class="mt-3">
-                                        <p style="text-align:center"><span style="color:#c0392b"><strong>Ch&agrave;o
-                                                    Mừng Đến Với GiangTran.Com.Vn</strong></span></p>
-                                        <p style="text-align:center"><strong>Giới Thiệu Bạn B&egrave;, Kh&aacute;ch
-                                                H&agrave;ng, ... Nhận 30% Tiền Mỗi Khi Họ Thanh To&aacute;n, R&uacute;t
-                                                Nhanh Ch&oacute;ng&nbsp;<a href="/tiep-thi-lien-ket"><span
-                                                        style="color:#3498db">Tại Đ&acirc;y</span></a></strong></p>
-                                        <p style="text-align:center">Nếu C&oacute; Bạn C&oacute; Bất Cứ Vấn Đề Hoặc
-                                            G&oacute;p &Yacute; Đừng Ngần Ngại Li&ecirc;n Hệ Nh&oacute;m Hỗ Trợ, Nify Sẽ
-                                            Cải Thiện Để Mọi Người Sử Dụng Dịch Vụ Được Tốt Nhất.</p>
-                                        <p style="text-align:center">Nh&oacute;m Zalo:<strong>&nbsp;<a
-                                                    href="https://zalo.me/">https://zalo.me/g/ukevsm860</a></strong>
-                                        </p>
-                                        <p style="text-align:center">Hỗ Trợ Nhanh Qua: <a
-                                                href="https://web.facebook.com/profile.php?id=61564038398069"><span
-                                                    style="color:#16a085"><strong>Fanpage</strong></span></a></p>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    @livewire('content.modal-home')
                     <script>
                         function close1h() {
                             localStorage.setItem('time_modal', '1731413273');
@@ -441,6 +406,8 @@
                             }
                         });
                     </script>
+
+
                     @livewire('inc.footer')
 
                 </div>
@@ -464,35 +431,35 @@
 
 
         {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-        <script src="/assets/static/simplebar.js"></script>
-        <script src="/assets/static/invoices.js?v=1731409673" defer></script>
-        <script src="/assets/static/jquery.min.js"></script>
-        <script src="/assets/static/config.js"></script>
-        <script src="/assets/static/cyberlux.js"></script>
-        <script src="/assets/static/handlebars.min.js"></script>
-        <script src="/assets/static/jquery.dataTables.min.js"></script>
-        <script src="/assets/static/datatable.custom.js"></script>
-        <script src="/assets/static/bundle.min.js"></script>
-        <script src="/assets/static/feather.min.js"></script>
-        <script src="/assets/static/bootstrap.bundle.min.js"></script>
-        <script src="/assets/static/feather.min.js"></script>
-        <script src="/assets/static/feather-icon.js"></script>
-        <script src="/assets/static/custom.js"></script>
-        <script src="/assets/static/swiper-bundle.min.js"></script>
-        <script src="/assets/static/sidebar-menu.js"></script>
-        <script src="/assets/static/sidebar-pin.js"></script>
-        <script src="/assets/static/bootstrap-notify.min.js"></script>
-        <script src="/assets/static/index.js"></script>
-        <script src="/assets/static/custom_touchspin.js"></script>
-        <script src="/assets/static/simple-datatable.js"></script>
-        <script src="/assets/static/handlebars.js"></script>
-        <script src="/assets/static/typeahead.bundle.js"></script>
-        <script src="/assets/static/typeahead.custom.js"></script>
-        <script src="/assets/static/search-handlebars.js"></script>
-        <script src="/assets/static/script.js"></script>
-        <script src="/assets/static/customizer.js"></script>
-
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script defer src="/assets/static/simplebar.js"></script>
+        <script defer src="/assets/static/invoices.js?v=1731409673" defer></script>
+        <script defer src="/assets/static/jquery.min.js"></script>
+        <script defer src="/assets/static/config.js"></script>
+        <script defer src="/assets/static/cyberlux.js"></script>
+        <script defer src="/assets/static/handlebars.min.js"></script>
+        <script defer src="/assets/static/jquery.dataTables.min.js"></script>
+        <script defer src="/assets/static/datatable.custom.js"></script>
+        <script defer src="/assets/static/bundle.min.js"></script>
+        <script defer src="/assets/static/feather.min.js"></script>
+        <script defer src="/assets/static/bootstrap.bundle.min.js"></script>
+        <script defer src="/assets/static/feather.min.js"></script>
+        <script defer src="/assets/static/feather-icon.js"></script>
+        <script defer src="/assets/static/custom.js"></script>
+        <script defer src="/assets/static/swiper-bundle.min.js"></script>
+        <script defer src="/assets/static/sidebar-menu.js"></script>
+        <script defer src="/assets/static/sidebar-pin.js"></script>
+        <script defer src="/assets/static/bootstrap-notify.min.js"></script>
+        <script defer src="/assets/static/index.js"></script>
+        <script defer src="/assets/static/custom_touchspin.js"></script>
+        <script defer src="/assets/static/simple-datatable.js"></script>
+        <script defer src="/assets/static/handlebars.js"></script>
+        <script defer src="/assets/static/typeahead.bundle.js"></script>
+        <script defer src="/assets/static/typeahead.custom.js"></script>
+        <script defer src="/assets/static/search-handlebars.js"></script>
+        <script defer src="/assets/static/script.js"></script>
+        <script defer src="/assets/static/customizer.js"></script>
+        @livewire('content.modal-hoa-don')
     </body>
 
 </div>
