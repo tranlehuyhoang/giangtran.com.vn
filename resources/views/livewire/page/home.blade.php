@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title> Trang Chủ - GIANGTRAN.COM.VN </title>
+        @livewire('inc.seo', ['title' => 'Trang Chủ'])
 
         <link rel="stylesheet" href="/assets/static/style.css?v=1822759336">
         <link rel="stylesheet" type="text/css"

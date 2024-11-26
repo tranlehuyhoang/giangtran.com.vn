@@ -1,16 +1,11 @@
 <div style="width: 100%;">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8">
-        <title> Hóa Đơn #564229 </title>
-        <link rel="icon" href="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png"
-            type="image/x-icon">
-        <link rel="shortcut icon" href="https://slopesoftware.com/wp-content/uploads/2021/12/cloud-servers.png"
-            type="image/x-icon">
+
+        @livewire('inc.seo', ['title' => 'Hóa Đơn #'.$invoice->invoice_code])
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-          {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
+
         <style>
             li {
                 font-size: 14px;
@@ -33,12 +28,12 @@
                 </header>
 
                 <main>
-                    <span> Hóa Đơn #564229 </span><br>
-                    <span> Trạng Thái: <b class="text-warning"> Chờ Thanh Toán </b> </span><br>
+                    <span> Hóa Đơn #{{ $invoice->invoice_code }} </span><br>
+                    <span> Trạng Thái: <b class="text-warning"> {{ $invoice->payment_status }} </b> </span><br>
 
 
                     <p class="text-secondary mt-2">
-                        Vui lòng thanh toán hóa đơn trước 18/11/2024 - 09:45:48, Nếu quá thời gian hóa đơn sẽ bị hủy.
+                        Vui lòng thanh toán hóa đơn trước {{ $invoice->due_date }}, Nếu quá thời gian hóa đơn sẽ bị hủy.
                     </p>
 
 
@@ -57,20 +52,20 @@
                     <div class="row mt-4" style="display: flex; justify-content: space-between;">
                         <div class="col-md-6 col-6">
                             <div style="margin-top: -10px; font-size: 14px;">
-                                <span> Số Tài Khoản: 127969999 </span><br>
-                                <span> Chủ TK: <b>NGUYEN HUU THANH</b> </span> <br>
-                                <span> Nội Dung CK: <b>TT564229</b> </span><br>
-                                <span> Cần Thanh Toán: 12,000<sup>đ</sup> </span><br>
-                                <span> Nhận Tối Thiểu: 0<sup>đ</sup></span><br>
+                                <span> Số Tài Khoản: 0966579217 </span><br>
+                                <span> Chủ TK: <b>TRAN LE HOANG GIANG</b> </span> <br>
+                                <span> Nội Dung CK: <b>TT{{ $invoice->invoice_code }}</b> </span><br>
+                                <span> Cần Thanh Toán: {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup> </span><br>
+                                <span> Nhận Tối Thiểu: {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup></span><br>
                             </div>
                         </div>
 
                         <div class="col-md-6 col-6 " style="display: flex; justify-content: flex-end;">
                             <img class="d-none d-md-block"
-                                src="https://api.vietqr.io/mb/127969999/0/TT564229/vietqr_net_2.jpg?accountName=NGUYEN+HUU+THANH"
+                                src="https://api.vietqr.io/mb/0966579217/{{ number_format($invoice->amount, 0, ',', '') }}/{{ $invoice->invoice_code }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG"
                                 id="qr-cid" style="width: 60%; height: auto; margin-top: -20px;" alt="">
                             <img class="d-block d-md-none"
-                                src="https://api.vietqr.io/mb/127969999/0/TT564229/vietqr_net_2.jpg?accountName=NGUYEN+HUU+THANH"
+                                src="https://api.vietqr.io/mb/0966579217/{{ number_format($invoice->amount, 0, ',', '') }}/{{ $invoice->invoice_code }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG"
                                 id="qr-cid" style="width: 100%; height: auto; margin-top: -20px;" alt="">
                         </div>
                     </div>
@@ -81,14 +76,14 @@
                     <p class="text-secondary">
                         <strong>Chi Tiết Hóa Đơn:</strong>
                     <div style="margin-top: -10px; font-size: 14px;">
-                        <span>- Mã Số Hóa Đơn: #564229</span><br>
+                        <span>- Mã Số Hóa Đơn: #{{ $invoice->invoice_code }}</span><br>
                         <span>- Loại Hóa Đơn: Đăng Ký Dịch Vụ </span><br>
                         <span
                             style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; display: inline-block;">-
-                            Dịch Vụ: VIETNAM #STARTUP (18/11/2024 - 09:30:27 - 17/01/2025 - 09:30:27) </span><br>
-                        <span>- Thời Gian Lập Hóa Đơn: 18/11/2024 - 09:30:27 </span><br>
-                        <span>- Số Tiền: 12,000<sup>đ</sup> </span><br>
-                        <span>- Hạn Thanh Toán: 18/11/2024 - 09:45:27 </span><br>
+                            Dịch Vụ: VIETNAM #STARTUP   </span><br>
+                        <span>- Thời Gian Lập Hóa Đơn: {{ $invoice->invoice_date }} </span><br>
+                        <span>- Số Tiền: {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup> </span><br>
+                        <span>- Hạn Thanh Toán: {{ $invoice->payment_due_date }} </span><br>
                     </div>
                     </p>
                 </main>

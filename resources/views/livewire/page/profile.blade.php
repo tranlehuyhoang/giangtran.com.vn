@@ -1,8 +1,7 @@
 <div>
 
     <head>
-        <title> THÔNG TIN TÀI KHOẢN | GIANGTRAN.COM.VN </title>
-      
+        @livewire('inc.seo', ['title' => 'Thông Tin Tài Khoản'])
         <link rel="stylesheet" href="/assets/static/style.css?v=507513158">
         <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,7 +32,7 @@
 
                     @livewire('inc.sidebar-wrapper')
 
-               
+
 
                     <div class="page-body">
                         <div class="container-fluid default-dashboard">
@@ -50,7 +49,7 @@
 
 
         <input type="hidden" id="mn" value="0">
- 
+
 
         <style>
             table tfoot tr {

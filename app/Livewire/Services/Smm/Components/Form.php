@@ -50,9 +50,13 @@ class Form extends Component
             'payment_method' => $this->paymentMethod ?? null,
         ];
         $order = SmmOrder::createOrder($data);
-
         if($order['status']){
-            $this->alert($order['status'], $order['message']);
+            $this->reset('quantity','link','paymentMethod','selectedService');
+            if( isset($order['payment_status']) && $order['payment_status'] == 'pending'){
+              return redirect('hoa-don/'.$order['order_code']);
+            }else{
+                $this->alert($order['status'], $order['message']);
+            }
         }
     }
     public function checkUser(){

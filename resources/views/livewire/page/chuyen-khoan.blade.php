@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title>Nạp Tiền - GIANGTRAN.COM.VN </title>
+        @livewire('inc.seo', ['title' => 'Nạp Tiền'])
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=1635596303">
         <link rel="stylesheet" type="text/css"
@@ -281,7 +281,7 @@
                 }
             });
    });
- 
+
    function fetchCronTransaction() {
     fetch('/api/transaction', {
         method: 'GET', // HTTP method
@@ -289,7 +289,7 @@
             'Content-Type': 'application/json' // Optional, depending on your backend requirements
         }
     })
-    .then(data => {   
+    .then(data => {
         setTimeout(fetchCronTransaction, 2000); // 2000 milliseconds = 2 seconds
     })
     ;
@@ -314,7 +314,7 @@
                     window.location.reload();
                 }
             });
-        } 
+        }
         // Set a timeout to fetch again after 2 seconds
         setTimeout(fetchCronData, 2000); // 2000 milliseconds = 2 seconds
     })

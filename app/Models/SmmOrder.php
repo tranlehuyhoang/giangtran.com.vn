@@ -103,7 +103,7 @@ class SmmOrder extends Model
             'payment_status' => $paymentStatus, // Thêm payment_status vào đơn hàng
         ]);
         if ($order && $order->payment_method == 'bank_transfer') {
-            $invoice = Invoice::createInvoice([
+            $data = [
                 'invoice_code' => $order->order_code,
                 'invoice_type' => 'Đăng Ký Dịch Vụ',
                 'service' => $order->service->name,
@@ -111,8 +111,11 @@ class SmmOrder extends Model
                 'invoice_date' => now(),
                 'user_id' => $order->user_id,
                 'payment_due_date' => now()->addMinutes(3),
-            ]);
-            return ['status' => $invoice['status'], 'message' => $invoice['message']];
+                'payment_status' => 'pending',
+            ];
+            $invoice = Invoice::createInvoice($data);
+
+            return ['status' => $invoice['status'], 'message' => $invoice['message'] , 'payment_status' => $paymentStatus , 'order' => $order , 'order_code' => $order->order_code];
         } else  {
             return ['status' => 'success', 'message' => 'Đơn hàng đã được tạo thành công'];
 

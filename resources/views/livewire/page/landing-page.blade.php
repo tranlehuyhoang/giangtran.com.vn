@@ -1,9 +1,9 @@
 <div>
 
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>GIANGTRAN.COM.VN - Cung Cấp Giải Pháp Website Chuyên Nghiệp</title>
+
+        @livewire('inc.seo', ['title' => 'Cung Cấp Giải Pháp Website Chuyên Nghiệp'])
+
         <link rel="stylesheet" href="/assets/static/assets/css/main.css">
     </head>
 

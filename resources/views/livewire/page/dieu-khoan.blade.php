@@ -1,10 +1,10 @@
 <div>
- 
+
     <!DOCTYPE html>
     <html lang="en">
-    
+
     <head>
-        <title> ĐIỀU KHOẢN & CHÍNH SÁCH - GIANGTRAN.COM.VN </title>
+        @livewire('inc.seo', ['title' => 'Điều Khoản & Chính Sách'])
         <link rel="stylesheet" href="/assets/static/style.css?v=410833453">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/css/toast@1.0.1/fuiToast.min.css">
@@ -13,9 +13,9 @@
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    
+
     </head>
-    
+
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">
             <div class="boxes"></div>
@@ -28,18 +28,18 @@
                 background-position: initial;
                 background-size: cover;
                 background-image: url(/assets/images/cyberlux/home-bg.jpg);">
-    
-    
+
+
                 <div class="container mt-5">
                     <div class="row starter-main">
-    
+
                         <div class="col-md-6">
                             <div class="card title-line">
                                 <div class="card-body">
                                     <h3>
                                         <strong>ĐIỀU KHOẢN SỬ DỤNG DỊCH VỤ</strong>
                                     </h3>
-    
+
                                     <br>
                                     <p>
                                         <strong>1. Giới thiệu</strong><br> Chào mừng bạn đến với trang web của chúng tôi. Bằng việc truy cập và sử dụng các dịch vụ cung cấp hosting, VPS, reseller, tên miền, mã nguồn, và cho thuê cron, bạn đồng ý tuân thủ
@@ -141,17 +141,17 @@
                                 </div>
                             </div>
                         </div>
-    
-    
+
+
                         <div class="col-md-6">
                             <div class="card title-line">
                                 <div class="card-body">
                                     <h3>
                                         <strong>CHÍNH SÁCH BẢO MẬT</strong>
                                     </h3>
-    
+
                                     <br>
-    
+
                                     <p>
                                         <strong>1. Thu thập thông tin cá nhân</strong><br> Chúng tôi thu thập thông tin cá nhân của bạn khi bạn đăng ký tài khoản, sử dụng dịch vụ, hoặc liên hệ với chúng tôi. Thông tin này bao gồm, nhưng không giới hạn, tên,
                                         địa chỉ email, số điện thoại, và các thông tin thanh toán.
@@ -226,14 +226,14 @@
                                     <p>
                                         <strong>3. Quyền bảo mật dữ liệu</strong><br> Bạn có quyền yêu cầu truy cập, sửa đổi, hoặc xóa dữ liệu cá nhân của mình. Chúng tôi sẽ tuân thủ các yêu cầu này trong giới hạn pháp lý và chính sách bảo mật của chúng tôi.
                                     </p>
-    
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             <script src="/assets/static/jquery.min.js"></script>
             <script src="/assets/static/config.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>

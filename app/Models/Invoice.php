@@ -23,6 +23,7 @@ class Invoice extends Model
         'amount',
         'user_id',
         'payment_due_date',
+        'payment_status',
     ];
 
     // Phương thức tạo hóa đơn mới
