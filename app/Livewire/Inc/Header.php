@@ -17,14 +17,13 @@ class Header extends Component
     }
     public function render()
     {
-     
+
         return view('livewire.inc.header');
     }
-    public function logout()
+    public function showModalLogout()
     {
-        Auth::logout();
-        $this->alert('success', 'Đăng xuất thành công');
-        return redirect('/login');
+        $this->dispatch('showModalLogout');
     }
+
 
 }

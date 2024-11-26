@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <link rel="icon" type="image/x-icon" href="/icon.png" />
     @livewireStyles
 </head>
 
@@ -16,5 +17,6 @@
 @livewire('inc.social-popup')
 @livewire('inc.zalo')
 @livewire('content.modal-hoa-don')
-
+@livewire('content.modal-alert')
+@livewire('content.modal-logout')
 </html>

@@ -7,7 +7,12 @@ use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 class Home extends Component
 {
+
     use LivewireAlert;
+    public function mount()
+    {
+        // $this->dispatch('showModalLogout');
+    }
     public function logout()
     {
         Auth::logout();

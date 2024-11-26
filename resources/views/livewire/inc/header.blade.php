@@ -113,7 +113,7 @@
                                 </li>
 
                                 <li>
-                                    <a wire:click="logout" >
+                                    <a wire:click="showModalLogout" >
                                         <div class="profile-icon">
                                             <svg>
                                                 <use href="/assets/assets/svg/icon-sprite.svg#login"></use>
