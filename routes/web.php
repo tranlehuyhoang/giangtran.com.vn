@@ -32,7 +32,7 @@ use App\Livewire\Template\VpsStore\CloudVpsVietNam\CloudVpsPro\Detail;
 use App\Livewire\Template\KhoMaNguon\Detail as KhoMaNguonDetail;
 use App\Livewire\Template\Manage\Code;
 use App\Livewire\Template\Product\Hosting\Detail as DetailHosting;
-use App\Livewire\Template\HoaDon\Detail as DetailHoaDon;
+use App\Livewire\Page\Invoice as Invoice;
 use App\Livewire\Services\Smm\Create as CreateSmm;
 use App\Livewire\Services\Smm\Manager as ManagerSmm;
 use Illuminate\Support\Facades\Route;
@@ -76,7 +76,7 @@ Route::get('/tiep-thi-lien-ket', action: TiepThiLienKet::class)->name('tiep-thi-
 Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
 Route::get('/nap-card', action: NapCard::class)->name('nap-card');
 Route::get('/api-client', action: ApiClient::class)->name('api-client');
-Route::get('/hoa-don/{id}', action: DetailHoaDon::class)->name('hoa-don');
+Route::get('/hoa-don/{id}', action: Invoice::class)->name('hoa-don');
 Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
 Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
 Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
