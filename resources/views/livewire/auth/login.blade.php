@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title> Đăng Nhập Tài Khoản | GIANGTRAN.COM.VN </title>
+        @livewire('inc.seo', ['title' => 'Đăng Nhập Tài Khoản'])
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=758177082">
@@ -16,7 +16,9 @@
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-
+        <script defer src="/assets/static/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script defer src="/assets/static/bootstrap.bundle.min.js"></script>
 
     </head>
 

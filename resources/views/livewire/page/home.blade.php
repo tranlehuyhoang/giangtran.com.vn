@@ -48,81 +48,24 @@
 
                                                             <h2> Tăng Tương Tác <span class="txt-danger"> Giá Rẻ </span>
                                                             </h2>
-                                                            <p class="mt-2 f-light"> Giải pháp tối ưu giúp bạn tăng cường tương tác trên mạng xã hội, thu hút nhiều người theo dõi và nâng cao sự hiện diện trực tuyến của bạn. </p> <a
+                                                            <p class="mt-2 f-light"> Giải pháp tối ưu giúp bạn tăng
+                                                                cường tương tác trên mạng xã hội, thu hút nhiều người
+                                                                theo dõi và nâng cao sự hiện diện trực tuyến của bạn.
+                                                            </p> <a
                                                                 class="btn btn-primary btn-hover-effect btn-sm f-w-500"
-                                                                  href="/services/smm/create"> Mua Ngay
+                                                                href="/services/smm/create"> Mua Ngay
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="cartoon-image"> <img class="img-fluid"
-                                                        src="/assets/images/smm/banner.png"
-                                                        alt="Nguyễn Thành"></div>
+                                                        src="/assets/images/smm/banner.png" alt="Nguyễn Thành"></div>
                                                 <img class="img-fluid pattern-image"
                                                     src="/assets/assets/images/dashboard/bg-1.png" alt="Nguyễn Thành">
                                             </div>
                                         </div>
                                         <div class="col-xl-6 col-xl-100 box-col-12">
-                                            <div class="card height-equal title-line" style="padding-bottom: 7px;">
-                                                <div class="row">
-                                                    <div class="col-xxl-12 col-xl-12 col-sm-12 box-col-12 col-xxl-100">
-                                                        <div class="card-header card-no-border">
-                                                            <h2>Tài Khoản</h2>
-                                                            @if (Auth::check())
-                                                                <span class="f-w-500">Xác Thực 2 Bước: Đang Tắt</span>
-                                                            @endif
-                                                        </div>
-
-                                                        <div class="card-body pt-0 chat-app-wrapper">
-                                                            @if (Auth::check())
-                                                                <div class="project-details">
-                                                                    <div class="d-flex gap-2">
-                                                                        <img src="/avatar.png" style="width: 48px;"
-                                                                            alt="user">
-                                                                        <div>
-                                                                            <h4 class="f-w-500">
-                                                                                {{ Auth::user()->username }}
-                                                                            </h4>
-                                                                            <span class="f-12 f-light f-w-500">Thành
-                                                                                Viên</span>
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <p class="f-w-500 f-light text-danger">Quý Khách
-                                                                        Chưa Cập
-                                                                        Nhật Thông Tin Liên Hệ, Thêm Thông Tin <a
-                                                                            href="/profile" class="text-primary">Tại
-                                                                            Đây</a>
-                                                                    </p>
-                                                                    <div class="mt-3" style="display: flex;">
-                                                                        <a href="/chuyen-khoan"
-                                                                            class="badge badge-primary text-light">Nạp
-                                                                            Tiền</a>
-                                                                        <a href="/profile"
-                                                                            class="badge badge-secondary text-light">Lịch
-                                                                            Sử
-                                                                            Hoạt Động</a>
-                                                                        <a wire:click="logout" style="cursor: pointer;"
-                                                                            class="badge badge-danger text-light">Đăng
-                                                                            Xuất</a>
-                                                                    </div>
-                                                                </div>
-                                                            @else
-                                                                <div class="card-body pt-0">
-                                                                    <div class="light-card satisfaction-box common-box">
-                                                                        <div>
-                                                                            <div class="g_id_signin" data-type="standard" data-shape="rectangular"
-                                                                                data-theme="outline" data-text="signin_with" data-size="large"
-                                                                                data-logo_alignment="left">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            @endif
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            @livewire('page.home.widget.account')
 
                                             <div class="col-xxl-12 col-xl-12 col-sm-12 box-col-12 col-xxl-100" hidden>
                                                 <div class="card height-equal title-line">

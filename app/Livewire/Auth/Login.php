@@ -25,11 +25,18 @@ class Login extends Component
         // Đăng nhập người dùng
         if (Auth::attempt(['username' => $this->username, 'password' => $this->password], $this->remember)) {
             // Đăng nhập thành công
-            $this->alert('success', 'Đăng nhập thành công!');
+            ActivityHistory::logActivity('Đăng nhập bằng tài khoản');
+            $this->dispatch('showModalAlert', [
+                'title' => 'Đăng nhập thành công!',
+                'message' => 'Chúc bạn có những trải nghiệm tuyệt vời!',
+            ]);
             return redirect('/'); // Chuyển hướng đến trang dashboard hoặc trang bạn muốn
         } else {
             // Đăng nhập không thành công
-            $this->alert('error', 'Tên tài khoản hoặc mật khẩu không chính xác.');
+            $this->dispatch('showModalAlert', [
+                'title' => 'Đăng nhập thất bại!',
+                'message' => 'Tên tài khoản hoặc mật khẩu không chính xác.',
+            ]);
         }
     }
     public function redirectToProvider()
@@ -59,18 +66,18 @@ class Login extends Component
                 Auth::login($newUser);
 
                 // Hiện thông báo thành công
-                $this->alert('success', 'Đăng ký thành công với Google!', [
-                    'timer' => 3000,
-                    'toast' => true,
+                $this->dispatch('showModalAlert', [
+                    'title' => 'Đăng ký thành công với Google!',
+                    'message' => 'Chúc bạn có những trải nghiệm tuyệt vời!',
                 ]);
                 ActivityHistory::logActivity('Đăng nhập bằng Google');
                 return redirect('/');
             }
         } catch (\Exception $e) {
             // Hiển thị thông báo lỗi nếu có sự cố
-            $this->alert('error', 'Đã có lỗi xảy ra hoặc bạn đã từ chối quyền truy cập ứng dụng.', [
-                'timer' => 3000,
-                'toast' => true,
+            $this->dispatch('showModalAlert', [
+                'title' => 'Đã có lỗi xảy ra hoặc bạn đã từ chối quyền truy cập ứng dụng.',
+                'message' => 'Đã có lỗi xảy ra hoặc bạn đã từ chối quyền truy cập ứng dụng.',
             ]);
 
             return redirect('/'); // Quay về trang chính

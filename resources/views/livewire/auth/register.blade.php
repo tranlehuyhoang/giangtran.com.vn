@@ -1,7 +1,8 @@
 <div>
 
     <head>
-        <title> Đăng Ký Tài Khoản | GIANGTRAN.COM.VN </title>
+        @livewire('inc.seo', ['title' => 'Đăng Ký Tài Khoản'])
+
         <link rel="stylesheet" href="/assets/static/style.css?v=2097735562">
     </head>
 

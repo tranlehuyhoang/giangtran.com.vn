@@ -13,10 +13,13 @@ class Home extends Component
     {
         // $this->dispatch('showModalLogout');
     }
+    public function showModalLogout()
+    {
+        $this->dispatch('showModalLogout');
+    }
     public function logout()
     {
         Auth::logout();
-        $this->alert('success', 'Đăng xuất thành công');
         return redirect('/home');
     }
     public function render()

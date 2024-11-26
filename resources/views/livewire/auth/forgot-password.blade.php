@@ -1,6 +1,7 @@
 <div>
     <head>
-        <title> Đặt Lại Mật Khẩu | GIANGTRAN.COM.VN </title>
+        @livewire('inc.seo', ['title' => 'Đặt Lại Mật Khẩu'])
+
         <link rel="stylesheet" href="/assets/static/style.css?v=62348332">
     </head>
     <body id="content">
@@ -19,27 +20,27 @@
                                     <center onclick="loadto('/');" style="cursor: pointer;"><img
                                             src="/giangtran.com.vn.png"
                                             style="max-width: 100%; height: 35px;"></center>
-    
+
                                     <div class="theme-form mt-3">
-    
+
                                         <div style="display: block;" id="get-send-otp">
                                             <center>
                                                 <h2> Đặt Lại Mật Khẩu </h2>
                                             </center>
-    
+
                                             <div class="form-group">
                                                 <label class="col-form-label"> Email Khôi Phục </label>
                                              @livewire('auth.forgot-password.form')
                                             </div>
-    
-    
+
+
                                             <div class="form-group" id="otpShow" style="display: none;">
                                                 <label class="col-form-label"> Mã OTP </label>
                                                 <input class="form-control" type="number" id="otp_new"
                                                     placeholder="Mã Gồm 6 Chữ Số" style="background-color: white;"
                                                     autocomplete="new-password" onchange="getOTPInoput()" value="">
                                             </div>
-    
+
                                             <div class="mt-2 text-danger" style="font-size: 12px;" id="default-text"> Hướng
                                                 Dẫn: Nhập Chính Xác Email Tài Khoản Của Bạn, Sau Khi Nhập Xong Hệ Thống Sẽ
                                                 Tự Gửi Một Email Đến Bạn! </div>
@@ -48,10 +49,10 @@
                                                         class="btn-link txt-danger" onclick="resendOTP()" id="icon-resend">
                                                         Gửi Lại </a></span></div>
                                         </div>
-    
+
                                         <div id="create-new-password" style="display: none;">
                                             <h4 class="mt-4"> Tạo Mật Khẩu Mới </h4>
-    
+
                                             <div class="form-group">
                                                 <label class="col-form-label"> Mật Khẩu Mới </label>
                                                 <div class="form-input position-relative">
@@ -60,7 +61,7 @@
                                                     <div class="show-hide"><span class="show"></span></div>
                                                 </div>
                                             </div>
-    
+
                                             <div class="form-group">
                                                 <label class="col-form-label"> Nhập Lại Mật Khẩu Mới </label>
                                                 <div class="form-input position-relative">
@@ -69,7 +70,7 @@
                                                     <div class="show-hide"><span class="show"></span></div>
                                                 </div>
                                             </div>
-    
+
                                             <div class="form-group mb-0">
                                                 <button class="btn btn-primary btn-block w-100" id="create_new_password"
                                                     onclick="create_new_password();"> Xác Nhận </button>
@@ -81,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <style>
                     @media only screen and (max-width: 456px) {
                         .login-card .login-main {
@@ -89,7 +90,7 @@
                             padding: 20px;
                         }
                     }
-    
+
                     @media only screen and (max-width: 400px) {
                         .login-card .login-main {
                             width: auto;
