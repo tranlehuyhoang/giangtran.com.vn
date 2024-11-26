@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Services\Smm\Components;
 
+use App\Models\Invoice;
 use App\Models\SmmCategory;
 use App\Models\SmmOrder;
 use App\Models\SmmService;
@@ -49,6 +50,15 @@ class Form extends Component
             'remains' => $this->quantity ?? null,
             'payment_method' => $this->paymentMethod ?? null,
         ];
+        if(Invoice::hasUnpaidInvoices()){
+
+
+            $this->dispatch('showModalAlert', [
+                'title' => 'Thông báo',
+                'message' => 'Bạn có hóa đơn chưa thanh toán, vui lòng thanh toán hóa đơn trước khi tạo đơn hàng mới',
+            ]);
+            return;
+        }
         $order = SmmOrder::createOrder($data);
         if($order['status']){
             $this->reset('quantity','link','paymentMethod','selectedService');

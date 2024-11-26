@@ -21,9 +21,9 @@
                                                     <p> Thời Gian Tạo:
                                                         {{ \Carbon\Carbon::parse($invoice->invoice_date)->format('m/d/Y, h:i:s A') }}
                                                     </p>
-                                                    <p> Hạn Thanh Toán:
+                                                    {{-- <p> Hạn Thanh Toán:
                                                         {{ \Carbon\Carbon::parse($invoice->payment_due_date)->format('m/d/Y, h:i:s A') }}
-                                                    </p>
+                                                    </p> --}}
                                                 </div>
                                                 <b class="text-warning"> Chờ Thanh Toán </b>
                                             </div>

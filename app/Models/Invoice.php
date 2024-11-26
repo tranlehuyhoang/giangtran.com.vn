@@ -66,4 +66,18 @@ class Invoice extends Model
             return collect();
         }
     }
+    public static function hasUnpaidInvoices($userId = null)
+    {
+        if ($userId) {
+            return self::where('user_id', $userId)
+                ->where('payment_status', 'pending')  // Giả sử trạng thái chưa thanh toán là 'unpaid'
+                ->exists();
+        } else if (Auth::check()) {
+            $user_id = Auth::user()->id;
+            return self::where('user_id', $user_id)
+                ->where('payment_status', 'pending')
+                ->exists();
+        }
+        return false;
+    }
 }
