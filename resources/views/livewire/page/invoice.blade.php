@@ -1,7 +1,8 @@
 <div style="width: 100%;">
+
     <head>
 
-        @livewire('inc.seo', ['title' => 'Hóa Đơn #'.$invoice->invoice_code])
+        @livewire('inc.seo', ['title' => 'Hóa Đơn #' . $invoice->invoice_code])
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -22,8 +23,8 @@
             <section class="container bg-white p-4 shadow-sm" style="border-radius: 3%; max-width: 480px;">
                 <header class="mb-4 d-flex align-items-center">
                     <a href="/" class="d-flex align-items-center text-decoration-none">
-                        <img class="me-2" src="/giangtran.com.vn.png"
-                            alt="" style="width: 200px; height: auto;">
+                        <img class="me-2" src="/giangtran.com.vn.png" alt=""
+                            style="width: 200px; height: auto;">
                     </a>
                 </header>
 
@@ -55,8 +56,11 @@
                                 <span> Số Tài Khoản: 0966579217 </span><br>
                                 <span> Chủ TK: <b>TRAN LE HOANG GIANG</b> </span> <br>
                                 <span> Nội Dung CK: <b>TT{{ $invoice->invoice_code }}</b> </span><br>
-                                <span> Cần Thanh Toán: {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup> </span><br>
-                                <span> Nhận Tối Thiểu: {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup></span><br>
+                                <span> Cần Thanh Toán:
+                                    {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup>
+                                </span><br>
+                                <span> Nhận Tối Thiểu:
+                                    {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup></span><br>
                             </div>
                         </div>
 
@@ -80,9 +84,10 @@
                         <span>- Loại Hóa Đơn: Đăng Ký Dịch Vụ </span><br>
                         <span
                             style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; display: inline-block;">-
-                            Dịch Vụ: VIETNAM #STARTUP   </span><br>
+                            Dịch Vụ: VIETNAM #STARTUP </span><br>
                         <span>- Thời Gian Lập Hóa Đơn: {{ $invoice->invoice_date }} </span><br>
-                        <span>- Số Tiền: {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup> </span><br>
+                        <span>- Số Tiền: {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup>
+                        </span><br>
                         <span>- Hạn Thanh Toán: {{ $invoice->payment_due_date }} </span><br>
                     </div>
                     </p>
@@ -99,58 +104,74 @@
             </section>
         </main>
 
-        <script>
-            function selectwallet(){
-                var bank = $("#select-wallet").val();
-                changeWallet(bank, '208');
-            }
-
-
-            realTime({ orderId: '564229' });
-
-            function realTime(data) {
-                axios.get('/axios/payment-check', {
-                    params: data
-                })
-                .then(response => {
-                    if(response.data.status == 'success'){
-                        swal('Thông Báo',response.data.message,response.data.status);
-                        setTimeout(() => {
-                            loadto('');
-                        }, 1000);
-                    } else if(response.data.status == 'error') {
-                        setTimeout(() => {
-                            loadto('');
-                        }, 1000);
-                    } else {
-                        if(response.status == 200){
-                            setTimeout(() => {
-                                realTime({ orderId: data.orderId });
-                            }, 3000);
-                        }
-                    }
-                })
-            }
-
-
-        </script>
-        <script src="/assets/static/cyberlux.js" defer></script>
-        <script src="/assets/static/wallet.js?v=1678586054" defer></script>
         <script src="/assets/static/jquery.min.js" defer></script>
     </body>
     <style>
         html {
-    height: 100%;
-}
-body#invoice-body {
-    justify-content: center;
-    height: 100%;
-}
-header.mb-4.d-flex.align-items-center {
-    justify-content: center;
-}
-body {
-    background-color: #009DB5 !important;
-}
+            height: 100%;
+        }
+
+        body#invoice-body {
+            justify-content: center;
+            height: 100%;
+        }
+
+        header.mb-4.d-flex.align-items-center {
+            justify-content: center;
+        }
+
+        body {
+            background-color: #009DB5 !important;
+        }
     </style>
+    <script>
+        function fetchCronTransaction() {
+            fetch('/api/transaction', {
+                    method: 'GET', // HTTP method
+                    headers: {
+                        'Content-Type': 'application/json' // Optional, depending on your backend requirements
+                    }
+                })
+                .then(data => {
+                    setTimeout(fetchCronTransaction, 2000); // 2000 milliseconds = 2 seconds
+                });
+        }
+
+        function fetchCronData() {
+            fetch('/api/invoice/' + {{ $invoice->invoice_code }}, {
+                    method: 'GET', // HTTP method
+                    headers: {
+                        'Content-Type': 'application/json' // Optional, depending on your backend requirements
+                    }
+                })
+                .then(response => response.json()) // Assuming the response is JSON
+                .then(data => {
+                    if (data.status == 'success') {
+                        Swal.fire({
+                            icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
+                            title: 'Thông báo',
+                            text: 'Thanh toán hóa đơn #' + data.code + ' thành công!',
+                            confirmButtonText: 'OK'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.reload();
+                            }
+                        });
+                    }
+                    // Set a timeout to fetch again after 2 seconds
+                    setTimeout(fetchCronData, 2000); // 2000 milliseconds = 2 seconds
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+
+                    // Handle errors if needed, continue fetching in case of failure
+                    setTimeout(fetchCronData, 2000); // Retry after 2 seconds in case of error
+                });
+        }
+
+        // Call fetchCronData once to start the process
+        fetchCronData();
+        fetchCronTransaction();
+    </script>
+    </script>
 </div>

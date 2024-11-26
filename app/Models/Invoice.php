@@ -80,4 +80,18 @@ class Invoice extends Model
         }
         return false;
     }
+    public static function updateInvoicePayment($invoice_code, $user_id)
+    {
+        $transactions = Transaction::all();
+
+        foreach ($transactions as $transaction) {
+            if (strpos($transaction->transaction_content, $invoice_code) !== false) {
+                $invoice = self::where('invoice_code', $invoice_code)->first();
+                $invoice->payment_status = 'paid';
+                $invoice->save();
+                return ['status' => 'success', 'code'=> $invoice_code, 'user' =>$user_id];
+
+            }
+        }
+    }
 }

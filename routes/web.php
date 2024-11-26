@@ -80,6 +80,7 @@ Route::get('/hoa-don/{id}', action: Invoice::class)->name('hoa-don');
 Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
 Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
 Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
+Route::get('/api/invoice/{invoice_code}', [Checkpayment::class, 'checkInvoice'])->name('checkinvoice');
 Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
 
 Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');

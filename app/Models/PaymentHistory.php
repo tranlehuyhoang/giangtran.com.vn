@@ -35,13 +35,13 @@ class PaymentHistory extends Model
     {
         // Lấy tất cả các giao dịch
         $transactions = Transaction::all();
-      
+
         foreach ($transactions as $transaction) {
             // Kiểm tra xem transaction_content có chứa mã code không
             if (strpos($transaction->transaction_content, $code) !== false) {
                 // Kiểm tra xem transaction_code đã tồn tại trong bảng PaymentHistory chưa
                 $exists = self::where('transaction_code', $transaction->id)->exists();
-    
+
                 if (!$exists) {
                     self::create([
                         'user_id' => $user_id, // Sử dụng user_id được truyền vào
@@ -60,4 +60,6 @@ class PaymentHistory extends Model
         // return ['status' => 'success', 'amount' => $transaction->amount_in, 'code'=> $code, 'user' =>$user_id];
         return ['status' => 'not_found', 'amount' => null,  'code'=> $code, 'user' =>$user_id];
     }
+
+
 }
