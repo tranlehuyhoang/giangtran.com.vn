@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2024 at 06:38 AM
+-- Generation Time: Nov 26, 2024 at 03:58 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -99,15 +99,31 @@ CREATE TABLE `invoices` (
   `payment_due_date` datetime NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `user_id` int(255) NOT NULL
+  `user_id` int(255) NOT NULL,
+  `payment_status` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `invoices`
 --
 
-INSERT INTO `invoices` (`id`, `invoice_code`, `invoice_type`, `service`, `invoice_date`, `amount`, `payment_due_date`, `created_at`, `updated_at`, `user_id`) VALUES
-(2, '363612', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-24 05:11:14', 20000000.00, '2024-11-24 12:14:14', '2024-11-24 05:11:14', '2024-11-24 05:11:14', 1);
+INSERT INTO `invoices` (`id`, `invoice_code`, `invoice_type`, `service`, `invoice_date`, `amount`, `payment_due_date`, `created_at`, `updated_at`, `user_id`, `payment_status`) VALUES
+(2, '363612', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-24 05:11:14', 20000000.00, '2024-11-24 12:14:14', '2024-11-24 05:11:14', '2024-11-24 05:11:14', 1, NULL),
+(3, '785265', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:39:24', 40000000.00, '2024-11-26 09:42:24', '2024-11-26 02:39:24', '2024-11-26 02:39:24', 1, 'pending'),
+(4, '642335', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:40:06', 10000000.00, '2024-11-26 09:43:06', '2024-11-26 02:40:06', '2024-11-26 02:40:06', 1, 'pending'),
+(5, '548104', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:41:17', 10000000.00, '2024-11-26 09:44:17', '2024-11-26 02:41:17', '2024-11-26 02:41:17', 1, 'pending'),
+(6, '808276', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:42:37', 10000000.00, '2024-11-26 09:45:37', '2024-11-26 02:42:37', '2024-11-26 02:42:37', 1, 'pending'),
+(7, '607418', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:42:50', 10000000.00, '2024-11-26 09:45:50', '2024-11-26 02:42:50', '2024-11-26 02:42:50', 1, 'pending'),
+(8, '536092', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:43:05', 10000000.00, '2024-11-26 09:46:05', '2024-11-26 02:43:05', '2024-11-26 02:43:05', 1, 'pending'),
+(9, '606821', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:44:17', 10000000.00, '2024-11-26 09:47:17', '2024-11-26 02:44:17', '2024-11-26 02:44:17', 1, 'pending'),
+(10, '158234', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:45:17', 10000000.00, '2024-11-26 09:48:17', '2024-11-26 02:45:17', '2024-11-26 02:45:17', 1, 'pending'),
+(11, '480892', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:45:31', 10000000.00, '2024-11-26 09:48:31', '2024-11-26 02:45:31', '2024-11-26 02:45:31', 1, 'pending'),
+(12, '848638', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:47:57', 10000000.00, '2024-11-26 09:50:57', '2024-11-26 02:47:57', '2024-11-26 02:47:57', 1, 'pending'),
+(13, '919973', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:50:24', 10000000.00, '2024-11-26 09:53:24', '2024-11-26 02:50:24', '2024-11-26 02:50:24', 1, 'pending'),
+(14, '466867', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:51:15', 10000000.00, '2024-11-26 09:54:15', '2024-11-26 02:51:15', '2024-11-26 02:51:15', 1, 'pending'),
+(15, '345485', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:51:39', 10000000.00, '2024-11-26 09:54:39', '2024-11-26 02:51:39', '2024-11-26 02:51:39', 1, 'pending'),
+(16, '667783', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:53:31', 10000000.00, '2024-11-26 09:56:31', '2024-11-26 02:53:31', '2024-11-26 02:53:31', 1, 'pending'),
+(17, '253201', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-26 02:57:20', 10000000.00, '2024-11-26 10:00:20', '2024-11-26 02:57:20', '2024-11-26 02:57:20', 1, 'pending');
 
 -- --------------------------------------------------------
 
@@ -308,7 +324,9 @@ INSERT INTO `payment_history` (`id`, `user_id`, `transaction_code`, `amount`, `s
 (112, 4, '4831131', 2012.00, 'thành công', 'MBBank', '2024-11-20 14:18:57', '2024-11-20 14:18:57'),
 (113, 4, '4831168', 2003.00, 'thành công', 'MBBank', '2024-11-20 14:20:24', '2024-11-20 14:20:24'),
 (115, 4, '4831251', 2400.00, 'thành công', 'MBBank', '2024-11-21 09:39:04', '2024-11-21 09:39:04'),
-(116, 1, '4891313', 2000.00, 'thành công', 'MBBank', '2024-11-23 02:51:02', '2024-11-23 02:51:02');
+(116, 1, '4891313', 2000.00, 'thành công', 'MBBank', '2024-11-23 02:51:02', '2024-11-23 02:51:02'),
+(117, 1, '4895678', 2000.00, 'thành công', 'MBBank', '2024-11-24 15:08:36', '2024-11-24 15:08:36'),
+(118, 1, '4896194', 2000.00, 'thành công', 'MBBank', '2024-11-25 14:45:12', '2024-11-25 14:45:12');
 
 -- --------------------------------------------------------
 
@@ -402,7 +420,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('fwscxVu0OafYLcMXOMUaZZoj4dnLndIzbYHB9wJc', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiRHRISTRnQVozd0VGSm5LMURvN1M1elFqRVhid2N3T1cyVUI4ZDM5aiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9ob21lIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732426645);
+('bxvZuN6IqJE01hkgGy3UJ0tIqD8r2ZfpGIDOlrJp', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiYlNGQ3RDWVRvdHJNNHNPY2hoUUxEdjdlRU1vVnkxUDJ3anJzckNFTyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vY3JlYXRlIjt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1732589843),
+('I8fzlQ7KzrxeDdCWepaQ2nZsvRAUVcTAYce7KgFJ', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMU9HNkZTNnV0T3Zhb0JPQVJEREVpQlFZcTZ1ZTRmWThmZVV4bWhDTCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1732587481);
 
 -- --------------------------------------------------------
 
@@ -456,7 +475,22 @@ CREATE TABLE `smm_orders` (
 --
 
 INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_price`, `status`, `unit_price`, `start_count`, `link`, `remains`, `payment_method`, `payment_status`, `created_at`, `updated_at`, `order_code`) VALUES
-(35, 1, 1, 2000, 20000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 2000, 'bank_transfer', 'pending', '2024-11-24 05:11:14', '2024-11-24 05:11:14', '363612');
+(35, 1, 1, 2000, 20000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 2000, 'bank_transfer', 'pending', '2024-11-24 05:11:14', '2024-11-24 05:11:14', '363612'),
+(36, 1, 1, 4000, 40000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 4000, 'bank_transfer', 'pending', '2024-11-26 02:39:24', '2024-11-26 02:39:24', '785265'),
+(37, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:40:06', '2024-11-26 02:40:06', '642335'),
+(38, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:41:17', '2024-11-26 02:41:17', '548104'),
+(39, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:42:37', '2024-11-26 02:42:37', '808276'),
+(40, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:42:50', '2024-11-26 02:42:50', '607418'),
+(41, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:43:05', '2024-11-26 02:43:05', '536092'),
+(42, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:44:17', '2024-11-26 02:44:17', '606821'),
+(43, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:45:17', '2024-11-26 02:45:17', '158234'),
+(44, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:45:31', '2024-11-26 02:45:31', '480892'),
+(45, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:47:57', '2024-11-26 02:47:57', '848638'),
+(46, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:50:24', '2024-11-26 02:50:24', '919973'),
+(47, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:51:15', '2024-11-26 02:51:15', '466867'),
+(48, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:51:39', '2024-11-26 02:51:39', '345485'),
+(49, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:53:31', '2024-11-26 02:53:31', '667783'),
+(50, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-26 02:57:20', '2024-11-26 02:57:20', '253201');
 
 -- --------------------------------------------------------
 
@@ -594,7 +628,22 @@ INSERT INTO `transactions` (`id`, `bank_brand_name`, `account_number`, `transact
 ('4872643', 'MBBank', '0966579217', '2024-11-22 15:02:12', 20000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ 6X412272', 'FT24327442460364', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
 ('4890341', 'MBBank', '0966579217', '2024-11-23 08:19:21', 0.00, 40000.00, 0.00, 'TRAN LE HUY HOANG chuyen tien', 'FT24328239208909', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
 ('4890566', 'MBBank', '0966579217', '2024-11-23 08:37:40', 1990000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien - Ma giao dich/ Trace 163334', 'FT24328175240474', NULL, NULL, '4230', '2024-11-23 02:50:04', '2024-11-23 02:50:04'),
-('4891313', 'MBBank', '0966579217', '2024-11-23 09:50:52', 0.00, 2000.00, 0.00, 'NF 2509ROBLOX', 'FT24328650993234', NULL, NULL, '4230', '2024-11-23 02:51:00', '2024-11-23 02:51:00');
+('4891313', 'MBBank', '0966579217', '2024-11-23 09:50:52', 0.00, 2000.00, 0.00, 'NF 2509ROBLOX', 'FT24328650993234', NULL, NULL, '4230', '2024-11-23 02:51:00', '2024-11-23 02:51:00'),
+('4891917', 'MBBank', '0966579217', '2024-11-23 10:37:43', 3123.00, 0.00, 0.00, 'MVPAS637th38h - Ma giao dich/ Trace606340', 'FT24328909426994', NULL, NULL, '4230', '2024-11-24 15:08:33', '2024-11-24 15:08:33'),
+('4895678', 'MBBank', '0966579217', '2024-11-23 14:25:27', 0.00, 2000.00, 0.00, 'NF 2509ROBLOX', 'FT24328208560736', NULL, NULL, '4230', '2024-11-24 15:08:33', '2024-11-24 15:08:33'),
+('4896194', 'MBBank', '0966579217', '2024-11-23 15:07:06', 0.00, 2000.00, 0.00, 'NF 2509ROBLOX', 'FT24328560885710', NULL, NULL, '4230', '2024-11-24 15:08:33', '2024-11-24 15:08:33'),
+('4911366', 'MBBank', '0966579217', '2024-11-24 08:55:55', 0.00, 300000.00, 0.00, 'QR   thanh toan- Ma GD ACSP/ 2C350876', 'FT24330003704498', NULL, NULL, '4230', '2024-11-24 15:08:33', '2024-11-24 15:08:33'),
+('4914546', 'MBBank', '0966579217', '2024-11-24 11:04:47', 0.00, 600000.00, 0.00, 'Parallax Scrolling FT24330550389246Ma giao dich  Trace858020 Trace858020', 'FT24330766674086', NULL, NULL, '4230', '2024-11-24 15:08:33', '2024-11-24 15:08:33'),
+('4914665', 'MBBank', '0966579217', '2024-11-24 11:10:15', 10000.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIaroeLCZf-72217675517', 'FT24330017450206', NULL, NULL, '4230', '2024-11-24 15:08:33', '2024-11-24 15:08:33'),
+('4937236', 'MBBank', '0966579217', '2024-11-25 10:50:26', 96000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ IP708190', 'FT24330810746961', NULL, NULL, '4230', '2024-11-25 14:45:13', '2024-11-25 14:45:13'),
+('4938988', 'MBBank', '0966579217', '2024-11-25 12:15:12', 0.00, 300000.00, 0.00, '72302101459-NGUYEN THI NGOC TRAN chuyen tien qua MoMo-CHUYEN TIEN-OQCH32579863-MOMO72302101459MOMO', 'FT24330740051461', NULL, NULL, '4230', '2024-11-25 14:45:13', '2024-11-25 14:45:13'),
+('4939027', 'MBBank', '0966579217', '2024-11-25 12:17:50', 0.00, 30000.00, 0.00, 'NGUYEN HUU TAI chuyen tien', 'FT24330014595320', NULL, NULL, '4230', '2024-11-25 14:45:13', '2024-11-25 14:45:13'),
+('4939061', 'MBBank', '0966579217', '2024-11-25 12:19:30', 0.00, 30000.00, 0.00, 'MBVCB.7712609686.296298.NGO THANH BINH chuyen tien.CT tu 1027045414 NGO THANH BINH toi 0966579217 TRAN LEHOANG GIANG tai MB- Ma GD ACSP/ ml', 'FT24330319737066', NULL, NULL, '4230', '2024-11-25 14:45:13', '2024-11-25 14:45:13'),
+('4939087', 'MBBank', '0966579217', '2024-11-25 12:21:40', 0.00, 30000.00, 0.00, 'DATN - DOCS', 'FT24330207996764', NULL, NULL, '4230', '2024-11-25 14:45:13', '2024-11-25 14:45:13'),
+('4940503', 'MBBank', '0966579217', '2024-11-25 13:57:39', 0.00, 50000.00, 0.00, 'TRAN QUANG NGHIA chuyen tien', 'FT24330556938007', NULL, NULL, '4230', '2024-11-25 14:45:13', '2024-11-25 14:45:13'),
+('4944840', 'MBBank', '0966579217', '2024-11-25 18:13:57', 0.00, 100000.00, 0.00, 'TRAN QUANG NGHIA chuyen tien', 'FT24330206584073', NULL, NULL, '4230', '2024-11-25 14:45:13', '2024-11-25 14:45:13'),
+('4956079', 'MBBank', '0966579217', '2024-11-26 08:00:14', 0.00, 400000.00, 0.00, 'TRAN QUANG NGHIA chuyen tien FT24331959502463   Ma giao dich  Trace654167 Trace 654167', 'FT24331945856850', NULL, NULL, '4230', '2024-11-26 02:11:25', '2024-11-26 02:11:25'),
+('4957058', 'MBBank', '0966579217', '2024-11-26 08:46:53', 0.00, 100000.00, 0.00, 'TRAN QUANG NGHIA chuyen tien FT24331052501436   Ma giao dich  Trace826670 Trace 826670', 'FT24331908069090', NULL, NULL, '4230', '2024-11-26 02:11:25', '2024-11-26 02:11:25');
 
 -- --------------------------------------------------------
 
@@ -629,7 +678,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`) VALUES
-(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$jXmBzW61MiWBtxuSMGsNCeuGlEhScP2E9lt50AqrIxVv5YzJqQ49e', 'HQXMKRXXIiuGCec7FJUZOLTzxmGLNdBRmWZDIUfLGjb94WD86fCZptT7QVNh', '2024-11-16 20:18:19', '2024-11-24 03:18:35', 'default', NULL, 2000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0, NULL),
+(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$jXmBzW61MiWBtxuSMGsNCeuGlEhScP2E9lt50AqrIxVv5YzJqQ49e', 'iJmKymxoQbVmvXb93StswBqn3urSTrScBf1ufG1lxKH0o9Fk6QJi9jiGM1LW', '2024-11-16 20:18:19', '2024-11-25 14:45:12', 'default', NULL, 6000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0, NULL),
 (4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$pqelBvHvBmcrFTMwtfPpFetOaczL7hbhM2iLR4IdoOXDwsSduQqLC', '4OBcTd5nAUfJTQ4vxjfh4ChaQ4TmKOGD0NfQjaQ0mtRJfR2IaIpKm4d5lmYr', '2024-11-19 13:52:31', '2024-11-21 09:39:04', 'default', NULL, 4800.00, NULL, NULL, NULL, NULL, NULL, 0, NULL),
 (5, 'Tran Le Huy Hoang (FPL HCM)', 'hoangtlhps26819@fpt.edu.vn', NULL, NULL, '$2y$12$DB1b1DSlzKgdA/kE8xn9ROrSRJA4fBtKXfYh0YMb.fPdKmLE7yYcy', NULL, '2024-11-21 10:50:00', '2024-11-21 10:50:00', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL),
 (6, '123', '2@2', '123', NULL, '$2y$12$6MfzzoMPyoUSQhMZOAp3V.8I/N00zunuSnP8hr4cWGn3nJueXqh8S', NULL, '2024-11-21 11:14:20', '2024-11-21 11:14:20', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL),
@@ -803,7 +852,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `jobs`
@@ -821,7 +870,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `payment_history`
 --
 ALTER TABLE `payment_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
 
 --
 -- AUTO_INCREMENT for table `permissions`
@@ -845,7 +894,7 @@ ALTER TABLE `smm_categories`
 -- AUTO_INCREMENT for table `smm_orders`
 --
 ALTER TABLE `smm_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `smm_services`
