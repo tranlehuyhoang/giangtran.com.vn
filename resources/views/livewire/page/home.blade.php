@@ -17,7 +17,6 @@
 
 
     </head>
-
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">
             <div class="boxes"></div>

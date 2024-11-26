@@ -85,3 +85,15 @@ Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
 Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
 Route::get('/auth/google/register', [Register::class, 'redirectToProvider'])->name('google.register');
 Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
+Route::get('/403', function () {
+    return view('errors.403');
+});
+Route::get('/500', function () {
+    return view('errors.500');
+});
+Route::get('/401', function () {
+    return view('errors.401');
+});
+Route::get('/404', function () {
+    return view('errors.404');
+});

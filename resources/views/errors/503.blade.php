@@ -5,34 +5,33 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mofi admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Mofi admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="pixelstrap">
-    <link rel="icon" href="/mofi/assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/mofi/assets/images/favicon.png" type="image/x-icon">
-    <title>Error-503 | Mofi - Premium Admin Template By Pixelstrap</title>
+    <link rel="icon" href="/assets/assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/assets/images/favicon.png" type="image/x-icon">
+    <title>503 - HG DIGITAL</title>
+    <link rel="icon" type="image/x-icon" href="/icon.png" />
+    <link rel="shortcut icon" href="/icon.png" />
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/mofi/assets/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,800;0,900;1,700&amp;display=swap" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="/assets/assets/css/font-awesome.css">
     <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="/mofi/assets/css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/icofont.css">
     <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="/mofi/assets/css/vendors/themify.css">
+    <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/themify.css">
     <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="/mofi/assets/css/vendors/flag-icon.css">
+    <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/flag-icon.css">
     <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="/mofi/assets/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/feather-icon.css">
     <!-- Plugins css start-->
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="/mofi/assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/bootstrap.css">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="/mofi/assets/css/style.css">
-    <link id="color" rel="stylesheet" href="/mofi/assets/css/color-1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/assets/assets/css/style.css">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="/mofi/assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/assets/assets/css/responsive.css">
   </head>
   <body>
     <!-- tap on top starts-->
@@ -42,34 +41,31 @@
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- error-503 start-->
       <div class="error-wrapper">
-        <div class="container"><img class="img-100" src="/mofi/assets/images/other-images/sad5.gif" alt="">
+        <div class="container"><img class="img-100" src="/assets/assets/images/other-images/sad.png" alt="">
           <div class="error-heading">
-            <h2 class="headline font-secondary">503</h2>
+            <h2 class="headline font-info">503</h2>
           </div>
           <div class="col-md-8 offset-md-2">
-            <p class="sub-content">The page you are attempting to reach is currently not available. This may be because the page does not exist or has been moved.</p>
+            <p class="sub-content">Trang bạn đang cố gắng truy cập hiện không khả dụng. Điều này có thể do trang không tồn tại hoặc đã bị di chuyển.</p>
           </div>
-          <div><a class="btn btn-secondary-gradien btn-lg" href="/" wire:navigate>BACK TO HOME PAGE</a></div>
+          <div><a class="btn btn-info-gradien btn-lg" href="/">TRỞ VỀ TRANG CHỦ</a></div>
         </div>
       </div>
       <!-- error-503 end-->
     </div>
     <!-- latest jquery-->
-    <script src="/mofi/assets/js/jquery.min.js"></script>
+    <script src="/assets/assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
-    <script src="/mofi/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/assets/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- feather icon js-->
-    <script src="/mofi/assets/js/icons/feather-icon/feather.min.js"></script>
-    <script src="/mofi/assets/js/icons/feather-icon/feather-icon.js"></script>
+    <script src="/assets/assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="/assets/assets/js/icons/feather-icon/feather-icon.js"></script>
     <!-- scrollbar js-->
     <!-- Sidebar jquery-->
-    <script src="/mofi/assets/js/config.js"></script>
+    <script src="/assets/assets/js/config.js"></script>
     <!-- Plugins JS start-->
-    <!-- calendar js-->
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
-    <script src="/mofi/assets/js/script.js"></script>
-    <script src="/mofi/assets/js/script1.js"></script>
-    <!-- Plugin used-->
+    <script src="/assets/assets/js/script.js"></script>
   </body>
 </html>
