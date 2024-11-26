@@ -84,7 +84,10 @@
                                                             <div class="g_id_signin" data-type="standard"
                                                                 data-shape="rectangular" data-theme="outline"
                                                                 data-text="signin_with" data-size="large"
-                                                                data-logo_alignment="left">
+                                                                data-logo_alignment="left" style="
+                                                                display: flex;
+                                                                justify-content: center;
+                                                            ">
                                                             </div>
                                                         </div>
 
