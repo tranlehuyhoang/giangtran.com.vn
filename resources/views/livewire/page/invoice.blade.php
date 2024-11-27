@@ -30,7 +30,11 @@
 
                 <main>
                     <span> Hóa Đơn #{{ $invoice->invoice_code }} </span><br>
-                    <span> Trạng Thái: <b class="text-warning"> {{ $invoice->payment_status }} </b> </span><br>
+                    @if ($invoice->payment_status == 'paid')
+                        <span> Trạng Thái: <b class="text-success"> Đã Thanh Toán </b> </span><br>
+                    @else
+                        <span> Trạng Thái: <b class="text-warning"> Chờ Thanh Toán </b> </span><br>
+                    @endif
 
 
                     <p class="text-secondary mt-2">
@@ -44,9 +48,6 @@
                     <div class="form-group">
                         <select class="form-select" id="select-wallet" onchange="selectwallet();">
                             <option value="mbbank" selected>Ngân Hàng MB Bank</option>
-                            <option value="dt1s">Ví DOITHE1S.VN</option>
-                            <option value="tsr">Ví THESIEURE.COM</option>
-                            <option value="dt">Ví DOITHE.VN</option>
                         </select>
                     </div>
 
@@ -81,10 +82,10 @@
                         <strong>Chi Tiết Hóa Đơn:</strong>
                     <div style="margin-top: -10px; font-size: 14px;">
                         <span>- Mã Số Hóa Đơn: #{{ $invoice->invoice_code }}</span><br>
-                        <span>- Loại Hóa Đơn: Đăng Ký Dịch Vụ </span><br>
+                        <span>- Loại Hóa Đơn: {{ $invoice->invoice_type }} </span><br>
                         <span
                             style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; display: inline-block;">-
-                            Dịch Vụ: VIETNAM #STARTUP </span><br>
+                            Dịch Vụ: {{ $invoice->service }} </span><br>
                         <span>- Thời Gian Lập Hóa Đơn: {{ $invoice->invoice_date }} </span><br>
                         <span>- Số Tiền: {{ App\Helpers\FormatHelper::formatCurrency($invoice->amount) }}<sup>đ</sup>
                         </span><br>

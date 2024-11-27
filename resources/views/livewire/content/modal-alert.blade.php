@@ -11,7 +11,7 @@
                         <h4 class="text-center pb-2" id="titless">  </h4>
                         <p class="text-center" id="messagess"> </p>
                         <button class="btn btn-secondary d-flex m-auto" type="button"
-                            data-bs-dismiss="modal">Close</button>
+                            data-bs-dismiss="modal">Đóng</button>
                     </div>
                 </div>
             </div>

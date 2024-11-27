@@ -56,7 +56,7 @@
                                                             <th>Trạng Thái</th> <!-- Trạng thái của đơn hàng -->
                                                             <th>Link</th> <!-- Liên kết đến dịch vụ -->
                                                             <th>Số Lượng Còn Lại</th> <!-- Số lượng còn lại -->
-                                                            <th>Thao Tác</th>
+                                                            <th>Thanh Toán</th>
                                                             <!-- Các thao tác mà người dùng có thể thực hiện -->
                                                         </tr>
                                                     </thead>
@@ -77,7 +77,7 @@
                                                                 </td> <!-- Thời gian tạo -->
                                                                 <td>
                                                                     <span
-                                                                        class="badge badge-success bg-success">{{ ucfirst($order->status) }}</span>
+                                                                        class="badge badge-success bg-success">{{ $order->status == 'pending' ? 'Đang Chạy' : 'Đã Xong' }}</span>
                                                                     <!-- Trạng thái -->
                                                                 </td>
                                                                 <td>
@@ -88,7 +88,7 @@
                                                                 <td>{{ $order->remains }}</td>
                                                                 <!-- Số lượng còn lại -->
                                                                 <td>
-                                                                    <span class="badge badge-primary">QUẢN LÝ</span>
+                                                                    <span class="badge badge-primary">{{ $order->payment_status == 'pending' ? 'Chưa Thanh Toán' : 'Đã Thanh Toán' }}</span>
                                                                     <!-- Thao tác -->
                                                                 </td>
                                                             </tr>

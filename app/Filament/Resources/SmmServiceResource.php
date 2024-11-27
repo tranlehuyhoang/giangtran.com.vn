@@ -32,14 +32,24 @@ class SmmServiceResource extends Resource
                 ->placeholder('Chọn danh mục Smm'),
                 Forms\Components\TextInput::make('name')
                     ->required()
+                    ->label('Tên dịch vụ')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('price')
                     ->required()
+                    ->label('Giá dịch vụ')
                     ->numeric()
-                    ->prefix('$'),
+                    ->prefix('VNĐ'),
                 Forms\Components\TextInput::make('code')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('min')
+                    ->required()
+                    ->label('Số lượng tối thiểu')
+                    ->numeric(),
+                Forms\Components\TextInput::make('max')
+                    ->required()
+                    ->label('Số lượng tối đa')
+                    ->numeric(),
                 Forms\Components\Toggle::make('is_active')
                     ->required(),
             ]);
@@ -93,7 +103,10 @@ class SmmServiceResource extends Resource
             //
         ];
     }
-
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
     public static function getPages(): array
     {
         return [

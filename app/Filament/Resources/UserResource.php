@@ -21,7 +21,7 @@ class UserResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?int $sort = 101;
 
-    
+
 
     public static function form(Form $form): Form
     {
@@ -29,24 +29,32 @@ class UserResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->label('Tên Người Dùng'),
                 Forms\Components\TextInput::make('email')
                     ->email()
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->label('Email'),
                 Forms\Components\TextInput::make('username')
                     ->maxLength(255)
-                    ->default(null),
-                Forms\Components\DateTimePicker::make('email_verified_at'),
+                    ->default(null)
+                    ->label('Tên Đăng Nhập'),
+                Forms\Components\DateTimePicker::make('email_verified_at')
+                    ->label('Thời Gian Xác Thực Email'),
                 Forms\Components\TextInput::make('password')
                     ->password()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->label('Mật Khẩu'),
                 Forms\Components\TextInput::make('theme')
                     ->maxLength(255)
-                    ->default('default'),
+                    ->default('default')
+                    ->label('Giao Diện'),
+
                 Forms\Components\TextInput::make('theme_color')
                     ->maxLength(255)
-                    ->default(null),
+                    ->default(null)
+                    ->label('Màu Giao Diện'),
                 Forms\Components\TextInput::make('ip_address')->label('Địa chỉ IP'),
                 Forms\Components\TextInput::make('other_contact_info')->label('Thông tin liên hệ khác'),
                 Forms\Components\TextInput::make('device')->label('Thiết bị'),
@@ -61,28 +69,48 @@ class UserResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('ID Người Dùng'),
                 Tables\Columns\TextColumn::make('name')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Tên Người Dùng'),
                 Tables\Columns\TextColumn::make('email')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Email'),
                 Tables\Columns\TextColumn::make('username')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Tên Đăng Nhập'),
+                Tables\Columns\TextColumn::make('balance')
+                    ->numeric()
+                    ->sortable()
+                    ->label('Số Dư'),
+                Tables\Columns\TextColumn::make('total_consumption')
+                    ->numeric()
+                    ->sortable()
+                    ->label('Đã Dùng'),
+                Tables\Columns\TextColumn::make('total_deposit')
+                    ->numeric()
+                    ->sortable()
+                    ->label('Tổng Nạp'),
                 Tables\Columns\TextColumn::make('email_verified_at')
                     ->dateTime()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Thời Gian Xác Thực Email'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->toggleable(isToggledHiddenByDefault: true)
+                    ->label('Thời Gian Tạo'),
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('theme')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Giao Diện'),
                 Tables\Columns\TextColumn::make('theme_color')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Màu Giao Diện'),
             ])
             ->filters([
                 //
@@ -103,7 +131,10 @@ class UserResource extends Resource
             //
         ];
     }
-
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
     public static function getPages(): array
     {
         return [

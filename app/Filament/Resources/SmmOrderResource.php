@@ -27,30 +27,47 @@ class SmmOrderResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('user_id')
                     ->required()
+                    ->label('ID Người Dùng')
                     ->numeric(),
                 Forms\Components\TextInput::make('smm_service_id')
                     ->required()
+                    ->label('ID Dịch Vụ')
                     ->numeric(),
                 Forms\Components\TextInput::make('quantity')
                     ->required()
+                    ->label('Số Lượng')
                     ->numeric(),
                 Forms\Components\TextInput::make('total_price')
                     ->required()
                     ->numeric(),
                 Forms\Components\TextInput::make('status')
                     ->required()
+                    ->label('Trạng Thái')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('unit_price')
                     ->required()
+                    ->label('Giá Đơn Vị')
                     ->numeric(),
                 Forms\Components\DateTimePicker::make('start_count')
-                    ->required(),
+                    ->required()
+                    ->label('Thời Gian Khởi Tạo')
+                    ->default(now()),
                 Forms\Components\TextInput::make('link')
                     ->required()
+                    ->label('Link')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('remains')
                     ->required()
+                    ->label('Số Lượng Còn Lại')
                     ->numeric(),
+                Forms\Components\TextInput::make('payment_method')
+                    ->required()
+                    ->label('Phương Thức Thanh Toán')
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('payment_status')
+                    ->required()
+                    ->label('Trạng Thái Thanh Toán')
+                    ->maxLength(255),
             ]);
     }
 
@@ -59,33 +76,50 @@ class SmmOrderResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('user_id')
+                    ->name('user.name')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('ID Người Dùng'),
                 Tables\Columns\TextColumn::make('smm_service_id')
+                    ->name('service.name')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('ID Dịch Vụ'),
                 Tables\Columns\TextColumn::make('quantity')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Số Lượng'),
+                    Tables\Columns\TextColumn::make('unit_price')
+                        ->numeric()
+                    ->sortable()
+                    ->label('Giá Đơn Vị'),
                 Tables\Columns\TextColumn::make('total_price')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Tổng Giá'),
                 Tables\Columns\TextColumn::make('status')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('unit_price')
-                    ->numeric()
-                    ->sortable(),
+                    ->searchable()
+                    ->label('Trạng Thái'),
                 Tables\Columns\TextColumn::make('start_count')
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Số lượng khởi tạo'),
+                    Tables\Columns\TextColumn::make('remains')
+                        ->numeric()
+                            ->sortable()
+                        ->label('Số Lượng Còn Lại'),
                 Tables\Columns\TextColumn::make('link')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('remains')
-                    ->numeric()
-                    ->sortable(),
+                    ->searchable()
+                    ->label('Link'),
+                Tables\Columns\TextColumn::make('payment_method')
+                    ->searchable()
+                    ->label('Phương Thức Thanh Toán'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('payment_status')
+                    ->searchable()
+                    ->label('Trạng Thái Thanh Toán'),
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
@@ -110,7 +144,10 @@ class SmmOrderResource extends Resource
             //
         ];
     }
-
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
     public static function getPages(): array
     {
         return [

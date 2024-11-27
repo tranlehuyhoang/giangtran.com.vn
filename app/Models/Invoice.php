@@ -94,4 +94,14 @@ class Invoice extends Model
             }
         }
     }
+    public static function removeInvoice($invoice_code)
+    {
+        $user_id = Auth::user()->id;
+        if (self::where('invoice_code', $invoice_code)->where('user_id', $user_id)->exists()) {
+            self::where('invoice_code', $invoice_code)->delete();
+            return ['status' => 'success', 'message' => 'Hóa đơn đã được xóa thành công'];
+        } else {
+            return ['status' => 'error', 'message' => 'Hóa đơn không tồn tại'];
+        }
+    }
 }

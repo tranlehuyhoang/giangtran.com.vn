@@ -14,7 +14,7 @@
             rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     </head>
     <body id="content">
