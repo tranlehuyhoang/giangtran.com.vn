@@ -9,6 +9,7 @@
     <link rel="canonical" href="{{ request()->fullUrl() }}" />
     <meta property="og:url" content="{{ request()->fullUrl() }}" />
     <meta name="twitter:url" content="{{ request()->fullUrl() }}" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta property="og:title" content="{{ $title ? $title . ' - HG DIGITAL' : 'Viettel Media - Trang Đăng Ký Dịch Vụ Internet 4G 5G Cho Di Động mạng Viettel
 Viettel Media - Trang Đăng Ký Dịch Vụ Internet 4G 5G Cho Di Động mạng Viettel' }}" />
     <meta property="og:type" content="website" />

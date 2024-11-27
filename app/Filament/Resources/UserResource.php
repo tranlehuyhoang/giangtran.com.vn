@@ -40,10 +40,16 @@ class UserResource extends Resource
                     ->maxLength(255)
                     ->default(null)
                     ->label('Tên Đăng Nhập'),
+                Forms\Components\Select::make('roles')
+                    ->multiple()
+                    ->relationship('roles', 'name')
+                    ->label('Quyền'),
                 Forms\Components\DateTimePicker::make('email_verified_at')
                     ->label('Thời Gian Xác Thực Email'),
                 Forms\Components\TextInput::make('password')
                     ->password()
+                    ->dehydrateStateUsing(fn($state) => bcrypt($state))
+                    ->dehydrated(fn($state) => filled($state))
                     ->maxLength(255)
                     ->label('Mật Khẩu'),
                 Forms\Components\TextInput::make('theme')
@@ -70,13 +76,15 @@ class UserResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('id')
                     ->searchable()
-                    ->label('ID Người Dùng'),
+                    ->label('ID'),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable()
                     ->label('Tên Người Dùng'),
                 Tables\Columns\TextColumn::make('email')
                     ->searchable()
                     ->label('Email'),
+                Tables\Columns\BadgeColumn::make('roles.name')
+                    ->label('Quyền'),
                 Tables\Columns\TextColumn::make('username')
                     ->searchable()
                     ->label('Tên Đăng Nhập'),
@@ -95,6 +103,7 @@ class UserResource extends Resource
                 Tables\Columns\TextColumn::make('email_verified_at')
                     ->dateTime()
                     ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true)
                     ->label('Thời Gian Xác Thực Email'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
@@ -107,16 +116,23 @@ class UserResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('theme')
                     ->searchable()
+                    ->toggleable(isToggledHiddenByDefault: true)
+
                     ->label('Giao Diện'),
                 Tables\Columns\TextColumn::make('theme_color')
                     ->searchable()
+                    ->toggleable(isToggledHiddenByDefault: true)
                     ->label('Màu Giao Diện'),
             ])
             ->filters([
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                Tables\Actions\ActionGroup::make([
+                    Tables\Actions\ViewAction::make(),
+                    Tables\Actions\EditAction::make(),
+                    Tables\Actions\DeleteAction::make(),
+                ]),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
