@@ -67,14 +67,18 @@ class SmmServiceResource extends Resource
                     ->label('Danh mục')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('name')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Tên dịch vụ'),
                 Tables\Columns\TextColumn::make('price')
-                    ->money()
+                    ->money('VND')
+                    ->label('Giá')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('code')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Mã dịch vụ'),
                 Tables\Columns\IconColumn::make('is_active')
-                    ->boolean(),
+                    ->boolean()
+                    ->label('Trạng thái'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

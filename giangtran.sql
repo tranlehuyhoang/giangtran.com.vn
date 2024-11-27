@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2024 at 12:23 PM
+-- Generation Time: Nov 27, 2024 at 01:03 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -61,6 +61,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
+('356a192b7913b04c54574d18c28d46e6395428ab', 'i:3;', 1732708890),
+('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1732708890;', 1732708890),
 ('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:7:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:1:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1732791881),
 ('theme', 's:7:\"dracula\";', 2048065513);
 
@@ -111,6 +113,13 @@ CREATE TABLE `invoices` (
   `user_id` int(255) NOT NULL,
   `payment_status` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `invoices`
+--
+
+INSERT INTO `invoices` (`id`, `invoice_code`, `invoice_type`, `service`, `invoice_date`, `amount`, `payment_due_date`, `created_at`, `updated_at`, `user_id`, `payment_status`) VALUES
+(24, '426599', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-27 11:28:05', 10000000.00, '2024-11-27 18:31:05', '2024-11-27 11:28:05', '2024-11-27 11:28:05', 1, 'pending');
 
 -- --------------------------------------------------------
 
@@ -407,7 +416,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('UccD6vzx2ECLS8VyMVVMay1HdO46EYm4UHEJVNvO', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiZkNLSTVsWUhDZUlTaUx5N0kwQXljcmFpT1VPZVZucnJPaHlMMWQ0dSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRod1pBZnZzZ21wYWUxdHhrdUk4Uy5PbmpqSFY4SlFzbFJVa1lLMzY5UGRtT0JWUkdkVWRQUyI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1732706608);
+('UccD6vzx2ECLS8VyMVVMay1HdO46EYm4UHEJVNvO', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiZkNLSTVsWUhDZUlTaUx5N0kwQXljcmFpT1VPZVZucnJPaHlMMWQ0dSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJGh3WkFmdnNnbXBhZTF0eGt1SThTLk9uampIVjhKUXNsUlVrWUszNjlQZG1PQlZSR2RVZFBTIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1732708979);
 
 -- --------------------------------------------------------
 
@@ -429,8 +438,15 @@ CREATE TABLE `smm_categories` (
 --
 
 INSERT INTO `smm_categories` (`id`, `name`, `image`, `code`, `created_at`, `updated_at`) VALUES
-(1, 'Follow tiktok', '01JD2DGAVJRKZZM70P3FA9ZFME.gif', '123', '2024-11-19 14:33:57', '2024-11-19 14:33:57'),
-(2, 'Follow facebook', '01JD2DM3EGYGQ1NGQF9S8GT266.gif', '1', '2024-11-19 14:36:01', '2024-11-19 14:36:25');
+(1, 'Tiktok Follow ', '01JD2DGAVJRKZZM70P3FA9ZFME.gif', '123', '2024-11-19 14:33:57', '2024-11-27 11:34:43'),
+(2, 'Tiktok View ', '01JDPPDF6ZT97C0PQ1GDPKRZDE.gif', '1', '2024-11-19 14:36:01', '2024-11-27 11:34:29'),
+(3, 'Tiktok share', '01JDPPFQGNC4CXA0RCSJE91QBP.gif', '123', '2024-11-27 11:35:43', '2024-11-27 11:35:43'),
+(4, 'Tiktok Like', '01JDPPGES6AG1SCWHZ9KQQZFJ8.gif', '2234', '2024-11-27 11:36:07', '2024-11-27 11:36:07'),
+(5, 'Facebook Follow', '01JDPPMS15JFJS5CYPGTSQ5W72.gif', '123', '2024-11-27 11:38:29', '2024-11-27 11:38:29'),
+(6, 'Facebook Like', '01JDPPP8T2NSSD4PQD0JHVENJC.gif', '123123', '2024-11-27 11:39:18', '2024-11-27 11:39:18'),
+(7, 'Instagram Follow', '01JDPQXEPSMKCDDD9YBNC3QF5R.gif', '123', '2024-11-27 12:00:42', '2024-11-27 12:00:42'),
+(8, 'Instagram Like', '01JDPQXX1R4PR4Z6NA87NFE21R.gif', '123', '2024-11-27 12:00:56', '2024-11-27 12:00:56'),
+(9, 'Instagram View Story', '01JDPQYBW5ENFY4C1F4NR3SAXD.gif', '123', '2024-11-27 12:01:12', '2024-11-27 12:01:12');
 
 -- --------------------------------------------------------
 
@@ -466,7 +482,8 @@ INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_
 (53, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 10:30:04', '2024-11-27 10:30:04', '449229'),
 (54, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 10:33:06', '2024-11-27 10:33:06', '808175'),
 (55, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 10:34:03', '2024-11-27 10:34:03', '801030'),
-(56, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 10:36:40', '2024-11-27 10:36:40', '788539');
+(56, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 10:36:40', '2024-11-27 10:36:40', '788539'),
+(57, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 11:28:05', '2024-11-27 11:28:05', '426599');
 
 -- --------------------------------------------------------
 
@@ -493,7 +510,12 @@ CREATE TABLE `smm_services` (
 --
 
 INSERT INTO `smm_services` (`id`, `smmcategory_id`, `name`, `price`, `code`, `is_active`, `time`, `min`, `max`, `created_at`, `updated_at`) VALUES
-(1, 1, '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', 10000.00, '763', 1, NULL, NULL, NULL, '2024-11-19 14:58:37', '2024-11-21 06:54:51');
+(1, 2, 'TikTok Views [Refill: 30 Days] [Max: 10M] [Start Time: 0-1 Hour] [Speed: 1M/Day] 🔥 ♻️', 4.00, '763', 1, NULL, 1000, 1000000, '2024-11-19 14:58:37', '2024-11-27 11:47:03'),
+(2, 1, 'TikTok HQ Followers [Refill: 30D] [Max: 1M] [Start Time: 0 - 3 Hrs] [Speed: 50K/D] 💧⛔️♻️', 50.00, '123', 1, NULL, 1, 1000000, '2024-11-27 11:32:45', '2024-11-27 11:32:45'),
+(3, 3, 'TikTok Shares [Max: 100K] [Start Time: 0 - 1 Hours] [Speed: 100K/Day] 💧', 5.00, '123', 1, NULL, 1000, 100000, '2024-11-27 11:49:37', '2024-11-27 11:49:37'),
+(4, 4, 'TikTok Likes | Worldwide 🌎| Max 10M | 𝗛𝗤+𝗥𝗘𝗔𝗟 | Cancel | No Refill | Day 150K | 𝗨𝗹𝘁𝗿𝗮𝗙𝗮𝘀𝘁', 5.00, '123', 1, NULL, 1000, 10000000, '2024-11-27 11:51:01', '2024-11-27 11:51:35'),
+(5, 5, 'Facebook Followers [Profile & Page] [Refill: 60D] [Max: 10K] [Start Time: 0-3 Hrs] [Speed: 5K/D]', 35.00, '123123', 1, NULL, 100, 10000, '2024-11-27 11:55:24', '2024-11-27 11:55:24'),
+(6, 6, 'Facebook Post Likes [Refill: No] [Max: 30K] [Start Time: 0-1 Hr] [Speed: 15K/D]', 20.00, '123', 1, NULL, 100, 30000, '2024-11-27 11:58:22', '2024-11-27 11:58:22');
 
 -- --------------------------------------------------------
 
@@ -835,7 +857,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `jobs`
@@ -871,19 +893,19 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `smm_categories`
 --
 ALTER TABLE `smm_categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `smm_orders`
 --
 ALTER TABLE `smm_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `smm_services`
 --
 ALTER TABLE `smm_services`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
