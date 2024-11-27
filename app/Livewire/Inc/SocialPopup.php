@@ -7,6 +7,7 @@ use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class SocialPopup extends Component
 {
@@ -39,6 +40,7 @@ class SocialPopup extends Component
             } else {
                 // Tạo người dùng mới nếu không tồn tại
                 $newUser = User::create([
+                    'username' => $this->generateUniqueUsername(),
                     'name' => $userData['name'],
                     'email' => $userData['email'],
                     'picture' => $userData['picture'],
@@ -65,6 +67,13 @@ class SocialPopup extends Component
 
             return redirect('/'); // Quay về trang chính
         }
+    }
+    function generateUniqueUsername($length = 10) {
+        do {
+            $username = strtolower(Str::random($length)); // Chuyển đổi thành chữ thường
+        } while (User::where('username', $username)->exists());
+
+        return $username;
     }
 
     public function render()

@@ -27,19 +27,29 @@ class ResetPassword extends Component
     public function changePassword()
     {
         if ($this->new_password !== $this->confirm_password) {
-            $this->alert('error', 'Mật khẩu mới không khớp');
+            $this->dispatch('showModalAlert', [
+                'title' => 'Mật khẩu không khớp',
+                'message' => 'Mật khẩu mới không khớp',
+            ]);
             return;
         }
         if ($this->captcha_answer != $this->captcha_answer_input) {
-            $this->alert('error', 'CAPTCHA không đúng');
+            $this->dispatch('showModalAlert', [
+                'title' => 'CAPTCHA không đúng',
+                'message' => 'CAPTCHA không đúng',
+            ]);
             return;
         }
 
         User::where('id', Auth::user()->id)->update([
             'password' => Hash::make($this->new_password),
         ]);
-        $this->alert('success', 'Đổi mật khẩu thành công');
-        $this->generateCaptcha(); // Regenerate CAPTCHA after success
+        $this->dispatch('showModalAlert', [
+            'title' => 'Đổi mật khẩu thành công',
+            'message' => 'Đổi mật khẩu thành công',
+        ]);
+        $this->reset(['new_password', 'confirm_password', 'captcha_answer_input']);
+        // $this->generateCaptcha(); // Regenerate CAPTCHA after success
     }
 
     public function render()

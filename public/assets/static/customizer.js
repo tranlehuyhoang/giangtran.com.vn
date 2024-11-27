@@ -10,13 +10,13 @@
     </div>
     <span> Tùy Chỉnh Giao Diện </span>
     </a>
-    <a class="nav-link" data-original-title="" href="https://t.me/+dkk8aBBJYKNkNTFl" target="_blank">
+    <a class="nav-link" data-original-title="" href="https://www.facebook.com/trancoizxcv?locale=vi_VN" target="_blank">
     <div>
     <img src="/assets/assets/svg/live-support.svg" alt="" loading="lazy">
     </div>
     <span> Hỗ Trợ </span>
     </a>
-    
+
     </div>
     </div>
     <div class="customizer-contain">

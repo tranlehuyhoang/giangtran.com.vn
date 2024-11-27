@@ -10,6 +10,7 @@ use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 
 class Login extends Component
 {
@@ -57,6 +58,7 @@ class Login extends Component
             } else {
                 // Tạo người dùng mới nếu email không được tìm thấy
                 $newUser = User::create([
+                    'username' => $this->generateUniqueUsername(),
                     'name' => $user->name,
                     'email' => $user->email,
                     'password' => Hash::make(uniqid()), // Tạo mật khẩu ngẫu nhiên
@@ -82,6 +84,13 @@ class Login extends Component
 
             return redirect('/'); // Quay về trang chính
         }
+    }
+    function generateUniqueUsername($length = 10) {
+        do {
+            $username = strtolower(Str::random($length)); // Chuyển đổi thành chữ thường
+        } while (User::where('username', $username)->exists());
+
+        return $username;
     }
     public function render()
     {

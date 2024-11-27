@@ -6,7 +6,7 @@
     @livewireStyles
 </head>
 
-<body>
+<body >
     {{ $slot }}
     @livewireScripts
 </body>

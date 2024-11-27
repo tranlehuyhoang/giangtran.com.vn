@@ -12,7 +12,7 @@ class Checkpayment extends Controller
 {
     public function checkPayment()
     {
-        $code = 'NF '.  strtoupper(string: Auth::user()->name);
+        $code = 'NF '.  strtoupper(string: Auth::user()->username);
         $userId = Auth::user()->id;
         // Gọi hàm từ model và truyền user_id
         $result = PaymentHistory::createPaymentHistory($code, $userId);

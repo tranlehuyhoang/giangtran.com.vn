@@ -9,8 +9,7 @@
         <link rel="stylesheet" type="text/css"
             href="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/css/toast@1.0.1/fuiToast.min.css">
         <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js">
-        </script>
+            src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -41,15 +40,19 @@
                         <div class="container-fluid default-dashboard">
 
                             <div class="card p-3 mb-4">
-                                <b class="font-weight-bold mb-3 text-dark">Nội dung chuyển khoản</b>
+                                <b class="font-weight-bold mb-3  ">Nội dung chuyển khoản</b>
                                 <div class="d-flex align-items-center justify-content-between bg-light rounded"
                                     style="padding: 10px;">
-                                    <b class="text-dark">
+                                    <b class="text-dark" id="code-transfer">
                                         NF {{ Auth::check() ? strtoupper(Auth::user()->name) : 'Khách' }}
                                     </b>
                                 </div>
                             </div>
-
+                            <style>
+                                body.dark-only #code-transfer {
+                                    color: #fff !important;
+                                }
+                            </style>
 
                             <div class="row">
 
@@ -57,7 +60,8 @@
                                     <div class="card card-body widget-1">
                                         <div class="row">
                                             <div class="col-md-6 col-6">
-                                                <img  loading="lazy" src="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMmZvSXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--88c82102b4c6782414b90e4077f75449b9789560/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJc0FXa0NMQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--15c3f2f3e11927673ae52b71712c1f66a7a1b7bd/Logo%20MB%20he%20mau%20RGB%2001.png"
+                                                <img loading="lazy"
+                                                    src="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMmZvSXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--88c82102b4c6782414b90e4077f75449b9789560/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJc0FXa0NMQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--15c3f2f3e11927673ae52b71712c1f66a7a1b7bd/Logo%20MB%20he%20mau%20RGB%2001.png"
                                                     style="width: 90px; max-width: 345px; height: auto">
                                             </div>
 
@@ -65,7 +69,7 @@
                                                 <i class="icofont icofont-qr-code" style="cursor: pointer;"
                                                     title="Mã QR Chuyển Khoản" data-bs-target="#showqr-code"
                                                     data-bs-toggle="modal"
-                                                    onclick="showQRcode(`https://api.vietqr.io/mb/0966579217/0/NF {{ Auth::check() ? strtoupper(Auth::user()->name) : 'Khách' }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG`);"></i>
+                                                    onclick="showQRcode(`https://api.vietqr.io/mb/0966579217/0/NF {{ Auth::check() ? strtoupper(Auth::user()->username) : 'Khách' }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG`);"></i>
                                             </div>
                                         </div>
 
@@ -121,14 +125,15 @@
                                                     </thead>
                                                     <tbody id="datatable">
                                                         @foreach ($paymentHistories as $index => $history)
-                                                        <tr>
-                                                            <td>{{ $index + 1 }}</td>
-                                                            <td>{{ $history->transaction_code }}</td>
-                                                            <td>{{ number_format($history->amount, 2) }} VNĐ</td>
-                                                            <td>{{ $history->status }}</td>
-                                                            <td>{{ $history->bank }}</td>
-                                                            <td>{{ $history->created_at->format('d/m/Y H:i:s') }}</td>
-                                                        </tr>
+                                                            <tr>
+                                                                <td>{{ $index + 1 }}</td>
+                                                                <td>{{ $history->transaction_code }}</td>
+                                                                <td>{{ number_format($history->amount, 2) }} VNĐ</td>
+                                                                <td>{{ $history->status }}</td>
+                                                                <td>{{ $history->bank }}</td>
+                                                                <td>{{ $history->created_at->format('d/m/Y H:i:s') }}
+                                                                </td>
+                                                            </tr>
                                                         @endforeach
 
                                                     </tbody>
@@ -151,8 +156,8 @@
                                     <div class="modal-toggle-wrapper">
                                         <ul class="modal-img">
                                             <li>
-                                                <center><img  loading="lazy" src="" id="qr-cid" style="width: 70%; height: auto;"
-                                                        alt=""></center>
+                                                <center><img src="" id="qr-cid"
+                                                        style="width: 70%; height: auto;" alt=""></center>
                                             </li>
                                         </ul>
 
@@ -166,8 +171,8 @@
 
                     <script>
                         function showQRcode(img) {
-                        $("#qr-cid").attr("src", img);
-                    }
+                            $("#qr-cid").attr("src", img);
+                        }
                     </script>
 
                     @livewire('inc.footer')
@@ -182,42 +187,42 @@
         <script>
             Pusher.logToConsole = false;
 
-        var pusher = new Pusher('b2658b1172ccab773a69', {
-            cluster: 'ap1'
-        });
-
-        var channel = pusher.subscribe('iamthanhX-2509roblox');
-        channel.bind('my-event', function(data) {
-            var message = data.message;
-            var status = data.status;
-
-            swal('Thông Báo', message, status);
-
-            if (data.reload) {
-                setTimeout(() => {
-                    loadto('');
-                }, 2000);
-            }
-
-        });
-
-
-        document.addEventListener("DOMContentLoaded", function() {
-            Fancybox.bind("[data-fancybox='gallery']", {
-                animated: true,
-                infobar: true,
-                toolbar: true,
-                loop: true
+            var pusher = new Pusher('b2658b1172ccab773a69', {
+                cluster: 'ap1'
             });
-        });
 
-        $(document).ready(function() {
-            $('img').each(function() {
-                if (!$(this).attr('loading')) {
-                    $(this).attr('loading', 'lazy');
+            var channel = pusher.subscribe('iamthanhX-2509roblox');
+            channel.bind('my-event', function(data) {
+                var message = data.message;
+                var status = data.status;
+
+                swal('Thông Báo', message, status);
+
+                if (data.reload) {
+                    setTimeout(() => {
+                        loadto('');
+                    }, 2000);
                 }
+
             });
-        });
+
+
+            document.addEventListener("DOMContentLoaded", function() {
+                Fancybox.bind("[data-fancybox='gallery']", {
+                    animated: true,
+                    infobar: true,
+                    toolbar: true,
+                    loop: true
+                });
+            });
+
+            $(document).ready(function() {
+                $('img').each(function() {
+                    if (!$(this).attr('loading')) {
+                        $(this).attr('loading', 'lazy');
+                    }
+                });
+            });
         </script>
 
         <style>
@@ -262,74 +267,72 @@
         <script src="https://fastly.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
             // Enable pusher logging - don't include this in production
-   Pusher.logToConsole = true;
+            Pusher.logToConsole = true;
 
-   var pusher = new Pusher('827c74b29880dbe97c43', {
-     cluster: 'ap1'
-   });
-
-   var channel = pusher.subscribe('notification');
-   channel.bind('notification.' + {{ Auth::user()->id ?? 0 }}, function(data) {
-    var content = data.invitation_code; // Adjust this field according to the actual structure of data.bank
-    Swal.fire({
-                icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
-                title: 'Thông báo',
-                text: 'Nạp thành công số tiền ' + content + '!',
-                confirmButtonText: 'OK'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                }
+            var pusher = new Pusher('827c74b29880dbe97c43', {
+                cluster: 'ap1'
             });
-   });
 
-   function fetchCronTransaction() {
-    fetch('/api/transaction', {
-        method: 'GET', // HTTP method
-        headers: {
-            'Content-Type': 'application/json' // Optional, depending on your backend requirements
-        }
-    })
-    .then(data => {
-        setTimeout(fetchCronTransaction, 2000); // 2000 milliseconds = 2 seconds
-    })
-    ;
-}
-   function fetchCronData() {
-    fetch('/api/checkpayment', {
-        method: 'GET', // HTTP method
-        headers: {
-            'Content-Type': 'application/json' // Optional, depending on your backend requirements
-        }
-    })
-    .then(response => response.json()) // Assuming the response is JSON
-    .then(data => {
-        if(data.status == 'success'){
-            Swal.fire({
-                icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
-                title: 'Thông báo',
-                text: 'Nạp thành công số tiền ' + data.amount + ' VNĐ!',
-                confirmButtonText: 'OK'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    window.location.reload();
-                }
+            var channel = pusher.subscribe('notification');
+            channel.bind('notification.' + {{ Auth::user()->id ?? 0 }}, function(data) {
+                var content = data.invitation_code; // Adjust this field according to the actual structure of data.bank
+                Swal.fire({
+                    icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
+                    title: 'Thông báo',
+                    text: 'Nạp thành công số tiền ' + content + '!',
+                    confirmButtonText: 'OK'
+                }).then((result) => {
+                    if (result.isConfirmed) {}
+                });
             });
-        }
-        // Set a timeout to fetch again after 2 seconds
-        setTimeout(fetchCronData, 2000); // 2000 milliseconds = 2 seconds
-    })
-    .catch(error => {
-        console.error('Error fetching data:', error);
 
-        // Handle errors if needed, continue fetching in case of failure
-        setTimeout(fetchCronData, 2000); // Retry after 2 seconds in case of error
-    });
-}
+            function fetchCronTransaction() {
+                fetch('/api/transaction', {
+                        method: 'GET', // HTTP method
+                        headers: {
+                            'Content-Type': 'application/json' // Optional, depending on your backend requirements
+                        }
+                    })
+                    .then(data => {
+                        setTimeout(fetchCronTransaction, 2000); // 2000 milliseconds = 2 seconds
+                    });
+            }
 
-// Call fetchCronData once to start the process
-fetchCronData();
-fetchCronTransaction();
+            function fetchCronData() {
+                fetch('/api/checkpayment', {
+                        method: 'GET', // HTTP method
+                        headers: {
+                            'Content-Type': 'application/json' // Optional, depending on your backend requirements
+                        }
+                    })
+                    .then(response => response.json()) // Assuming the response is JSON
+                    .then(data => {
+                        if (data.status == 'success') {
+                            Swal.fire({
+                                icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
+                                title: 'Thông báo',
+                                text: 'Nạp thành công số tiền ' + data.amount + ' VNĐ!',
+                                confirmButtonText: 'OK'
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    window.location.reload();
+                                }
+                            });
+                        }
+                        // Set a timeout to fetch again after 2 seconds
+                        setTimeout(fetchCronData, 2000); // 2000 milliseconds = 2 seconds
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
 
+                        // Handle errors if needed, continue fetching in case of failure
+                        setTimeout(fetchCronData, 2000); // Retry after 2 seconds in case of error
+                    });
+            }
+
+            // Call fetchCronData once to start the process
+            fetchCronData();
+            fetchCronTransaction();
         </script>
     </body>
 

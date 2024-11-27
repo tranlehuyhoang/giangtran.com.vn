@@ -4,7 +4,11 @@
             <div class="card-header card-no-border">
                 <h2>Tài Khoản</h2>
                 @if (Auth::check())
-                    <span class="f-w-500">Xác Thực 2 Bước: Đang Tắt</span>
+                    @if (Auth::user()->two_factor_auth_status == 0)
+                        <span class="f-w-500">Xác Thực 2 Bước: Đang Tắt</span>
+                    @else
+                        <span class="f-w-500">Xác Thực 2 Bước: Đang Bật</span>
+                    @endif
                 @endif
             </div>
 
@@ -22,13 +26,14 @@
                                     Viên</span>
                             </div>
                         </div>
-
+                        @if (Auth::user()->contact == null)
                         <p class="f-w-500 f-light text-danger">Quý Khách
                             Chưa Cập
                             Nhật Thông Tin Liên Hệ, Thêm Thông Tin <a
                                 href="/profile" class="text-primary">Tại
-                                Đây</a>
-                        </p>
+                                    Đây</a>
+                            </p>
+                        @endif
                         <div class="mt-3" style="display: flex;">
                             <a href="/chuyen-khoan"
                                 class="badge badge-primary text-light">Nạp
