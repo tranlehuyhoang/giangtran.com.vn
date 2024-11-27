@@ -1,7 +1,0 @@
-<meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
-
-
-ssh ubuntu-03@103.147.186.167
-Ubuntu-03@
-sudo bash /var/www/giangtran.com.vn.sh
-32209b9265aca382dd8f23588e59d8ff

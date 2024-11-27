@@ -3,6 +3,7 @@
 
 <head>
     <link rel="icon" type="image/x-icon" href="/icon.png" />
+    <meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
     @livewireStyles
 </head>
 

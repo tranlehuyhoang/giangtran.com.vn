@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2024 at 04:11 PM
+-- Generation Time: Nov 27, 2024 at 04:48 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,7 +42,8 @@ CREATE TABLE `activity_history` (
 
 INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `created_at`, `updated_at`) VALUES
 (1, 1, 'Đăng nhập bằng Google', '127.0.0.1', '2024-11-24 03:29:57', '2024-11-24 03:29:57'),
-(2, 1, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-11-26 10:19:24', '2024-11-26 10:19:24');
+(2, 1, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-11-26 10:19:24', '2024-11-26 10:19:24'),
+(3, 12, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-11-27 15:39:17', '2024-11-27 15:39:17');
 
 -- --------------------------------------------------------
 
@@ -63,9 +64,9 @@ CREATE TABLE `cache` (
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
 ('356a192b7913b04c54574d18c28d46e6395428ab', 'i:3;', 1732708890),
 ('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1732708890;', 1732708890),
-('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1732720286),
-('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1732720286;', 1732720286),
-('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:7:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:1:{i:0;i:1;}}}s:5:\"roles\";a:1:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1732806252),
+('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1732722058),
+('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1732722058;', 1732722058),
+('spatie.permission.cache', 'a:3:{s:5:\"alias\";a:4:{s:1:\"a\";s:2:\"id\";s:1:\"b\";s:4:\"name\";s:1:\"c\";s:10:\"guard_name\";s:1:\"r\";s:5:\"roles\";}s:11:\"permissions\";a:80:{i:0;a:4:{s:1:\"a\";i:1;s:1:\"b\";s:9:\"view_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:1;a:4:{s:1:\"a\";i:2;s:1:\"b\";s:13:\"view_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:2;a:4:{s:1:\"a\";i:3;s:1:\"b\";s:11:\"create_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:3;a:4:{s:1:\"a\";i:4;s:1:\"b\";s:11:\"update_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:4;a:4:{s:1:\"a\";i:5;s:1:\"b\";s:11:\"delete_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:5;a:4:{s:1:\"a\";i:6;s:1:\"b\";s:15:\"delete_any_role\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:6;a:4:{s:1:\"a\";i:7;s:1:\"b\";s:21:\"view_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:7;a:4:{s:1:\"a\";i:8;s:1:\"b\";s:25:\"view_any_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:8;a:4:{s:1:\"a\";i:9;s:1:\"b\";s:23:\"create_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:9;a:4:{s:1:\"a\";i:10;s:1:\"b\";s:23:\"update_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:10;a:4:{s:1:\"a\";i:11;s:1:\"b\";s:24:\"restore_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:11;a:4:{s:1:\"a\";i:12;s:1:\"b\";s:28:\"restore_any_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:12;a:4:{s:1:\"a\";i:13;s:1:\"b\";s:26:\"replicate_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:13;a:4:{s:1:\"a\";i:14;s:1:\"b\";s:24:\"reorder_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:14;a:4:{s:1:\"a\";i:15;s:1:\"b\";s:23:\"delete_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:15;a:4:{s:1:\"a\";i:16;s:1:\"b\";s:27:\"delete_any_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:16;a:4:{s:1:\"a\";i:17;s:1:\"b\";s:29:\"force_delete_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:17;a:4:{s:1:\"a\";i:18;s:1:\"b\";s:33:\"force_delete_any_payment::history\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:18;a:4:{s:1:\"a\";i:19;s:1:\"b\";s:18:\"view_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:19;a:4:{s:1:\"a\";i:20;s:1:\"b\";s:22:\"view_any_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:20;a:4:{s:1:\"a\";i:21;s:1:\"b\";s:20:\"create_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:21;a:4:{s:1:\"a\";i:22;s:1:\"b\";s:20:\"update_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:22;a:4:{s:1:\"a\";i:23;s:1:\"b\";s:21:\"restore_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:23;a:4:{s:1:\"a\";i:24;s:1:\"b\";s:25:\"restore_any_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:24;a:4:{s:1:\"a\";i:25;s:1:\"b\";s:23:\"replicate_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:25;a:4:{s:1:\"a\";i:26;s:1:\"b\";s:21:\"reorder_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:26;a:4:{s:1:\"a\";i:27;s:1:\"b\";s:20:\"delete_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:27;a:4:{s:1:\"a\";i:28;s:1:\"b\";s:24:\"delete_any_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:28;a:4:{s:1:\"a\";i:29;s:1:\"b\";s:26:\"force_delete_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:29;a:4:{s:1:\"a\";i:30;s:1:\"b\";s:30:\"force_delete_any_smm::category\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:30;a:4:{s:1:\"a\";i:31;s:1:\"b\";s:15:\"view_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:31;a:4:{s:1:\"a\";i:32;s:1:\"b\";s:19:\"view_any_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:32;a:4:{s:1:\"a\";i:33;s:1:\"b\";s:17:\"create_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:33;a:4:{s:1:\"a\";i:34;s:1:\"b\";s:17:\"update_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:34;a:4:{s:1:\"a\";i:35;s:1:\"b\";s:18:\"restore_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:35;a:4:{s:1:\"a\";i:36;s:1:\"b\";s:22:\"restore_any_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:36;a:4:{s:1:\"a\";i:37;s:1:\"b\";s:20:\"replicate_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:37;a:4:{s:1:\"a\";i:38;s:1:\"b\";s:18:\"reorder_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:38;a:4:{s:1:\"a\";i:39;s:1:\"b\";s:17:\"delete_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:39;a:4:{s:1:\"a\";i:40;s:1:\"b\";s:21:\"delete_any_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:40;a:4:{s:1:\"a\";i:41;s:1:\"b\";s:23:\"force_delete_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:41;a:4:{s:1:\"a\";i:42;s:1:\"b\";s:27:\"force_delete_any_smm::order\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:42;a:4:{s:1:\"a\";i:43;s:1:\"b\";s:17:\"view_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:43;a:4:{s:1:\"a\";i:44;s:1:\"b\";s:21:\"view_any_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:44;a:4:{s:1:\"a\";i:45;s:1:\"b\";s:19:\"create_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:45;a:4:{s:1:\"a\";i:46;s:1:\"b\";s:19:\"update_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:46;a:4:{s:1:\"a\";i:47;s:1:\"b\";s:20:\"restore_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:47;a:4:{s:1:\"a\";i:48;s:1:\"b\";s:24:\"restore_any_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:48;a:4:{s:1:\"a\";i:49;s:1:\"b\";s:22:\"replicate_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:49;a:4:{s:1:\"a\";i:50;s:1:\"b\";s:20:\"reorder_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:50;a:4:{s:1:\"a\";i:51;s:1:\"b\";s:19:\"delete_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:51;a:4:{s:1:\"a\";i:52;s:1:\"b\";s:23:\"delete_any_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:52;a:4:{s:1:\"a\";i:53;s:1:\"b\";s:25:\"force_delete_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:53;a:4:{s:1:\"a\";i:54;s:1:\"b\";s:29:\"force_delete_any_smm::service\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:54;a:4:{s:1:\"a\";i:55;s:1:\"b\";s:16:\"view_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:55;a:4:{s:1:\"a\";i:56;s:1:\"b\";s:20:\"view_any_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:56;a:4:{s:1:\"a\";i:57;s:1:\"b\";s:18:\"create_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:57;a:4:{s:1:\"a\";i:58;s:1:\"b\";s:18:\"update_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:58;a:4:{s:1:\"a\";i:59;s:1:\"b\";s:19:\"restore_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:59;a:4:{s:1:\"a\";i:60;s:1:\"b\";s:23:\"restore_any_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:60;a:4:{s:1:\"a\";i:61;s:1:\"b\";s:21:\"replicate_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:61;a:4:{s:1:\"a\";i:62;s:1:\"b\";s:19:\"reorder_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:62;a:4:{s:1:\"a\";i:63;s:1:\"b\";s:18:\"delete_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:63;a:4:{s:1:\"a\";i:64;s:1:\"b\";s:22:\"delete_any_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:64;a:4:{s:1:\"a\";i:65;s:1:\"b\";s:24:\"force_delete_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:65;a:4:{s:1:\"a\";i:66;s:1:\"b\";s:28:\"force_delete_any_transaction\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:66;a:4:{s:1:\"a\";i:67;s:1:\"b\";s:9:\"view_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:67;a:4:{s:1:\"a\";i:68;s:1:\"b\";s:13:\"view_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:68;a:4:{s:1:\"a\";i:69;s:1:\"b\";s:11:\"create_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:69;a:4:{s:1:\"a\";i:70;s:1:\"b\";s:11:\"update_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:70;a:4:{s:1:\"a\";i:71;s:1:\"b\";s:12:\"restore_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:71;a:4:{s:1:\"a\";i:72;s:1:\"b\";s:16:\"restore_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:72;a:4:{s:1:\"a\";i:73;s:1:\"b\";s:14:\"replicate_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:73;a:4:{s:1:\"a\";i:74;s:1:\"b\";s:12:\"reorder_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:74;a:4:{s:1:\"a\";i:75;s:1:\"b\";s:11:\"delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:75;a:4:{s:1:\"a\";i:76;s:1:\"b\";s:15:\"delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:76;a:4:{s:1:\"a\";i:77;s:1:\"b\";s:17:\"force_delete_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:77;a:4:{s:1:\"a\";i:78;s:1:\"b\";s:21:\"force_delete_any_user\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:78;a:4:{s:1:\"a\";i:79;s:1:\"b\";s:11:\"page_Themes\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}i:79;a:4:{s:1:\"a\";i:80;s:1:\"b\";s:23:\"widget_SmmOrderOverview\";s:1:\"c\";s:3:\"web\";s:1:\"r\";a:2:{i:0;i:1;i:1;i:2;}}}s:5:\"roles\";a:2:{i:0;a:3:{s:1:\"a\";i:1;s:1:\"b\";s:10:\"panel_user\";s:1:\"c\";s:3:\"web\";}i:1;a:3:{s:1:\"a\";i:2;s:1:\"b\";s:11:\"super_admin\";s:1:\"c\";s:3:\"web\";}}}', 1732808825),
 ('theme', 's:6:\"sunset\";', 2048079248),
 ('theme_color', 's:4:\"lime\";', 2048079251);
 
@@ -116,13 +117,6 @@ CREATE TABLE `invoices` (
   `user_id` int(255) NOT NULL,
   `payment_status` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `invoices`
---
-
-INSERT INTO `invoices` (`id`, `invoice_code`, `invoice_type`, `service`, `invoice_date`, `amount`, `payment_due_date`, `created_at`, `updated_at`, `user_id`, `payment_status`) VALUES
-(24, '426599', 'Đăng Ký Dịch Vụ', '763 - TikTok Followers | Instant | 10000 Per Day | Real &amp; Bot Data ⚡⛔ - ≈ 33024.265 ₫ per 1000', '2024-11-27 11:28:05', 10000000.00, '2024-11-27 18:31:05', '2024-11-27 11:28:05', '2024-11-27 11:28:05', 1, 'pending');
 
 -- --------------------------------------------------------
 
@@ -182,13 +176,13 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (4, '2024_11_17_043830_create_transactions_table', 2),
 (5, '2024_11_17_045600_create_payment_history_table', 3),
 (6, '2024_11_19_205751_add_themes_settings_to_users_table', 4),
-(7, '2024_11_19_210118_create_permission_tables', 5),
 (8, '2024_11_19_212615_create_smm_categories_table', 6),
 (9, '2024_11_19_214137_create_smm_services_table', 7),
 (10, '2024_11_21_140737_create_smm_orders_table', 8),
 (11, '2024_11_21_213650_add_fields_to_users_table', 9),
 (12, '2024_11_24_102438_create_activity_history_table', 10),
-(13, '2024_11_24_112534_create_invoices_table', 11);
+(13, '2024_11_24_112534_create_invoices_table', 11),
+(14, '2024_11_19_210118_create_permission_tables', 12);
 
 -- --------------------------------------------------------
 
@@ -220,7 +214,8 @@ CREATE TABLE `model_has_roles` (
 
 INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 (1, 'App\\Models\\User', 1),
-(2, 'App\\Models\\User', 1);
+(1, 'App\\Models\\User', 12),
+(2, 'App\\Models\\User', 4);
 
 -- --------------------------------------------------------
 
@@ -355,13 +350,86 @@ CREATE TABLE `permissions` (
 --
 
 INSERT INTO `permissions` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
-(1, 'view_role', 'web', '2024-11-19 14:06:30', '2024-11-19 14:06:30'),
-(2, 'view_any_role', 'web', '2024-11-19 14:06:30', '2024-11-19 14:06:30'),
-(3, 'create_role', 'web', '2024-11-19 14:06:30', '2024-11-19 14:06:30'),
-(4, 'update_role', 'web', '2024-11-19 14:06:30', '2024-11-19 14:06:30'),
-(5, 'delete_role', 'web', '2024-11-19 14:06:30', '2024-11-19 14:06:30'),
-(6, 'delete_any_role', 'web', '2024-11-19 14:06:30', '2024-11-19 14:06:30'),
-(7, 'page_Themes', 'web', '2024-11-19 14:06:30', '2024-11-19 14:06:30');
+(1, 'view_role', 'web', '2024-11-27 15:25:10', '2024-11-27 15:25:10'),
+(2, 'view_any_role', 'web', '2024-11-27 15:25:10', '2024-11-27 15:25:10'),
+(3, 'create_role', 'web', '2024-11-27 15:25:10', '2024-11-27 15:25:10'),
+(4, 'update_role', 'web', '2024-11-27 15:25:10', '2024-11-27 15:25:10'),
+(5, 'delete_role', 'web', '2024-11-27 15:25:10', '2024-11-27 15:25:10'),
+(6, 'delete_any_role', 'web', '2024-11-27 15:25:10', '2024-11-27 15:25:10'),
+(7, 'view_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(8, 'view_any_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(9, 'create_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(10, 'update_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(11, 'restore_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(12, 'restore_any_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(13, 'replicate_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(14, 'reorder_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(15, 'delete_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(16, 'delete_any_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(17, 'force_delete_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(18, 'force_delete_any_payment::history', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(19, 'view_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(20, 'view_any_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(21, 'create_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(22, 'update_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(23, 'restore_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(24, 'restore_any_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(25, 'replicate_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(26, 'reorder_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(27, 'delete_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(28, 'delete_any_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(29, 'force_delete_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(30, 'force_delete_any_smm::category', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(31, 'view_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(32, 'view_any_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(33, 'create_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(34, 'update_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(35, 'restore_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(36, 'restore_any_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(37, 'replicate_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(38, 'reorder_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(39, 'delete_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(40, 'delete_any_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(41, 'force_delete_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(42, 'force_delete_any_smm::order', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(43, 'view_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(44, 'view_any_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(45, 'create_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(46, 'update_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(47, 'restore_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(48, 'restore_any_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(49, 'replicate_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(50, 'reorder_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(51, 'delete_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(52, 'delete_any_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(53, 'force_delete_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(54, 'force_delete_any_smm::service', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(55, 'view_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(56, 'view_any_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(57, 'create_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(58, 'update_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(59, 'restore_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(60, 'restore_any_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(61, 'replicate_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(62, 'reorder_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(63, 'delete_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(64, 'delete_any_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(65, 'force_delete_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(66, 'force_delete_any_transaction', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(67, 'view_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(68, 'view_any_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(69, 'create_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(70, 'update_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(71, 'restore_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(72, 'restore_any_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(73, 'replicate_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(74, 'reorder_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(75, 'delete_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(76, 'delete_any_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(77, 'force_delete_user', 'web', '2024-11-27 15:35:37', '2024-11-27 15:35:37'),
+(78, 'force_delete_any_user', 'web', '2024-11-27 15:35:38', '2024-11-27 15:35:38'),
+(79, 'page_Themes', 'web', '2024-11-27 15:35:38', '2024-11-27 15:35:38'),
+(80, 'widget_SmmOrderOverview', 'web', '2024-11-27 15:35:38', '2024-11-27 15:35:38');
 
 -- --------------------------------------------------------
 
@@ -382,9 +450,8 @@ CREATE TABLE `roles` (
 --
 
 INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
-(1, 'super_admin', 'web', '2024-11-19 14:06:30', '2024-11-19 14:06:30'),
-(2, 'user', 'web', '2024-11-27 14:35:30', '2024-11-27 14:35:30'),
-(3, 'panel_user', 'web', '2024-11-27 15:04:12', '2024-11-27 15:04:12');
+(1, 'panel_user', 'web', '2024-11-27 15:24:28', '2024-11-27 15:24:28'),
+(2, 'super_admin', 'web', '2024-11-27 15:25:10', '2024-11-27 15:25:10');
 
 -- --------------------------------------------------------
 
@@ -403,12 +470,165 @@ CREATE TABLE `role_has_permissions` (
 
 INSERT INTO `role_has_permissions` (`permission_id`, `role_id`) VALUES
 (1, 1),
+(1, 2),
 (2, 1),
+(2, 2),
 (3, 1),
+(3, 2),
 (4, 1),
+(4, 2),
 (5, 1),
+(5, 2),
 (6, 1),
-(7, 1);
+(6, 2),
+(7, 1),
+(7, 2),
+(8, 1),
+(8, 2),
+(9, 1),
+(9, 2),
+(10, 1),
+(10, 2),
+(11, 1),
+(11, 2),
+(12, 1),
+(12, 2),
+(13, 1),
+(13, 2),
+(14, 1),
+(14, 2),
+(15, 1),
+(15, 2),
+(16, 1),
+(16, 2),
+(17, 1),
+(17, 2),
+(18, 1),
+(18, 2),
+(19, 1),
+(19, 2),
+(20, 1),
+(20, 2),
+(21, 1),
+(21, 2),
+(22, 1),
+(22, 2),
+(23, 1),
+(23, 2),
+(24, 1),
+(24, 2),
+(25, 1),
+(25, 2),
+(26, 1),
+(26, 2),
+(27, 1),
+(27, 2),
+(28, 1),
+(28, 2),
+(29, 1),
+(29, 2),
+(30, 1),
+(30, 2),
+(31, 1),
+(31, 2),
+(32, 1),
+(32, 2),
+(33, 1),
+(33, 2),
+(34, 1),
+(34, 2),
+(35, 1),
+(35, 2),
+(36, 1),
+(36, 2),
+(37, 1),
+(37, 2),
+(38, 1),
+(38, 2),
+(39, 1),
+(39, 2),
+(40, 1),
+(40, 2),
+(41, 1),
+(41, 2),
+(42, 1),
+(42, 2),
+(43, 1),
+(43, 2),
+(44, 1),
+(44, 2),
+(45, 1),
+(45, 2),
+(46, 1),
+(46, 2),
+(47, 1),
+(47, 2),
+(48, 1),
+(48, 2),
+(49, 1),
+(49, 2),
+(50, 1),
+(50, 2),
+(51, 1),
+(51, 2),
+(52, 1),
+(52, 2),
+(53, 1),
+(53, 2),
+(54, 1),
+(54, 2),
+(55, 1),
+(55, 2),
+(56, 1),
+(56, 2),
+(57, 1),
+(57, 2),
+(58, 1),
+(58, 2),
+(59, 1),
+(59, 2),
+(60, 1),
+(60, 2),
+(61, 1),
+(61, 2),
+(62, 1),
+(62, 2),
+(63, 1),
+(63, 2),
+(64, 1),
+(64, 2),
+(65, 1),
+(65, 2),
+(66, 1),
+(66, 2),
+(67, 1),
+(67, 2),
+(68, 1),
+(68, 2),
+(69, 1),
+(69, 2),
+(70, 1),
+(70, 2),
+(71, 1),
+(71, 2),
+(72, 1),
+(72, 2),
+(73, 1),
+(73, 2),
+(74, 1),
+(74, 2),
+(75, 1),
+(75, 2),
+(76, 1),
+(76, 2),
+(77, 1),
+(77, 2),
+(78, 1),
+(78, 2),
+(79, 1),
+(79, 2),
+(80, 1),
+(80, 2);
 
 -- --------------------------------------------------------
 
@@ -430,7 +650,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('A0AzKubs1vXVsULFGBaPuvb6MiDWlbcv0MlrPIMg', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjM6InVybCI7YTowOnt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo2OiJfdG9rZW4iO3M6NDA6IlNqeTR3ZTRkSUhncFdOQ0RVRFBxdVo0aDJNS3hlQkxLbUJUQ3hFdzkiO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjI3OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4iO31zOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJG1DalhqRFJNVWFDVVdQbDhTLkx6ZGVldWpnbUJld0M4Yi5sc3lteWZEUmt1RkZnTnUwcTJDIjtzOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO30=', 1732720308);
+('9HeseKkZC8SIKuGyVXPwaUBmWNJg5yOWczNnosij', 11, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoicnRBcTR4MUFtQjJydVVHV0EwUjZicmVYWFgxQ1dVaDRjZVhhVVNnMCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbiI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjExO30=', 1732722479),
+('nzfn8owjlvuUIbIZhkG5uAT7kf5psHGYObQfJzWq', 4, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiMFRGdkx0Y2RxdHp6OTBzbHVyeFFFc0lvZUkxOVVCa0tQTlBQQVlOdCI7czozOiJ1cmwiO2E6MDp7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjMzOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4vdXNlcnMiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aTo0O3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkbnB2enR2M3RhcmxPVGFPVGlEVG5WZXZ5bFo4WFBOLnB0M3htRWlBb1RHQ0FTanRpb0F5WXUiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1732722448);
 
 -- --------------------------------------------------------
 
@@ -498,7 +719,8 @@ INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_
 (55, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 10:34:03', '2024-11-27 10:34:03', '801030'),
 (56, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 10:36:40', '2024-11-27 10:36:40', '788539'),
 (57, 1, 1, 1000, 10000000.00, 'pending', 10000.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 11:28:05', '2024-11-27 11:28:05', '426599'),
-(58, 4, 1, 1000, 4000.00, 'pending', 4.00, 0, 'https://giangtran.com.vn/', 1000, 'account_balance', 'paid', '2024-11-27 14:59:08', '2024-11-27 14:59:08', '211424');
+(58, 4, 1, 1000, 4000.00, 'pending', 4.00, 0, 'https://giangtran.com.vn/', 1000, 'account_balance', 'paid', '2024-11-27 14:59:08', '2024-11-27 14:59:08', '211424'),
+(59, 1, 2, 1000, 50000.00, 'pending', 50.00, 0, 'https://giangtran.com.vn/', 1000, 'bank_transfer', 'pending', '2024-11-27 15:13:43', '2024-11-27 15:13:43', '678489');
 
 -- --------------------------------------------------------
 
@@ -667,7 +889,8 @@ INSERT INTO `transactions` (`id`, `bank_brand_name`, `account_number`, `transact
 ('4989649', 'MBBank', '0966579217', '2024-11-27 19:12:14', 13365.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIzfTveaem-72485813433', 'FT24332092067001', NULL, NULL, '4230', '2024-11-27 13:26:03', '2024-11-27 13:26:03'),
 ('4989650', 'MBBank', '0966579217', '2024-11-27 19:12:21', 0.00, 10000.00, 0.00, 'NF HOaNG TRaN   Ma giao dich  Trace633731 Trace 633731', 'FT24332776958660', NULL, NULL, '4230', '2024-11-27 13:26:03', '2024-11-27 13:26:03'),
 ('4990567', 'MBBank', '0966579217', '2024-11-27 20:28:35', 0.00, 2000.00, 0.00, 'NF M8UHSL2XQ2', 'FT24332309213300', NULL, NULL, '4230', '2024-11-27 13:28:50', '2024-11-27 13:28:50'),
-('4990925', 'MBBank', '0966579217', '2024-11-27 21:00:04', 100000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien', 'FT24332554507207', NULL, NULL, '4230', '2024-11-27 14:10:15', '2024-11-27 14:10:15');
+('4990925', 'MBBank', '0966579217', '2024-11-27 21:00:04', 100000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien', 'FT24332554507207', NULL, NULL, '4230', '2024-11-27 14:10:15', '2024-11-27 14:10:15'),
+('4991056', 'MBBank', '0966579217', '2024-11-27 21:10:55', 0.00, 210000.00, 0.00, 'TRAN QUANG NGHIA chuyen tien', 'FT24332442844539', NULL, NULL, '4230', '2024-11-27 15:12:37', '2024-11-27 15:12:37');
 
 -- --------------------------------------------------------
 
@@ -703,9 +926,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`, `contact`) VALUES
-(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$mCjXjDRMUaCUWPl8S.LzdeeujgmBewC8b.lsymyfDRkuFFgNu0q2C', 'X11reeCieG3YbbNAD6TFX9CrxPBBsIZb18ZAL69fHYisKOrvZTIVXoZ1oBnU', '2024-11-16 20:18:19', '2024-11-27 14:35:45', 'default', NULL, 6000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0, NULL, NULL),
-(4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$mCjXjDRMUaCUWPl8S.LzdeeujgmBewC8b.lsymyfDRkuFFgNu0q2C', '129dfBjwjy3rDwjjsztbk4ScohpXtH55JcMx4OdOD9KLIa6CqrAOYQsAUldH', '2024-11-19 13:52:31', '2024-11-27 14:59:08', 'default', NULL, 800.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL),
-(11, 'BB Gamer. HG', '2508roblox@gmail.com', 'm8uhsl2xq2', NULL, '$2y$12$g2eGKJEeckE6cGf6AXzlhOCTHyIDsrBaai/EBrP71NlAYHama8m0O', NULL, '2024-11-27 13:25:42', '2024-11-27 14:19:04', 'default', NULL, 2000.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, '');
+(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$kY2ZpM2tVVx/4wTg1xaYW.pIydlUIDrvzDQ1tqvpvg1Q7VjQl8CSC', 'sXHqu6C6Vx3ic0K9Vxi4eo5ST9bjQiNK2FPqrf2Ep1YeT51z6rZ5EdGWfxBp', '2024-11-16 20:18:19', '2024-11-27 15:37:19', 'default', NULL, 6000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0, NULL, NULL),
+(4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$npvztv3tarlOTaOTiDTnVevylZ8XPN.pt3xmEiAoTGCASjtioAyYu', 'd1015BGMV7CL8WzWocn91zxLjpKOPAZdoZhmEcrGX51rTDtuJHLkQTH3dUB9', '2024-11-19 13:52:31', '2024-11-27 15:26:11', 'default', NULL, 800.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL),
+(11, 'BB Gamer. HG', '2508roblox@gmail.com', '2508roblox@gmail.com', NULL, '$2y$12$npvztv3tarlOTaOTiDTnVevylZ8XPN.pt3xmEiAoTGCASjtioAyYu', NULL, '2024-11-27 13:25:42', '2024-11-27 14:19:04', 'default', NULL, 2000.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, ''),
+(12, '2509roblxox@gmail.com', '2509roblxox@gmail.com', '2509roblxox@gmail.com', NULL, '$2y$12$npvztv3tarlOTaOTiDTnVevylZ8XPN.pt3xmEiAoTGCASjtioAyYu', NULL, '2024-11-27 15:37:59', '2024-11-27 15:37:59', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -862,7 +1086,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `activity_history`
 --
 ALTER TABLE `activity_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -874,7 +1098,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `jobs`
@@ -886,7 +1110,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `payment_history`
@@ -898,13 +1122,13 @@ ALTER TABLE `payment_history`
 -- AUTO_INCREMENT for table `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `smm_categories`
@@ -916,7 +1140,7 @@ ALTER TABLE `smm_categories`
 -- AUTO_INCREMENT for table `smm_orders`
 --
 ALTER TABLE `smm_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `smm_services`
@@ -928,7 +1152,7 @@ ALTER TABLE `smm_services`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
