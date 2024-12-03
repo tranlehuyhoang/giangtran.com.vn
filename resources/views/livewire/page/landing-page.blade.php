@@ -6,6 +6,11 @@
 
         <link rel="stylesheet" href="/assets/static/assets/css/main.css">
     </head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 
     <body class="bg-secondary">
 

@@ -44,7 +44,7 @@
                                 <div class="d-flex align-items-center justify-content-between bg-light rounded"
                                     style="padding: 10px;">
                                     <b class="text-dark" id="code-transfer">
-                                        NF {{ Auth::check() ? strtoupper(Auth::user()->name) : 'Khách' }}
+                                        NF {{ Auth::check() ? strtoupper(Auth::user()->username) : 'Khách' }}
                                     </b>
                                 </div>
                             </div>

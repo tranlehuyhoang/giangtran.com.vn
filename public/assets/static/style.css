@@ -68,6 +68,10 @@
     --header-height: 76px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 td {
     width: auto;
     white-space: nowrap;

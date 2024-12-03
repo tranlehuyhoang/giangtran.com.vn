@@ -78,11 +78,32 @@
 
 
 
-                            <li><a href="/services/smm/create"> Danh sách dịch vụ </a></li>
+                            <li><a href="/smm/create"> Danh sách dịch vụ </a></li>
 
 
 
-                            <li><a href="/services/smm/manager"> Quản Lý </a></li>
+                            <li><a href="/smm/manager"> Quản Lý </a></li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
+                            href="#">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-social"></use>
+                            </svg>
+
+                            <span class="lan-6"> Mã Nguồn  </span></a>
+                        <ul class="sidebar-submenu">
+
+
+
+                            <li><a href="/source-code/list"> Danh sách mã nguồn </a></li>
+
+
+
+                            <li><a href="/source-code/manager"> Quản Lý </a></li>
 
 
 

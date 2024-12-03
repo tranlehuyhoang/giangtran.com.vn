@@ -5,9 +5,7 @@
         <link rel="stylesheet" href="/assets/static/style.css?v=62348332">
     </head>
     <body id="content">
-        <div class="loader-wrapper" style="z-index: 999999;">
-            <div class="boxes"></div>
-        </div>
+
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
             <div class="container-fluid p-0">
