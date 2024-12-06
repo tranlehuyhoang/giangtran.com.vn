@@ -68,7 +68,7 @@ class AdminPanelProvider extends PanelProvider
                 ->navigationGroup('Content')
                 ->navigationSort(3)
                 ->navigationCountBadge()
-                ->registerNavigation(false)
+                ->registerNavigation(true)
                 ->defaultListView('grid' || 'list')
             ])
             ->brandLogo(asset('/giangtran.com.vn.png'))

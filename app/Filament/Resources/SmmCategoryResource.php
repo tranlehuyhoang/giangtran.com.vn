@@ -14,7 +14,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Validation\Rules\In;
 use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
-
+use Awcodes\Curator\Components\Forms\CuratorPicker;
+use Awcodes\Curator\Components\Tables\CuratorColumn;
 class SmmCategoryResource extends Resource
 {
     protected static ?string $model = SmmCategory::class;
@@ -31,9 +32,7 @@ class SmmCategoryResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\FileUpload::make('image')
-                    ->image()
-                    ->required(),
+                CuratorPicker::make('image'),
                 Forms\Components\TextInput::make('code')
                     ->required()
                     ->maxLength(255),
@@ -45,8 +44,11 @@ class SmmCategoryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')
-                ->searchable(),
+                    ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
+                CuratorColumn::make('image')
+                ->label('Thumbnail')
+                ->size(40),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('code')
