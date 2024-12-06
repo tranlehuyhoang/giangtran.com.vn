@@ -60,11 +60,21 @@ class AdminPanelProvider extends PanelProvider
             ->plugins([
                 \Hasnayeen\Themes\ThemesPlugin::make(),
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
-                \BezhanSalleh\FilamentGoogleAnalytics\FilamentGoogleAnalyticsPlugin::make()
+                \BezhanSalleh\FilamentGoogleAnalytics\FilamentGoogleAnalyticsPlugin::make(),
+                \Awcodes\Curator\CuratorPlugin::make()
+                ->label('Media')
+                ->pluralLabel('Media')
+                ->navigationIcon('heroicon-o-photo')
+                ->navigationGroup('Content')
+                ->navigationSort(3)
+                ->navigationCountBadge()
+                ->registerNavigation(false)
+                ->defaultListView('grid' || 'list')
             ])
             ->brandLogo(asset('/giangtran.com.vn.png'))
             ->brandLogoHeight('2rem')
             ->favicon('/icon.png')
-            ->brandName('HG DIGITAL');
+            ->brandName('HG DIGITAL')
+            ->viteTheme('resources/css/filament/admin/theme.css');
     }
 }

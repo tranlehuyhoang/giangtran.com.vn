@@ -6,8 +6,10 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "awcodes/filament-curator": "^3.6",
         "bezhansalleh/filament-google-analytics": "^2.1",
         "bezhansalleh/filament-shield": "^3.3",
+        "eightynine/filament-excel-import": "^3.1",
         "filament/filament": "3.2.57",
         "hasnayeen/themes": "^3.0",
         "jantinnerezo/livewire-alert": "^3.0",
@@ -16,7 +18,9 @@
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.5",
         "pusher/pusher-php-server": "^7.2",
-        "spatie/laravel-analytics": "^5.4"
+        "pxlrbt/filament-excel": "^2.3",
+        "spatie/laravel-analytics": "^5.4",
+        "spatie/laravel-medialibrary": "^11.10"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

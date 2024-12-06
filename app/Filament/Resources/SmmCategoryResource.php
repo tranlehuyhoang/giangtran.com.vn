@@ -13,6 +13,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Validation\Rules\In;
+use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
 
 class SmmCategoryResource extends Resource
 {
@@ -72,6 +73,7 @@ class SmmCategoryResource extends Resource
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
+                    ExportBulkAction::make()
                 ]),
             ]);
     }

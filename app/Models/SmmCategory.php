@@ -11,8 +11,8 @@ class SmmCategory extends Model
     protected $table = 'smm_categories';
 
     protected $fillable = [
-        'name',
         'image',
+        'name',
         'code',
     ];
     public static function getAllCategories()
