@@ -21,4 +21,14 @@
 @livewire('content.modal-hoa-don')
 @livewire('content.modal-alert')
 @livewire('content.modal-logout')
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JGV3L3V7ZL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JGV3L3V7ZL');
+</script>
 </html>
