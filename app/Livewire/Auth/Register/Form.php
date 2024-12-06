@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Livewire\Auth;
-
+namespace App\Livewire\Auth\Register;
 use Laravel\Socialite\Facades\Socialite;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
-class Register extends Component
+class Form extends Component
 {
     use LivewireAlert;
 
@@ -86,6 +85,6 @@ class Register extends Component
 
     public function render()
     {
-        return view('livewire.auth.register');
+        return view('livewire.auth.register.form');
     }
 }

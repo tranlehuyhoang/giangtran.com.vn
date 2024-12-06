@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Livewire\Page\Profile\Form;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 use Livewire\Component;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 class ChangeInfo extends Component
 {
+    use LivewireAlert;
+
     public $device, $ipAddress, $contact;
     public function mount()
     {
@@ -29,10 +32,7 @@ class ChangeInfo extends Component
             'contact' => $this->contact,
         ]);
         if ($user) {
-            $this->dispatch('showModalAlert', [
-                'title' => 'Thành Công',
-                'message' => 'Thông Tin Đã Được Lưu',
-            ]);
+            $this->alert('success', 'Cập nhật thông tin thành công!');
         }
     }
     public function render()

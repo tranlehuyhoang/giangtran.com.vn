@@ -10,8 +10,7 @@
         <link rel="stylesheet" type="text/css"
             href="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/css/toast@1.0.1/fuiToast.min.css">
         <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js">
-        </script>
+            src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -23,7 +22,9 @@
     </head>
 
     <body id="content">
-
+        <div class="loader-wrapper" style="z-index: 999999;">
+            <div class="boxes"></div>
+        </div>
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
@@ -61,4 +62,9 @@
         @livewire('inc.social-popup')
 
     </body>
+    <script>
+        $(".loader-wrapper").fadeOut("slow", function() {
+            $(this).remove();
+        });
+    </script>
 </div>
