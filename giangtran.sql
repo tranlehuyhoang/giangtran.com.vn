@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2024 at 08:33 AM
+-- Generation Time: Dec 06, 2024 at 04:32 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -43,7 +43,11 @@ CREATE TABLE `activity_history` (
 INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `created_at`, `updated_at`) VALUES
 (1, 1, 'Đăng nhập bằng Google', '127.0.0.1', '2024-11-24 03:29:57', '2024-11-24 03:29:57'),
 (2, 1, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-11-26 10:19:24', '2024-11-26 10:19:24'),
-(3, 12, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-11-27 15:39:17', '2024-11-27 15:39:17');
+(3, 12, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-11-27 15:39:17', '2024-11-27 15:39:17'),
+(4, 1, 'Đăng nhập bằng Google', '127.0.0.1', '2024-12-06 03:13:37', '2024-12-06 03:13:37'),
+(5, 1, 'Đăng nhập bằng Google', '127.0.0.1', '2024-12-06 03:13:56', '2024-12-06 03:13:56'),
+(6, 1, 'Đăng nhập bằng Google', '127.0.0.1', '2024-12-06 03:14:15', '2024-12-06 03:14:15'),
+(7, 1, 'Đăng nhập bằng Google', '127.0.0.1', '2024-12-06 03:15:41', '2024-12-06 03:15:41');
 
 -- --------------------------------------------------------
 
@@ -646,12 +650,9 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('26a8swIBHaJ2Yk8WqOc4kHVaXzm8pgFfVgiUrn7t', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicUkyODZuTHBvNzJBQ0RWa2RWck5lQk1jUVBhaFk5Y2hHWUYwa3NHUCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9saXN0LzEyIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1733211124),
-('bGRS7Y4fjeaSuLwhS21wun0RIQK2adjZ6V8Zb4Fl', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoia01aRlpwVFNmT2RNZFo3dE1pTG5oWEpWaWNwMW9BaHMyd0ZjZ1FkaiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9tYW5hZ2VyIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1733209946),
-('GPCs5JWqZSOckpzXfZAJWLmVZe4ibRbC6dGA5Y6E', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoia2hRVUJCcGpuMmtPT0RNS2s1OG10dXFyYkU5bGxwcXJ2cUIwbEsxRSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zZXJ2aWNlcy9zbW0vbWFuYWdlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1733208836),
-('s6bjqKzdlgrPHpBJlCYlK64paThLMLlTGdRXg1Z7', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNjB6MlRXSVhxMk1teENWbTBXZm9vOHpXUWdTdUUwN1l2NnZidXhHaSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9tYW5hZ2VyIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1733209991),
-('wHoVYmWxVSJBrkecs2WbBj1PF6iU1Jdv6bPsqMAA', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiNGE3dUZzazdQY21Hd3FWU01HMEhKM2lTTlRGRnM0WkxpUDdRZGx6USI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjE6e3M6ODoiaW50ZW5kZWQiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbiI7fX0=', 1733211229),
-('yJQw9r3aQrojuhp4rxo5ZFkJmB4QfGFzlKK0pt5u', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNmV0ZGhnRUNUcGJ4SUNPVmVSRkkzdWkyZG5kMU9qTGswRVVXN25ybiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9tYW5hZ2VyIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1733210006);
+('b9E40GhHz2rtk9LAKoRWB8g6H7MUqjUU0hFiulRN', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoicUhhSWJtNlNNbHREajk5aEVNN0VlTUJKRlo3bXdscVkwWnFBZXd0VyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9yZWdpc3RlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NToic3RhdGUiO3M6NDA6IjQ4SnNGVXpYTFpXbXdqZ0IxSmw0cEFGYjBGMThScHA3NmRxODBkRnAiO30=', 1733454872),
+('Et6rHz3cbKOPCtTuVgI41KYkayGOnhoObJtvqjT4', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoieTd5QXBlZlR3RXBDNmhVNjN5anNWMDliYWFoWnkyTUNHZlVUeFpQViI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1733455791),
+('pt4PYY6Z4X6fZ4WgxmQqYx2xF7HnOOhD0kRsnjbp', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQmxpOGtUNGc5c3lNd3lVVTlOWWZWUFI2aGpJT0xaNzVwR25xTGtLTiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1733455942);
 
 -- --------------------------------------------------------
 
@@ -936,7 +937,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`, `contact`) VALUES
-(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$kY2ZpM2tVVx/4wTg1xaYW.pIydlUIDrvzDQ1tqvpvg1Q7VjQl8CSC', 'sXHqu6C6Vx3ic0K9Vxi4eo5ST9bjQiNK2FPqrf2Ep1YeT51z6rZ5EdGWfxBp', '2024-11-16 20:18:19', '2024-11-27 15:37:19', 'default', NULL, 6000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0, NULL, NULL),
+(1, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$kY2ZpM2tVVx/4wTg1xaYW.pIydlUIDrvzDQ1tqvpvg1Q7VjQl8CSC', 'xwVUrETgvOtYIUumC0SwFttAEDLuaz1MrYydksBYNdhyBdULKpfhPxFRUg2a', '2024-11-16 20:18:19', '2024-11-27 15:37:19', 'default', NULL, 6000.00, '171.243.49.123171.243.49.123', 'Thông Tin Liên Hệ Khác (Nếu Có)', '123Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0', 100000.00, 100000.00, 0, NULL, NULL),
 (4, 'admin', 'admin@gmail.com', 'admin', NULL, '$2y$12$npvztv3tarlOTaOTiDTnVevylZ8XPN.pt3xmEiAoTGCASjtioAyYu', 'd1015BGMV7CL8WzWocn91zxLjpKOPAZdoZhmEcrGX51rTDtuJHLkQTH3dUB9', '2024-11-19 13:52:31', '2024-11-27 15:26:11', 'default', NULL, 800.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL),
 (11, 'BB Gamer. HG', '2508roblox@gmail.com', '2508roblox@gmail.com', NULL, '$2y$12$npvztv3tarlOTaOTiDTnVevylZ8XPN.pt3xmEiAoTGCASjtioAyYu', NULL, '2024-11-27 13:25:42', '2024-11-27 14:19:04', 'default', NULL, 2000.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, ''),
 (12, '2509roblxox@gmail.com', '2509roblxox@gmail.com', '2509roblxox@gmail.com', NULL, '$2y$12$npvztv3tarlOTaOTiDTnVevylZ8XPN.pt3xmEiAoTGCASjtioAyYu', NULL, '2024-11-27 15:37:59', '2024-11-27 15:37:59', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL),
@@ -1097,7 +1098,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `activity_history`
 --
 ALTER TABLE `activity_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`

@@ -21,7 +21,7 @@ class Register extends Component
     public $agree_terms = false;
     public $num1;
     public $num2;
-
+    public $errors = [];
     public function mount()
     {
         // Tạo hai số ngẫu nhiên từ 1 đến 10
@@ -32,20 +32,45 @@ class Register extends Component
 
     public function register()
     {
-        // Kiểm tra xem các input có trống hay không
-        if (empty($this->name) || empty($this->email) || empty($this->username) || empty($this->password) || !$this->agree_terms) {
-            $this->alert('error', 'Vui lòng điền đầy đủ thông tin.');
-            return;
+        $this->errors = []; // Reset lỗi
+
+        if (empty($this->name)) {
+            $this->errors['name'] = 'Họ và tên là bắt buộc.';
+        } elseif (!preg_match('/^[a-zA-Z0-9]{6,20}$/', $this->name)) {
+            $this->errors['name'] = 'Họ và tên phải từ 6 tới 20 ký tự và chỉ chứa chữ cái và số.';
         }
 
-        // Kiểm tra CAPTCHA
-        if ($this->captcha != $this->captchaResult) {
-            $this->alert('error', 'Kết quả xác minh không chính xác.');
+        if (empty($this->email)) {
+            $this->errors['email'] = 'Email là bắt buộc.';
+        } elseif (!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
+            $this->errors['email'] = 'Email không hợp lệ.';
+        }
+
+        if (empty($this->username)) {
+            $this->errors['username'] = 'Tên tài khoản là bắt buộc.';
+        } elseif (strlen($this->username) < 6 || strlen($this->username) > 20) {
+            $this->errors['username'] = 'Tên tài khoản phải từ 6 đến 20 ký tự.';
+        } elseif (!preg_match('/^[a-zA-Z0-9]+$/', $this->username)) {
+            $this->errors['username'] = 'Tên tài khoản chỉ được chứa chữ cái và số.';
+        }
+
+        if (empty($this->password)) {
+            $this->errors['password'] = 'Mật khẩu là bắt buộc.';
+        } elseif (strlen($this->password) < 6 || strlen($this->password) > 20) {
+            $this->errors['password'] = 'Mật khẩu phải từ 8 đến 20 ký tự.';
+        }
+        if (!$this->agree_terms) {
+            $this->errors['agree_terms'] = 'Bạn phải đồng ý với điều khoản.';
+        }
+
+        if (!empty($this->errors)) {
+            $this->alert('error', 'Vui lòng kiểm tra lại thông tin.');
             return;
         }
 
         // Kiểm tra xem tài khoản đã tồn tại hay chưa
         if (User::where('email', $this->email)->exists() || User::where('username', $this->username)->exists()) {
+            $this->errors['account'] = 'Tài khoản đã tồn tại với email hoặc tên đăng nhập này.';
             $this->alert('error', 'Tài khoản đã tồn tại với email hoặc tên đăng nhập này.');
             return;
         }
@@ -58,13 +83,9 @@ class Register extends Component
             'password' => Hash::make($this->password),
         ]);
 
-        // Hiển thị thông báo thành công
         $this->alert('success', 'Đăng ký thành công!');
-
-        // Reset form sau khi thành công
-        $this->reset(['name', 'email', 'username', 'password', 'captcha', 'agree_terms']);
+        $this->reset(['name', 'email', 'username', 'password', 'agree_terms']);
     }
-
     public function redirectToProvider()
     {
         return Socialite::driver('google')->redirect();

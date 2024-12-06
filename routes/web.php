@@ -42,6 +42,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', LandingPage::class)->name('landingpage');
 Route::get('/home', Home::class)->name('home');
+Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
 
 Route::middleware(CheckAuth::class)->group(function () {
     Route::get('/login', Login::class)->name('login');
@@ -54,6 +55,8 @@ Route::middleware(CheckAuth::class)->group(function () {
 Route::middleware(EnsureUserIsAuthenticated::class)->group(function () {
     Route::get('/profile', Profile::class)->name('profile');
     Route::get('/chuyen-khoan', ChuyenKhoan::class)->name('chuyen-khoan');
+Route::get('/hoa-don/{id}', action: Invoice::class)->name('hoa-don');
+
 
 });
 
@@ -64,7 +67,8 @@ Route::get('/source-code/list', CreateSourceCode::class)->name('source-code.crea
 Route::get('/source-code/list/{id}', DetailSourceCode::class)->name('source-code.detail');
 Route::get('/source-code/manager', ManagerSourceCode::class)->name('source-code.manager');
 
-
+Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
+Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
 
 // template
 
@@ -86,16 +90,12 @@ Route::get('/source-code/manager', ManagerSourceCode::class)->name('source-code.
 // Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
 // Route::get('/nap-card', action: NapCard::class)->name('nap-card');
 // Route::get('/api-client', action: ApiClient::class)->name('api-client');
-// Route::get('/hoa-don/{id}', action: Invoice::class)->name('hoa-don');
 // Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
 // Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
 // Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
 // Route::get('/api/invoice/{invoice_code}', [Checkpayment::class, 'checkInvoice'])->name('checkinvoice');
-// Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
 
-// Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
-// Route::get('/auth/google/register', [Register::class, 'redirectToProvider'])->name('google.register');
-// Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
+
 // Route::get('/403', function () {
 //     return view('errors.403');
 // });
