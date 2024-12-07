@@ -6,6 +6,7 @@ use App\Models\Invoice;
 use App\Models\SmmCategory;
 use App\Models\SmmOrder;
 use App\Models\SmmService;
+use Awcodes\Curator\Models\Media;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
@@ -20,17 +21,33 @@ class Form extends Component
     public function mount()
     {
         $this->balance = Auth::user()->balance ?? 0; // Mặc định là 0 nếu không có balance
-         $this->categories = SmmCategory::getAllCategories();
-         $this->image = SmmCategory::first()->image; // Khởi tạo danh sách dịch vụ theo danh mục
-         $this->selectedCategory = SmmCategory::first()->id;
-         $this->services = SmmService::where('smmcategory_id', $this->selectedCategory)->get();
+        $this->categories = SmmCategory::getAllCategories();
+        $this->image = SmmCategory::first()->image; // Khởi tạo danh sách dịch vụ theo danh mục
+        $this->selectedCategory = SmmCategory::first()->id;
+        $this->services = SmmService::where('smmcategory_id', $this->selectedCategory)->get();
 
     }
     public function updatedSelectedCategory()
     {
         $this->services = SmmService::where('smmcategory_id', $this->selectedCategory)->get();
+        $category = SmmCategory::find($this->selectedCategory);
+        if ($category) {
+            // Gọi thuộc tính image để lấy ID của Media
+            $mediaId = $category->image; // Giả sử image chứa ID của Media
 
-        $this->image = $this->categories->where('id', $this->selectedCategory)->first()->image;
+            // Lấy đối tượng Media có ID bằng $mediaId
+            $media = Media::find($mediaId);
+
+            // Kiểm tra xem đối tượng Media có tồn tại không
+            if ($media) {
+                $this->image = $media->path; // Lấy đường dẫn từ đối tượng Media
+            } else {
+                $this->image = null; // Thiết lập giá trị mặc định nếu không tìm thấy
+            }
+        } else {
+            dd('Category not found');
+        }
+
     }
     public function submitOrder() // Hàm submit đơn hàng
     {
@@ -38,7 +55,7 @@ class Form extends Component
             $this->alert('error', 'Vui lòng đăng nhập để tạo đơn hàng');
             return;
         }
-       $data = [
+        $data = [
             'user_id' => auth()->user()->id ?? null,
             'smm_service_id' => $this->selectedService ?? null,
             'quantity' => $this->quantity ?? null,
@@ -50,7 +67,7 @@ class Form extends Component
             'remains' => $this->quantity ?? null,
             'payment_method' => $this->paymentMethod ?? null,
         ];
-        if(Invoice::hasUnpaidInvoices()){
+        if (Invoice::hasUnpaidInvoices()) {
 
 
             $this->dispatch('showModalAlert', [
@@ -60,31 +77,34 @@ class Form extends Component
             return;
         }
         $order = SmmOrder::createOrder($data);
-        if($order['status']){
-            $this->reset('quantity','link','paymentMethod','selectedService');
-            if( isset($order['payment_status']) && $order['payment_status'] == 'pending'){
-              return redirect('hoa-don/'.$order['order_code']);
-            }else{
+        if ($order['status']) {
+            $this->reset('quantity', 'link', 'paymentMethod', 'selectedService');
+            if (isset($order['payment_status']) && $order['payment_status'] == 'pending') {
+                return redirect('hoa-don/' . $order['order_code']);
+            } else {
                 $this->alert($order['status'], $order['message']);
             }
         }
     }
-    public function checkUser(){
-        if(auth()->user()){
+    public function checkUser()
+    {
+        if (auth()->user()) {
             return auth()->user();
         }
         return null;
     }
-    public function findService($id){
+    public function findService($id)
+    {
 
-        if(SmmService::find($id)){
+        if (SmmService::find($id)) {
             return SmmService::find($id);
         }
         return null;
     }
-    public function getServicePrice($id){
+    public function getServicePrice($id)
+    {
 
-        if(SmmService::find($id)){
+        if (SmmService::find($id)) {
             return SmmService::find($id)->price;
         }
         return null;

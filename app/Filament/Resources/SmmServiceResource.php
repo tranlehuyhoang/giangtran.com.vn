@@ -27,10 +27,10 @@ class SmmServiceResource extends Resource
         return $form
             ->schema([
                 Forms\Components\Select::make('smmcategory_id')
-                ->required()
-                ->label('Danh Mục')
-                ->options(SmmCategory::all()->pluck('name', 'id'))
-                ->placeholder('Chọn danh mục Smm'),
+                    ->required()
+                    ->label('Danh Mục')
+                    ->options(SmmCategory::all()->pluck('name', 'id'))
+                    ->placeholder('Chọn danh mục Smm'),
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->label('Tên dịch vụ')
@@ -40,9 +40,11 @@ class SmmServiceResource extends Resource
                     ->label('Giá dịch vụ')
                     ->numeric()
                     ->prefix('VNĐ'),
-                Forms\Components\TextInput::make('code')
-                    ->required()
-                    ->maxLength(255),
+                Forms\Components\TextInput::make('old_price')
+                    ->nullable()  // Thêm trường old_price
+                    ->label('Giá cũ')
+                    ->numeric()
+                    ->prefix('VNĐ'),
                 Forms\Components\TextInput::make('min')
                     ->required()
                     ->label('Số lượng tối thiểu')
@@ -55,7 +57,6 @@ class SmmServiceResource extends Resource
                     ->required(),
             ]);
     }
-
     public static function table(Table $table): Table
     {
         return $table
@@ -74,9 +75,21 @@ class SmmServiceResource extends Resource
                     ->money('VND')
                     ->label('Giá')
                     ->sortable(),
-                Tables\Columns\TextColumn::make('code')
-                    ->searchable()
-                    ->label('Mã dịch vụ'),
+                Tables\Columns\TextColumn::make('old_price')  // Cột giá cũ
+                    ->money('VND')
+                    ->label('Giá cũ')
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('min')  // Cột số lượng tối thiểu
+                    ->numeric()
+                    ->label('Số lượng tối thiểu')
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('max')  // Cột số lượng tối đa
+                    ->numeric()
+                    ->label('Số lượng tối đa')
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('time')  // Cột thời gian
+                    ->label('Thời gian')
+                    ->sortable(),
                 Tables\Columns\IconColumn::make('is_active')
                     ->boolean()
                     ->label('Trạng thái'),
@@ -90,7 +103,9 @@ class SmmServiceResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                Tables\Filters\SelectFilter::make('smmcategory_id')
+                    ->label('Danh mục')
+                    ->options(SmmCategory::all()->pluck('name', 'id')),
             ])
             ->actions([
                 Tables\Actions\ActionGroup::make([
@@ -106,7 +121,6 @@ class SmmServiceResource extends Resource
                 ]),
             ]);
     }
-
     public static function getRelations(): array
     {
         return [

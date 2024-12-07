@@ -44,6 +44,7 @@
                             <img id="selected-category-image" src="{{ Storage::url($image) }}" alt=""
                                 style="width: 20px; height: 20px;">
                         </label>
+                        {{$selectedCategory}}
                         <input type="hidden" id="cycle_max" value="12">
 
                         <select class="form-control" id="categories" wire:model.live="selectedCategory">

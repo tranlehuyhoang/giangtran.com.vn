@@ -23,4 +23,9 @@ class SmmCategory extends Model
     {
         return $this->belongsTo(Media::class, 'media_id');
     }
+    public function media()
+    {
+        return $this->belongsTo(Media::class, 'media_id');
+    }
+
 }

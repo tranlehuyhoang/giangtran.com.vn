@@ -33,9 +33,6 @@ class SmmCategoryResource extends Resource
                     ->required()
                     ->maxLength(255),
                 CuratorPicker::make('image'),
-                Forms\Components\TextInput::make('code')
-                    ->required()
-                    ->maxLength(255),
             ]);
     }
 
@@ -50,8 +47,6 @@ class SmmCategoryResource extends Resource
                 ->label('Thumbnail')
                 ->size(40),
                 Tables\Columns\TextColumn::make('name')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('code')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
