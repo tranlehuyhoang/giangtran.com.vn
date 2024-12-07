@@ -6,6 +6,7 @@ sudo composer install && \
 sudo cp .env.production .env && \
 sudo chmod -R 777 . && \
 sudo php artisan storage:link && \
+sudo npm run build && \
 
 # Xóa và tạo lại database
 DB_NAME="giangtran"

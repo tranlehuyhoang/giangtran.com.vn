@@ -1,8 +1,6 @@
 <div class="pricing-content">
     <div class="row g-sm-4 g-3">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
         <div class="col-md-8">
             <div class="card title-line">
                 <div class="card-header card-no-border">
@@ -24,13 +22,13 @@
                             <div class="radio-form">
                                 <div class="form-check">
                                     <input class="form-check-input" id="radio14" type="radio" name="radio-stacked"
-                                        wire:model.live="paymentMethod" value="account_balance" checked>
+                                        wire:model="paymentMethod" value="account_balance" checked>
                                     <label class="form-check-label" for="radio14"> Số Dư Tài Khoản
                                         ({{ App\Helpers\FormatHelper::formatCurrency($balance) }}<sup>đ</sup>) </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" id="radio13" type="radio" name="radio-stacked"
-                                        wire:model.live="paymentMethod" value="bank_transfer">
+                                        wire:model="paymentMethod" value="bank_transfer">
                                     <label class="form-check-label" for="radio13"> Chuyển Khoản Ngân Hàng </label>
                                 </div>
                             </div>
@@ -46,36 +44,69 @@
                         </label>
                         <input type="hidden" id="cycle_max" value="12">
 
-                        {{-- <select class="form-control" id="categories" wire:model.live="selectedCategory"> --}}
-                        <select class="form-control" id="categories"  >
+                        {{-- <select class="form-control" id="categories" wire:model="selectedCategory"> --}}
+                        <select class="form-control" id="categories">
                             @foreach ($categories as $category)
                                 <option value="{{ $category['id'] }}"
-                                    data-image="{{Storage::url($category->media->path)}}">
+                                    data-image="{{ Storage::url($category->media->path) }}">
                                     {{ $category['name'] }}
                                 </option>
                             @endforeach
                         </select>
+                        {{ $selectedCategory }}
+                        @assets
+                            <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+                                rel="stylesheet" />
 
-                        <script>
-                            function formatState(state) {
-                                if (!state.id) {
-                                    return state.text; // Return the default text if no ID
-                                }
-                                const imageUrl = $(state.element).data('image');
-                                return $('<span><img src="' + imageUrl + '" class="img-flag" style="width: 20px; height: 20px;" /> ' + state.text + '</span>');
-                            }
-
-                            $(document).ready(function() {
+                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+                        @endassets
+                        @script
+                            <script>
+                                initializeSelect2()
+                                Livewire.on('select2:updated', () => {
+                                    initializeSelect2();
+                                });
                                 $('#categories').select2({
                                     templateResult: formatState,
                                     templateSelection: formatState
                                 });
-                            });
-                        </script>
+                                $('#categories').on('change', function(e) {
+                                    const selectedCategory = $(this).val(); // Lấy giá trị đã chọn
+                                    console.log('Selected category:', selectedCategory); // Hiển thị trong console
+                                    $wire.$set('selectedCategory', selectedCategory)
+                                });
+
+                                function formatState(state) {
+                                    if (!state.id) {
+                                        return state.text;
+                                    }
+                                    const imageUrl = $(state.element).data('image');
+                                    return $('<span><img src="' + imageUrl + '" class="img-flag" style="width: 20px; height: 20px;" /> ' + state
+                                        .text + '</span>');
+                                }
+
+                                function initializeSelect2() {
+
+
+                                    $(document).ready(function() {
+                                        $('#categories').select2({
+                                            templateResult: formatState,
+                                            templateSelection: formatState
+                                        });
+                                    });
+                                    $(document).ready(function() {
+                                        $('#services').select2();
+                                    });
+
+
+                                }
+                            </script>
+                        @endscript
                     </div>
                     <div class="form-group mt-3">
                         <label>Gói Dịch Vụ</label>
-                        <select class="form-control" wire:model.live="selectedService">
+                        <select class="form-control" id='services'>
                             <option value="">--Chọn Gói Dịch Vụ--</option>
                             @foreach ($services as $service)
                                 <option value="{{ $service->id }}">{{ $service->name }} - {{ $service->price }} VNĐ
@@ -86,14 +117,14 @@
                     <div class="form-group mt-3">
                         <label> Link </label>
                         <input type="hidden" id="cycle_max" value="12">
-                        <input class="form-control" id="domain" placeholder="Link" wire:model.live="link">
+                        <input class="form-control" id="domain" placeholder="Link" wire:model="link">
                     </div>
                     <div class="form-group mt-3">
                         <label> Số Lượng </label>
 
                         <div class="input-group">
                             <input class="form-control" type="number" placeholder="Tối thiểu 1000 tối đa 10000"
-                                wire:model.live="quantity" min="1000" max="10000">
+                                wire:model="quantity" min="1000" max="10000">
                             <button class="btn btn-success" type="button">
                                 {{ App\Helpers\FormatHelper::formatCurrency(
                                     isset($services->where('id', $selectedService)->first()->price)
@@ -138,13 +169,15 @@
                                 <tr>
                                     <td> Dịch Vụ:</td>
                                     <td colspan="2" class="txt-primary">
-                                        {{ $categories->where('id', $selectedCategory)->first()->name }} </td>
+                                        {{-- {{ $categories->where('id', $selectedCategory)->first()->name }}  --}}
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td> Giá Dịch Vụ :</td>
                                     <td colspan="2" id="chuky-show">
-                                        {{ App\Helpers\FormatHelper::formatCurrency(isset($services->where('id', $selectedService)->first()->price) ? $services->where('id', $selectedService)->first()->price : 0) }}
-                                        VNĐ </td>
+                                        {{-- {{ App\Helpers\FormatHelper::formatCurrency(isset($services->where('id', $selectedService)->first()->price) ? $services->where('id', $selectedService)->first()->price : 0) }}
+                                        VNĐ  --}}
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Số Lượng:</td>
@@ -153,11 +186,11 @@
                                 <tr>
                                     <td> Tổng Thanh Toán (VND) :</td>
                                     <td colspan="2" id="amount-total">
-                                        {{ App\Helpers\FormatHelper::formatCurrency(
+                                        {{-- {{ App\Helpers\FormatHelper::formatCurrency(
                                             isset($services->where('id', $selectedService)->first()->price)
                                                 ? floatval($services->where('id', $selectedService)->first()->price) * intval($quantity)
                                                 : 0,
-                                        ) }}
+                                        ) }} --}}
                                         VNĐ
                                     </td>
                                 </tr>
