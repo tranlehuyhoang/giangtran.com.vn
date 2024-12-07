@@ -28,13 +28,13 @@
                 </div>
 
                 <div class="col-sm-6 col-md-6">
-                    <label class="form-label"> Địa Chỉ IP </label>
-                    <input class="form-control" value="{{ $ipAddress }}" disabled>
+                    <label class="form-label"> Địa Chỉ IP Đăng Ký </label>
+                    <input class="form-control" value="{{ Auth::user()->ip_address }}" disabled>
                 </div>
 
                 <div class="col-md-6">
-                    <label class="form-label"> Thiết Bị </label>
-                    <input class="form-control" value="{{ $device }}" disabled>
+                    <label class="form-label"> Thiết Bị Đăng Ký</label>
+                    <input class="form-control" value="{{ Auth::user()->device }}" disabled>
                 </div>
 
                 <div class="col-sm-6 col-md-4">

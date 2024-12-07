@@ -30,15 +30,29 @@ class ActivityHistory extends Model
         if (is_null($userId)) {
             $userId = Auth::user()->id;
         }
+
         // Nếu không có ipAddress, lấy từ request
         $ipAddress = request()->ip();
 
         // Tạo bản ghi lịch sử hoạt động
-        return self::create([
+        $activity = self::create([
             'user_id' => $userId,
             'content' => $content,
             'ip_address' => $ipAddress,
         ]);
+
+        // Kiểm tra số lượng hoạt động của người dùng
+        $activityCount = self::where('user_id', $userId)->count();
+
+        // Nếu số lượng hoạt động lớn hơn 100, xóa những bản ghi cũ
+        if ($activityCount > 100) {
+            self::where('user_id', $userId)
+                ->orderBy('created_at', 'asc') // Sắp xếp theo thời gian tạo
+                ->limit($activityCount - 100) // Giữ lại 100 bản ghi mới nhất
+                ->delete();
+        }
+
+        return $activity;
     }
     public static function getActivitiesByUserId($userId = null)
     {

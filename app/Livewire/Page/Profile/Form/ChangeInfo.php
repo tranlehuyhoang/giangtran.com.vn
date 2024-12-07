@@ -10,22 +10,13 @@ class ChangeInfo extends Component
 {
     use LivewireAlert;
 
-    public $device, $ipAddress, $contact;
+    public  $contact;
     public function mount()
     {
         $this->contact = Auth::user()->contact;
-        $this->device = $this->getDevice();
-        $this->ipAddress = $this->getIpAddress();
     }
-    public function getIpAddress()
-    {
-        return request()->ip();
-    }
-    public function getDevice()
-    {
-        return request()->header('User-Agent');
-    }
-    public function saveProfile()
+
+       public function saveProfile()
     {
 
         $user = User::where('id', Auth::id())->update([

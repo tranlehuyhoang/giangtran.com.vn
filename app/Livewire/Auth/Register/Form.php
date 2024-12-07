@@ -26,6 +26,8 @@ class Form extends Component
     {
         $this->errors = []; // Reset lỗi
 
+
+
         if (empty($this->name)) {
             $this->errors['name'] = 'Họ và tên là bắt buộc.';
         } elseif (!preg_match('/^[a-zA-Z0-9]{6,20}$/', $this->name)) {
@@ -67,16 +69,34 @@ class Form extends Component
             return;
         }
 
-        // Lưu dữ liệu vào cơ sở dữ liệu
-        User::create([
-            'name' => $this->name,
-            'email' => $this->email,
-            'username' => $this->username,
-            'password' => Hash::make($this->password),
-        ]);
+        $today = now()->startOfDay();
+        $countByIp = User::where('ip_address', request()->ip())
+            ->whereDate('created_at', $today)
+            ->count();
+        if ($countByIp >= 2) {
+            $this->alert('error', 'Bạn đã đăng ký quá số lần cho phép trong một ngày với địa chỉ IP này.');
+            return;
+        }
+        // Lưu dữ liệu vào cơ sở dữ liệu, bao gồm địa chỉ IP và thông tin thiết bị
+        try {
+            // Lưu dữ liệu vào cơ sở dữ liệu
+            User::create([
+                'name' => $this->name,
+                'email' => $this->email,
+                'username' => $this->username,
+                'password' => Hash::make($this->password),
+                'ip_address' => request()->ip(), // Lưu địa chỉ IP
+                'device' => request()->header('User-Agent'), // Lưu thông tin thiết bị
+            ]);
 
-        $this->alert('success', 'Đăng ký thành công!');
-        $this->reset(['name', 'email', 'username', 'password', 'agree_terms']);
+            $this->alert('success', 'Đăng ký thành công!');
+            $this->reset(['name', 'email', 'username', 'password', 'agree_terms']);
+        } catch (\Exception $e) {
+            // Nếu có lỗi xảy ra, hiển thị thông báo lỗi
+            $this->alert('error', 'Đăng ký thất bại: ' . $e->getMessage());
+            // Bạn có thể ghi log lỗi nếu cần
+            \Log::error('Registration error: ' . $e->getMessage());
+        }
     }
     public function redirectToProvider()
     {

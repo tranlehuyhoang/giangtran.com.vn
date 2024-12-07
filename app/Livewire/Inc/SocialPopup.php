@@ -30,12 +30,6 @@ class SocialPopup extends Component
             if ($findUser) {
                 // Đăng nhập người dùng nếu đã tồn tại
                 Auth::login($findUser);
-
-                $this->dispatch('showModalAlert', [
-                    'title' => 'Đăng nhập thành công!',
-                    'message' => 'Chúc bạn có những trải nghiệm tuyệt vời!',
-                ]);
-                sleep(1);
                 return redirect('/home');
             } else {
                 // Tạo người dùng mới nếu không tồn tại
@@ -50,25 +44,21 @@ class SocialPopup extends Component
                 // Đăng nhập người dùng mới
                 Auth::login($newUser);
 
-                // Hiện thông báo thành công
-                $this->dispatch('showModalAlert', [
-                    'title' => 'Đăng nhập thành công!',
-                    'message' => 'Chúc bạn có những trải nghiệm tuyệt vời!',
-                ]);
                 sleep(1);
                 return redirect('/home');
             }
         } catch (\Exception $e) {
             // Hiển thị thông báo lỗi nếu có sự cố
-            $this->dispatch('showModalAlert', [
-                'title' => 'Đã có lỗi xảy ra hoặc bạn đã từ chối quyền truy cập ứng dụng.',
-                'message' => 'Đã có lỗi xảy ra hoặc bạn đã từ chối quyền truy cập ứng dụng.',
-            ]);
+            $this->alert(
+                'error',
+                'Đã có lỗi xảy ra hoặc bạn đã từ chối quyền truy cập ứng dụng.',
+            );
 
             return redirect('/'); // Quay về trang chính
         }
     }
-    function generateUniqueUsername($length = 10) {
+    function generateUniqueUsername($length = 10)
+    {
         do {
             $username = strtolower(Str::random($length)); // Chuyển đổi thành chữ thường
         } while (User::where('username', $username)->exists());

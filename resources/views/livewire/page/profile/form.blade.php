@@ -123,7 +123,7 @@
                                     <tbody>
                                         @foreach($activities as $activity)
                                             <tr>
-                                                <td>{{ $activity->id }}</td>
+                                                <td>{{ $loop->count - $loop->index }}</td> <!-- Số đếm giảm dần -->
                                                 <td>{{ $activity->content }}</td>
                                                 <td>{{ $activity->ip_address }}</td>
                                                 <td>{{ $activity->created_at->format('d/m/Y - H:i:s') }}</td>
