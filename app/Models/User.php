@@ -27,6 +27,8 @@ class User extends Authenticatable implements FilamentUser
         'total_consumption',
         'total_deposit',
         'two_factor_auth_status',
+        'otp',
+
     ];
 
     protected $hidden = [

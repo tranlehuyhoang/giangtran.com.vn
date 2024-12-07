@@ -1,14 +1,12 @@
 <?php
-
 namespace App\Livewire\Auth\Login;
+
 use App\Models\ActivityHistory;
 use App\Models\User;
-use Laravel\Socialite\Facades\Socialite;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Http;
 
 class Form extends Component
 {
@@ -17,9 +15,9 @@ class Form extends Component
     public $username;
     public $password;
     public $remember = false;
-    public $captcha;
     public $errors = [];
-
+    public $otp ,$opt_status;
+    public $userId; // Thêm biến để lưu ID người dùng
 
     public function login()
     {
@@ -51,16 +49,49 @@ class Form extends Component
             return;
         }
 
-        // Đăng nhập người dùng
-        if (Auth::attempt(['username' => $user->username, 'password' => $this->password], $this->remember) ||
-            Auth::attempt(['email' => $user->email, 'password' => $this->password], $this->remember)) {
-            // Đăng nhập thành công
+        // Kiểm tra mật khẩu
+        if (Hash::check($this->password, $user->password)) {
+            // Mật khẩu chính xác, kiểm tra trạng thái 2FA
+            if ($user->two_factor_auth_status) {
+                // Gửi email chứa mã OTP
+                $this->sendOtpEmail($user);
+                $this->userId = $user->id; // Lưu ID người dùng vào phiên
+                return; // Ngừng lại để yêu cầu nhập OTP
+            }
+
+            // Nếu không có 2FA, thực hiện đăng nhập
+            Auth::login($user, $this->remember);
             ActivityHistory::logActivity('Đăng nhập bằng tài khoản');
-            return redirect('/'); // Chuyển hướng đến trang dashboard hoặc trang bạn muốn
+            return redirect('/'); // Chuyển hướng đến trang bạn muốn
         } else {
             // Đăng nhập không thành công
             $this->errors['password'] = 'Mật khẩu không chính xác.';
             $this->alert('error', 'Mật khẩu không chính xác.');
+        }
+    }
+
+    private function sendOtpEmail($user)
+    {
+        // Tạo và gửi mã OTP qua email
+        $otp = rand(100000, 999999); // Tạo mã OTP
+        $user->update(['otp' => $otp]); // Lưu mã OTP vào cơ sở dữ liệu
+        // \Mail::to($user->email)->send(new \App\Mail\OtpMail($otp)); // Gửi email
+        $this->opt_status = true; // Lưu mã OTP vào biến
+        $this->alert('info', 'Mã OTP đã được gửi đến email của bạn.');
+    }
+
+    public function verifyOtp()
+    {
+        // Kiểm tra mã OTP
+        $user = User::find($this->userId); // Lấy lại người dùng từ ID đã lưu
+
+        if ($this->otp == $user->otp) {
+            // Đăng nhập thành công
+            Auth::login($user, $this->remember); // Thực hiện đăng nhập
+            ActivityHistory::logActivity('Đăng nhập thành công với OTP');
+            return redirect('/'); // Chuyển hướng đến trang bạn muốn
+        } else {
+            $this->alert('error', 'Mã OTP không chính xác.');
         }
     }
 

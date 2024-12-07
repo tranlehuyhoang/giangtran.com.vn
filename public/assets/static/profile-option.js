@@ -119,29 +119,29 @@ function sendOTP() {
 
 }
 
-function isChecked() {
-    if (document.getElementById("2FaStatus").checked) {
-        document.getElementById("isCheckedText").innerHTML = 'Đang Bật';
+// function isChecked() {
+//     if (document.getElementById("2FaStatus").checked) {
+//         document.getElementById("isCheckedText").innerHTML = 'Đang Bật';
 
-        if (document.getElementById("2faDefault").value != 'true') {
-            document.getElementById("formOTP-2Fa").classList.remove('content-vi');
-            status2FA = true;
-            sendOTP();
-        } else {
-            document.getElementById("formOTP-2Fa").classList.add('content-vi');
-        }
-    } else {
-        document.getElementById("isCheckedText").innerHTML = 'Đang Tắt';
+//         if (document.getElementById("2faDefault").value != 'true') {
+//             document.getElementById("formOTP-2Fa").classList.remove('content-vi');
+//             status2FA = true;
+//             sendOTP();
+//         } else {
+//             document.getElementById("formOTP-2Fa").classList.add('content-vi');
+//         }
+//     } else {
+//         document.getElementById("isCheckedText").innerHTML = 'Đang Tắt';
 
-        if (document.getElementById("2faDefault").value != 'false') {
-            document.getElementById("formOTP-2Fa").classList.remove('content-vi');
-            status2FA = false;
-            sendOTP();
-        } else {
-            document.getElementById("formOTP-2Fa").classList.add('content-vi');
-        }
-    }
-}
+//         if (document.getElementById("2faDefault").value != 'false') {
+//             document.getElementById("formOTP-2Fa").classList.remove('content-vi');
+//             status2FA = false;
+//             sendOTP();
+//         } else {
+//             document.getElementById("formOTP-2Fa").classList.add('content-vi');
+//         }
+//     }
+// }
 
 document.addEventListener('DOMContentLoaded', function() {
     isChecked();

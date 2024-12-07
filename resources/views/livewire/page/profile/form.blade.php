@@ -39,65 +39,8 @@
 
     @livewire('page.profile.form.change-info')
     @livewire('page.profile.form.reset-password')
+    @livewire('page.profile.form.two-factor-auth')
 
-    <div class="col-xl-8 content-vi" id="2step">
-        <div class="card">
-            <div class="card-header">
-                <h2 class="card-title mb-0"> Xác Thực 2 Bước </h2>
-            </div>
-            <div class="card-body">
-
-                <div class="">
-                    <strong class="txt-primary"> Ghi Chú Nên Đọc: </strong> <br>
-                    <p>- Trình Xác Thực 2 Bước Được Tạo Trên Hệ Thống Này Nhằm Tạo Thêm Bước
-                        Xác
-                        Thực OTP Qua Email Sau Khi Bạn Xác Thực Bước 1 Với Tài Khoản & Mật
-                        Khẩu
-                    </p>
-                </div>
-
-                <div class="row g-3 mt-3">
-
-                    <div class="col-md-12 col-xl-4">
-                        <div class="card-wrapper border rounded-3 checkbox-checked">
-                            <h6 class="sub-title"> Trạng Thái 2FA </h6>
-                            <div class="form-check-size">
-
-                                <div class="form-check form-switch form-check-inline">
-                                    <input class="form-check-input check-size"
-                                        id="2FaStatus" type="checkbox" role="switch"
-                                        onchange="isChecked();">
-                                </div><strong id="isCheckedText"
-                                    style="padding-left: -10px;">
-                                    Loading ... </strong>
-
-                                <div class="form-group content-vi" id="formOTP-2Fa">
-                                    <label> OTP Xác Minh </label>
-                                    <input class="form-control" id="otp_new"
-                                        placeholder="Nhập Mã Xác Minh Gồm 6 Số!"
-                                        onchange="getOTPInoput();">
-                                    <div id="isLoading"></div>
-                                </div>
-
-                                <div class="mb-4" id="btn-resendText"
-                                    style="display: none;">
-                                    <span class="reset-password-link"> Chưa Nhận Được Mã
-                                        OTP? <a class="btn-link txt-danger"
-                                            onclick="resendOTP()" id="icon-resend"> Gửi Lại
-                                        </a></span>
-                                </div>
-
-                                <input type="hidden" id="2faDefault" value="false">
-                                <input type="hidden" id="email"
-                                    value="2509roblox@gmail.com">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <div class="col-xl-8 content-vi" id="history">

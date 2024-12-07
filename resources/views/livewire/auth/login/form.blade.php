@@ -4,7 +4,7 @@
 
     <div class="theme-form mt-3">
 
-        <div id="form-login">
+        <div id="form-login" class="{{ isset($opt_status) ? 'content-vi' : '' }}">
             <center>
                 <h2> Đăng Nhập Hệ Thống </h2>
             </center>
@@ -127,20 +127,24 @@
                 </a></p>
         </div>
 
-        <div id="otp_form" class="content-vi">
+        <div id="otp_form" class="{{ isset($opt_status) ? '' : 'content-vi' }}">
+
             <center>
                 <h2> Xác Minh 2 Bước </h2>
             </center>
             <div class="form-group mt-3">
                 <label class="col-form-label"> Mã Xác Thực (OTP) </label>
-                <input class="form-control" type="text" id="otp_new" placeholder="Mã Xác Thực Gồm 6 Chữ Số"
-                    style="background-color: white;" onchange="getOTPInoput();">
+                <input class="form-control" type="text" id="otp_new" wire:model='otp' placeholder="Mã Xác Thực Gồm 6 Chữ Số" style="background-color: white;">
             </div>
-
-            <div class="mb-4" id="btn-resendText" style="display: none;"><span class="reset-password-link"> Chưa Nhận
-                    Được Mã OTP? <a class="btn-link txt-danger" onclick="resendOTP()" id="icon-resend">
-                        Gửi Lại </a></span></div>
-
+            <button class="btn btn-dark btn-block w-100" type="button" wire:click="verifyOtp" wire:loading.attr="disabled">
+                <span wire:loading.remove> Xác Minh OTP </span>
+                <span wire:loading> Đang xác minh... </span>
+            </button>
+            <div class="mb-4" id="btn-resendText" style="display: none;">
+                <span class="reset-password-link"> Chưa Nhận Được Mã OTP?
+                    <a class="btn-link txt-danger" onclick="resendOTP()" id="icon-resend">Gửi Lại</a>
+                </span>
+            </div>
         </div>
 
     </div>
