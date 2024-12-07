@@ -1,6 +1,8 @@
 <div class="pricing-content">
     <div class="row g-sm-4 g-3">
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <div class="col-md-8">
             <div class="card title-line">
                 <div class="card-header card-no-border">
@@ -41,20 +43,35 @@
 
                     <div class="form-group">
                         <label for="categories">Danh Mục
-                            <img id="selected-category-image" src="{{ Storage::url($image) }}" alt=""
-                                style="width: 20px; height: 20px;">
                         </label>
-                        {{$selectedCategory}}
                         <input type="hidden" id="cycle_max" value="12">
 
-                        <select class="form-control" id="categories" wire:model.live="selectedCategory">
+                        {{-- <select class="form-control" id="categories" wire:model.live="selectedCategory"> --}}
+                        <select class="form-control" id="categories"  >
                             @foreach ($categories as $category)
                                 <option value="{{ $category['id'] }}"
-                                    data-image="{{ Storage::url($category['image']) }}">
+                                    data-image="{{Storage::url($category->media->path)}}">
                                     {{ $category['name'] }}
                                 </option>
                             @endforeach
                         </select>
+
+                        <script>
+                            function formatState(state) {
+                                if (!state.id) {
+                                    return state.text; // Return the default text if no ID
+                                }
+                                const imageUrl = $(state.element).data('image');
+                                return $('<span><img src="' + imageUrl + '" class="img-flag" style="width: 20px; height: 20px;" /> ' + state.text + '</span>');
+                            }
+
+                            $(document).ready(function() {
+                                $('#categories').select2({
+                                    templateResult: formatState,
+                                    templateSelection: formatState
+                                });
+                            });
+                        </script>
                     </div>
                     <div class="form-group mt-3">
                         <label>Gói Dịch Vụ</label>
@@ -74,17 +91,18 @@
                     <div class="form-group mt-3">
                         <label> Số Lượng </label>
 
-                            <div class="input-group">
-                                <input class="form-control" type="number" placeholder="Tối thiểu 1000 tối đa 10000"
-                                    wire:model.live="quantity" min="1000" max="10000" >
-                                <button class="btn btn-success" type="button">
-                                    {{ App\Helpers\FormatHelper::formatCurrency(
-                                        isset($services->where('id', $selectedService)->first()->price)
-                                            ? floatval($services->where('id', $selectedService)->first()->price) * intval($quantity)
-                                            : 0,
-                                    ) }} đ
-                                </button>
-                            </div>
+                        <div class="input-group">
+                            <input class="form-control" type="number" placeholder="Tối thiểu 1000 tối đa 10000"
+                                wire:model.live="quantity" min="1000" max="10000">
+                            <button class="btn btn-success" type="button">
+                                {{ App\Helpers\FormatHelper::formatCurrency(
+                                    isset($services->where('id', $selectedService)->first()->price)
+                                        ? floatval($services->where('id', $selectedService)->first()->price) * intval($quantity)
+                                        : 0,
+                                ) }}
+                                đ
+                            </button>
+                        </div>
                     </div>
 
 
@@ -162,7 +180,6 @@
                 </div>
             </div>
         </div>
-        <input type="hidden" id="id" value="19">
-        <input type="hidden" id="idPresent" value="">
     </div>
+
 </div>

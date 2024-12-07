@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <style>
+        .select2-results__option img {
+            width: 20px;
+            /* Adjust the size as needed */
+            height: 20px;
+            /* Adjust the size as needed */
+            margin-right: 10px;
+            /* Spacing between image and text */
+        }
+    </style>
+</head>
+
+<body>
+    <select class="js-example-basic-single" name="state">
+        <option value="AL" data-image="http://localhost:8000/storage/media/70a41ab8-2495-4176-a9b2-d338f298d633.png">Alabama</option>
+        <option value="WY" data-image="http://example.com/wyoming.png">Wyoming</option>
+        <!-- Add other options here -->
+    </select>
+
+    <script>
+        function formatState(state) {
+            if (!state.id) {
+                return state.text; // Return the default text if no ID
+            }
+            const imageUrl = $(state.element).data('image');
+            return $('<span><img src="' + imageUrl + '" class="img-flag" /> ' + state.text + '</span>');
+        }
+
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2({
+                templateResult: formatState,
+                templateSelection: formatState
+            });
+        });
+    </script>
+</body>
+
+</html>

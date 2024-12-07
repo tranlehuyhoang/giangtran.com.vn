@@ -77,7 +77,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
         <script src="/assets/static/simplebar.js"></script>
         <script src="/assets/static/invoices.js?v=1731410540" defer></script>
-        <script src="/assets/static/jquery.min.js"></script>
+        {{-- <script src="/assets/static/jquery.min.js"></script> --}}
         <script src="/assets/static/config.js"></script>
         <script src="/assets/static/cyberlux.js"></script>
         <script src="/assets/static/handlebars.min.js"></script>

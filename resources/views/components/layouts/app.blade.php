@@ -5,10 +5,12 @@
     <link rel="icon" type="image/x-icon" href="/icon.png" />
     <meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
     <meta name="robots" content="index, follow" />
+
+
     @livewireStyles
 </head>
 
-<body >
+<body>
     {{ $slot }}
     @livewireScripts
 </body>
@@ -25,10 +27,14 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGV3L3V7ZL"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-JGV3L3V7ZL');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JGV3L3V7ZL');
 </script>
+
 </html>

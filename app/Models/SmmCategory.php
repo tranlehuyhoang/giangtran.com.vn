@@ -15,17 +15,9 @@ class SmmCategory extends Model
         'name',
         'code',
     ];
-    public static function getAllCategories()
-    {
-        return self::all();
-    }
-    public function image()
-    {
-        return $this->belongsTo(Media::class, 'media_id');
-    }
     public function media()
     {
-        return $this->belongsTo(Media::class, 'media_id');
+        return $this->belongsTo(Media::class, 'image');
     }
 
 }

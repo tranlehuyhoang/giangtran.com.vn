@@ -17,11 +17,10 @@ class Form extends Component
 
 
 
-    public $categories, $selectedCategory, $selectedService, $services = [], $quantity = 1000, $link, $image, $paymentMethod; // Danh sách danh mục
+    public  $selectedCategory, $selectedService, $services = [], $quantity = 1000, $link, $image, $paymentMethod; // Danh sách danh mục
     public function mount()
     {
         $this->balance = Auth::user()->balance ?? 0; // Mặc định là 0 nếu không có balance
-        $this->categories = SmmCategory::getAllCategories();
         $this->image = SmmCategory::first()->image; // Khởi tạo danh sách dịch vụ theo danh mục
         $this->selectedCategory = SmmCategory::first()->id;
         $this->services = SmmService::where('smmcategory_id', $this->selectedCategory)->get();
@@ -115,6 +114,7 @@ class Form extends Component
     }
     public function render()
     {
-        return view('livewire.services.smm.components.form');
+        $categories = SmmCategory::with('media')->get();
+        return view('livewire.services.smm.components.form',['categories'=> $categories]);
     }
 }
