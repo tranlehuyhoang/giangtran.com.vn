@@ -3,10 +3,9 @@
 
 <head>
     <link rel="icon" type="image/x-icon" href="/icon.png" />
-    <meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
+
     <meta name="robots" content="index, follow" />
-
-
+    <meta name="google-site-verification" content="XdpPCe9WLWMZA9pEynO-7B7lRoimKZl7qFlCqvZsVlo">
     @livewireStyles
 </head>
 
