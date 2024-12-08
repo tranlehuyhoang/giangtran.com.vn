@@ -17,8 +17,9 @@ class Form extends Component
 
 
 
-    public  $selectedCategory, $categories, $services, $selectedCategory_path  , $quantity , $link, $image, $paymentMethod; // Danh sách danh mục
-    public $selectedService, $selectedServicePrice, $selectedServiceMin, $selectedServiceMax, $selectedServiceTime ;
+    public $selectedCategory, $categories, $services, $selectedCategory_path, $quantity, $link, $image, $paymentMethod; // Danh sách danh mục
+    public $selectedService, $selectedServicePrice, $selectedServiceMin, $selectedServiceMax, $selectedServiceTime;
+    public $errors = [];
     public function mount()
     {
         $this->balance = Auth::user()->balance ?? 0;
@@ -83,40 +84,92 @@ class Form extends Component
 
     public function submitOrder() // Hàm submit đơn hàng
     {
+        // Reset errors before processing
+        $this->errors = [];
+
+        // Check if the user is authenticated
         if (!auth()->user()) {
-            $this->alert('error', 'Vui lòng đăng nhập để tạo đơn hàng');
+            $this->errors['auth'] = 'Vui lòng đăng nhập để tạo đơn hàng';
+        }
+
+        // Validate required fields
+        if (is_null($this->paymentMethod)) {
+            $this->errors['paymentMethod'] = 'Vui lòng chọn phương thức thanh toán.';
+        }
+        if (is_null($this->selectedService)) {
+            $this->errors['selectedService'] = 'Vui lòng chọn gói dịch vụ.';
+        }
+        if (is_null($this->selectedService)) {
+            $this->errors['selectedService'] = 'Vui lòng chọn gói dịch vụ.';
+        }
+        if (is_null($this->quantity) || $this->quantity < $this->selectedServiceMin || $this->quantity > $this->selectedServiceMax) {
+            $this->errors['quantity'] = 'Số lượng không hợp lệ. Tối thiểu: ' . $this->selectedServiceMin . ', tối đa: ' . $this->selectedServiceMax . '.';
+        }
+        if (empty($this->link)) {
+            $this->errors['link'] = 'Vui lòng nhập link.';
+        }
+
+        // If there are errors, alert the user and return
+        if (!empty($this->errors)) {
+            foreach ($this->errors as $error) {
+                $this->alert('error', $error); // Alert each error
+            }
+            $this->dispatch('select2:updated');
+
             return;
         }
+        // Calculate total price
+        $totalPrice = $this->getServicePrice($this->selectedService) * $this->quantity;
+
+        // Get user's balance
+        $userBalance = auth()->user()->balance; // Assuming 'balance' is a field in the User model
+
+        // Check if user has sufficient balance
+        if ($userBalance < $totalPrice) {
+            $this->alert('error', 'Số dư tài khoản không đủ để thanh toán.'); // Alert insufficient balance
+            $this->dispatch('select2:updated');
+            return;
+        }
+
+        // Prepare order data
         $data = [
-            'user_id' => auth()->user()->id ?? null,
-            'smm_service_id' => $this->selectedService ?? null,
-            'quantity' => $this->quantity ?? null,
-            'total_price' => $this->getServicePrice($this->selectedService) * $this->quantity ?? null,
+            'user_id' => auth()->user()->id,
+            'smm_service_id' => $this->selectedService,
+            'quantity' => $this->quantity,
+            'total_price' => $totalPrice,
             'status' => 'pending',
-            'unit_price' => $this->getServicePrice($this->selectedService) ?? null,
-            'start_count' => 0 ?? null,
-            'link' => $this->link ?? null,
-            'remains' => $this->quantity ?? null,
-            'payment_method' => $this->paymentMethod ?? null,
+            'unit_price' => $this->getServicePrice($this->selectedService),
+            'start_count' => 0,
+            'link' => $this->link,
+            'remains' => $this->quantity,
+            'payment_method' => $this->paymentMethod,
         ];
+
+        // Check for unpaid invoices
         if (Invoice::hasUnpaidInvoices()) {
-
-
             $this->dispatch('showModalAlert', [
                 'title' => 'Thông báo',
                 'message' => 'Bạn có hóa đơn chưa thanh toán, vui lòng thanh toán hóa đơn trước khi tạo đơn hàng mới',
             ]);
             return;
         }
+
+        // Create the order
         $order = SmmOrder::createOrder($data);
         if ($order['status']) {
+            // Reset form fields after successful order creation
             $this->reset('quantity', 'link', 'paymentMethod', 'selectedService');
+
+            // Redirect based on payment status
             if (isset($order['payment_status']) && $order['payment_status'] == 'pending') {
                 return redirect('hoa-don/' . $order['order_code']);
             } else {
                 $this->alert($order['status'], $order['message']);
                 $this->dispatch('select2:updated');
             }
+        } else {
+            // Handle order creation failure
+            $this->alert('error', 'Đã xảy ra lỗi khi tạo đơn hàng. Vui lòng thử lại.');
         }
     }
 
