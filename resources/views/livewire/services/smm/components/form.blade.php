@@ -60,35 +60,33 @@
                         <select class="form-control" id='services'>
                             @foreach ($services as $service)
                                 <option value="{{ $service->id }}">
-                                    {{ $service->name }} - {{ $service->price }} VNĐ
+                                <strong>{{ $service->id }}</strong> - {{ $service->name }} - {{ $service->price }} VNĐ
                                 </option>
                             @endforeach
                         </select>
-
                     </div>
+
                     <div class="form-group mt-3">
-                        <label> Link </label>
+                        <label>Link</label>
                         <input type="hidden" id="cycle_max" value="12">
                         <input class="form-control" id="domain" placeholder="Link" wire:model="link">
                     </div>
-                    <div class="form-group mt-3">
-                        <label> Số Lượng </label>
 
+                    <div class="form-group mt-3">
+                        <label>Số Lượng</label>
                         <div class="input-group">
-                            <input class="form-control" type="number" placeholder="Tối thiểu 1000 tối đa 10000"
-                                wire:model.live="quantity" min="1000" max="10000">
+                            <input class="form-control" type="number" placeholder="Tối thiểu 1000 tối đa 10000" wire:model.live="quantity" min="{{$selectedServiceMin}}" max="{{$selectedServiceMax}}">
                             <button class="btn btn-success" type="button">
-                                {{ App\Helpers\FormatHelper::formatCurrency(
-                                    isset($services->where('id', $selectedService)->first()->price)
-                                        ? floatval($services->where('id', $selectedService)->first()->price) * intval($quantity)
-                                        : 0,
-                                ) }}
+                                {{ number_format($selectedServicePrice * $quantity, 0, '.', '.') }}
                                 đ
                             </button>
                         </div>
+                        <small class="form-text text-muted">
+                            Tối thiểu: {{ number_format($selectedServiceMin, 0, '.', '.') }},
+                            Tối đa: {{ number_format($selectedServiceMax, 0, '.', '.') }},
+                            Thời gian dự kiến: {{ ($selectedServiceTime) }}/ 1000
+                        </small>
                     </div>
-
-
 
                     <div class="form-group mt-3">
 
@@ -121,28 +119,25 @@
                                 <tr>
                                     <td> Dịch Vụ:</td>
                                     <td colspan="2" class="txt-primary">
-                                        {{-- {{ $categories->where('id', $selectedCategory)->first()->name }}  --}}
+                                        {{ $categories->where('id', $selectedCategory)->first()->name }}
                                     </td>
                                 </tr>
                                 <tr>
                                     <td> Giá Dịch Vụ :</td>
                                     <td colspan="2" id="chuky-show">
-                                        {{-- {{ App\Helpers\FormatHelper::formatCurrency(isset($services->where('id', $selectedService)->first()->price) ? $services->where('id', $selectedService)->first()->price : 0) }}
-                                        VNĐ  --}}
+                                        {{ App\Helpers\FormatHelper::formatCurrency($selectedServicePrice)}}
+                                        VNĐ
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Số Lượng:</td>
-                                    <td colspan="2" id="discount-show"> {{ $quantity }} </td>
+                                    <td colspan="2" id="discount-show">
+                                        {{ number_format($quantity, 0, '.', '.') }} </td>
                                 </tr>
                                 <tr>
                                     <td> Tổng Thanh Toán (VND) :</td>
                                     <td colspan="2" id="amount-total">
-                                        {{-- {{ App\Helpers\FormatHelper::formatCurrency(
-                                            isset($services->where('id', $selectedService)->first()->price)
-                                                ? floatval($services->where('id', $selectedService)->first()->price) * intval($quantity)
-                                                : 0,
-                                        ) }} --}}
+                                        {{ number_format($selectedServicePrice * $quantity, 0, '.', '.') }}
                                         VNĐ
                                     </td>
                                 </tr>

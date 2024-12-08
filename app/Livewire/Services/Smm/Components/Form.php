@@ -17,7 +17,8 @@ class Form extends Component
 
 
 
-    public  $selectedCategory, $categories, $services, $selectedCategory_path , $selectedService , $quantity = 1000, $link, $image, $paymentMethod; // Danh sách danh mục
+    public  $selectedCategory, $categories, $services, $selectedCategory_path  , $quantity , $link, $image, $paymentMethod; // Danh sách danh mục
+    public $selectedService, $selectedServicePrice, $selectedServiceMin, $selectedServiceMax, $selectedServiceTime ;
     public function mount()
     {
         $this->balance = Auth::user()->balance ?? 0;
@@ -34,13 +35,48 @@ class Form extends Component
             $this->selectedCategory_path = null;
             $this->services = collect(); // Return an empty collection
         }
+
+        $this->selectedService = SmmService::where('smmcategory_id', $this->selectedCategory)->first()->id;
+        $this->selectedServicePrice = SmmService::where('smmcategory_id', $this->selectedCategory)->first()->price;
+        $this->selectedServiceMin = SmmService::where('smmcategory_id', $this->selectedCategory)->first()->min;
+        $this->selectedServiceMax = SmmService::where('smmcategory_id', $this->selectedCategory)->first()->max;
+        $this->selectedServiceTime = SmmService::where('smmcategory_id', $this->selectedCategory)->first()->time;
+        $this->quantity = $this->selectedServiceMin;
+
     }
     public function updatedSelectedCategory()
     {
-        $this->services = SmmService::where('smmcategory_id', $this->selectedCategory)->get();
+        $services = SmmService::where('smmcategory_id', $this->selectedCategory)->get();
+
+        if ($services->isNotEmpty()) {
+            $this->services = $services;
+            $firstService = $services->first();
+
+            $this->selectedService = $firstService->id;
+            $this->selectedServicePrice = $firstService->price;
+            $this->selectedServiceMin = $firstService->min;
+            $this->selectedServiceMax = $firstService->max;
+            $this->selectedServiceTime = $firstService->time;
+            $this->quantity = $this->selectedServiceMin;
+        }
+
         $this->dispatch('select2:updated');
     }
     public function updatedSelectedService()
+    {
+        $service = SmmService::find($this->selectedService);
+
+        if ($service) {
+            $this->selectedServicePrice = $service->price;
+            $this->selectedServiceMin = $service->min;
+            $this->selectedServiceMax = $service->max;
+            $this->selectedServiceTime = $service->time;
+            $this->quantity = $service->min; // Assuming you want to set quantity to min
+        }
+
+        $this->dispatch('select2:updated');
+    }
+    public function updatedQuantity()
     {
         $this->dispatch('select2:updated');
     }
@@ -93,10 +129,31 @@ class Form extends Component
         }
         return null;
     }
-    // public function incrementQuantity($amount)
-    // {
-    //     $this->quantity += $amount; // Tăng số lượng với giá trị được truyền vào
-    // }
+    public function getServiceMin($id)
+    {
+
+        if (SmmService::find($id)) {
+            return SmmService::find($id)->min;
+        }
+        return null;
+    }
+    public function getServiceMax($id)
+    {
+
+        if (SmmService::find($id)) {
+            return SmmService::find($id)->max;
+        }
+        return null;
+    }
+    public function getServiceTime($id)
+    {
+
+        if (SmmService::find($id)) {
+            return SmmService::find($id)->time;
+        }
+        return null;
+    }
+
 
 
     public function render()
