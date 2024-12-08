@@ -1,4 +1,5 @@
 <div class="pricing-content">
+
     <div class="row g-sm-4 g-3">
 
         <div class="col-md-8">
@@ -53,66 +54,17 @@
                                 </option>
                             @endforeach
                         </select>
-                        {{ $selectedCategory }}
-                        @assets
-                            <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-                                rel="stylesheet" />
-
-                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                            <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-                        @endassets
-                        @script
-                            <script>
-                                initializeSelect2()
-                                Livewire.on('select2:updated', () => {
-                                    initializeSelect2();
-                                });
-                                $('#categories').select2({
-                                    templateResult: formatState,
-                                    templateSelection: formatState
-                                });
-                                $('#categories').on('change', function(e) {
-                                    const selectedCategory = $(this).val(); // Lấy giá trị đã chọn
-                                    console.log('Selected category:', selectedCategory); // Hiển thị trong console
-                                    $wire.$set('selectedCategory', selectedCategory)
-                                });
-
-                                function formatState(state) {
-                                    if (!state.id) {
-                                        return state.text;
-                                    }
-                                    const imageUrl = $(state.element).data('image');
-                                    return $('<span><img src="' + imageUrl + '" class="img-flag" style="width: 20px; height: 20px;" /> ' + state
-                                        .text + '</span>');
-                                }
-
-                                function initializeSelect2() {
-
-
-                                    $(document).ready(function() {
-                                        $('#categories').select2({
-                                            templateResult: formatState,
-                                            templateSelection: formatState
-                                        });
-                                    });
-                                    $(document).ready(function() {
-                                        $('#services').select2();
-                                    });
-
-
-                                }
-                            </script>
-                        @endscript
                     </div>
                     <div class="form-group mt-3">
                         <label>Gói Dịch Vụ</label>
                         <select class="form-control" id='services'>
-                            <option value="">--Chọn Gói Dịch Vụ--</option>
                             @foreach ($services as $service)
-                                <option value="{{ $service->id }}">{{ $service->name }} - {{ $service->price }} VNĐ
+                                <option value="{{ $service->id }}">
+                                    {{ $service->name }} - {{ $service->price }} VNĐ
                                 </option>
                             @endforeach
                         </select>
+
                     </div>
                     <div class="form-group mt-3">
                         <label> Link </label>
@@ -124,7 +76,7 @@
 
                         <div class="input-group">
                             <input class="form-control" type="number" placeholder="Tối thiểu 1000 tối đa 10000"
-                                wire:model="quantity" min="1000" max="10000">
+                                wire:model.live="quantity" min="1000" max="10000">
                             <button class="btn btn-success" type="button">
                                 {{ App\Helpers\FormatHelper::formatCurrency(
                                     isset($services->where('id', $selectedService)->first()->price)
@@ -214,5 +166,60 @@
             </div>
         </div>
     </div>
+    @script
+        <script>
+            initializeSelect2()
+            Livewire.on('select2:updated', () => {
+                initializeSelect2();
+            });
 
+            $('#categories').on('change', function(e) {
+                const selectedCategory = $(this).val(); // Lấy giá trị đã chọn
+                console.log('Selected category:', selectedCategory); // Hiển thị trong console
+                $wire.$set('selectedCategory', selectedCategory)
+            });
+            $('#services').on('change', function(e) {
+                const selectedService = $(this).val(); // Lấy giá trị đã chọn
+                console.log('Selected service:', selectedService); // Hiển thị trong console
+                $wire.$set('selectedService', selectedService)
+            });
+
+            function formatState(state) {
+                if (!state.id) {
+                    return state.text;
+                }
+                const imageUrl = $(state.element).data('image');
+                return $('<span><img src="' + imageUrl + '" class="img-flag" style="width: 20px; height: 20px;" /> ' + state
+                    .text + '</span>');
+            }
+
+            function formatState1(state) {
+                if (!state.id) {
+                    return state.text;
+                }
+                return $('<span>  ' + state
+                    .text + '</span>');
+            }
+
+            function initializeSelect2() {
+
+
+                $(document).ready(function() {
+                    $('#categories').select2({
+                        templateResult: formatState,
+                        templateSelection: formatState
+                    });
+
+
+                    $('#services').select2({
+                        templateResult: formatState1,
+                        templateSelection: formatState1
+                    });
+                });
+
+
+
+            }
+        </script>
+    @endscript
 </div>
