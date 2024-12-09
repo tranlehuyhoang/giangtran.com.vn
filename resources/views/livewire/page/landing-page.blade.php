@@ -400,7 +400,7 @@
                         </h1>
                         <p class="text-white mt-5 max-text-68 mb-8" data-sal="fade" data-sal-duration="500"
                             data-sal-delay="200" data-sal-easing="ease-in-out-sine">
-                            Bắt Đầu Sử Dụng Hosting Miễn Phí, Trải Nghiệm Tính Năng Nâng Cao. </p>
+                            Bắt Đầu Thiết Kế Website Của Bạn, Trải Nghiệm Tính Năng Nâng Cao. </p>
                         <div class="d-flex align-items-center gap-6 flex-wrap" data-sal="fade"
                             data-sal-duration="500" data-sal-delay="200" data-sal-easing="ease-in-out-sine">
                             <a href="/home" class="btn btn-primary btn-arrow btn-lg fs-14 fw-semibold rounded">
@@ -584,15 +584,135 @@
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
                             <div
                                 class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
-                                <h6 class="mb-1"> GERMANY #CP10G </h6>
-                                <small> Miễn Phí 10GB/ 30 Ngày, Dùng Trải Nghiệm, Hạn Chế Kinh Doanh. </small>
+                                <h6 class="mb-1"> Gói cơ bản </h6>
+                                <small> Thiết kế giao diện Bán Hàng theo
+                                    mẫu có sẵn. </small>
                                 <div class="mt-5">
                                     <div class="monthly-price">
-                                        <h4> 0đ </h4>
-                                        <small class="fw-bold"><del>Giá Gốc: 29,000đ</del></small>
+                                        <h4> 4,000,000đ </h4>
+                                        <small class="fw-bold"><del>Giá Gốc: 8,000,000đ</del></small>
                                     </div>
                                 </div>
 
+                                <div class="mt-6">
+                                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>                                         Tự động Gửi Email Marketing. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Đặt hàng cơ bản. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Đa ngôn ngữ. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Tương thích phiên bản mobile. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Tối ưu tốc độ PageSpeed Insights. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Mobile > 80% , Desktop > 98%. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Tối ưu tốc độ web. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Lượt xem theo dõi tương tác web. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Đánh giá 5 sao (Cơ bản). </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Thiết kế chuẩn SEO. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Geotag hình ảnh. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Truy xuất vị trí địa lý. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Tích hợp đa ngôn ngữ tự động. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Domain & Hosting. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Nền tảng Lập Trình Laravel Framework. </small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div
+                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small> Bảo hành Website miễn phí trọn đời. </small>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
                                         href="/home">
@@ -603,108 +723,127 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <small class="d-block fw-medium mt-2"> Không Hỗ Trợ Gia Hạn.</small>
                                 </div>
 
-                                <div class="mt-6">
-                                    <h6 class="mb-5"> Thông Số Nổi Bật </h6>
-                                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> SSD NVMe <span class="fw-bold"> 10GB </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Băng Thông <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Miền Khác <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Miền Con <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Database <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> <span class="fw-bold"> Miễn Phí Chứng Chỉ SSL </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
-                                                </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Anti DDoS <span class="fw-bold"> Basic </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Vị Trí Máy Chủ <span class="fw-bold"> Đức </span></small>
-                                        </li>
-
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 sal-animate" data-sal="slide-up" data-sal-duration="350"
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
-                            <div
-                                class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
-                                <h6 class="mb-1"> VIETNAM #STARTUP </h6>
-                                <small> Phù Hợp Kinh Doanh Web Nhỏ, Doanh Nghiệp Nhỏ, Anti DDoS </small>
+                            <div class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
+                                <h6 class="mb-1">Gói phổ thông</h6>
+                                <small>Tùy biến giao diện Bán Hàng có sẵn theo yêu cầu.</small>
                                 <div class="mt-5">
                                     <div class="monthly-price">
-                                        <h4> 12,000đ </h4>
-                                        <small class="fw-bold"><del>Giá Gốc: 29,000đ</del></small>
+                                        <h4>6,000,000đ</h4>
+                                        <small class="fw-bold"><del>Giá Gốc: 12,000,000đ</del></small>
                                     </div>
                                 </div>
 
+                                <div class="mt-6">
+                                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tự động Gửi Email Marketing.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Đặt hàng online.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Đa ngôn ngữ (Giới hạn).</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tương thích phiên bản mobile.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tối ưu tốc độ PageSpeed Insights.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Mobile > 80%, Desktop > 98%.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tối ưu tốc độ web.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Lượt xem theo dõi tương tác web.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Đánh giá 5 sao (Cơ bản).</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Thiết kế chuẩn SEO.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Geotag hình ảnh.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Truy xuất vị trí địa lý.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tích hợp đa ngôn ngữ tự động.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Domain & Hosting.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Nền tảng Lập Trình Laravel Framework.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Bảo hành Website miễn phí trọn đời.</small>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                        href="">
+                                        href="/home">
                                         <span class="btn-arrow__text">
                                             Đăng Ký
                                             <span class="btn-arrow__icon">
@@ -712,111 +851,127 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <small class="d-block fw-medium mt-2">12,000đ Khi Gia Hạn Mỗi Chu Kỳ.</small>
                                 </div>
 
-                                <div class="mt-6">
-                                    <h6 class="mb-5"> Thông Số Nổi Bật </h6>
-                                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> SSD NVMe <span class="fw-bold"> 1GB </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Băng Thông <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Miền Khác <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Miền Con <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Database <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> <span class="fw-bold"> Miễn Phí Chứng Chỉ SSL </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
-                                                </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Anti DDoS <span class="fw-bold"> Pro </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Vị Trí Máy Chủ <span class="fw-bold"> Việt Nam </span></small>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 sal-animate" data-sal="slide-up" data-sal-duration="350"
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
-                            <div
-                                class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
-                                <div class="discount-badge gradient-bg">
-                                    <p class="text-white fw-bold mb-0"> Bán Chạy </p>
-                                </div>
-
-                                <h6 class="mb-1"> VIETNAM #PREMIUM1 </h6>
-                                <small> Phù Hợp Kinh Doanh, Doanh Nghiệp - Đại Lý, Anti DDoS Pro </small>
+                            <div class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
+                                <h6 class="mb-1">Gói nâng cao</h6>
+                                <small>Thiết kế giao diện Bán Hàng theo yêu cầu.</small>
                                 <div class="mt-5">
                                     <div class="monthly-price">
-                                        <h4> 52,000đ </h4>
-                                        <small class="fw-bold"><del>Giá Gốc: 99,000đ</del></small>
+                                        <h4>8,000,000đ</h4>
+                                        <small class="fw-bold"><del>Giá Gốc: 16,000,000đ</del></small>
                                     </div>
                                 </div>
 
+                                <div class="mt-6">
+                                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tự động Gửi Email Marketing.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Đặt hàng online.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Đa ngôn ngữ (Giới hạn).</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tương thích phiên bản mobile.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tối ưu tốc độ PageSpeed Insights.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Mobile > 98%, Desktop 100%.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tối ưu tốc độ web.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Lượt xem theo dõi tương tác web.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Đánh giá 5 sao (Cơ bản).</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Thiết kế chuẩn SEO.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Geotag hình ảnh.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Truy xuất vị trí địa lý.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tích hợp đa ngôn ngữ tự động.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Domain & Hosting.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Nền tảng Lập Trình Laravel Framework.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Bảo hành Website miễn phí trọn đời.</small>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                        href="">
+                                        href="/home">
                                         <span class="btn-arrow__text">
                                             Đăng Ký
                                             <span class="btn-arrow__icon">
@@ -824,111 +979,127 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <small class="d-block fw-medium mt-2">52,000đ Khi Gia Hạn Mỗi Chu Kỳ.</small>
                                 </div>
 
-                                <div class="mt-6">
-                                    <h6 class="mb-5"> Thông Số Nổi Bật </h6>
-                                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> SSD NVMe <span class="fw-bold"> 5.5GB </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Băng Thông <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Miền Khác <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Miền Con <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Database <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> <span class="fw-bold"> Miễn Phí Chứng Chỉ SSL </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
-                                                </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Anti DDoS <span class="fw-bold"> Pro </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Vị Trí Máy Chủ <span class="fw-bold"> Việt Nam </span></small>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-xl-3 col-md-6">
                         <div class="card border-0 sal-animate" data-sal="slide-up" data-sal-duration="350"
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
-                            <div
-                                class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
-                                <div class="discount-badge gradient-bg">
-                                    <p class="text-white fw-bold mb-0"> Bán Chạy </p>
-                                </div>
-
-                                <h6 class="mb-1"> CANADA #CA3 </h6>
-                                <small> Phù Hợp Kinh Doanh, Doanh Nghiệp - Đại Lý, Anti DDoS (Basic) </small>
+                            <div class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
+                                <h6 class="mb-1">Gói Thương Mại Điện Tử</h6>
+                                <small>Thiết kế giao diện Bán Hàng đặc biệt theo yêu cầu.</small>
                                 <div class="mt-5">
                                     <div class="monthly-price">
-                                        <h4> 30,000đ </h4>
-                                        <small class="fw-bold"><del>Giá Gốc: 72,000đ</del></small>
+                                        <h4>12,000,000đ</h4>
+                                        <small class="fw-bold"><del>Giá Gốc: 24,000,000đ</del></small>
                                     </div>
                                 </div>
 
+                                <div class="mt-6">
+                                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tự động Gửi Email Marketing.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Đặt hàng online.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Đa ngôn ngữ (Giới hạn).</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tương thích phiên bản mobile.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tối ưu tốc độ PageSpeed Insights.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Mobile > 98%, Desktop 100%.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tối ưu tốc độ web.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Lượt xem theo dõi tương tác web.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Đánh giá 5 sao (Cơ bản).</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Thiết kế chuẩn SEO.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Geotag hình ảnh.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Truy xuất vị trí địa lý.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Tích hợp đa ngôn ngữ tự động.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Domain & Hosting.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Nền tảng Lập Trình Laravel Framework.</small>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3">
+                                            <div class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
+                                                <i class="las la-check"></i>
+                                            </div>
+                                            <small>Bảo hành Website miễn phí trọn đời.</small>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="monthly-price">
                                     <a class="btn btn-dark btn-arrow btn-lg w-100 fs-14 fw-bolder rounded mt-6"
-                                        href="">
+                                        href="/home">
                                         <span class="btn-arrow__text">
                                             Đăng Ký
                                             <span class="btn-arrow__icon">
@@ -936,86 +1107,8 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <small class="d-block fw-medium mt-2">30,000đ Khi Gia Hạn Mỗi Chu Kỳ.</small>
                                 </div>
 
-                                <div class="mt-6">
-                                    <h6 class="mb-5"> Thông Số Nổi Bật </h6>
-                                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> SSD NVMe <span class="fw-bold"> 3GB </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Băng Thông <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Miền Khác <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Miền Con <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Database <span class="fw-bold"> Không Giới Hạn </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> <span class="fw-bold"> Miễn Phí Chứng Chỉ SSL </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Backup <span class="fw-bold"> AutoBackup 3 Bản / Ngày
-                                                </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Anti DDoS <span class="fw-bold"> Medium </span></small>
-                                        </li>
-
-                                        <li class="d-flex align-items-center gap-3">
-                                            <div
-                                                class="w-4 h-4 bg-success rounded-circle fs-12 text-white d-flex align-items-center justify-content-center">
-                                                <i class="las la-check"></i>
-                                            </div>
-                                            <small> Vị Trí Máy Chủ <span class="fw-bold"> Canada </span></small>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1035,7 +1128,7 @@
                                 <p class="text-white text-opacity-75 sal-animate" data-sal="slide-up"
                                     data-sal-duration="500" data-sal-delay="300" data-sal-easing="ease-in-out-sine">
                                     Liên Hệ
-                                    Dùng Thử Trong 30 Phút Hoàn Toàn Miễn Phí </p>
+                                    Tư Vấn Hoàn Toàn Miễn Phí </p>
                                 <div class="d-flex justify-content-center sal-animate" data-sal="slide-up"
                                     data-sal-duration="500" data-sal-delay="300" data-sal-easing="ease-in-out-sine">
                                     <div
@@ -1046,21 +1139,21 @@
                                                     href="#" data-bs-toggle="pill"
                                                     data-bs-target="#reseller-plan" aria-selected="true"
                                                     role="tab">
-                                                    Reseller Hosting
+                                                    Thiết Kế Website
                                                 </a>
                                             </li>
                                             <li class="nav-item flex-shrink-0" role="presentation">
                                                 <a class="text-white nav-link rounded-pill fs-14" href="#"
                                                     data-bs-toggle="pill" data-bs-target="#cloud-vps"
                                                     aria-selected="false" tabindex="-1" role="tab">
-                                                    Cloud VPS
+                                                    Mã Nguồn Giá Rẻ
                                                 </a>
                                             </li>
                                             <li class="nav-item flex-shrink-0" role="presentation">
                                                 <a class="text-white nav-link rounded-pill fs-14" href="#"
                                                     data-bs-toggle="pill" data-bs-target="#server-full"
                                                     aria-selected="false" tabindex="-1" role="tab">
-                                                    Máy Chủ Dịch Vụ
+                                                    Tăng Tương Tác MXH
                                                 </a>
                                             </li>
 
@@ -2160,13 +2253,11 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-xl-7">
                         <h2 class="text-white" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"
-                            data-sal-easing="ease-in-out-sine"> Tại Sao Nên Chọn Sử Dụng Dịch Vụ Từ Nify?</h2>
+                            data-sal-easing="ease-in-out-sine"> Tại Sao Nên Chọn Sử Dụng Dịch Vụ Từ HG DIGITAL?</h2>
                     </div>
                     <div class="col-xl-4">
                         <p class="text-white" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300"
-                            data-sal-easing="ease-in-out-sine"> Miễn Phí SSL Tiêu Chuẩn Cho Các Dịch Vụ Lưu Trữ, Đại
-                            Lý Lưu
-                            Trữ Hoàn Toàn Miễn Phí. </p>
+                            data-sal-easing="ease-in-out-sine"> Tặng SSL Tiêu Chuẩn, Tên Miền, VPS 1 Năm Khi Thiết Kế Website Tại HG DIGITAL Hoàn Toàn Miễn Phí. </p>
                     </div>
                 </div>
                 <div class="mt-8">
@@ -2542,7 +2633,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <img src="/logo/giangtran.com.vn.dark.png" alt="image" class="logo__img" style="width: 145px;">
+                        <img src="/logo/giangtran.com.vn.png" alt="image" class="logo__img" style="width: 145px;">
                         <p class="text-white text-opacity-75 mt-8">
                             Bạn đang quản lý một trang web hay điều hành doanh nghiệp? Hãy đảm bảo rằng trang web của
                             bạn
