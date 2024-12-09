@@ -23,7 +23,7 @@
             <section class="container bg-white p-4 shadow-sm" style="border-radius: 3%; max-width: 480px;">
                 <header class="mb-4 d-flex align-items-center">
                     <a href="/" class="d-flex align-items-center text-decoration-none">
-                        <img class="me-2" src="/giangtran.com.vn.png" alt=""
+                        <img class="me-2" src="/logo/giangtran.com.vn.png" alt=""
                             style="width: 200px; height: auto;">
                     </a>
                 </header>

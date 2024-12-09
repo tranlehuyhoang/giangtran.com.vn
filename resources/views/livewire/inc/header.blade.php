@@ -5,7 +5,7 @@
         <div class="col-auto header-left-wrapper">
             <div class="header-logo-wrapper p-0 left-header">
                 <div class="logo-wrapper"><a href="/"><img loading="lazy" class="img-fluid"
-                            src="/giangtran.com.vn.png" style="height: 35px;"
+                            src="/logo/giangtran.com.vn.png" style="height: 35px;"
                             alt=""></a></div>
             </div>
             <div class="toggle-sidebar">
@@ -80,7 +80,7 @@
 
 
                             <div class="onhover-click">
-                                <div class="sidebar-image"> <img loading="lazy" src="/avatar.png"
+                                <div class="sidebar-image"> <img loading="lazy" src="/logo/avatar.png"
                                         alt="profile"><span class="status status-success"></span></div>
                                 <div class="sidebar-content">
                                     <h4>

@@ -16,11 +16,11 @@ Viettel Media - Trang Đăng Ký Dịch Vụ Internet 4G 5G Cho Di Động mạn
     <meta property="og:image" content="{{ $image ?? 'https://static.ladipage.net/64915c71730f460012dc49d8/banner-web-5g-20241111015356-nul73.jpg' }}">
     <meta property="og:description" content="{{ $description ?? 'Viettel Media Trang Đăng Ký Dịch Vụ Internet 4G 5G Cho Di Động mạng Viettel. Cách đăng ký các gói cước 4G, 5G Viettel kèm gọi nội mạng miễn phí' }}" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="icon" type="image/x-icon" href="/icon.png" />
-    <link rel="shortcut icon" href="/icon.png" />
-    <link rel="apple-touch-icon" href="/icon.png" />
-    <link rel="apple-touch-icon-precomposed" href="/icon.png" />
-    <meta name="msapplication-TileImage" content="/icon.png" />
+    <link rel="icon" type="image/x-icon" href="/logo/icon.png" />
+    <link rel="shortcut icon" href="/logo/icon.png" />
+    <link rel="apple-touch-icon" href="/logo/icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="/logo/icon.png" />
+    <meta name="msapplication-TileImage" content="/logo/icon.png" />
     <meta name="revisit-after" content="days" />
     <link rel="dns-prefetch">
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>

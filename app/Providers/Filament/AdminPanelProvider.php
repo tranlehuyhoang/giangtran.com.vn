@@ -71,9 +71,9 @@ class AdminPanelProvider extends PanelProvider
                 ->registerNavigation(true)
                 ->defaultListView('grid' || 'list')
             ])
-            ->brandLogo(asset('/giangtran.com.vn.png'))
+            ->brandLogo(asset('/logo/giangtran.com.vn.png'))
             ->brandLogoHeight('2rem')
-            ->favicon('/icon.png')
+            ->favicon('/logo/icon.png')
             ->brandName('HG DIGITAL')
             ->viteTheme('resources/css/filament/admin/theme.css');
     }

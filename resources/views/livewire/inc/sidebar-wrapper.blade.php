@@ -1,17 +1,17 @@
 <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
     <div>
-        <div class="logo-wrapper"><a href="/home"><img loading="lazy" class="img-fluid" src="/giangtran.com.vn.png"
+        <div class="logo-wrapper"><a href="/home"><img loading="lazy" class="img-fluid" src="/logo/giangtran.com.vn.png"
                     style="height: 40px;" alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
         </div>
-        <div class="logo-icon-wrapper"><a href="/home"><img loading="lazy" class="img-fluid" src="/icon.png"
+        <div class="logo-icon-wrapper"><a href="/home"><img loading="lazy" class="img-fluid" src="/logo/icon.png"
                     width="35px;" alt=""></a></div>
         <div class="profile-section sidebar-search">
 
 
             <div class="profile-wrapper">
-                <div class="active-profile"> <img loading="lazy" class="img-fluid" src="/avatar.png" alt="user">
+                <div class="active-profile"> <img loading="lazy" class="img-fluid" src="/logo/avatar.png" alt="user">
                     <div class="status bg-success"> </div>
                 </div>
                 <div>
@@ -46,7 +46,7 @@
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
-                    <li class="back-btn"><a href="/home"><img loading="lazy" class="img-fluid" src="/icon.png"
+                    <li class="back-btn"><a href="/home"><img loading="lazy" class="img-fluid" src="/logo/icon.png"
                                 width="35px;" alt=""></a>
                         <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2"
                                 aria-hidden="true"></i></div>

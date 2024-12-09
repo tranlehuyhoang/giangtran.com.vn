@@ -16,7 +16,7 @@
 
         <div class="preloader bg-light-subtle">
             <div class="preloader-wrap">
-                <img src="/giangtran.com.vn.png" alt="logo" class="img-fluid" style="width: 150px;">
+                <img src="/logo/giangtran.com.vn.dark.png" alt="logo" class="img-fluid" style="width: 150px;">
                 <div class="loading-bar"></div>
             </div>
         </div>
@@ -26,8 +26,8 @@
             <nav class="navbar navbar-1 navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand logo" href="/">
-                        <img src="/giangtran.com.vn.png" alt="image" class="logo__img">
-                        <img src="/giangtran.com.vn.png" alt="image" class="logo__img logo__sticky">
+                        <img src="/logo/giangtran.com.vn.png" alt="image" class="logo__img">
+                        <img src="/logo/giangtran.com.vn.dark.png" alt="image" class="logo__img logo__sticky">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#primaryMenu" aria-expanded="false">
@@ -325,7 +325,7 @@
                                 <ul class="contain-sub-1__content list-unstyled">
                                     <li>
                                         <a target="_blank"
-                                            href="https://www.google.com/search?sca_esv=4002789bc611c637&sca_upv=1&rlz=1C1ONGR_viVN1056VN1056&sxsrf=ADLYWIJKYwNDUMy_c4WsvQw7qE1F9EYd-w%3A1726882528723&q=Nify.vn&stick=H4sIAAAAAAAAAONgU1I1qEg0MjM1STJJSjKxNE60MDG3MqgwTTU1NTNOsTAzNjRNNUhLXMTK7peZVqlXlgcA04Yy1TMAAAA&mat=CZBTciThUhTZ&ved=2ahUKEwiGzcXd8tKIAxWLs1YBHSt_FrIQrMcEegQIFBAD"
+                                            href="https://www.google.com/search?q=hg+digital&sca_esv=4002789bc611c637&rlz=1C1ONGR_viVN1056VN1056&sxsrf=ADLYWIItfq3YipgSISt2nM2DyCDhhlIstA%3A1733713081394&ei=uVxWZ87gF5SRnesP8erN2A0&oq=hg&gs_lp=Egxnd3Mtd2l6LXNlcnAiAmhnKgIIADIKECMYgAQYJxiKBTIKECMYgAQYJxiKBTIEECMYJzIFEAAYgAQyCBAAGIAEGLEDMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIFEAAYgARIyT9Qzi1Y9DJwBHgAkAEAmAFMoAGVAaoBATK4AQPIAQD4AQGYAgKgAp8BwgIOEAAYgAQYsQMYgwEYigXCAg4QLhiABBixAxjRAxjHAcICCxAuGIAEGNEDGMcBwgIIEC4YgAQYsQOYAwCIBgGSBwEyoAeBGQ&sclient=gws-wiz-serp"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
                                                 <img src="/assets/static/assets/img/icon-menu-about.png"
@@ -336,7 +336,7 @@
                                                     Thông Tin
                                                 </span>
                                                 <span class="contain-sub-1__description">
-                                                    Thông Tin Về Nify.vn
+                                                    Thông Tin Về Hg Digital
                                                 </span>
                                             </span>
                                         </a>
@@ -2542,7 +2542,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <img src="/giangtran.com.vn.png" alt="image" class="logo__img" style="width: 145px;">
+                        <img src="/logo/giangtran.com.vn.dark.png" alt="image" class="logo__img" style="width: 145px;">
                         <p class="text-white text-opacity-75 mt-8">
                             Bạn đang quản lý một trang web hay điều hành doanh nghiệp? Hãy đảm bảo rằng trang web của
                             bạn
