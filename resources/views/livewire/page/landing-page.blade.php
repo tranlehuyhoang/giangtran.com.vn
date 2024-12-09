@@ -411,7 +411,7 @@
                                     </span>
                                 </span>
                             </a>
-                            <a href="https://zalo.me/g/ukevsm860"
+                            <a href="https://zalo.me/1715225565559061022"
                                 class="btn btn-light btn-arrow btn-lg fs-14 fw-semibold rounded transition">
                                 <span class="btn-arrow__text">
                                     Liên Hệ Tư Vấn
@@ -2284,9 +2284,9 @@
                                 <img src="/assets/static/assets/img/why-icon-2-dark.png" alt="image"
                                     class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Chuyển Dữ Liệu Miễn Phí </h6>
-                                <p class="text-white text-opacity-75 mb-0"> GiangTran Hỗ Trợ Chuyển Dữ Liệu Từ Nhà
+                                <p class="text-white text-opacity-75 mb-0"> Hg Digital Hỗ Trợ Chuyển Dữ Liệu Từ Nhà
                                     Cung Cấp Khác
-                                    Sang GiangTran Hoàn Toàn Miễn Phí Qua FTP. </p>
+                                    Sang Hg Digital Hoàn Toàn Miễn Phí Qua FTP. </p>
                             </div>
                         </div>
 
@@ -2312,7 +2312,7 @@
                                 <img src="/assets/static/assets/img/why-icon-4-dark.png" alt="image"
                                     class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Hoàn Tiền </h6>
-                                <p class="text-white text-opacity-75 mb-0"> GiangTran Có Chính Sách Hoàn 100% Tiền
+                                <p class="text-white text-opacity-75 mb-0"> Hg Digital Có Chính Sách Hoàn 100% Tiền
                                     Trong 24 Giờ
                                     Nếu Dịch Vụ Gặp Lỗi Do Nify. </p>
                             </div>
@@ -2393,7 +2393,7 @@
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi
                                                 thích ở
-                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
+                                                Hg Digital là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
                                                 xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
@@ -2439,7 +2439,7 @@
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi
                                                 thích ở
-                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
+                                                Hg Digital là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
                                                 xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
@@ -2485,7 +2485,7 @@
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi
                                                 thích ở
-                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
+                                                Hg Digital là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
                                                 xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
@@ -2531,7 +2531,7 @@
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Điều tuyệt vời nhất mà chúng tôi
                                                 thích ở
-                                                GiangTran là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
+                                                Hg Digital là nó đồng bộ hai chiều với Google Apps. Nó giúp chúng tôi sắp
                                                 xếp mọi
                                                 thứ theo đúng tiến độ tốt hơn.</font>
                                         </font>
@@ -2586,7 +2586,7 @@
                                 <div
                                     class="px-3 py-1 border border-primary rounded d-inline-flex align-items-center gap-2">
                                     <div class="w-2 h-2 rounded-circle bg-primary"></div>
-                                    <small class="text-primary fw-bold"> Chuyển Dữ Liệu Đến GiangTran </small>
+                                    <small class="text-primary fw-bold"> Chuyển Dữ Liệu Đến Hg Digital </small>
                                 </div>
                             </div>
                             <div class="text-center mt-5">
@@ -2637,7 +2637,7 @@
                         <p class="text-white text-opacity-75 mt-8">
                             Bạn đang quản lý một trang web hay điều hành doanh nghiệp? Hãy đảm bảo rằng trang web của
                             bạn
-                            luôn hoạt động ổn định với hiệu suất tối ưu. Đến với GiangTran – giải pháp toàn diện từ A
+                            luôn hoạt động ổn định với hiệu suất tối ưu. Đến với Hg Digital – giải pháp toàn diện từ A
                             đến Z, giúp
                             bạn thành công vượt bậc!
                         </p>
@@ -2647,7 +2647,7 @@
                                 class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10">
                                 <span class="text-white"><i class="lab la-twitter"></i></span>
                             </a>
-                            <a href="https://www.facebook.com/profile.php?id=61564038398069"
+                            <a href="https://www.facebook.com/profile.php?id=61569955093836&locale=vi_VN"
                                 class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10">
                                 <span class="text-white"><i class="lab la-facebook-f"></i></span>
                             </a>
@@ -2663,25 +2663,30 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="ps-xl-10">
-                            <h6 class="text-white fs-16 mt-3 mb-8">Product &amp; Solutions</h6>
+                            <h6 class="text-white fs-16 mt-3 mb-8">Thiết Kế Website</h6>
                             <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li><a href="/home" class="footer-2-link">Hosting Anti DDoS</a>
+                                <li><a href="/home" class="footer-2-link">Shop bán hàng</a>
                                 </li>
-                                <li><a href="/home" class="footer-2-link">Hosting WordPress</a>
+                                <li><a href="/home" class="footer-2-link"> Spa làm đẹp</a>
                                 </li>
-                                <li><a href="/home" class="footer-2-link">Cloud VPS</a></li>
-                                <li><a href="/home" class="footer-2-link">Máy Chủ Cài Sẵn</a></li>
-                                <li><a href="/home" class="footer-2-link">Máy Chủ Chuyên Dụng</a></li>
+                                <li><a href="/home" class="footer-2-link"> Thể thao</a>
+                                </li>
+                                <li><a href="/home" class="footer-2-link"> Thiết bị điện</a>
+                                </li>
+                                <li><a href="/home" class="footer-2-link"> Thời trang & phụ kiện</a>
+                                </li>
+
+
+
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="ps-xl-5">
-                            <h6 class="text-white fs-16 mt-3 mb-8">GiangTran Feature</h6>
+                            <h6 class="text-white fs-16 mt-3 mb-8">Dịch Vụ Khác</h6>
                             <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li><a href="#" class="footer-2-link">Data Center</a></li>
-                                <li><a href="#" class="footer-2-link">Uptime Server</a></li>
-                                <li><a href="#" class="footer-2-link">Anti DDoS</a></li>
+                                <li><a href="#" class="footer-2-link">Mã Nguồn Giá Rẻ</a></li>
+                                <li><a href="#" class="footer-2-link">Tăng Tương Tác MXH</a></li>
                             </ul>
                         </div>
                     </div>
@@ -2689,15 +2694,10 @@
                         <div class="ps-xl-5">
                             <h6 class="text-white fs-16 mt-3 mb-8">Về Chúng Tôi</h6>
                             <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li><a href="https://www.google.com/search?sca_esv=2b5ce49ea87870d0&q=Nify.vn"
+                                <li><a href="https://www.google.com/search?q=giangtran.com.vn&sca_esv=2b5ce49ea87870d0&sxsrf=ADLYWII56hxsddjcMcrurysdzZUp-mBXOA%3A1733717437372&ei=vW1WZ4KoFszgseMP_rnN2Ak&oq=GIANG&gs_lp=Egxnd3Mtd2l6LXNlcnAiBUdJQU5HKgIIADIEECMYJzIKECMYgAQYJxiKBTIIEAAYgAQYsQMyCxAuGIAEGMcBGK8BMgUQABiABDIEEAAYAzIFEC4YgAQyBBAAGAMyBRAuGIAEMgUQLhiABEj2G1C3BljEFXAEeACQAQCYAWqgAZkEqgEDNC4yuAEDyAEA-AEBmAIKoAK6BKgCFMICCRAAGLADGAoYHsICDhAAGIAEGLEDGIMBGIoFwgIOEC4YgAQYsQMY0QMYxwHCAgsQLhiABBjRAxjHAcICCBAuGIAEGLEDwgIHECMYJxjqAsICEBAuGAMYtAIY6gIYjwHYAQHCAhAQABgDGLQCGOoCGI8B2AEBwgILEAAYgAQYsQMYgwHCAhAQLhiABBjRAxjHARgnGIoFwgIKEAAYgAQYQxiKBZgDCPEFOEbCBzEkWbiIBgGQBgG6BgYIARABGAqSBwM3LjOgB-dL&sclient=gws-wiz-serp"
                                         class="footer-2-link">Giới Thiệu</a></li>
-                                <li><a href="#" class="footer-2-link">Đối Tác</a></li>
-                                <li><a href="https://zalo.me/g/ukevsm860" class="footer-2-link">Liên hệ với chúng
-                                        tôi</a>
-                                </li>
-                                <li><a href="#" class="footer-2-link">Tin Tức</a></li>
-                                <li><a href="https://t.me/iamthanhXdev" class="footer-2-link">Trò Chuyện Trực
-                                        Tiếp</a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=61569955093836" class="footer-2-link">Liên hệ với chúng
+                                    tôi</a></li>
                             </ul>
                         </div>
                     </div>
