@@ -6,7 +6,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="{{ $description ?? 'Viettel Media Trang Đăng Ký Dịch Vụ Internet 4G 5G Cho Di Động mạng Viettel. Cách đăng ký các gói cước 4G, 5G Viettel kèm gọi nội mạng miễn phí' }}">
     <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <link rel="canonical" href="{{ request()->fullUrl() }}" />
+    {{-- <link rel="canonical" href="{{ request()->fullUrl() }}" /> --}}
     <meta property="og:url" content="{{ request()->fullUrl() }}" />
     <meta name="twitter:url" content="{{ request()->fullUrl() }}" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
