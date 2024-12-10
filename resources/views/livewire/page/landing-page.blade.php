@@ -434,7 +434,7 @@
                             </div>
                             <div class="hero-1__map">
                                 <img class="img-fluid hero-1__map-img"
-                                    src="/assets/static/assets/img/shape/hero-map.png" alt="image">
+                                    src="/assets/static/assets/img/shape/hero-map.webp" alt="image">
                                 <div class="hero-1__map-location hero-1__map-location--1 active">
                                     <div class="hero-1__map-location-dot">
                                         <div class="hero-1__map-location-info">
@@ -2712,7 +2712,6 @@
 
 
         <!--build:js-->
-        <script src="{{ asset('js/default.js') }}"></script>
         <script src="/assets/static/assets/js/vendors/jquery-3.7.1.min.js"></script>
         <script src="/assets/static/assets/js/vendors/jquery-ui.min.js"></script>
         <script src="/assets/static/assets/js/vendors/bootstrap.bundle.min.js"></script>
@@ -2722,7 +2721,6 @@
         <script src="/assets/static/assets/js/vendors/jquery.magnific-popup.min.js"></script>
 
         <script src="/assets/static/assets/js/app.js"></script>
-        @livewire('inc.social-popup')
 
     </body>
 </div>

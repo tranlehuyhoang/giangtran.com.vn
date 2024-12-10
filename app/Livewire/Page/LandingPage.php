@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Page;
 
+use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,6 +14,7 @@ class LandingPage extends Component
             return redirect('/home');
         }
     }
+    #[Layout('components.layouts.landingpage')]
 
     public function render()
     {
