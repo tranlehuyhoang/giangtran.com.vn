@@ -56,7 +56,7 @@
                     <label class="text-muted" for="checkbox1" id="flexCheckChecked"> Ghi
                         Nhớ? </label>
                 </div>
-                <a class="link" href="/forgot-password">Quên Mật Khẩu?</a>
+                <a class="link" wire:navigate href="/forgot-password">Quên Mật Khẩu?</a>
 
 
                 <div class="text-end mt-3">
@@ -123,7 +123,7 @@
                 </style>
             </div>
 
-            <p class="mt-4 mb-0 text-center"> Tôi Chưa Có Tài Khoản?<a class="ms-2" href="/register"> Tạo Tài Khoản
+            <p class="mt-4 mb-0 text-center"> Tôi Chưa Có Tài Khoản?<a class="ms-2" wire:navigate href="/register"> Tạo Tài Khoản
                 </a></p>
         </div>
 

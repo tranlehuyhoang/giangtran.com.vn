@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Request;
+use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Illuminate\Support\Str;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -17,6 +18,7 @@ class ResetPassword extends Component
     {
 
     }
+    #[Layout('components.layouts.auth')]
 
     public function render()
     {

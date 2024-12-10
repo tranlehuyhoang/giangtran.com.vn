@@ -3,6 +3,7 @@
 namespace App\Livewire\Auth;
 
 use Laravel\Socialite\Facades\Socialite;
+use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use App\Models\User;
@@ -83,7 +84,7 @@ class Register extends Component
     {
         return Socialite::driver('google')->redirect();
     }
-
+    #[Layout('components.layouts.auth')]
     public function render()
     {
         return view('livewire.auth.register');

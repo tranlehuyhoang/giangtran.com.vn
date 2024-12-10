@@ -3,24 +3,9 @@
     <head>
         @livewire('inc.seo', ['title' => 'Đăng Nhập Tài Khoản'])
 
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <link rel="stylesheet" href="/assets/static/style.css?v=758177082">
-        <link rel="stylesheet" type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/css/toast@1.0.1/fuiToast.min.css">
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-        <script defer src="/assets/static/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script defer src="/assets/static/bootstrap.bundle.min.js"></script>
+
 
     </head>
-
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">
             <div class="boxes"></div>
@@ -59,7 +44,6 @@
                 </style>
             </div>
         </div>
-        @livewire('inc.social-popup')
 
     </body>
     <script>

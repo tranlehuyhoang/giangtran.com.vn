@@ -5,6 +5,7 @@ namespace App\Livewire\Auth;
 use App\Models\ActivityHistory;
 use App\Models\User;
 use Laravel\Socialite\Facades\Socialite;
+use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -59,13 +60,17 @@ class Login extends Component
             return redirect('/'); // Quay về trang chính
         }
     }
-    function generateUniqueUsername($length = 10) {
+    function generateUniqueUsername($length = 10)
+    {
         do {
             $username = strtolower(Str::random($length)); // Chuyển đổi thành chữ thường
         } while (User::where('username', $username)->exists());
 
         return $username;
     }
+
+    #[Layout('components.layouts.auth')]
+
     public function render()
     {
         return view('livewire.auth.login');

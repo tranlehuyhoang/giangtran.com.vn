@@ -41,7 +41,7 @@
         <div class="checkbox p-0">
             <input id="dieuKhoan" type="checkbox" wire:model="agree_terms">
             <label class="text-muted" for="dieuKhoan"> Đồng Ý</label>
-            <a href="/dieu-khoan" class="txt-primary"> Điều Khoản & Chính Sách
+            <a wire:navigate href="/dieu-khoan" class="txt-primary"> Điều Khoản & Chính Sách
             </a>
         </div>
         @if (isset($errors['agree_terms']))
@@ -111,6 +111,6 @@
         }
     </style>
     <p class="mt-4 mb-0 text-center"> Đã Có Tài Khoản?
-        <a class="ms-2" href="/login"> Đăng Nhập </a>
+        <a class="ms-2" wire:navigate href="/login"> Đăng Nhập </a>
     </p>
 </div>

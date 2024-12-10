@@ -2,7 +2,7 @@
     <head>
         @livewire('inc.seo', ['title' => 'Đặt Lại Mật Khẩu'])
 
-        <link rel="stylesheet" href="/assets/static/style.css?v=62348332">
+        {{-- <link rel="stylesheet" href="/assets/static/style.css?v=62348332"> --}}
     </head>
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">
@@ -90,7 +90,7 @@
                         }
                     }
                 </style>
-                <script src="/assets/static/script.js"></script>
+                {{-- <script src="/assets/static/script.js"></script> --}}
             </div>
         </div>
     </body>

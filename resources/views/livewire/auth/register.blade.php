@@ -3,8 +3,6 @@
     <head>
         @livewire('inc.seo', ['title' => 'Đăng Ký Tài Khoản'])
 
-        <link rel="stylesheet" href="/assets/static/style.css?v=2097735562">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     </head>
 
@@ -15,7 +13,6 @@
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
-            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
             <div class="container-fluid p-0">
                 <div class="row m-0">
                     <div class="col-12 p-0">
@@ -61,12 +58,7 @@
 
             </div>
         </div>
-        @livewire('inc.social-popup')
     </body>
-    <script>
-        $(".loader-wrapper").fadeOut("slow", function() {
-            $(this).remove();
-        });
-    </script>
+
 
 </div>
