@@ -30,7 +30,7 @@
                         <img src="/logo/giangtran.com.vn.dark.png" alt="image" class="logo__img logo__sticky">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#primaryMenu" aria-expanded="false">
+                        data-bs-target="#primaryMenu" aria-expanded="false"  aria-label="Mở menu chính">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="primaryMenu">
@@ -385,7 +385,7 @@
                         <div class="fs-14 text-white">
                             <div class="d-flex align-items-center gap-3" data-sal="fade" data-sal-duration="500"
                                 data-sal-delay="200" data-sal-easing="ease-in-out-sine">
-                                <span><img src="/assets/static/assets/img/shape/bage-1.png" alt=""></span>
+                                <span><img src="/assets/static/assets/img/shape/fire.png" style="width: 20px;" alt=""></span>
                                 <span>
                                     Đừng bỏ lỡ chương trình tiết kiệm có thời hạn: <span class="text-warning">Tiết kiệm
                                         50%
@@ -428,7 +428,7 @@
                                 data-sal-duration="500" data-sal-delay="300" data-sal-easing="ease-in-out-sine">
                                 <div
                                     class="d-inline-block border border-1 border-primary px-5 py-7 text-center rounded-circle">
-                                    <h3 class="text-white"><span class="counter">64</span>+</h3>
+                                    <h1 class="text-white"><span class="counter">64</span>+</h1>
                                     <small class="text-white fw-bold">Our Availability</small>
                                 </div>
                             </div>
@@ -1273,7 +1273,7 @@
                                                 </ul>
 
                                                 <a
-                                                    class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
+                                                    href="/home" class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
                                                         class="w-6 h-6 rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fs-14">
@@ -1388,7 +1388,7 @@
                                                 </ul>
 
                                                 <a
-                                                    class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
+                                                    href="/home" class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
                                                         class="w-6 h-6 rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fs-14">
@@ -1503,7 +1503,7 @@
                                                 </ul>
 
                                                 <a
-                                                    class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
+                                                    href="/home" class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
                                                         class="w-6 h-6 rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fs-14">
@@ -1615,7 +1615,7 @@
                                                     </li>
                                                 </ul>
                                                 <a
-                                                    class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
+                                                    href="/home" class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
                                                         class="w-6 h-6 rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fs-14">
@@ -1726,7 +1726,7 @@
 
                                                 </ul>
                                                 <a
-                                                    class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
+                                                    href="/home" class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
                                                         class="w-6 h-6 rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fs-14">
@@ -1833,7 +1833,7 @@
 
                                                 </ul>
                                                 <a
-                                                    class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
+                                                    href="/home" class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
                                                         class="w-6 h-6 rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fs-14">
@@ -1956,7 +1956,7 @@
                                                 </ul>
 
                                                 <a
-                                                    class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
+                                                    href="/home" class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
                                                         class="w-6 h-6 rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fs-14">
@@ -2088,7 +2088,7 @@
                                                 </ul>
 
                                                 <a
-                                                    class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
+                                                    href="/home" class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
                                                         class="w-6 h-6 rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fs-14">
@@ -2229,7 +2229,7 @@
                                                 </ul>
 
                                                 <a
-                                                    class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
+                                                    href="/home" class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
                                                         class="w-6 h-6 rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fs-14">
