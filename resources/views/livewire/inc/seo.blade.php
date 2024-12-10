@@ -29,5 +29,4 @@ Viettel Media - Trang Đăng Ký Dịch Vụ Internet 4G 5G Cho Di Động mạn
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
 
 
-    <meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
 </div>

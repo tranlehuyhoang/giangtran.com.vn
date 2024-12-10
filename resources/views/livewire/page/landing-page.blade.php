@@ -2,7 +2,7 @@
 
     <head>
 
-        @livewire('inc.seo', ['title' => 'Cung Cấp Giải Pháp Website Chuyên Nghiệp'])
+
 
         <link rel="stylesheet" href="/assets/static/assets/css/main.css">
     </head>
@@ -1272,7 +1272,7 @@
 
                                                 </ul>
 
-                                                <a href="javascript:void(0)"
+                                                <a
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
@@ -1387,7 +1387,7 @@
 
                                                 </ul>
 
-                                                <a href="javascript:void(0)"
+                                                <a
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
@@ -1502,7 +1502,7 @@
 
                                                 </ul>
 
-                                                <a href="javascript:void(0)"
+                                                <a
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
@@ -1614,7 +1614,7 @@
                                                         <small><span class="fw-bold"> IPv4 Private </span></small>
                                                     </li>
                                                 </ul>
-                                                <a href="javascript:void(0)"
+                                                <a
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
@@ -1725,7 +1725,7 @@
                                                     </li>
 
                                                 </ul>
-                                                <a href="javascript:void(0)"
+                                                <a
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
@@ -1832,7 +1832,7 @@
                                                     </li>
 
                                                 </ul>
-                                                <a href="javascript:void(0)"
+                                                <a
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
@@ -1955,7 +1955,7 @@
                                                     </li>
                                                 </ul>
 
-                                                <a href="javascript:void(0)"
+                                                <a
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
@@ -2087,7 +2087,7 @@
                                                     </li>
                                                 </ul>
 
-                                                <a href="javascript:void(0)"
+                                                <a
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
@@ -2228,7 +2228,7 @@
                                                     </li>
                                                 </ul>
 
-                                                <a href="javascript:void(0)"
+                                                <a
                                                     class="price-control-btn text-decoration-none  d-flex align-items-center justify-content-center gap-3 mt-5">
                                                     <p class="text-body fw-bold mb-0">Expand Feature</p>
                                                     <div
