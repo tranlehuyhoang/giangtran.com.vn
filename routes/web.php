@@ -40,7 +40,10 @@ use App\Livewire\Services\SourceCode\Manager as ManagerSourceCode;
 use App\Livewire\Services\SourceCode\Detail as DetailSourceCode;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', LandingPage::class)->name('landingpage');
+// Route::get('/', LandingPage::class)->name('landingpage');
+Route::get('/', function () {
+    return view('landing-page');
+});
 Route::get('/home', Home::class)->name('home');
 Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
 
