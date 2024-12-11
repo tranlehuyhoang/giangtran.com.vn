@@ -19,8 +19,7 @@
         <meta property="og:title"
             content="Thiết Kế Website Chuyên Nghiệp, Trọn Gói, Uy Tín - HG DIGITAL" />
         <meta property="og:type" content="website" />
-        <meta property="og:image"
-        content="/logo/banner.svg" />
+        <meta property="og:image" itemprop="thumbnailUrl" content="/logo/banner.png">
         <meta property="og:description"
             content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7. Công ty thiết kế web bán hàng, web doanh nghiệp uy tín, chất lượng, kinh nghiệm nhiều năm. 10+ năm kinh nghiệm. Nhân viên chuyên nghiệp." />
         <meta name="format-detection" content="telephone=no" />
@@ -32,7 +31,7 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Thiết Kế Website Chuyên Nghiệp, Trọn Gói, Uy Tín - HG DIGITAL" />
         <meta name="twitter:description" content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7." />
-        <meta name="twitter:image" content="/logo/banner.svg" /> <!-- Add your image path here -->
+        <meta name="twitter:image" content="/logo/banner.png" /> <!-- Add your image path here -->
 
 
         <meta name="revisit-after" content="days" />
