@@ -20,7 +20,7 @@
             content="Thiết Kế Website Chuyên Nghiệp, Trọn Gói, Uy Tín - HG DIGITAL" />
         <meta property="og:type" content="website" />
         <meta property="og:image"
-            content="">
+        content="/logo/banner.svg" />
         <meta property="og:description"
             content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7. Công ty thiết kế web bán hàng, web doanh nghiệp uy tín, chất lượng, kinh nghiệm nhiều năm. 10+ năm kinh nghiệm. Nhân viên chuyên nghiệp." />
         <meta name="format-detection" content="telephone=no" />
@@ -28,6 +28,13 @@
         <link rel="apple-touch-icon" href="/logo/icon.png" />
         <link rel="apple-touch-icon-precomposed" href="/logo/icon.png" />
         <meta name="msapplication-TileImage" content="/logo/icon.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Thiết Kế Website Chuyên Nghiệp, Trọn Gói, Uy Tín - HG DIGITAL" />
+        <meta name="twitter:description" content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7." />
+        <meta name="twitter:image" content="/logo/banner.svg" /> <!-- Add your image path here -->
+
+
         <meta name="revisit-after" content="days" />
         <meta name="geo.region" content="VN" />
         <meta name="geo.placename" content="Hồ Chí Minh" />
@@ -2770,19 +2777,23 @@
                         <h6 class="text-white mt-6 mb-4 fs-16">Social Media</h6>
                         <div class="d-inline-flex align-items-center justify-content-center gap-2">
                             <a href="/home"
-                                class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10">
+                               class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
+                               aria-label="Twitter">
                                 <span class="text-white"><i class="lab la-twitter"></i></span>
                             </a>
                             <a href="https://www.facebook.com/profile.php?id=61569955093836&locale=vi_VN"
-                                class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10">
+                               class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
+                               aria-label="Facebook">
                                 <span class="text-white"><i class="lab la-facebook-f"></i></span>
                             </a>
                             <a href="/home"
-                                class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10">
+                               class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
+                               aria-label="Dribbble">
                                 <span class="text-white"><i class="lab la-dribbble"></i></span>
                             </a>
                             <a href="/home"
-                                class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10">
+                               class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
+                               aria-label="Behance">
                                 <span class="text-white"><i class="lab la-behance"></i></span>
                             </a>
                         </div>
@@ -2840,7 +2851,7 @@
 
         <!--build:js-->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        {{-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
