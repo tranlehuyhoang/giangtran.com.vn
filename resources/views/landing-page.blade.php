@@ -72,13 +72,13 @@
 
 
     <body class="bg-secondary">
-
+{{--
         <div class="preloader bg-light-subtle">
             <div class="preloader-wrap">
                 <img src="/logo/giangtran.com.vn.dark.webp" alt="logo" class="img-fluid" style="width: 150px;">
                 <div class="loading-bar"></div>
             </div>
-        </div>
+        </div> --}}
 
         <div class="navbar-overlay bg-body bg-opacity-5">
             <!-- Primary Header -->

@@ -8,7 +8,10 @@
 
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">
-            <div class="boxes"></div>
+            <div class="preloader-wrap">
+                <img src="/logo/giangtran.com.vn.dark.webp" alt="logo" class="img-fluid" style="width: 150px;">
+                <div class="loading-bar"></div>
+            </div>
         </div>
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
@@ -21,7 +24,8 @@
                             <div>
                                 <div class="login-main">
                                     <center onclick="loadto('/');" style="cursor: pointer;">
-                                        <img src="/logo/giangtran.com.vn.dark.png" style="max-width: 100%; height: 35px;">
+                                        <img src="/logo/giangtran.com.vn.dark.png"
+                                            style="max-width: 100%; height: 35px;">
                                     </center>
 
                                     <div class="theme-form mt-3">
