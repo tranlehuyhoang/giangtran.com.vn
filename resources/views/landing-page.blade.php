@@ -61,6 +61,8 @@
             }
             </script>
             <link rel="stylesheet" href="/assets/static/assets/css/main.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
             <style>
                 html {
                     scroll-behavior: smooth;
@@ -73,7 +75,7 @@
 
         <div class="preloader bg-light-subtle">
             <div class="preloader-wrap">
-                <img src="/logo/giangtran.com.vn.dark.png" alt="logo" class="img-fluid" style="width: 150px;">
+                <img src="/logo/giangtran.com.vn.dark.webp" alt="logo" class="img-fluid" style="width: 150px;">
                 <div class="loading-bar"></div>
             </div>
         </div>
@@ -90,7 +92,7 @@
                             sizes="(max-width: 600px) 300px, (max-width: 1024px) 600px, 1200px">
 
 
-                        <img src="/logo/giangtran.com.vn.dark.png" loading="lazy" alt="image" class="logo__img logo__sticky">
+                        <img src="/logo/giangtran.com.vn.dark.webp" loading="lazy" alt="image" class="logo__img logo__sticky">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#primaryMenu" aria-expanded="false" aria-label="Mở menu chính">
@@ -449,11 +451,11 @@
                             <div class="d-flex align-items-center gap-3" data-sal="fade" data-sal-duration="500"
                                 data-sal-delay="200" data-sal-easing="ease-in-out-sine">
                                 <span>
-                                    <img src="/assets/static/assets/img/shape/fire.png" alt="Fire Icon"
+                                    <img src="/assets/static/assets/img/shape/fire.webp" alt="Fire Icon"
                                         style="width: 20px;"
-                                        srcset="/assets/static/assets/img/shape/fire.png 300w,
-            /assets/static/assets/img/shape/fire.png 600w,
-            /assets/static/assets/img/shape/fire.png 1200w"
+                                        srcset="/assets/static/assets/img/shape/fire.webp 300w,
+            /assets/static/assets/img/shape/fire.webp 600w,
+            /assets/static/assets/img/shape/fire.webp 1200w"
                                         sizes="(max-width: 600px) 20px, (max-width: 1024px) 40px, 60px">
 
                                 </span>
@@ -659,7 +661,7 @@
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
                             <div
                                 class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
-                                <h6 class="mb-1"> Gói cơ bản </h6>
+                                <h1 class="mb-1" style="font-size: 1.25rem;"> Gói cơ bản </h1>
                                 <small> Thiết kế giao diện Bán Hàng theo
                                     mẫu có sẵn. </small>
                                 <div class="mt-5">
@@ -808,7 +810,7 @@
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
                             <div
                                 class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
-                                <h6 class="mb-1">Gói phổ thông</h6>
+                                <h1 class="mb-1" style="font-size: 1.25rem;"> Gói phổ thông </h1>
                                 <small>Tùy biến giao diện Bán Hàng có sẵn theo yêu cầu.</small>
                                 <div class="mt-5">
                                     <div class="monthly-price">
@@ -953,7 +955,7 @@
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
                             <div
                                 class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
-                                <h6 class="mb-1">Gói nâng cao</h6>
+                                <h1 class="mb-1" style="font-size: 1.25rem;">Gói nâng cao</h1>
                                 <small>Thiết kế giao diện Bán Hàng theo yêu cầu.</small>
                                 <div class="mt-5">
                                     <div class="monthly-price">
@@ -1098,7 +1100,7 @@
                             data-sal-delay="50" data-sal-easing="ease-in-out-sine">
                             <div
                                 class="card-body price-card-item-one position-relative overflow-hidden px-xl-7 py-xl-9">
-                                <h6 class="mb-1">Gói Thương Mại Điện Tử</h6>
+                                <h1 class="mb-1" style="font-size: 1.25rem;">Gói Thương Mại Điện Tử</h1>
                                 <small>Thiết kế giao diện Bán Hàng đặc biệt theo yêu cầu.</small>
                                 <div class="mt-5">
                                     <div class="monthly-price">
@@ -1249,7 +1251,7 @@
                         <div class="col-md-10 col-lg-8 col-xxl-7">
                             <div class="text-center">
                                 <h2 class="text-white mb-4 sal-animate" data-sal="slide-up" data-sal-duration="500"
-                                    data-sal-delay="300" data-sal-easing="ease-in-out-sine"> Các Gói Dịch Vụ Phổ Biến
+                                    data-sal-delay="300" data-sal-easing="ease-in-out-sine"> Các Dịch Vụ Phổ Biến
                                 </h2>
                                 <p class="text-white text-opacity-75 sal-animate" data-sal="slide-up"
                                     data-sal-duration="500" data-sal-delay="300" data-sal-easing="ease-in-out-sine">
@@ -1306,7 +1308,7 @@
                                             <div class="text-center">
                                                 <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
                                                     class="img-fluid mb-5">
-                                                <h6 class="mb-1"> VIETNAM #WHM1 </h6>
+                                                <h1 class="mb-1" style="font-size: 1.25rem;"> VIETNAM #WHM1 </h1>
                                                 <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý Nhỏ Lẻ.
                                                 </small>
                                                 <div class="mt-5">
@@ -1420,7 +1422,7 @@
                                             <div class="text-center">
                                                 <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
                                                     class="img-fluid mb-5">
-                                                <h6 class="mb-1"> VIETNAM #WHM3 </h6>
+                                                <h1 class="mb-1" style="font-size: 1.25rem;"> VIETNAM #WHM3 </h1>
                                                 <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý, Tính Ổn
                                                     Định
                                                     Cao. </small>
@@ -1535,7 +1537,7 @@
                                             <div class="text-center">
                                                 <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
                                                     class="img-fluid mb-5">
-                                                <h6 class="mb-1"> VIETNAM #WHM4 </h6>
+                                                <h1 class="mb-1" style="font-size: 1.25rem;"> VIETNAM #WHM4 </h1>
                                                 <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý, Tính Ổn
                                                     Định
                                                     Cao. </small>
@@ -1652,7 +1654,7 @@
                                             <div class="text-center">
                                                 <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
                                                     class="img-fluid mb-5">
-                                                <h6 class="mb-1"> VPS VN PRO 1 </h6>
+                                                <h1 class="mb-1" style="font-size: 1.25rem;"> VPS VN PRO 1 </h1>
                                                 <small> Cloud VPS Giá Rẻ </small>
                                                 <div class="mt-5">
                                                     <div class="monthly-price">
@@ -1982,7 +1984,7 @@
                                             <div class="text-center">
                                                 <img src="https://123host.vn/uploads/post/320/cpanelandwhm.png"
                                                     alt="image" class="img-fluid mb-5" style="width: 100px" loading="lazy">
-                                                <h6 class="mb-1"> SERVER CPANEL 01 </h6>
+                                                <h1 class="mb-1" style="font-size: 1.25rem;"> SERVER CPANEL 01 </h1>
                                                 <small> Phù Hợp Doanh Nghiệp, Đại Lý Bán Nhỏ Lẻ, Tự Làm Chủ Server.
                                                 </small>
                                                 <div class="mt-5">
@@ -2849,8 +2851,7 @@
 
 
         <!--build:js-->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        {{-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> --}}
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>

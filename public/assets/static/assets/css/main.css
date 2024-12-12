@@ -43338,7 +43338,7 @@ body {
 }
 
 .game-cta-wrapper {
-    background-image: url(../img/shape/game-cta-bg.png);
+    background-image: url(../img/shape/game-cta-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover

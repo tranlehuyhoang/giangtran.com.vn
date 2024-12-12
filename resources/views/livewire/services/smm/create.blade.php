@@ -6,21 +6,24 @@
             li {
                 padding-top: 5px;
             }
-            </style>
-            <style>
-                table tfoot tr {
-                    padding-bottom: 6px;
-                }
+        </style>
+        <style>
+            table tfoot tr {
+                padding-bottom: 6px;
+            }
 
-                table tfoot tr td {
-                    padding-bottom: 6px;
-                }
-            </style>
+            table tfoot tr td {
+                padding-bottom: 6px;
+            }
+        </style>
     </head>
 
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">
-            <div class="boxes"></div>
+            <div class="preloader-wrap">
+                <img src="/logo/giangtran.com.vn.dark.webp" alt="logo" class="img-fluid" style="width: 150px;">
+                <div class="loading-bar"></div>
+            </div>
         </div>
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>

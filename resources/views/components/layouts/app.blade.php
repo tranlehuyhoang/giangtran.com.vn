@@ -27,7 +27,38 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/assets/static/style.css?v=100766406">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        .loading-bar {
+        width: 100%;
+        height: 3px;
+        margin-top: 30px;
+        position: relative;
+        overflow: hidden;
+        background: #dee2e6;
+    }
+     .loading-bar:before {
+        content: "";
+        width: 35px;
+        height: 3px;
+        background: #1062fe;
+        position: absolute;
+        left: -34px;
+        -webkit-animation: bluebar 1.5s infinite ease;
+        animation: bluebar 1.5s infinite ease;
+    }
+    @-webkit-keyframes bluebar {
+        50% {
+            left: 96px
+        }
+    }
 
+    @keyframes bluebar {
+        50% {
+            left: 96px
+        }
+    }
+
+    </style>
     @livewireStyles
 </head>
 
