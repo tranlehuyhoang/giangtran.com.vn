@@ -59,6 +59,6 @@
             </div>
         </div>
     </body>
-
+    @livewire('inc.social-popup')
 
 </div>

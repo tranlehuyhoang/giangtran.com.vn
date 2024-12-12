@@ -15,11 +15,11 @@ use Illuminate\Support\Str;
 class Login extends Component
 {
     public $userRepository;
-    public function mount(UserEloquentRepository $userRepository)
-    {
-        $this->userRepository = $userRepository;
-        dd($this->userRepository->getUserHost());
-    }
+    // public function mount(UserEloquentRepository $userRepository)
+    // {
+    //     $this->userRepository = $userRepository;
+    //     dd($this->userRepository->getUserHost());
+    // }
 
 
     public function redirectToProvider()

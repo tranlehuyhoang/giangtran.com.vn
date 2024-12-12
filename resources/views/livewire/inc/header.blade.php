@@ -102,7 +102,7 @@
 
                                 @if (Auth::check())
                                 <li>
-                                    <a href="/profile">
+                                    <a href="/profile" wire:navigate>
                                         <div class="profile-icon">
                                             <svg>
                                                 <use href="/assets/assets/svg/icon-sprite.svg#user"></use>

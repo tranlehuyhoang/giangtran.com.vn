@@ -2,20 +2,6 @@
 
     <head>
         @livewire('inc.seo', ['title' => 'Trang Chủ'])
-
-        <link rel="stylesheet" href="/assets/static/style.css?v=1822759336">
-        <link rel="stylesheet" type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/css/toast@1.0.1/fuiToast.min.css">
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js"></script>
-        <link id="googleidentityservice" type="text/css" media="all" href="https://accounts.google.com/gsi/style"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     </head>
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">
@@ -370,37 +356,6 @@
                 padding-bottom: 6px;
             }
         </style>
-
-
-        {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-        <script defer src="/assets/static/simplebar.js"></script>
-        <script defer src="/assets/static/invoices.js?v=1731409673" defer></script>
-        <script defer src="/assets/static/jquery.min.js"></script>
-        <script defer src="/assets/static/config.js"></script>
-        <script defer src="/assets/static/cyberlux.js"></script>
-        <script defer src="/assets/static/handlebars.min.js"></script>
-        <script defer src="/assets/static/jquery.dataTables.min.js"></script>
-        <script defer src="/assets/static/datatable.custom.js"></script>
-        <script defer src="/assets/static/bundle.min.js"></script>
-        <script defer src="/assets/static/feather.min.js"></script>
-        <script defer src="/assets/static/bootstrap.bundle.min.js"></script>
-        <script defer src="/assets/static/feather.min.js"></script>
-        <script defer src="/assets/static/feather-icon.js"></script>
-        <script defer src="/assets/static/custom.js"></script>
-        <script defer src="/assets/static/swiper-bundle.min.js"></script>
-        <script defer src="/assets/static/sidebar-menu.js"></script>
-        <script defer src="/assets/static/sidebar-pin.js"></script>
-        <script defer src="/assets/static/bootstrap-notify.min.js"></script>
-        <script defer src="/assets/static/index.js"></script>
-        <script defer src="/assets/static/custom_touchspin.js"></script>
-        <script defer src="/assets/static/simple-datatable.js"></script>
-        <script defer src="/assets/static/handlebars.js"></script>
-        <script defer src="/assets/static/typeahead.bundle.js"></script>
-        <script defer src="/assets/static/typeahead.custom.js"></script>
-        <script defer src="/assets/static/search-handlebars.js"></script>
-        <script defer src="/assets/static/script.js"></script>
-        <script defer src="/assets/static/customizer.js"></script>
         @livewire('content.modal-hoa-don')
     </body>
 

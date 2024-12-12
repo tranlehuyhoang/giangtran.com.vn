@@ -22,7 +22,7 @@
             </div>
 
             <div>
-                <a href="/profile">
+                <a href="/profile" wire:navigate>
                     <svg>
                         <use href="/assets/assets/svg/icon-sprite.svg#profile-setting"></use>
                     </svg>
@@ -59,7 +59,7 @@
 
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
-                        <a class="sidebar-link sidebar-title link-nav" id="homeHref" href="/home">
+                        <a class="sidebar-link sidebar-title link-nav" id="homeHref" wire:navigate href="/home">
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-home"></use>
                             </svg>
@@ -78,11 +78,11 @@
 
 
 
-                            <li><a href="/smm/create"> Danh sách dịch vụ </a></li>
+                            <li><a wire:navigate href="/smm/create"> Danh sách dịch vụ </a></li>
 
 
 
-                            <li><a href="/smm/manager"> Quản Lý </a></li>
+                            <li><a wire:navigate href="/smm/manager"> Quản Lý </a></li>
 
 
 
@@ -99,11 +99,11 @@
 
 
 
-                            <li><a href="/source-code/list"> Danh sách mã nguồn </a></li>
+                            <li><a wire:navigate href="/source-code/list"> Danh sách mã nguồn </a></li>
 
 
 
-                            <li><a href="/source-code/manager"> Quản Lý </a></li>
+                            <li><a wire:navigate href="/source-code/manager"> Quản Lý </a></li>
 
 
 
@@ -233,7 +233,7 @@
 
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
-                        <a class="sidebar-link sidebar-title link-nav" href="/chuyen-khoan">
+                        <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/chuyen-khoan">
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-starter-kit"></use>
                             </svg>
