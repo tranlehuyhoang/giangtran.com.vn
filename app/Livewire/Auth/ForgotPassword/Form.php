@@ -27,11 +27,11 @@ class Form extends Component
 
         // Tạo token cho việc đặt lại mật khẩu
         $token = app('auth.password.broker')->createToken($user);
+        $this->alert('success', 'Email đã được gửi. Vui lòng kiểm tra email của bạn.');
 
         // Gửi email tùy chỉnh
         Mail::to($this->email)->send(new ResetPasswordMail($token, $this->email));
 
-        $this->alert('success', 'Email đã được gửi. Vui lòng kiểm tra email của bạn.');
     }
 
     public function render()

@@ -27,6 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/assets/static/style.css?v=100766406">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
     @livewireStyles
 </head>
 
@@ -63,7 +64,8 @@
     <script  src="/assets/static/script.js"></script>
     <script  src="/assets/static/customizer.js"></script>
     <script src="/assets/static/profile-option.js" ></script>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <x-livewire-alert::scripts />
 </body>
 
 

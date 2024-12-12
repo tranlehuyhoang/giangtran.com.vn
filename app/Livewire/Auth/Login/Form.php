@@ -75,7 +75,10 @@ class Form extends Component
         // Tạo và gửi mã OTP qua email
         $otp = rand(100000, 999999); // Tạo mã OTP
         $user->update(['otp' => $otp]); // Lưu mã OTP vào cơ sở dữ liệu
-        // \Mail::to($user->email)->send(new \App\Mail\OtpMail($otp)); // Gửi email
+
+        // Gửi email chứa mã OTP
+        \Mail::to($user->email)->send(new \App\Mail\OtpMail($otp));
+
         $this->opt_status = true; // Lưu mã OTP vào biến
         $this->alert('info', 'Mã OTP đã được gửi đến email của bạn.');
     }
@@ -89,7 +92,7 @@ class Form extends Component
             // Đăng nhập thành công
             Auth::login($user, $this->remember); // Thực hiện đăng nhập
             ActivityHistory::logActivity('Đăng nhập thành công với OTP');
-            return redirect('/'); // Chuyển hướng đến trang bạn muốn
+            return redirect('/home'); // Chuyển hướng đến trang bạn muốn
         } else {
             $this->alert('error', 'Mã OTP không chính xác.');
         }
