@@ -4,6 +4,7 @@ namespace App\Livewire\Auth;
 
 use App\Models\ActivityHistory;
 use App\Models\User;
+use App\Repositories\User\UserEloquentRepository;
 use Laravel\Socialite\Facades\Socialite;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
@@ -13,6 +14,12 @@ use Illuminate\Support\Str;
 
 class Login extends Component
 {
+    public $userRepository;
+    public function mount(UserEloquentRepository $userRepository)
+    {
+        $this->userRepository = $userRepository;
+        dd($this->userRepository->getUserHost());
+    }
 
 
     public function redirectToProvider()
