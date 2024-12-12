@@ -119,14 +119,27 @@ class Form extends Component
             return;
         }
         // Calculate total price
+
         $totalPrice = $this->getServicePrice($this->selectedService) * $this->quantity;
 
         // Get user's balance
         $userBalance = auth()->user()->balance; // Assuming 'balance' is a field in the User model
 
         // Check if user has sufficient balance
-        if ($userBalance < $totalPrice) {
-            $this->alert('error', 'Số dư tài khoản không đủ để thanh toán.'); // Alert insufficient balance
+        if ($this->paymentMethod == 'account_balance') {
+            if ($userBalance < $totalPrice) {
+                $this->alert('error', 'Số dư tài khoản không đủ để thanh toán.'); // Alert insufficient balance
+                $this->dispatch('select2:updated');
+                return;
+            }
+        }
+
+        // Check for unpaid invoices
+        if (Invoice::hasUnpaidInvoices()) {
+            $this->dispatch('showModalAlert', [
+                'title' => 'Thông báo',
+                'message' => 'Bạn có hóa đơn chưa thanh toán, vui lòng thanh toán hóa đơn trước khi tạo đơn hàng mới',
+            ]);
             $this->dispatch('select2:updated');
             return;
         }
@@ -144,21 +157,10 @@ class Form extends Component
             'remains' => $this->quantity,
             'payment_method' => $this->paymentMethod,
         ];
-
-        // Check for unpaid invoices
-        if (Invoice::hasUnpaidInvoices()) {
-            $this->dispatch('showModalAlert', [
-                'title' => 'Thông báo',
-                'message' => 'Bạn có hóa đơn chưa thanh toán, vui lòng thanh toán hóa đơn trước khi tạo đơn hàng mới',
-            ]);
-            return;
-        }
-
         // Create the order
         $order = SmmOrder::createOrder($data);
         if ($order['status']) {
             // Reset form fields after successful order creation
-            $this->reset('quantity', 'link', 'paymentMethod', 'selectedService');
 
             // Redirect based on payment status
             if (isset($order['payment_status']) && $order['payment_status'] == 'pending') {

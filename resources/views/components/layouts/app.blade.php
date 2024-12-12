@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/assets/static/style.css?v=100766406">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
@@ -66,6 +65,7 @@
     {{ $slot }}
 
     @livewireScripts
+
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <script  src="/assets/static/simplebar.js"></script>
     <script  src="/assets/static/invoices.js?v=1731409673" ></script>
@@ -97,6 +97,8 @@
     <script src="/assets/static/profile-option.js" ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <x-livewire-alert::scripts />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
+
 </body>
 
 
