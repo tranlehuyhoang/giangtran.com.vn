@@ -33,7 +33,7 @@ class Form extends Component
                 $user->forceFill([
                     'password' => Hash::make($password)
                 ])->setRememberToken(Str::random(60));
-     
+
                 $user->save();
             }
         );

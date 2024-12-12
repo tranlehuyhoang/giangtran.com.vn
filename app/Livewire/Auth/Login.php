@@ -3,23 +3,20 @@
 namespace App\Livewire\Auth;
 
 use App\Models\ActivityHistory;
-use App\Models\User;
-use App\Repositories\User\UserEloquentRepository;
+use App\Repositories\User\UserRepositoryInterface;
 use Laravel\Socialite\Facades\Socialite;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 
 class Login extends Component
 {
-    public $userRepository;
-    // public function mount(UserEloquentRepository $userRepository)
-    // {
-    //     $this->userRepository = $userRepository;
-    //     dd($this->userRepository->getUserHost());
-    // }
+    protected $userRepository;
+
+    public function mount(UserRepositoryInterface $userRepository): void
+    {
+        $this->userRepository = $userRepository;
+    }
 
 
     public function redirectToProvider()
@@ -30,7 +27,7 @@ class Login extends Component
     {
         try {
             $user = Socialite::driver('google')->user();
-            $findUser = User::where('email', $user->email)->first();
+            $findUser = $this->userRepository->findByEmail($user->email); // Sử dụng hàm mới
 
             if ($findUser) {
                 // Đăng nhập người dùng nếu email được tìm thấy trong cơ sở dữ liệu
@@ -39,13 +36,10 @@ class Login extends Component
                 return redirect('/');
             } else {
                 // Tạo người dùng mới nếu email không được tìm thấy
-                $newUser = User::create([
-                    'username' => $this->generateUniqueUsername(),
+                $newUser = $this->userRepository->createUser([
                     'name' => $user->name,
                     'email' => $user->email,
-                    'password' => Hash::make(uniqid()), // Tạo mật khẩu ngẫu nhiên
                 ]);
-
                 // Đăng nhập người dùng mới
                 Auth::login($newUser);
 
@@ -67,14 +61,7 @@ class Login extends Component
             return redirect('/'); // Quay về trang chính
         }
     }
-    function generateUniqueUsername($length = 10)
-    {
-        do {
-            $username = strtolower(Str::random($length)); // Chuyển đổi thành chữ thường
-        } while (User::where('username', $username)->exists());
 
-        return $username;
-    }
 
     #[Layout('components.layouts.auth')]
 

@@ -44,33 +44,7 @@ class User extends Authenticatable implements FilamentUser
         ];
     }
 
-    /**
-     * Lấy số dư của người dùng hiện tại.
-     *
-     * @return float|int|null
-     */
-    public static function getCurrentUserBalance()
-    {
-        // Lấy người dùng đang đăng nhập
-        $user = auth()->user();
 
-        // Kiểm tra xem người dùng có tồn tại không
-        return $user ? $user->balance : 0;
-    }
-
-    /**
-     * Lấy tên của người dùng hiện tại.
-     *
-     * @return string|null
-     */
-    public static function getCurrentUserName()
-    {
-        // Lấy người dùng đang đăng nhập
-        $user = auth()->user();
-
-        // Kiểm tra xem người dùng có tồn tại không
-        return $user ? $user->name : 'Khách';
-    }
     public function canAccessPanel(Panel $panel): bool
     {
         // Chỉ cho phép người dùng có vai trò khác ngoài 'customer' truy cập

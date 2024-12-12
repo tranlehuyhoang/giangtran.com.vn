@@ -15,8 +15,8 @@
                     <div class="status bg-success"> </div>
                 </div>
                 <div>
-                    <h4> {{ App\Models\User::getCurrentUserName() }} </h4><span> Số Dư:
-                        {{ App\Helpers\FormatHelper::formatCurrency(App\Models\User::getCurrentUserBalance()) }}
+                    <h4> {{ $name }} </h4><span> Số Dư:
+                        {{ App\Helpers\FormatHelper::formatCurrency($balance) }}
                         <sup>đ</sup> </span>
                 </div>
             </div>

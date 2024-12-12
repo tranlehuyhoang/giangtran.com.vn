@@ -84,10 +84,10 @@
                                         alt="profile"><span class="status status-success"></span></div>
                                 <div class="sidebar-content">
                                     <h4>
-                                        {{ App\Models\User::getCurrentUserName() }}
+                                        {{ $name }}
                                     </h4>
                                     <span class="f-12 f-w-600 f-light"> Số Dư:
-                                        {{ App\Helpers\FormatHelper::formatCurrency(App\Models\User::getCurrentUserBalance()) }} <sup>đ</sup> </span>
+                                        {{ App\Helpers\FormatHelper::formatCurrency($balance) }} <sup>đ</sup> </span>
                                 </div>
                             </div>
 
@@ -97,7 +97,7 @@
                             <ul class="profile-dropdown onhover-show-div">
 
                                 <li class="text-center d-block d-md-none">
-                                    <span> Số Dư:    {{ App\Helpers\FormatHelper::formatCurrency(App\Models\User::getCurrentUserBalance()) }}<sup>đ</sup> </span>
+                                    <span> Số Dư:    {{ App\Helpers\FormatHelper::formatCurrency($balance) }}<sup>đ</sup> </span>
                                 </li>
 
                                 @if (Auth::check())
