@@ -5,7 +5,7 @@
             <div class="modal-body">
                 <div class="modal-toggle-wrapper">
                     <h4>{{ auth()->user()->name ?? 'Khách Hàng' }}, Bạn Có <strong
-                            class="txt-danger">{{ $invoices->count() ?? 0 }} Hóa
+                            class="txt-danger">{{ $countInvoices  }} Hóa
                             Đơn </strong> Chờ Thanh Toán!</h4>
                     @if ($invoices->isNotEmpty())
                         <div class="col-lg-12 mt-3" id="dmm_box">
@@ -34,13 +34,7 @@
                                                     "
                                                             wire:click="removeInvoice({{ $invoice->invoice_code }})"
                                                             class="text-danger">
-                                                            <svg style="
-                                                            width: 20px;
-                                                            height: 20px;
-                                                            cursor: pointer;
-                                                        ">
-                                                                <use href="/assets/assets/svg/icon-sprite.svg#trash1"></use>
-                                                            </svg>
+
                                                         </span> </b>
                                                 @else
                                                     <b class="text-warning"> Chờ Thanh Toán <span
@@ -50,13 +44,7 @@
                                                             "
                                                             wire:click="removeInvoice({{ $invoice->invoice_code }})"
                                                             class="text-danger">
-                                                            <svg style="
-                                                            width: 20px;
-                                                            height: 20px;
-                                                            cursor: pointer;
-                                                        ">
-                                                                <use href="/assets/assets/svg/icon-sprite.svg#trash1"></use>
-                                                            </svg>
+
                                                         </span> </b>
                                                 @endif
                                             </div>

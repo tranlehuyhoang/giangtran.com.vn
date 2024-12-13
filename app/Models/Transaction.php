@@ -38,14 +38,14 @@ class Transaction extends Model
         if (self::where('id', $attributes['id'])->exists()) {
             return;
         }
-     
+
         // Tạo giao dịch mới
         return self::create($attributes);
     }
     public static function fetchTransactionsFromApi()
     {
         $url = 'https://my.sepay.vn/userapi/transactions/list';
-        $accountNumber = '0966579217';
+        $accountNumber = env('SEPAY_ACCOUNT_NUMBER');
         $limit = 10;
 
         // Khởi tạo cURL
@@ -56,7 +56,7 @@ class Transaction extends Model
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'Authorization: Bearer ZTAMVHYFPJWVYTNXQWXEMAP5IOBUADBMH079LUDYBQJQRZLHZTUI2TXS3LS8F8PL',
+            'Authorization: Bearer '. env('SEPAY_TOKEN') ,
         ]);
         curl_setopt($ch, CURLOPT_TIMEOUT, 30);
 
@@ -86,5 +86,5 @@ class Transaction extends Model
             }
         }
     }
-   
+
 }

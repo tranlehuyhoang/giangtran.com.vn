@@ -71,7 +71,7 @@
                                 <svg>
                                     <use href="/assets/assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
                                 </svg><span class="badge rounded-pill badge-primary"
-                                    id="number_bill">{{ App\Models\Invoice::getInvoicesByUser()->count() ?? 0 }}</span>
+                                    id="number_bill">{{ $countInvoices  }}</span>
                             </div>
                         </li>
 

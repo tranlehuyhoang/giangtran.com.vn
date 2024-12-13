@@ -2,32 +2,22 @@
 
 namespace App\Livewire\Content;
 
+use App\Repositories\Invoice\InvoiceRepositoryInterface;
 use Livewire\Component;
 use App\Models\Invoice as InvoiceModel;
 
 class ModalHoaDon extends Component
 {
     public $invoices;
-
-    public function mount()
+    public $countInvoices;
+    protected $invoiceRepository;
+    public function mount(InvoiceRepositoryInterface $invoiceRepository)
     {
-        $this->loadInvoices();
+        $this->invoiceRepository = $invoiceRepository;
+        $this->invoices = $this->invoiceRepository->getInvoicesByUser();
+        $this->countInvoices = $this->invoiceRepository->countInvoicesByUser();
     }
 
-    public function removeInvoice($invoice_code)
-    {
-      $result = InvoiceModel::removeInvoice($invoice_code);
-    //   $this->dispatch('showModalAlert', [
-    //     'title' => $result['status'] == 'success' ? 'Thành công' : 'Thất bại',
-    //     'message' => $result['message'],
-    // ]);
-    // redirect('/home');
-    }
-
-    public function loadInvoices()
-    {
-        $this->invoices = InvoiceModel::getInvoicesByUser();
-    }
 
     public function render()
     {

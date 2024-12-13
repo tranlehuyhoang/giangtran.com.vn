@@ -54,7 +54,7 @@
                     <div class="row mt-4" style="display: flex; justify-content: space-between;">
                         <div class="col-md-6 col-6">
                             <div style="margin-top: -10px; font-size: 14px;">
-                                <span> Số Tài Khoản: 0966579217 </span><br>
+                                <span> Số Tài Khoản: {{ env('SEPAY_ACCOUNT_NUMBER') }} </span><br>
                                 <span> Chủ TK: <b>TRAN LE HOANG GIANG</b> </span> <br>
                                 <span> Nội Dung CK: <b>TT{{ $invoice->invoice_code }}</b> </span><br>
                                 <span> Cần Thanh Toán:
@@ -67,10 +67,10 @@
 
                         <div class="col-md-6 col-6 " style="display: flex; justify-content: flex-end;">
                             <img class="d-none d-md-block"
-                                src="https://api.vietqr.io/mb/0966579217/{{ number_format($invoice->amount, 0, ',', '') }}/{{ $invoice->invoice_code }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG"
+                                src="https://api.vietqr.io/mb/{{ env('SEPAY_ACCOUNT_NUMBER') }}/{{ number_format($invoice->amount, 0, ',', '') }}/{{ $invoice->invoice_code }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG"
                                 id="qr-cid" style="width: 60%; height: auto; margin-top: -20px;" alt="">
                             <img class="d-block d-md-none"
-                                src="https://api.vietqr.io/mb/0966579217/{{ number_format($invoice->amount, 0, ',', '') }}/{{ $invoice->invoice_code }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG"
+                                src="https://api.vietqr.io/mb/{{ env('SEPAY_ACCOUNT_NUMBER') }}/{{ number_format($invoice->amount, 0, ',', '') }}/{{ $invoice->invoice_code }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG"
                                 id="qr-cid" style="width: 100%; height: auto; margin-top: -20px;" alt="">
                         </div>
                     </div>
