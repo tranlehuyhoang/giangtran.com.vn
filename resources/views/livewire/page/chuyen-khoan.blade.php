@@ -2,6 +2,8 @@
 
     <head>
         @livewire('inc.seo', ['title' => 'Nạp Tiền'])
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     </head>
 
     <body id="content">
@@ -10,7 +12,7 @@
                 <img src="/logo/giangtran.com.vn.dark.webp" alt="logo" class="img-fluid" style="width: 150px;">
                 <div class="loading-bar"></div>
             </div>
-    </div>
+        </div>
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
@@ -69,7 +71,8 @@
                                                 </div>
 
                                                 <div class="col-md-6 col-6 text-end">
-                                                    <span> {{ env('SEPAY_ACCOUNT_NUMBER') }} <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <span> {{ env('SEPAY_ACCOUNT_NUMBER') }} <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
                                                             style="width: 18px; height: auto; cursor: pointer;"
                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor"
                                                             onclick="copyText('{{ env('SEPAY_ACCOUNT_NUMBER') }}');">
@@ -169,30 +172,7 @@
 
         <input type="hidden" id="mn" value="0">
 
-        <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
         <script>
-            Pusher.logToConsole = false;
-
-            var pusher = new Pusher('b2658b1172ccab773a69', {
-                cluster: 'ap1'
-            });
-
-            var channel = pusher.subscribe('iamthanhX-2509roblox');
-            channel.bind('my-event', function(data) {
-                var message = data.message;
-                var status = data.status;
-
-                swal('Thông Báo', message, status);
-
-                if (data.reload) {
-                    setTimeout(() => {
-                        loadto('');
-                    }, 2000);
-                }
-
-            });
-
-
             document.addEventListener("DOMContentLoaded", function() {
                 Fancybox.bind("[data-fancybox='gallery']", {
                     animated: true,
@@ -222,75 +202,54 @@
         </style>
 
 
-
         <script>
-            // Enable pusher logging - don't include this in production
-            Pusher.logToConsole = true;
+            document.addEventListener('DOMContentLoaded', function() {
+                function fetchCronTransaction() {
+                    fetch('/api/transaction', {
+                            method: 'GET',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            }
+                        })
+                        .then(data => {
+                            setTimeout(fetchCronTransaction, 2000);
+                        });
+                }
 
-            var pusher = new Pusher('827c74b29880dbe97c43', {
-                cluster: 'ap1'
+                function fetchCronData() {
+                    fetch('/api/checkpayment', {
+                            method: 'GET',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            }
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.status == 'success') {
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Thông báo',
+                                    text: 'Nạp thành công số tiền ' + data.amount + ' VNĐ!',
+                                    confirmButtonText: 'OK'
+                                }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        window.location.reload();
+                                    }
+                                });
+                            }
+                            setTimeout(fetchCronData, 2000);
+                        })
+                        .catch(error => {
+                            console.error('Error fetching data:', error);
+                            setTimeout(fetchCronData, 2000);
+                        });
+
+                }
+
+                // Gọi fetchCronData một lần để bắt đầu quá trình
+                fetchCronData();
+                fetchCronTransaction();
             });
-
-            var channel = pusher.subscribe('notification');
-            channel.bind('notification.' + {{ Auth::user()->id ?? 0 }}, function(data) {
-                var content = data.invitation_code; // Adjust this field according to the actual structure of data.bank
-                Swal.fire({
-                    icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
-                    title: 'Thông báo',
-                    text: 'Nạp thành công số tiền ' + content + '!',
-                    confirmButtonText: 'OK'
-                }).then((result) => {
-                    if (result.isConfirmed) {}
-                });
-            });
-
-            function fetchCronTransaction() {
-                fetch('/api/transaction', {
-                        method: 'GET', // HTTP method
-                        headers: {
-                            'Content-Type': 'application/json' // Optional, depending on your backend requirements
-                        }
-                    })
-                    .then(data => {
-                        setTimeout(fetchCronTransaction, 2000); // 2000 milliseconds = 2 seconds
-                    });
-            }
-
-            function fetchCronData() {
-                fetch('/api/checkpayment', {
-                        method: 'GET', // HTTP method
-                        headers: {
-                            'Content-Type': 'application/json' // Optional, depending on your backend requirements
-                        }
-                    })
-                    .then(response => response.json()) // Assuming the response is JSON
-                    .then(data => {
-                        if (data.status == 'success') {
-                            Swal.fire({
-                                icon: 'success', // Change the icon type based on your needs (e.g., 'info', 'warning', 'error')
-                                title: 'Thông báo',
-                                text: 'Nạp thành công số tiền ' + data.amount + ' VNĐ!',
-                                confirmButtonText: 'OK'
-                            }).then((result) => {
-                                if (result.isConfirmed) {
-                                    window.location.reload();
-                                }
-                            });
-                        }
-                        // Set a timeout to fetch again after 2 seconds
-                        setTimeout(fetchCronData, 2000); // 2000 milliseconds = 2 seconds
-                    })
-                    .catch(error => {
-                        console.error('Error fetching data:', error);
-
-                        // Handle errors if needed, continue fetching in case of failure
-                        setTimeout(fetchCronData, 2000); // Retry after 2 seconds in case of error
-                    });
-            }
-
-            // Call fetchCronData once to start the process
-            fetchCronData();
-            fetchCronTransaction();
         </script>
     </body>
 

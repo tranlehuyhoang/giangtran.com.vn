@@ -77,9 +77,9 @@
                             <input class="form-control" type="number" placeholder="Tối thiểu 1000 tối đa 10000"
                                    wire:model.live="quantity" min="{{ $selectedServiceMin }}"
                                    max="{{ $selectedServiceMax }}">
-                            <button class="btn btn-success" type="button">
-                                {{ number_format($selectedServicePrice * $quantity, 0, '.', '.') }} đ
-                            </button>
+                                   <button class="btn btn-success" type="button">
+                                    {{ number_format((float)$selectedServicePrice * (int)$quantity, 0, '.', '.') }} đ
+                                </button>
                         </div>
                         <small class="form-text text-muted">
                             Tối thiểu: {{ number_format($selectedServiceMin, 0, '.', '.') }},

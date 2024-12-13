@@ -58,8 +58,10 @@ Route::middleware(CheckAuth::class)->group(function () {
 Route::middleware(EnsureUserIsAuthenticated::class)->group(function () {
     Route::get('/profile', Profile::class)->name('profile');
     Route::get('/chuyen-khoan', ChuyenKhoan::class)->name('chuyen-khoan');
-Route::get('/hoa-don/{id}', action: Invoice::class)->name('hoa-don');
-
+    Route::get('/hoa-don/{id}', action: Invoice::class)->name('hoa-don');
+    Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
+    Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
+    Route::get('/api/invoice/{invoice_code}', [Checkpayment::class, 'checkInvoice'])->name('checkinvoice');
 
 });
 
@@ -94,9 +96,7 @@ Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
 // Route::get('/nap-card', action: NapCard::class)->name('nap-card');
 // Route::get('/api-client', action: ApiClient::class)->name('api-client');
 // Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
-// Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
-// Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
-// Route::get('/api/invoice/{invoice_code}', [Checkpayment::class, 'checkInvoice'])->name('checkinvoice');
+
 
 
 // Route::get('/403', function () {

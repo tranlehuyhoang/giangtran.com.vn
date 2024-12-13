@@ -73,9 +73,6 @@ class Transaction extends Model
 
         // Giải mã phản hồi JSON
         $data = json_decode($response, true);
-        if ($data) {
-            return response()->json($data, 200);
-        }
 
         // Kiểm tra nếu phản hồi thành công
         if (isset($data['status']) && $data['status'] === 200 && $data['messages']['success']) {
@@ -85,6 +82,7 @@ class Transaction extends Model
                 try {
                     Transaction::createUniqueTransaction($transaction);
                 } catch (\Exception $e) {
+                    \Log::error('Error creating transaction: ' . $e->getMessage());
                 }
             }
         }
