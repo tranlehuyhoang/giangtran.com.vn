@@ -21,7 +21,7 @@ class OtpMail extends Mailable
     public function __construct($otp)
     {
         $this->otp = $otp;
-        $this->from('hoangtlhps26819@fpt.edu.vn', 'HG Digital');
+        $this->from('2508roblox@gmail.com', 'HG Digital');
 
     }
 

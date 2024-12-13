@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title> Bảng Giá Dịch Vụ | GIANGTRAN.COM.VN </title>
+        <title> Bảng Giá Dịch Vụ | HGDIGITAL.VN </title>
         <link rel="stylesheet" href="/assets/static/style.css?v=1917939314">
         <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

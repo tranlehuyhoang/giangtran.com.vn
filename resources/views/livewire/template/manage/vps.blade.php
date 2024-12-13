@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title> Quản Lý Hosting | GIANGTRAN.COM.VN</title>
+        <title> Quản Lý Hosting | HGDIGITAL.VN</title>
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=100766406">

@@ -2843,7 +2843,7 @@
                 </div>
                 <div class="mt-20">
                     <div class="d-flex align-items-center justify-content-between flex-wrap gap-5 pt-5 border-top">
-                        <p class="mb-0 fs-14 text-white">&copy; 2024 GIANGTRAN.COM.VN. All rights reserved</p>
+                        <p class="mb-0 fs-14 text-white">&copy; 2024 HGDIGITAL.VN. All rights reserved</p>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,8 @@
 <div>
 
 <head>
-    <title>API Client | GIANGTRAN.COM.VN</title>
-  
+    <title>API Client | HGDIGITAL.VN</title>
+
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/assets/static/style.css?v=1296109908">
@@ -126,7 +126,7 @@
         table tfoot tr {
             padding-bottom: 6px;
         }
-        
+
         table tfoot tr td {
             padding-bottom: 6px;
         }

@@ -1,8 +1,8 @@
 <div>
-    
+
     <head>
-        <title> Quản Lý Hosting | GIANGTRAN.COM.VN</title>
-    
+        <title> Quản Lý Hosting | HGDIGITAL.VN</title>
+
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=100766406">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,30 +12,30 @@
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    
-    
+
+
         <noscript>
             <meta http-equiv="refresh" content="0;url=about:blank">
         </noscript>
     </head>
-    
+
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">
             <div class="boxes"></div>
         </div>
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
-    
+
             <div class="page-wrapper compact-wrapper" id="pageWrapper">
                 @livewire('inc.header')
-    
+
                 <div class="page-body-wrapper">
-    
+
                     @livewire('inc.sidebar-wrapper')
-     
+
                     <div class="page-body">
                         <div class="container-fluid default-dashboard">
-    
+
                             <div class="col-xl-12">
                                 <div class="card title-line">
                                     <div class="card-header">
@@ -66,36 +66,36 @@
                                                             <td><span class="badge badge-success badge bg-success"> Hoạt Động </span></td>
                                                             <td><span onclick="loadto('/product/hosting/471');" class="badge badge-primary"> QUẢN LÝ </span></td>
                                                           </tr>
-    
+
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
-    
+
                                     </div>
                                 </div>
                             </div>
-    
+
                         </div>
                     </div>
                     @livewire('inc.footer')
                 </div>
             </div>
         </div>
-    
-    
-         
+
+
+
         <style>
             table tfoot tr {
                 padding-bottom: 6px;
             }
-            
+
             table tfoot tr td {
                 padding-bottom: 6px;
             }
         </style>
-    
-    
+
+
           {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
         <script src="/assets/static/simplebar.js"></script>
@@ -125,7 +125,7 @@
         <script src="/assets/static/search-handlebars.js"></script>
         <script src="/assets/static/script.js"></script>
         <script src="/assets/static/customizer.js"></script>
-    
+
     </body>
-    
+
 </div>

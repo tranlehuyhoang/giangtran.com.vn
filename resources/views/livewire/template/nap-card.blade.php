@@ -1,9 +1,9 @@
 <div>
 
-    
+
     <head>
-        <title>Nap Thẻ | GIANGTRAN.COM.VN</title>
-       
+        <title>Nap Thẻ | HGDIGITAL.VN</title>
+
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=588955398">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,25 +13,25 @@
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    
-    
+
+
         <noscript>
             <meta http-equiv="refresh" content="0;url=about:blank">
         </noscript>
     </head>
-    
+
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">
             <div class="boxes"></div>
         </div>
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
-    
+
             <div class="page-wrapper compact-wrapper" id="pageWrapper">
                 @livewire('inc.header')
                 <div class="page-body-wrapper">
-    
-    
+
+
                 @livewire('inc.sidebar-wrapper')
                     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     <div class="page-body">
@@ -42,11 +42,11 @@
                                         <div class="card title-line">
                                             <div class="card-header card-no-border">
                                                 <h2> Nhập Thông Tin Thẻ </h2>
-    
+
                                                 <span class="f-w-500 f-12 f-light mt-0"> Ghi Chú: Nạp Thẻ Cào Có Chiết Khấu (Đây Là Phí Từ Dịch Vụ Đổi Thẻ Tự Động, Chúng Tôi Không Thu Phí Của Bạn!) </span>
                                             </div>
                                             <div class="card-body pt-0">
-    
+
                                                 <div class="row">
                                                     <div class="col-md-6 col-6">
                                                         <div class="form-group mt-3">
@@ -54,14 +54,14 @@
                                                             <input class="form-control" id="pinCard" placeholder="Nhập Mã Thẻ Cào">
                                                         </div>
                                                     </div>
-    
+
                                                     <div class="col-md-6 col-6">
                                                         <div class="form-group mt-3">
                                                             <label> Số Serial </label>
                                                             <input class="form-control" id="serialCard" placeholder="Nhập Số Serial">
                                                         </div>
                                                     </div>
-    
+
                                                     <div class="col-md-6 col-6">
                                                         <div class="form-group mt-3">
                                                             <label> Loại Thẻ </label>
@@ -75,7 +75,7 @@
                                 </select>
                                                         </div>
                                                     </div>
-    
+
                                                     <div class="col-md-6 col-6">
                                                         <div class="form-group mt-3">
                                                             <label> Mệnh Giá </label>
@@ -93,18 +93,18 @@
                                     </select>
                                                         </div>
                                                     </div>
-    
+
                                                     <div class="mt-2" id="recaptchaTrue"></div>
                                                     <div class="g-recaptcha" data-sitekey="6LfzvSUqAAAAABdzyxupCtes0wk7WdoQP3kyjsi4"></div>
                                                     <div class="mt-3">
                                                         <button class="btn btn-primary btn-sm" onclick="NapThe('btn-card', `<i class='icofont icofont-bill-alt'></i> Nạp Thẻ`);" id="btn-card"> <i class="icofont icofont-bill-alt"></i> Nạp Thẻ </button>
                                                     </div>
                                                 </div>
-    
+
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-md-12">
                                         <div class="card title-line">
                                             <div class="card-header">
@@ -130,12 +130,12 @@
                                                         </table>
                                                     </div>
                                                 </div>
-    
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="col-md-4">
                                     <div class="col-md-12">
                                         <div class="card title-line">
@@ -145,16 +145,16 @@
                                             </div>
                                             <div class="card-body pt-0">
                                                 <p>- Vui L&ograve;ng Chọn Đ&uacute;ng Mệnh Gi&aacute; V&agrave; Loại Thẻ (Nếu Sai C&oacute; Thể Dẫn Đến Mất Thẻ)</p>
-    
+
                                                 <p>- Nhập Đ&uacute;ng Số Serial &amp; M&atilde; Thẻ</p>
-    
+
                                                 <p>- Lưu &Yacute; Kh&ocirc;ng Gửi Thẻ Li&ecirc;n Tục, Nếu Vẫn Cố T&igrave;nh Thực Hiện Bạn Sẽ Bị Kh&oacute;a T&agrave;i Khoản Ngay Lập Tức</p>
-    
+
                                                 <p>- Thẻ C&agrave;o Được Duyệt Tự Động Từ 30 Gi&acirc;y Đến 1 Ph&uacute;t</p>
-    
+
                                                 <p><span style="font-size:12px"><span style="color:#c0392b"><strong>Ch&uacute;ng T&ocirc;i Kh&ocirc;ng Hỗ Trợ Xử L&iacute; Nếu Bạn Nạp Thẻ V&agrave; C&oacute; Trạng Th&aacute;i L&agrave; Thẻ Sai, Thẻ Lỗi, Sai Mệnh Gi&aacute; V&igrave; Đ&acirc;y L&agrave; Do Bạn Nạp V&agrave; Xử L&iacute; Với Nh&agrave; Mạng, Ch&uacute;ng T&ocirc;i Kh&ocirc;ng C&oacute; Quyền Xử L&iacute; Vấn Đề N&agrave;y.</strong></span></span>
                                                 </p>
-    
+
                                             </div>
                                         </div>
                                     </div>
@@ -162,27 +162,27 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <script src="/assets/static/nap-the.js"></script>
                     @livewire('inc.footer')
-                           
+
                 </div>
             </div>
         </div>
-    
-    
-    
+
+
+
         <style>
             table tfoot tr {
                 padding-bottom: 6px;
             }
-            
+
             table tfoot tr td {
                 padding-bottom: 6px;
             }
         </style>
-    
-    
+
+
           {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
         <script src="/assets/static/simplebar.js"></script>
@@ -212,7 +212,7 @@
         <script src="/assets/static/search-handlebars.js"></script>
         <script src="/assets/static/script.js"></script>
         <script src="/assets/static/customizer.js"></script>
-    
+
     </body>
-    
+
 </div>

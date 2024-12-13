@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title> Rút Tiền | GIANGTRAN.COM.VN </title>
+        <title> Rút Tiền | HGDIGITAL.VN </title>
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=910055670">

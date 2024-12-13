@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title> Kho Mã Nguồn | GIANGTRAN.COM.VN </title>
+        <title> Kho Mã Nguồn | HGDIGITAL.VN </title>
 
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
