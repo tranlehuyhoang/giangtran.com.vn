@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Tạo Đơn Tăng Tương Tác'])
+        <title>Tạo Đơn Tăng Tương Tác - HG DIGITAL</title>
         <style>
             li {
                 padding-top: 5px;

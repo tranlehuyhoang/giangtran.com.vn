@@ -1,10 +1,7 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Đăng Nhập Tài Khoản'])
-
-
-
+        <title>Đăng Nhập Tài Khoản - HG DIGITAL</title>
     </head>
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">

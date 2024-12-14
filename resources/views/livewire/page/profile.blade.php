@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Thông Tin Tài Khoản'])
+        <title>Thông Tin Tài Khoản - HG DIGITAL</title>
 
 
 

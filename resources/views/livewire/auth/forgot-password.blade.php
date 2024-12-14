@@ -1,6 +1,6 @@
 <div>
     <head>
-        @livewire('inc.seo', ['title' => 'Đặt Lại Mật Khẩu'])
+     <title>Đặt Lại Mật Khẩu - HG DIGITAL</title>
 
     </head>
     <body id="content">

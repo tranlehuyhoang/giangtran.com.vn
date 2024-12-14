@@ -2,12 +2,27 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="/logo/icon.png" />
-    <meta name="robots" content="index, follow" />
-    <meta name="google-site-verification" content="XdpPCe9WLWMZA9pEynO-7B7lRoimKZl7qFlCqvZsVlo">
-    <meta name="robots" content="index, follow" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Expires" content="-1">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <meta name="google" content="notranslate">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta name="twitter:url" content="{{ url('/') }}">
+    <meta name="google-site-verification" content="W1Wf5_b9Yoc5PaKmRkfDJB0bzRUGDkcn2rDUhja0skU" />
+    <link rel="shortcut icon" href="{{ asset('/logo/icon.png') }}" type="image/png">
+
+    <meta name="description"
+        content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7. Công ty thiết kế web bán hàng, web doanh nghiệp uy tín, chất lượng, kinh nghiệm nhiều năm. 10+ năm kinh nghiệm. Nhân viên chuyên nghiệp.">
+    <meta name="twitter:image" content="{{ asset('logo/banner.png') }}" /> <!-- Add your image path here -->
+    <meta property="og:image" content="{{ asset('logo/banner.png') }}">
+    <meta property="og:image" itemprop="thumbnailUrl" content="{{ asset('logo/banner.png') }}">
+
+
+
+
+
     <link rel="stylesheet" href="/assets/static/style.css?v=1822759336">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Chi Tiết Mã Nguồn'])
+        <title>Chi Tiết Mã Nguồn - HG DIGITAL</title>
 
     </head>
 

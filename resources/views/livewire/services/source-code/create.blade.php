@@ -2,7 +2,7 @@
 
 
     <head>
-        @livewire('inc.seo', ['title' => 'Kho Mã Nguồn'])
+        <title>Kho Mã Nguồn - HG DIGITAL</title>
     </head>
 
     <body id="content">

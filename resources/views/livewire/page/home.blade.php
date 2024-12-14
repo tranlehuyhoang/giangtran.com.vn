@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Trang Chủ'])
+        <title>Trang Chủ - HG DIGITAL</title>
     </head>
     <body id="content">
         <div class="loader-wrapper" style="z-index: 999999;">

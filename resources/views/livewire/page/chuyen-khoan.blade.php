@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Nạp Tiền'])
+        <title>Nạp Tiền - HG DIGITAL</title>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     </head>

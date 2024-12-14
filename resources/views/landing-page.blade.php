@@ -2,77 +2,36 @@
     <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
     <head>
-        <link rel="icon" type="image/x-icon" href="/logo/icon.png" />
-        <meta name="robots" content="index, follow" />
-        <meta name="google-site-verification" content="XdpPCe9WLWMZA9pEynO-7B7lRoimKZl7qFlCqvZsVlo">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Expires" content="-1">
-        <meta name="keywords" content="thiết kế website, hg digital, source code">
-        <meta property="og:site_name" content="Hg Digital" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+        <meta name="google" content="notranslate">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta property="og:url" content="{{ url('/') }}">
+        <meta name="twitter:url" content="{{ url('/') }}">
+        <meta name="google-site-verification" content="W1Wf5_b9Yoc5PaKmRkfDJB0bzRUGDkcn2rDUhja0skU" />
+        <link rel="shortcut icon" href="{{ asset('/logo/icon.png') }}" type="image/png">
+
         <title>Thiết Kế Website Chuyên Nghiệp, Trọn Gói, Uy Tín - HG DIGITAL</title>
         <meta name="description"
             content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7. Công ty thiết kế web bán hàng, web doanh nghiệp uy tín, chất lượng, kinh nghiệm nhiều năm. 10+ năm kinh nghiệm. Nhân viên chuyên nghiệp.">
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta property="og:url" content="{{ request()->fullUrl() }}" />
-        <meta name="twitter:url" content="{{ request()->fullUrl() }}" />
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta property="og:title"
-            content="Thiết Kế Website Chuyên Nghiệp, Trọn Gói, Uy Tín - HG DIGITAL" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" itemprop="thumbnailUrl" content="/logo/banner.png">
-        <meta property="og:description"
-            content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7. Công ty thiết kế web bán hàng, web doanh nghiệp uy tín, chất lượng, kinh nghiệm nhiều năm. 10+ năm kinh nghiệm. Nhân viên chuyên nghiệp." />
-        <meta name="format-detection" content="telephone=no" />
-        <link rel="shortcut icon" href="/logo/icon.png" />
-        <link rel="apple-touch-icon" href="/logo/icon.png" />
-        <link rel="apple-touch-icon-precomposed" href="/logo/icon.png" />
-        <meta name="msapplication-TileImage" content="/logo/icon.png" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Thiết Kế Website Chuyên Nghiệp, Trọn Gói, Uy Tín - HG DIGITAL" />
-        <meta name="twitter:description" content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7." />
-        <meta name="twitter:image" content="/logo/banner.png" /> <!-- Add your image path here -->
+        <meta name="twitter:image" content="{{ asset('logo/banner.png') }}" /> <!-- Add your image path here -->
+        <meta property="og:image" content="{{ asset('logo/banner.png') }}">
+        <meta property="og:image" itemprop="thumbnailUrl" content="{{ asset('logo/banner.png') }}">
 
 
-        <meta name="revisit-after" content="days" />
-        <meta name="geo.region" content="VN" />
-        <meta name="geo.placename" content="Hồ Chí Minh" />
-        <link rel="dns-prefetch">
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org/",
-                "@graph": [
-                    {
-                        "@type": "LocalBusiness",
-                        "name": "Hg Digital",
-                        "url": "https://giangtran.com.vn"
-                    },
-                    {
-                        "@type": "CreativeWorkSeries",
-                        "name": "Thiết Kế Website Chuyên Nghiệp",
-                        "aggregateRating": {
-                            "@type": "AggregateRating",
-                            "ratingValue": "4.9",
-                            "bestRating": "5",
-                            "ratingCount": "9999"
-                        }
-                    }
-                ]
-            }
-            </script>
-            <link rel="stylesheet" href="/assets/static/assets/css/main.css">
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-            <style>
-                html {
-                    scroll-behavior: smooth;
-                }
-            </style>
+        <link rel="stylesheet" href="/assets/static/assets/css/main.css">
     </head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 
 
     <body class="bg-secondary">
-{{--
+        {{--
         <div class="preloader bg-light-subtle">
             <div class="preloader-wrap">
                 <img src="/logo/giangtran.com.vn.dark.webp" alt="logo" class="img-fluid" style="width: 150px;">
@@ -92,7 +51,8 @@
                             sizes="(max-width: 600px) 300px, (max-width: 1024px) 600px, 1200px">
 
 
-                        <img src="/logo/giangtran.com.vn.dark.webp" loading="lazy" alt="image" class="logo__img logo__sticky">
+                        <img src="/logo/giangtran.com.vn.dark.webp" loading="lazy" alt="image"
+                            class="logo__img logo__sticky">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#primaryMenu" aria-expanded="false" aria-label="Mở menu chính">
@@ -114,8 +74,8 @@
                                         <a href="/home"
                                             class="contain-sub-1__link text-decoration-none d-flex align-items-start gap-2">
                                             <span class="contain-sub-1__img">
-                                                <img src="/assets/static/assets/img/icon-menu-wp-hosting.png" loading="lazy"
-                                                    alt="image" class="img-fluid">
+                                                <img src="/assets/static/assets/img/icon-menu-wp-hosting.png"
+                                                    loading="lazy" alt="image" class="img-fluid">
                                             </span>
                                             <span class="flex-grow-1">
                                                 <span
@@ -329,7 +289,8 @@
                                                                         class="contain-mega-menu__link text-decoration-none d-flex align-items-start gap-2">
                                                                         <span class="contain-mega-menu__img">
                                                                             <img src="/assets/static/assets/img/icon-menu-domain-reg.png"
-                                                                                alt="image" class="img-fluid" loading="lazy">
+                                                                                alt="image" class="img-fluid"
+                                                                                loading="lazy">
                                                                         </span>
                                                                         <span class="flex-grow-1">
                                                                             <span
@@ -1306,8 +1267,8 @@
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="text-center">
-                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
-                                                    class="img-fluid mb-5">
+                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy"
+                                                    alt="image" class="img-fluid mb-5">
                                                 <h1 class="mb-1" style="font-size: 1.25rem;"> VIETNAM #WHM1 </h1>
                                                 <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý Nhỏ Lẻ.
                                                 </small>
@@ -1420,8 +1381,8 @@
                                             </div>
 
                                             <div class="text-center">
-                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
-                                                    class="img-fluid mb-5">
+                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy"
+                                                    alt="image" class="img-fluid mb-5">
                                                 <h1 class="mb-1" style="font-size: 1.25rem;"> VIETNAM #WHM3 </h1>
                                                 <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý, Tính Ổn
                                                     Định
@@ -1535,8 +1496,8 @@
                                             </div>
 
                                             <div class="text-center">
-                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
-                                                    class="img-fluid mb-5">
+                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy"
+                                                    alt="image" class="img-fluid mb-5">
                                                 <h1 class="mb-1" style="font-size: 1.25rem;"> VIETNAM #WHM4 </h1>
                                                 <small> Reseller Hosting Phù Hợp Với Các Doanh Nghiệp, Đại Lý, Tính Ổn
                                                     Định
@@ -1652,8 +1613,8 @@
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="text-center">
-                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
-                                                    class="img-fluid mb-5">
+                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy"
+                                                    alt="image" class="img-fluid mb-5">
                                                 <h1 class="mb-1" style="font-size: 1.25rem;"> VPS VN PRO 1 </h1>
                                                 <small> Cloud VPS Giá Rẻ </small>
                                                 <div class="mt-5">
@@ -1762,8 +1723,8 @@
                                             </div>
 
                                             <div class="text-center">
-                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
-                                                    class="img-fluid mb-5">
+                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy"
+                                                    alt="image" class="img-fluid mb-5">
                                                 <h6 class="mb-1"> VPS VN Platinum 7 </h6>
                                                 <small> Cloud VPS Phù Hợp Chạy Máy Chủ, Treo Game, Tools </small>
                                                 <div class="mt-5">
@@ -1869,8 +1830,8 @@
                                         <div
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="text-center">
-                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy" alt="image"
-                                                    class="img-fluid mb-5">
+                                                <img src="/assets/static/assets/img/price-2-icon.png" loading="lazy"
+                                                    alt="image" class="img-fluid mb-5">
                                                 <h6 class="mb-1"> VPS VN Platinum 9 </h6>
                                                 <small> Phù Hợp Làm Máy Chủ, Cấu Hình Cao Anti DDoS </small>
                                                 <div class="mt-5">
@@ -1983,8 +1944,10 @@
                                             class="price-card-item-one position-relative overflow-hidden bg-white px-7 py-9 border-end rounded-3">
                                             <div class="text-center">
                                                 <img src="https://123host.vn/uploads/post/320/cpanelandwhm.png"
-                                                    alt="image" class="img-fluid mb-5" style="width: 100px" loading="lazy">
-                                                <h1 class="mb-1" style="font-size: 1.25rem;"> SERVER CPANEL 01 </h1>
+                                                    alt="image" class="img-fluid mb-5" style="width: 100px"
+                                                    loading="lazy">
+                                                <h1 class="mb-1" style="font-size: 1.25rem;"> SERVER CPANEL 01
+                                                </h1>
                                                 <small> Phù Hợp Doanh Nghiệp, Đại Lý Bán Nhỏ Lẻ, Tự Làm Chủ Server.
                                                 </small>
                                                 <div class="mt-5">
@@ -2410,8 +2373,8 @@
                             <div class="why-card px-6 py-9 rounded-3 transition">
                                 <img src="/assets/static/assets/img/why-icon-2.png" loading="lazy" alt="image"
                                     class="img-fluid">
-                                <img src="/assets/static/assets/img/why-icon-2-dark.png" loading="lazy" alt="image"
-                                    class="img-fluid dark">
+                                <img src="/assets/static/assets/img/why-icon-2-dark.png" loading="lazy"
+                                    alt="image" class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Chuyển Dữ Liệu Miễn Phí </h6>
                                 <p class="text-white text-opacity-75 mb-0"> Hg Digital Hỗ Trợ Chuyển Dữ Liệu Từ Nhà
                                     Cung Cấp Khác
@@ -2424,8 +2387,8 @@
                             <div class="why-card px-6 py-9 rounded-3 transition">
                                 <img src="/assets/static/assets/img/why-icon-3.png" loading="lazy" alt="image"
                                     class="img-fluid">
-                                <img src="/assets/static/assets/img/why-icon-3-dark.png" loading="lazy" alt="image"
-                                    class="img-fluid dark">
+                                <img src="/assets/static/assets/img/why-icon-3-dark.png" loading="lazy"
+                                    alt="image" class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Bảo Mật Máy Chủ </h6>
                                 <p class="text-white text-opacity-75 mb-0"> Quét Virus Trong File, Tường Lữa Anti DDoS
                                     Hạn
@@ -2438,8 +2401,8 @@
                             <div class="why-card px-6 py-9 rounded-3 transition">
                                 <img src="/assets/static/assets/img/why-icon-4.png" loading="lazy" alt="image"
                                     class="img-fluid">
-                                <img src="/assets/static/assets/img/why-icon-4-dark.png" loading="lazy" alt="image"
-                                    class="img-fluid dark">
+                                <img src="/assets/static/assets/img/why-icon-4-dark.png" loading="lazy"
+                                    alt="image" class="img-fluid dark">
                                 <h6 class="text-white mt-7"> Hoàn Tiền </h6>
                                 <p class="text-white text-opacity-75 mb-0"> Hg Digital Có Chính Sách Hoàn 100% Tiền
                                     Trong 24 Giờ
@@ -2647,10 +2610,10 @@
                                 <div class="bg-white p-7 shadow-sm rounded-3">
                                     <div
                                         class="d-flex align-items-center justify-content-between border-bottom border-secondary pb-5">
-                                        <img src="/assets/static/assets/img/feedback-brand-1.png" loading="lazy" alt="hình ảnh"
-                                            class="img-fluid">
-                                        <img src="/assets/static/assets/img/shape/feedback-quate.png" loading="lazy" alt="hình ảnh"
-                                            class="img-fluid">
+                                        <img src="/assets/static/assets/img/feedback-brand-1.png" loading="lazy"
+                                            alt="hình ảnh" class="img-fluid">
+                                        <img src="/assets/static/assets/img/shape/feedback-quate.png" loading="lazy"
+                                            alt="hình ảnh" class="img-fluid">
                                     </div>
                                     <h6 class="mt-5">
                                         <font style="vertical-align: inherit;">
@@ -2670,8 +2633,8 @@
                                         </font>
                                     </p>
                                     <div class="d-flex align-items-center gap-4 mt-7">
-                                        <img src="/assets/static/assets/img/user-img-1.png" loading="lazy" alt="hình ảnh"
-                                            class="img-fluid">
+                                        <img src="/assets/static/assets/img/user-img-1.png" loading="lazy"
+                                            alt="hình ảnh" class="img-fluid">
                                         <div>
                                             <h6 class="fs-16 mb-0">
                                                 <font style="vertical-align: inherit;">
@@ -2778,23 +2741,23 @@
                         <h6 class="text-white mt-6 mb-4 fs-16">Social Media</h6>
                         <div class="d-inline-flex align-items-center justify-content-center gap-2">
                             <a href="/home"
-                               class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
-                               aria-label="Twitter">
+                                class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
+                                aria-label="Twitter">
                                 <span class="text-white"><i class="lab la-twitter"></i></span>
                             </a>
                             <a href="https://www.facebook.com/profile.php?id=61569955093836&locale=vi_VN"
-                               class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
-                               aria-label="Facebook">
+                                class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
+                                aria-label="Facebook">
                                 <span class="text-white"><i class="lab la-facebook-f"></i></span>
                             </a>
                             <a href="/home"
-                               class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
-                               aria-label="Dribbble">
+                                class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
+                                aria-label="Dribbble">
                                 <span class="text-white"><i class="lab la-dribbble"></i></span>
                             </a>
                             <a href="/home"
-                               class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
-                               aria-label="Behance">
+                                class="social-icon w-9 h-9 d-inline-flex align-items-center justify-content-center rounded-circle border border-light border-opacity-10"
+                                aria-label="Behance">
                                 <span class="text-white"><i class="lab la-behance"></i></span>
                             </a>
                         </div>
@@ -2861,4 +2824,5 @@
         <script src="/assets/static/assets/js/app.js"></script>
 
     </body>
+
     </html>
